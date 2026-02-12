@@ -12,7 +12,7 @@ This roadmap delivers a consumer-facing equipment verification tool in 5 phases.
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Data Foundation** - Equipment database and TypeScript type system
+- [x] **Phase 1: Data Foundation** - Equipment database and TypeScript type system
 - [ ] **Phase 2: Static Pages & SEO** - Individual machine pages with SSG and schema markup
 - [ ] **Phase 3: Search & Autocomplete** - Fuzzy search with real-time suggestions
 - [ ] **Phase 4: Not Found Flow** - Partial matches and related machine suggestions
@@ -34,7 +34,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md - TypeScript types and TDD-driven lookup utilities
-- [ ] 01-02-PLAN.md - Complete equipment data population (~38 entries)
+- [x] 01-02-PLAN.md - Complete equipment data population (~38 entries)
 
 ### Phase 2: Static Pages & SEO
 **Goal**: Individual machine pages exist at SEO-friendly URLs with proper metadata and schema markup
@@ -111,7 +111,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Data Foundation | 1/2 | In Progress | - |
+| 1. Data Foundation | 2/2 | Complete | 2026-02-12 |
 | 2. Static Pages & SEO | 0/3 | Not started | - |
 | 3. Search & Autocomplete | 0/2 | Not started | - |
 | 4. Not Found Flow | 0/1 | Not started | - |
