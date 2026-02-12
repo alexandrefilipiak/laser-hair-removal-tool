@@ -26,7 +26,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Requirements**: DATA-01, DATA-02, DATA-03, DATA-04, DATA-05, DATA-06, DATA-07
 **Success Criteria** (what must be TRUE):
   1. Equipment JSON file contains all ~38 Phase 1 entries (clinical lasers, home lasers, technologies, multi-purpose)
-  2. Each entry includes all classification fields: name, manufacturer, technology type, wavelengths, purpose, effectiveness rating, skin type info, brand tier, cooling method, notes, aliases
+  2. Each entry includes all classification fields: name, manufacturer, technology type, wavelengths, purpose, skin type info, brand tier, cooling method, notes, aliases
   3. Technology term entries (SHR, AFT, BBL, E-Light, OPT, DPL) include clarification text explaining what each term means
   4. Data access utilities (getEquipmentBySlug, getAllEquipmentSlugs) return correctly typed data
   5. Alias/synonym dictionary resolves multiple search variations to the same machine
@@ -43,7 +43,7 @@ Plans:
 **Success Criteria** (what must be TRUE):
   1. User can visit /is-it-a-real-laser/[slug] for any equipment entry and see its classification
   2. Each machine page displays clear "Real Laser" or "Not a Laser" classification prominently
-  3. Each machine page shows brand tier, purpose-built/multi-purpose distinction, and effectiveness rating
+  3. Each machine page shows brand tier, purpose-built/multi-purpose distinction
   4. Permanent disclaimer appears on every result page
   5. Each page has unique meta title, description, and JSON-LD Product schema visible to crawlers
   6. sitemap.xml lists all machine pages and robots.txt allows crawler access
