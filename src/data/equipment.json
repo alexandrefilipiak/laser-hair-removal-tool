@@ -1,0 +1,43 @@
+[
+  {
+    "type": "machine",
+    "slug": "gentlemax-pro",
+    "name": "GentleMax Pro",
+    "manufacturer": "Candela",
+    "technologyType": "laser",
+    "wavelengths": ["755nm", "1064nm"],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (dual wavelength system)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "cryogen",
+    "notes": "Dual-wavelength Alexandrite + Nd:YAG. Gold standard for versatility.",
+    "aliases": ["gentle max pro", "gentlemaxpro", "candela gentlemax pro"],
+    "family": "candela-gentlemax",
+    "deliveryMethod": null
+  },
+  {
+    "type": "technology-term",
+    "slug": "shr",
+    "name": "SHR",
+    "technologyType": "delivery-method",
+    "isRealLaser": null,
+    "whatItIs": "Super Hair Removal - a delivery method using gradual heating with rapid pulses.",
+    "whyItMatters": "SHR is NOT a device type. It can be applied to real lasers (Soprano) or IPL machines. Always ask what device your clinic uses for SHR.",
+    "askYourClinic": "What device do you use for SHR? Is it a Soprano (laser) or an IPL applicator?",
+    "aliases": ["super hair removal"]
+  },
+  {
+    "type": "technology-term",
+    "slug": "755nm",
+    "name": "755nm Alexandrite",
+    "technologyType": "wavelength",
+    "isRealLaser": true,
+    "whatItIs": "A wavelength commonly used in Alexandrite lasers for hair removal.",
+    "whyItMatters": "755nm is excellent for lighter skin tones (Fitzpatrick I-III) and fine hair. It's the wavelength used by gold-standard machines like the GentleLase and GentleMax Pro.",
+    "askYourClinic": "What brand is your 755nm Alexandrite laser?",
+    "aliases": ["alexandrite", "755 nm", "alexandrite laser"]
+  }
+]
