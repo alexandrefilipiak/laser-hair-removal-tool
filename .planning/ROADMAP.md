@@ -30,11 +30,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Technology term entries (SHR, AFT, BBL, E-Light, OPT, DPL) include clarification text explaining what each term means
   4. Data access utilities (getEquipmentBySlug, getAllEquipmentSlugs) return correctly typed data
   5. Alias/synonym dictionary resolves multiple search variations to the same machine
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md - TypeScript types and TDD-driven lookup utilities
+- [ ] 01-02-PLAN.md - Complete equipment data population (~38 entries)
 
 ### Phase 2: Static Pages & SEO
 **Goal**: Individual machine pages exist at SEO-friendly URLs with proper metadata and schema markup
@@ -49,7 +49,7 @@ Plans:
   6. sitemap.xml lists all machine pages and robots.txt allows crawler access
   7. Pages render correctly on mobile devices (responsive layout)
   8. Unknown brand searches (if user navigates to non-existent slug) show "ask your clinic what brand" messaging
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
 - [ ] 02-01: TBD
@@ -67,7 +67,7 @@ Plans:
   4. Search normalizes input (case-insensitive, ignores extra whitespace and punctuation)
   5. Brand aliases resolve correctly (multiple ways to find same machine)
   6. Results display classification layers in clear visual hierarchy before user clicks through
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
 - [ ] 03-01: TBD
@@ -81,7 +81,7 @@ Plans:
   1. When search returns no exact match, user sees "Did you mean...?" partial match suggestions
   2. User sees related machines from the same manufacturer when available
   3. Search results link to relevant machine pages for easy navigation
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
 - [ ] 04-01: TBD
@@ -97,7 +97,7 @@ Plans:
   4. Each machine page has 300+ words of unique content (not just templated specs)
   5. Homepage exists with link to equipment checker tool and descriptive text explaining purpose
   6. Tool page displays browseable index of all equipment at bottom for discovery
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
 - [ ] 05-01: TBD
@@ -111,7 +111,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Data Foundation | 0/2 | Not started | - |
+| 1. Data Foundation | 0/2 | Planned | - |
 | 2. Static Pages & SEO | 0/3 | Not started | - |
 | 3. Search & Autocomplete | 0/2 | Not started | - |
 | 4. Not Found Flow | 0/1 | Not started | - |
