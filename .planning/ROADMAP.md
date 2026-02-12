@@ -33,7 +33,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans:** 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md - TypeScript types and TDD-driven lookup utilities
+- [x] 01-01-PLAN.md - TypeScript types and TDD-driven lookup utilities
 - [ ] 01-02-PLAN.md - Complete equipment data population (~38 entries)
 
 ### Phase 2: Static Pages & SEO
@@ -111,7 +111,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Data Foundation | 0/2 | Planned | - |
+| 1. Data Foundation | 1/2 | In Progress | - |
 | 2. Static Pages & SEO | 0/3 | Not started | - |
 | 3. Search & Autocomplete | 0/2 | Not started | - |
 | 4. Not Found Flow | 0/1 | Not started | - |
