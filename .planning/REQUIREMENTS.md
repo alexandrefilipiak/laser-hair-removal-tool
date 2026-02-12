@@ -1,0 +1,157 @@
+# Requirements: Laser Equipment Checker Tool
+
+**Defined:** 2026-02-12
+**Core Value:** Consumers can instantly determine if a machine is a real laser or not
+
+## v1 Requirements
+
+Requirements for initial release. Each maps to roadmap phases.
+
+### Search & Discovery
+
+- [ ] **SRCH-01**: User can type machine name and see fuzzy-matched results
+- [ ] **SRCH-02**: Search handles typos (e.g., "gentlemax" finds "GentleMax Pro")
+- [ ] **SRCH-03**: Autocomplete suggestions appear as user types
+- [ ] **SRCH-04**: Search results appear in <200ms
+- [ ] **SRCH-05**: User can search for technology terms (SHR, AFT, BBL) and get clarification
+- [ ] **SRCH-06**: Search normalizes input (case, whitespace, punctuation)
+- [ ] **SRCH-07**: Brand aliases resolve correctly (multiple ways to find same machine)
+
+### Classification Display
+
+- [ ] **CLAS-01**: User sees clear "Real Laser" or "Not a Laser" classification (Layer 1)
+- [ ] **CLAS-02**: User sees brand tier classification (Gold standard / Established / Unknown) (Layer 2)
+- [ ] **CLAS-03**: User sees purpose-built vs multi-purpose distinction (Layer 3)
+- [ ] **CLAS-04**: User sees effectiveness rating (Gold standard / Excellent / Effective / Adequate) (Layer 3b)
+- [ ] **CLAS-05**: User sees skin type informational content (Layer 4)
+- [ ] **CLAS-06**: Skin type info is informational only, no safety recommendations
+- [ ] **CLAS-07**: Permanent disclaimer appears on all results
+- [ ] **CLAS-08**: Technology terms display clarification (SHR can be laser OR IPL)
+- [ ] **CLAS-09**: Unknown brand searches prompt "ask your clinic what brand"
+
+### SEO & Pages
+
+- [ ] **SEO-01**: Individual page exists for each equipment entry (/is-it-a-real-laser/[slug])
+- [ ] **SEO-02**: Individual pages have unique meta title and description
+- [ ] **SEO-03**: Product schema markup (JSON-LD) on each machine page
+- [ ] **SEO-04**: FAQPage schema markup where appropriate
+- [ ] **SEO-05**: Each machine page has 300+ unique words of content
+- [ ] **SEO-06**: Technology term pages exist (SHR, AFT, BBL, E-Light, OPT, DPL)
+- [ ] **SEO-07**: sitemap.xml includes all machine and technology pages
+- [ ] **SEO-08**: robots.txt allows crawler access to all content pages
+- [ ] **SEO-09**: Mobile-responsive design (60%+ expected mobile traffic)
+
+### Data & Content
+
+- [ ] **DATA-01**: Database includes ~38 Phase 1 entries (clinical lasers, home lasers, technologies, multi-purpose)
+- [ ] **DATA-02**: Each entry has: name, manufacturer, technology type, wavelengths, purpose, effectiveness rating
+- [ ] **DATA-03**: Each entry has: skin type info, brand tier, cooling method, notes
+- [ ] **DATA-04**: Each entry has: alias/synonym list for search
+- [ ] **DATA-05**: Technology entries have: clarification text explaining what it is
+- [ ] **DATA-06**: Brand tier classification: Gold standard / Established / Unknown
+- [ ] **DATA-07**: Home laser entries note lower power vs clinical (Tria 4X, Tria Precision)
+
+### User Experience
+
+- [ ] **UX-01**: Homepage exists with link to equipment checker tool
+- [ ] **UX-02**: Homepage has descriptive text explaining tool purpose
+- [ ] **UX-03**: Main tool page has prominent search bar
+- [ ] **UX-04**: Results display classification layers in clear visual hierarchy
+- [ ] **UX-05**: "Not found" shows partial match suggestions ("Did you mean...?")
+- [ ] **UX-06**: "Not found" shows related machines from same manufacturer
+- [ ] **UX-07**: Results link to relevant machine pages
+- [ ] **UX-08**: Tool page displays browseable index of all equipment at bottom
+
+## v2 Requirements
+
+Deferred to future release. Tracked but not in current roadmap.
+
+### Engagement
+
+- **ENG-01**: "Not found" email capture ("We'll add it and notify you")
+- **ENG-02**: Email notification when requested machine is added
+- **ENG-03**: Analytics dashboard for search query patterns
+
+### Content Expansion
+
+- **CONT-01**: Professional IPL devices (~15 entries)
+- **CONT-02**: Consumer IPL by brand (not by model)
+- **CONT-03**: Blog articles in /guides/ section
+- **CONT-04**: Comparison pages ("X vs Y")
+
+### Directory Integration
+
+- **DIR-01**: "Find clinics using this laser" CTA
+- **DIR-02**: Clinic directory with equipment verification
+- **DIR-03**: Equipment verification badges for clinics
+
+## Out of Scope
+
+Explicitly excluded. Documented to prevent scope creep.
+
+| Feature | Reason |
+|---------|--------|
+| User accounts / authentication | Not needed for lookup tool |
+| User reviews or ratings | Creates moderation burden, potential legal issues |
+| Medical advice or safety recommendations | Liability exposure, informational only |
+| Real-time clinic equipment verification | Manual database only for v1 |
+| Price information | Varies too much, creates maintenance burden |
+| Clinic booking or scheduling | Directory feature, not tool |
+| Multi-language support | English only for v1 |
+| API access | Build for web first |
+
+## Traceability
+
+Which phases cover which requirements. Updated during roadmap creation.
+
+| Requirement | Phase | Status |
+|-------------|-------|--------|
+| DATA-01 | Phase 1 | Pending |
+| DATA-02 | Phase 1 | Pending |
+| DATA-03 | Phase 1 | Pending |
+| DATA-04 | Phase 1 | Pending |
+| DATA-05 | Phase 1 | Pending |
+| DATA-06 | Phase 1 | Pending |
+| DATA-07 | Phase 1 | Pending |
+| SEO-01 | Phase 2 | Pending |
+| SEO-02 | Phase 2 | Pending |
+| SEO-03 | Phase 2 | Pending |
+| SEO-04 | Phase 2 | Pending |
+| SEO-07 | Phase 2 | Pending |
+| SEO-08 | Phase 2 | Pending |
+| SEO-09 | Phase 2 | Pending |
+| CLAS-01 | Phase 2 | Pending |
+| CLAS-02 | Phase 2 | Pending |
+| CLAS-03 | Phase 2 | Pending |
+| CLAS-04 | Phase 2 | Pending |
+| CLAS-07 | Phase 2 | Pending |
+| CLAS-09 | Phase 2 | Pending |
+| SRCH-01 | Phase 3 | Pending |
+| SRCH-02 | Phase 3 | Pending |
+| SRCH-03 | Phase 3 | Pending |
+| SRCH-04 | Phase 3 | Pending |
+| SRCH-06 | Phase 3 | Pending |
+| SRCH-07 | Phase 3 | Pending |
+| UX-03 | Phase 3 | Pending |
+| UX-04 | Phase 3 | Pending |
+| UX-05 | Phase 4 | Pending |
+| UX-06 | Phase 4 | Pending |
+| UX-07 | Phase 4 | Pending |
+| SRCH-05 | Phase 5 | Pending |
+| CLAS-05 | Phase 5 | Pending |
+| CLAS-06 | Phase 5 | Pending |
+| CLAS-08 | Phase 5 | Pending |
+| SEO-05 | Phase 5 | Pending |
+| SEO-06 | Phase 5 | Pending |
+| UX-01 | Phase 5 | Pending |
+| UX-02 | Phase 5 | Pending |
+| UX-08 | Phase 5 | Pending |
+
+**Coverage:**
+- v1 requirements: 37 total
+- Mapped to phases: 37
+- Unmapped: 0 ✓
+
+---
+*Requirements defined: 2026-02-12*
+*Last updated: 2026-02-12 after initial definition*
