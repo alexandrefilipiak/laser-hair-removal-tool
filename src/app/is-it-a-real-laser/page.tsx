@@ -68,8 +68,8 @@ export default function IsItARealLaserPage() {
 
       {/* Equipment Database */}
       <section
-        className="px-4 sm:px-6 lg:px-8 py-12"
-        style={{ backgroundColor: '#0f172a' }}
+        className="px-4 sm:px-6 lg:px-8"
+        style={{ backgroundColor: '#0f172a', paddingTop: '2rem', paddingBottom: '3rem' }}
       >
         <div className="max-w-6xl mx-auto">
           <EquipmentIndex equipment={equipment} />
@@ -77,7 +77,7 @@ export default function IsItARealLaserPage() {
       </section>
 
       {/* Footer */}
-      <footer style={{ backgroundColor: '#0f172a', padding: '2rem 0 1.5rem' }}>
+      <footer style={{ backgroundColor: '#0f172a', paddingTop: '2rem', paddingBottom: '1.5rem' }}>
         <p className="text-center" style={{ fontSize: '0.75rem', color: '#475569' }}>
           Informational content only — not medical advice
         </p>

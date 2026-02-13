@@ -13,7 +13,7 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
   return (
     <div>
       {/* Machines Section */}
-      <div style={{ paddingBottom: '2.5rem' }}>
+      <div style={{ marginBottom: '3rem' }}>
         <div className="flex items-center gap-3 mb-5">
           <h2 style={{ color: '#f1f5f9', fontSize: '1.25rem', fontWeight: 600 }}>
             Machines
@@ -38,13 +38,6 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
           ))}
         </div>
       </div>
-
-      {/* Section Divider */}
-      <div style={{
-        height: '1px',
-        background: 'linear-gradient(to right, transparent, #475569 20%, #475569 80%, transparent)',
-        marginBottom: '2rem'
-      }} />
 
       {/* Technology Terms Section */}
       <div>
