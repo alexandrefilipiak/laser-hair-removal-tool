@@ -165,49 +165,72 @@ export function SearchBar({ equipment }: SearchBarProps) {
 
   return (
     <div ref={containerRef} className="relative w-full max-w-2xl mx-auto">
-      {/* Search icon */}
-      <div className="absolute inset-y-0 left-0 flex items-center pl-5 pointer-events-none z-10">
-        <svg
-          className="w-5 h-5"
-          style={{ color: '#64748b' }}
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-          />
-        </svg>
-      </div>
-
-      {/* Search input */}
-      <input
-        ref={inputRef}
-        type="text"
-        role="combobox"
-        aria-expanded={showDropdown}
-        aria-controls={listboxId}
-        aria-autocomplete="list"
-        aria-activedescendant={
-          activeIndex >= 0 ? `result-${activeIndex}` : undefined
-        }
-        value={query}
-        onChange={handleChange}
-        onFocus={handleFocus}
-        onKeyDown={handleKeyDown}
-        placeholder="Search by device name, brand, or technology..."
-        className="w-full text-lg rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-shadow"
+      {/* Search input container */}
+      <div
         style={{
+          position: 'relative',
+          display: 'flex',
+          alignItems: 'center',
           backgroundColor: '#1e293b',
-          color: '#f1f5f9',
           border: '1px solid #334155',
-          padding: '1rem 1.25rem 1rem 3.5rem',
+          borderRadius: '0.75rem',
+          transition: 'border-color 0.2s, box-shadow 0.2s',
         }}
-      />
+        className="focus-within:border-blue-500 focus-within:ring-2 focus-within:ring-blue-500/20"
+      >
+        {/* Search icon */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            paddingLeft: '1rem',
+            pointerEvents: 'none',
+          }}
+        >
+          <svg
+            style={{ width: '20px', height: '20px', color: '#64748b' }}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+        </div>
+
+        {/* Search input */}
+        <input
+          ref={inputRef}
+          type="text"
+          role="combobox"
+          aria-expanded={showDropdown}
+          aria-controls={listboxId}
+          aria-autocomplete="list"
+          aria-activedescendant={
+            activeIndex >= 0 ? `result-${activeIndex}` : undefined
+          }
+          value={query}
+          onChange={handleChange}
+          onFocus={handleFocus}
+          onKeyDown={handleKeyDown}
+          placeholder="Search by device name, brand, or technology..."
+          style={{
+            flex: 1,
+            backgroundColor: 'transparent',
+            color: '#f1f5f9',
+            fontSize: '1rem',
+            padding: '0.875rem 1rem 0.875rem 0.75rem',
+            border: 'none',
+            outline: 'none',
+          }}
+        />
+      </div>
 
       {/* Results dropdown */}
       {showDropdown && (
