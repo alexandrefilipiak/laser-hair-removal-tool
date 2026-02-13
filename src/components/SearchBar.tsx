@@ -6,6 +6,7 @@ import { useSearch } from '@/hooks/useSearch';
 import { useDebounce } from '@/hooks/useDebounce';
 import type { EquipmentEntry } from '@/lib/equipment';
 import { SearchResultItem } from './SearchResultItem';
+import { NotFoundSuggestions } from './NotFoundSuggestions';
 
 interface SearchBarProps {
   /** Equipment data to search through */
@@ -21,6 +22,7 @@ interface SearchBarProps {
  * - 150ms debounce for performance
  * - ARIA attributes for screen reader accessibility
  * - Results limited to 8 for UX
+ * - "Did you mean?" suggestions when no exact matches
  *
  * @example
  * <SearchBar equipment={equipmentData} />
@@ -202,18 +204,21 @@ export function SearchBar({ equipment }: SearchBarProps) {
         </ul>
       )}
 
-      {/* Empty state */}
+      {/* Empty state with suggestions */}
       {showEmptyState && (
-        <div className="absolute z-50 w-full mt-2 bg-white border border-gray-200 rounded-xl shadow-lg p-6 text-center">
-          <p className="text-gray-600 mb-2">
-            No equipment found for &quot;{debouncedQuery}&quot;
+        <div className="absolute z-50 w-full mt-2 bg-white border border-gray-200 rounded-xl shadow-lg p-6">
+          <p className="text-gray-600 mb-4">
+            No exact match for &quot;{debouncedQuery}&quot;
           </p>
-          <a
-            href="/is-it-a-real-laser"
-            className="text-blue-600 hover:text-blue-800 font-medium"
-          >
-            Browse all equipment
-          </a>
+          <NotFoundSuggestions
+            query={debouncedQuery}
+            equipment={equipment}
+            onSelect={(slug) => {
+              router.push(`/is-it-a-real-laser/${slug}`);
+              setIsOpen(false);
+              setQuery('');
+            }}
+          />
         </div>
       )}
     </div>
