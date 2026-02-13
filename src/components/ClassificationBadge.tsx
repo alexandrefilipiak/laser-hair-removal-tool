@@ -10,6 +10,8 @@ interface ClassificationBadgeProps {
   isRealLaser?: boolean | null;
   /** Technology type for machines (derives isRealLaser if provided) */
   technologyType?: string;
+  /** Size variant for different contexts */
+  size?: 'default' | 'small';
 }
 
 /**
@@ -23,20 +25,29 @@ interface ClassificationBadgeProps {
 export function ClassificationBadge({
   isRealLaser,
   technologyType,
+  size = 'default',
 }: ClassificationBadgeProps) {
   // For machines, derive classification from technology type
   const classification =
     technologyType !== undefined ? technologyType === 'laser' : isRealLaser;
+
+  // Size-based styling
+  const sizeClasses =
+    size === 'small'
+      ? 'px-2 py-0.5 text-xs gap-1'
+      : 'px-3 py-1.5 text-sm gap-1.5 md:px-4 md:py-2 md:text-base';
+
+  const iconSize = size === 'small' ? 'h-3 w-3' : 'h-4 w-4 md:h-5 md:w-5';
 
   // Determine badge content and styling based on classification
   if (classification === true) {
     return (
       <span
         role="status"
-        className="inline-flex items-center gap-1.5 rounded-full border border-green-200 bg-green-100 px-3 py-1.5 text-sm font-semibold text-green-800 md:px-4 md:py-2 md:text-base"
+        className={`inline-flex items-center rounded-full border border-green-200 bg-green-100 font-semibold text-green-800 ${sizeClasses}`}
       >
         <svg
-          className="h-4 w-4 md:h-5 md:w-5"
+          className={iconSize}
           fill="currentColor"
           viewBox="0 0 20 20"
           aria-hidden="true"
@@ -56,10 +67,10 @@ export function ClassificationBadge({
     return (
       <span
         role="status"
-        className="inline-flex items-center gap-1.5 rounded-full border border-red-200 bg-red-100 px-3 py-1.5 text-sm font-semibold text-red-800 md:px-4 md:py-2 md:text-base"
+        className={`inline-flex items-center rounded-full border border-red-200 bg-red-100 font-semibold text-red-800 ${sizeClasses}`}
       >
         <svg
-          className="h-4 w-4 md:h-5 md:w-5"
+          className={iconSize}
           fill="currentColor"
           viewBox="0 0 20 20"
           aria-hidden="true"
@@ -79,10 +90,10 @@ export function ClassificationBadge({
   return (
     <span
       role="status"
-      className="inline-flex items-center gap-1.5 rounded-full border border-yellow-200 bg-yellow-100 px-3 py-1.5 text-sm font-semibold text-yellow-800 md:px-4 md:py-2 md:text-base"
+      className={`inline-flex items-center rounded-full border border-yellow-200 bg-yellow-100 font-semibold text-yellow-800 ${sizeClasses}`}
     >
       <svg
-        className="h-4 w-4 md:h-5 md:w-5"
+        className={iconSize}
         fill="currentColor"
         viewBox="0 0 20 20"
         aria-hidden="true"
