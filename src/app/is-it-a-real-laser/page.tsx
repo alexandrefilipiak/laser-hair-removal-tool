@@ -4,10 +4,7 @@ import equipmentData from '@/data/equipment.json';
 import type { EquipmentEntry } from '@/lib/equipment';
 import Link from 'next/link';
 
-// Cast imported JSON to typed array
 const equipment = equipmentData as EquipmentEntry[];
-
-// Get machine count for stats
 const machineCount = equipment.filter(e => e.type === 'machine').length;
 
 export const metadata = {
@@ -16,7 +13,6 @@ export const metadata = {
     'Search and verify laser hair removal equipment. Find out if a device is a real laser or IPL.',
 };
 
-// Popular searches for quick access
 const popularSearches = [
   { name: 'GentleMax Pro', slug: 'gentlemax-pro' },
   { name: 'Soprano ICE', slug: 'soprano-ice' },
@@ -26,76 +22,68 @@ const popularSearches = [
 
 export default function IsItARealLaserPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-      {/* Hero Search Section */}
-      <section className="relative overflow-hidden">
-        {/* Subtle background pattern */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.05),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(16,185,129,0.05),transparent_50%)]" />
+    <main className="min-h-screen">
+      {/* Hero Section */}
+      <section style={{ backgroundColor: '#1e293b' }} className="text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full text-sm border" style={{ backgroundColor: 'rgba(255,255,255,0.1)', borderColor: 'rgba(255,255,255,0.1)', color: '#93c5fd' }}>
+            <span className="w-2 h-2 rounded-full" style={{ backgroundColor: '#4ade80' }} />
+            Free verification tool
+          </div>
 
-        <div className="relative px-4 sm:px-6 lg:px-8 pt-16 pb-20">
-          <div className="max-w-3xl mx-auto">
-            {/* Eyebrow */}
-            <div className="flex justify-center mb-6">
-              <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-100">
-                <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
-                Free equipment verification tool
-              </span>
-            </div>
+          {/* Title */}
+          <h1 style={{ fontSize: '3.5rem', lineHeight: 1.1 }} className="sm:text-6xl lg:text-7xl font-extrabold mb-6 tracking-tight text-white">
+            Is It a <span style={{ color: '#60a5fa' }}>Real Laser</span>?
+          </h1>
 
-            {/* Title */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-6 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
-              Is It a Real Laser?
-            </h1>
+          {/* Subtitle */}
+          <p className="text-lg sm:text-xl mb-10 max-w-2xl mx-auto" style={{ color: '#cbd5e1' }}>
+            Many clinics use IPL devices marketed as &ldquo;lasers.&rdquo;
+            Search any device to find out the truth.
+          </p>
 
-            {/* Subtitle */}
-            <p className="text-lg sm:text-xl text-gray-600 text-center mb-10 max-w-2xl mx-auto leading-relaxed">
-              Many clinics use IPL devices marketed as &ldquo;lasers.&rdquo;
-              <br className="hidden sm:block" />
-              <span className="text-gray-900 font-medium">Search any device to verify instantly.</span>
-            </p>
+          {/* Search Bar */}
+          <div className="max-w-2xl mx-auto mb-6">
+            <SearchBar equipment={equipment} />
+          </div>
 
-            {/* Search Bar */}
-            <div className="mb-6">
-              <SearchBar equipment={equipment} />
-            </div>
-
-            {/* Popular Searches */}
-            <div className="flex flex-wrap items-center justify-center gap-2 text-sm">
-              <span className="text-gray-500">Popular:</span>
-              {popularSearches.map((item) => (
-                <Link
-                  key={item.slug}
-                  href={`/is-it-a-real-laser/${item.slug}`}
-                  className="px-3 py-1 bg-white border border-gray-200 rounded-full text-gray-700 hover:border-blue-300 hover:text-blue-600 hover:bg-blue-50 transition-all"
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
+          {/* Popular Searches */}
+          <div className="flex flex-wrap items-center justify-center gap-2 text-sm">
+            <span style={{ color: '#94a3b8' }}>Try:</span>
+            {popularSearches.map((item) => (
+              <Link
+                key={item.slug}
+                href={`/is-it-a-real-laser/${item.slug}`}
+                className="px-3 py-1.5 rounded-full transition-colors"
+                style={{ backgroundColor: 'rgba(255,255,255,0.1)', color: '#e2e8f0' }}
+              >
+                {item.name}
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Trust Bar */}
-      <section className="border-y border-gray-100 bg-white/50 backdrop-blur-sm">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-4 text-sm text-gray-500">
+      {/* Stats Bar */}
+      <section style={{ backgroundColor: '#334155', borderTopColor: '#475569' }} className="border-t">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+          <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-16 text-sm" style={{ color: '#cbd5e1' }}>
             <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <svg className="w-5 h-5" style={{ color: '#4ade80' }} fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span><strong className="text-gray-900">{machineCount}+</strong> devices verified</span>
+              <span><strong className="text-white">{machineCount}+</strong> devices</span>
             </div>
             <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              <svg className="w-5 h-5" style={{ color: '#60a5fa' }} fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4zm3 1h6v4H7V5zm6 6H7v2h6v-2z" clipRule="evenodd" />
               </svg>
-              <span>Candela, Cynosure, Lumenis, Alma & more</span>
+              <span>Candela, Cynosure, Lumenis & more</span>
             </div>
             <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              <svg className="w-5 h-5" style={{ color: '#facc15' }} fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
               </svg>
               <span>Instant results</span>
             </div>
@@ -103,46 +91,44 @@ export default function IsItARealLaserPage() {
         </div>
       </section>
 
-      {/* Value Props - Compact Cards */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-6">
-            {/* Card 1 */}
-            <div className="group p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200 transition-all">
-              <div className="w-10 h-10 bg-gradient-to-br from-green-400 to-emerald-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+      {/* Features Section */}
+      <section className="bg-white py-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-center text-gray-900 mb-12">
+            What You&apos;ll Learn
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div style={{ width: '56px', height: '56px' }} className="bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <svg style={{ width: '28px', height: '28px' }} className="text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Clear Classification</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Instantly see if a device is a real laser, IPL, or hybrid technology. No guesswork.
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Real Laser or IPL?</h3>
+              <p className="text-gray-600">
+                Instantly see if a device uses true laser technology or intense pulsed light.
               </p>
             </div>
-
-            {/* Card 2 */}
-            <div className="group p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200 transition-all">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+            <div className="text-center">
+              <div style={{ width: '56px', height: '56px' }} className="bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <svg style={{ width: '28px', height: '28px' }} className="text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Verified Data</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Manufacturer specs, wavelengths, and technology types from official sources.
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Brand & Specs</h3>
+              <p className="text-gray-600">
+                View manufacturer details, wavelengths, and technology specifications.
               </p>
             </div>
-
-            {/* Card 3 */}
-            <div className="group p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200 transition-all">
-              <div className="w-10 h-10 bg-gradient-to-br from-purple-400 to-violet-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            <div className="text-center">
+              <div style={{ width: '56px', height: '56px' }} className="bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <svg style={{ width: '28px', height: '28px' }} className="text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Skin Type Info</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Learn which Fitzpatrick skin types each device is designed to treat.
+              <p className="text-gray-600">
+                Learn which Fitzpatrick skin types each device is designed for.
               </p>
             </div>
           </div>
@@ -150,19 +136,17 @@ export default function IsItARealLaserPage() {
       </section>
 
       {/* Equipment Index */}
-      <section className="px-4 sm:px-6 lg:px-8 py-12 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-6xl mx-auto">
+      <section className="bg-gray-50 py-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <EquipmentIndex equipment={equipment} />
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-gray-100 bg-gray-50/50">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+      <footer className="bg-white border-t border-gray-200 py-8">
+        <div className="max-w-3xl mx-auto px-4 text-center">
           <p className="text-sm text-gray-500">
             This tool provides informational content only and is not medical advice.
-            <br />
-            Always consult with a qualified professional for treatment decisions.
           </p>
         </div>
       </footer>

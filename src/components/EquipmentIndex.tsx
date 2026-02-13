@@ -25,9 +25,9 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
       {/* Machines Section */}
       <div className="mb-12">
         <div className="flex items-center gap-3 mb-6">
-          <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
-            <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+          <div style={{ width: '32px', height: '32px', background: 'linear-gradient(to bottom right, #3b82f6, #4f46e5)' }} className="rounded-lg flex items-center justify-center">
+            <svg style={{ width: '16px', height: '16px' }} className="text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
             </svg>
           </div>
           <h3 className="text-xl font-semibold text-gray-900">
@@ -47,9 +47,9 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
       {/* Technology Terms Section */}
       <div>
         <div className="flex items-center gap-3 mb-6">
-          <div className="w-8 h-8 bg-gradient-to-br from-amber-500 to-orange-600 rounded-lg flex items-center justify-center">
-            <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+          <div style={{ width: '32px', height: '32px', background: 'linear-gradient(to bottom right, #f59e0b, #ea580c)' }} className="rounded-lg flex items-center justify-center">
+            <svg style={{ width: '16px', height: '16px' }} className="text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
             </svg>
           </div>
           <h3 className="text-xl font-semibold text-gray-900">
