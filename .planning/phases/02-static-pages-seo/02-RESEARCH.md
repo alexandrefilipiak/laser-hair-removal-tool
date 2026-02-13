@@ -10,14 +10,14 @@ This phase creates individual equipment pages at SEO-friendly URLs (`/is-it-a-re
 
 The project currently has TypeScript/Vitest but no Next.js installation. Phase 2 will bootstrap the Next.js App Router structure, create the dynamic route, and implement all SEO infrastructure (metadata, JSON-LD, sitemap, robots.txt). Tailwind CSS v4 provides mobile-first responsive design with utility classes.
 
-**Primary recommendation:** Use Next.js 15 App Router with `generateStaticParams` for static generation, `generateMetadata` for dynamic SEO metadata, and Product JSON-LD schema for structured data. Use `dynamicParams = false` to return 404 for unknown slugs.
+**Primary recommendation:** Use Next.js 16 App Router with `generateStaticParams` for static generation, `generateMetadata` for dynamic SEO metadata, and Product JSON-LD schema for structured data. Use `dynamicParams = false` to return 404 for unknown slugs.
 
 ## Standard Stack
 
 ### Core
 | Library | Version | Purpose | Why Standard |
 |---------|---------|---------|--------------|
-| next | ^15.1 | React framework with App Router, SSG, metadata API | Industry standard for React SEO, built-in static generation |
+| next | ^16.0 | React framework with App Router, SSG, metadata API | Industry standard for React SEO, built-in static generation |
 | react | ^19.0 | UI library | Required by Next.js 15+ |
 | react-dom | ^19.0 | React DOM bindings | Required by Next.js 15+ |
 | tailwindcss | ^4.0 | Utility-first CSS framework | Mobile-first responsive design, optimal for server components |
