@@ -69,7 +69,6 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
           <dt className="text-sm font-medium text-gray-500">Technology</dt>
           <dd className="mt-1 text-sm text-gray-900 md:text-base">
             {technologyType.charAt(0).toUpperCase() + technologyType.slice(1)}
-            {technologyType === 'laser' ? ' laser' : ''}
           </dd>
         </div>
 

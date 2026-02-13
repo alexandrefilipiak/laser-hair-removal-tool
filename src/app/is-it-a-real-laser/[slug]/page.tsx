@@ -19,7 +19,7 @@ import { TechnologyTermDetails } from '@/components/TechnologyTermDetails';
 import { JsonLd } from '@/components/JsonLd';
 import { generateProductSchema, generateTechTermSchema } from '@/lib/schema';
 
-// Only serve known slugs - return 404 for unknown
+// For static export: only pre-rendered slugs are valid, unknown slugs return 404
 export const dynamicParams = false;
 
 /**

@@ -8,6 +8,9 @@
 import type { MetadataRoute } from 'next';
 import { getAllEquipmentSlugs } from '@/lib/equipment';
 
+// Required for static export
+export const dynamic = 'force-static';
+
 const BASE_URL = 'https://laserhairremovalmap.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
