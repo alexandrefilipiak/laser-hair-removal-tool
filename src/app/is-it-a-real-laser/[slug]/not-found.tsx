@@ -2,12 +2,22 @@
  * Equipment not found page
  *
  * Custom 404 page for unknown equipment slugs.
- * Provides helpful guidance to ask clinics about their equipment.
+ * Provides helpful guidance to ask clinics about their equipment
+ * and shows popular equipment suggestions to help users discover
+ * known machines in our database.
  */
 
 import Link from 'next/link';
+import { getAllEquipment, isMachine } from '@/lib/equipment';
 
 export default function EquipmentNotFound() {
+  // Get popular machines for suggestions
+  // We use a static list since we can't access the slug in not-found.tsx
+  const allEquipment = getAllEquipment();
+  const machines = allEquipment.filter(isMachine);
+  // Get a diverse sample - first 4 machines (sorted by manufacturer in JSON)
+  const suggestions = machines.slice(0, 4);
+
   return (
     <div className="mx-auto max-w-2xl px-4 py-8 md:py-12">
       <h1 className="mb-4 text-2xl font-bold text-gray-900 md:text-3xl">
@@ -28,6 +38,28 @@ export default function EquipmentNotFound() {
           flag.
         </p>
       </div>
+
+      {/* Popular equipment suggestions */}
+      {suggestions.length > 0 && (
+        <div className="mt-6">
+          <p className="text-sm font-medium text-gray-700 mb-3">
+            Browse popular equipment:
+          </p>
+          <ul className="space-y-2">
+            {suggestions.map((machine) => (
+              <li key={machine.slug}>
+                <Link
+                  href={`/is-it-a-real-laser/${machine.slug}`}
+                  className="text-blue-600 hover:text-blue-800 font-medium"
+                >
+                  {machine.name}
+                  <span className="text-gray-500 font-normal"> by {machine.manufacturer}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       <Link
         href="/is-it-a-real-laser"
