@@ -14,7 +14,7 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
     <div>
       {/* Machines Section */}
       <div style={{ marginBottom: '3rem' }}>
-        <div className="flex items-center gap-3 mb-5">
+        <div className="flex items-center gap-3" style={{ marginBottom: '1.5rem' }}>
           <h2 style={{ color: '#f1f5f9', fontSize: '1.25rem', fontWeight: 600 }}>
             Machines
           </h2>
@@ -41,7 +41,7 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
 
       {/* Technology Terms Section */}
       <div>
-        <div className="flex items-center gap-3 mb-5">
+        <div className="flex items-center gap-3" style={{ marginBottom: '1.5rem' }}>
           <h2 style={{ color: '#f1f5f9', fontSize: '1.25rem', fontWeight: 600 }}>
             Technology Terms
           </h2>
