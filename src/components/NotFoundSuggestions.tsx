@@ -68,7 +68,7 @@ export function NotFoundSuggestions({
       {/* Partial matches - "Did you mean?" */}
       {hasPartialMatches && (
         <div className="mb-4">
-          <p className="text-sm font-medium text-gray-700 mb-2">Did you mean?</p>
+          <p className="text-sm font-medium mb-2" style={{ color: '#cbd5e1' }}>Did you mean?</p>
           <ul className="space-y-1">
             {partialMatches.map((suggestion, index) => {
               const item = suggestion.item;
@@ -90,16 +90,16 @@ export function NotFoundSuggestions({
                         onSelect(suggestion.slug);
                       }
                     }}
-                    className={`flex items-center justify-between gap-3 py-1.5 px-2 rounded-lg font-medium transition-colors ${
-                      isActive
-                        ? 'bg-blue-50 text-blue-700'
-                        : 'text-blue-600 hover:text-blue-800 hover:bg-gray-50'
-                    }`}
+                    className="flex items-center justify-between gap-3 py-1.5 px-2 rounded-lg font-medium transition-colors"
+                    style={{
+                      backgroundColor: isActive ? '#334155' : 'transparent',
+                      color: isActive ? '#93c5fd' : '#60a5fa',
+                    }}
                   >
                     <span className="truncate">
                       <span className="font-semibold">{suggestion.name}</span>
                       {machine && suggestion.manufacturer && (
-                        <span className={isActive ? 'text-blue-600' : 'text-gray-500'}>
+                        <span style={{ color: '#94a3b8' }}>
                           {' '}
                           by {suggestion.manufacturer}
                         </span>
@@ -123,7 +123,7 @@ export function NotFoundSuggestions({
       {/* Related machines by manufacturer */}
       {hasRelated && (
         <div className="mb-4">
-          <p className="text-sm font-medium text-gray-700 mb-2">
+          <p className="text-sm font-medium mb-2" style={{ color: '#cbd5e1' }}>
             Related {detectedManufacturer} machines:
           </p>
           <ul className="space-y-1">
@@ -146,15 +146,15 @@ export function NotFoundSuggestions({
                         onSelect(suggestion.slug);
                       }
                     }}
-                    className={`flex items-center justify-between gap-3 py-1.5 px-2 rounded-lg font-medium transition-colors ${
-                      isActive
-                        ? 'bg-blue-50 text-blue-700'
-                        : 'text-blue-600 hover:text-blue-800 hover:bg-gray-50'
-                    }`}
+                    className="flex items-center justify-between gap-3 py-1.5 px-2 rounded-lg font-medium transition-colors"
+                    style={{
+                      backgroundColor: isActive ? '#334155' : 'transparent',
+                      color: isActive ? '#93c5fd' : '#60a5fa',
+                    }}
                   >
                     <span className="truncate">
                       <span className="font-semibold">{suggestion.name}</span>
-                      <span className={isActive ? 'text-blue-600' : 'text-gray-500'}>
+                      <span style={{ color: '#94a3b8' }}>
                         {' '}
                         by {suggestion.manufacturer}
                       </span>
@@ -173,7 +173,8 @@ export function NotFoundSuggestions({
       {/* Always show fallback */}
       <Link
         href="/is-it-a-real-laser"
-        className="text-blue-600 hover:text-blue-800 font-medium"
+        className="font-medium"
+        style={{ color: '#60a5fa' }}
       >
         Browse all equipment
       </Link>

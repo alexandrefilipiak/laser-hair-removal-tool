@@ -168,7 +168,8 @@ export function SearchBar({ equipment }: SearchBarProps) {
       {/* Search icon */}
       <div className="absolute inset-y-0 left-0 flex items-center pl-5 pointer-events-none z-10">
         <svg
-          className="w-5 h-5 text-gray-400"
+          className="w-5 h-5"
+          style={{ color: '#64748b' }}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -199,7 +200,12 @@ export function SearchBar({ equipment }: SearchBarProps) {
         onFocus={handleFocus}
         onKeyDown={handleKeyDown}
         placeholder="Search by device name, brand, or technology..."
-        className="w-full py-4 pl-14 pr-5 text-lg bg-white rounded-xl shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition-shadow placeholder:text-gray-400"
+        className="w-full py-4 pl-14 pr-5 text-lg rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-shadow"
+        style={{
+          backgroundColor: '#1e293b',
+          color: '#f1f5f9',
+          border: '1px solid #334155',
+        }}
       />
 
       {/* Results dropdown */}
@@ -207,7 +213,11 @@ export function SearchBar({ equipment }: SearchBarProps) {
         <ul
           id={listboxId}
           role="listbox"
-          className="absolute z-50 w-full mt-2 bg-white rounded-xl shadow-xl max-h-96 overflow-auto"
+          className="absolute z-50 w-full mt-2 rounded-xl max-h-96 overflow-auto"
+          style={{
+            backgroundColor: '#1e293b',
+            border: '1px solid #334155',
+          }}
         >
           {results.map((result, index) => (
             <SearchResultItem
@@ -222,8 +232,14 @@ export function SearchBar({ equipment }: SearchBarProps) {
 
       {/* Empty state with suggestions */}
       {showEmptyState && (
-        <div className="absolute z-50 w-full mt-2 bg-white rounded-xl shadow-xl p-6">
-          <p className="text-gray-500 mb-4 text-sm">
+        <div
+          className="absolute z-50 w-full mt-2 rounded-xl p-6"
+          style={{
+            backgroundColor: '#1e293b',
+            border: '1px solid #334155',
+          }}
+        >
+          <p className="mb-4 text-sm" style={{ color: '#94a3b8' }}>
             No exact match for &ldquo;{debouncedQuery}&rdquo;
           </p>
           <NotFoundSuggestions

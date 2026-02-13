@@ -43,9 +43,11 @@ export function SearchResultItem({
       id={`result-${index}`}
       role="option"
       aria-selected={isActive}
-      className={`border-b border-gray-100 last:border-b-0 ${
-        isActive ? 'bg-blue-50' : 'hover:bg-gray-50'
-      }`}
+      style={{
+        borderBottom: '1px solid #334155',
+        backgroundColor: isActive ? '#334155' : 'transparent',
+      }}
+      className="last:border-b-0 transition-colors hover:bg-[#334155]"
     >
       <Link
         href={`/is-it-a-real-laser/${item.slug}`}
@@ -53,7 +55,7 @@ export function SearchResultItem({
       >
         <div className="flex-1 min-w-0">
           {/* Equipment name with match highlighting */}
-          <div className="font-medium text-gray-900 truncate">
+          <div className="font-medium truncate" style={{ color: '#f1f5f9' }}>
             <HighlightMatch
               text={item.name}
               matches={result.matches}
@@ -63,7 +65,7 @@ export function SearchResultItem({
 
           {/* Manufacturer for machines */}
           {machine && (
-            <div className="text-sm text-gray-500 truncate">
+            <div className="text-sm truncate" style={{ color: '#94a3b8' }}>
               <HighlightMatch
                 text={item.manufacturer}
                 matches={result.matches}
