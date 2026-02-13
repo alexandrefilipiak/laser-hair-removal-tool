@@ -7,7 +7,7 @@
 
 interface ClassificationBadgeProps {
   /** Whether this is a real laser - null for ambiguous terms */
-  isRealLaser: boolean | null;
+  isRealLaser?: boolean | null;
   /** Technology type for machines (derives isRealLaser if provided) */
   technologyType?: string;
 }
