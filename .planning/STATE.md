@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-12)
 ## Current Position
 
 Phase: 5 of 5 (Content Depth Launch) - IN PROGRESS
-Plan: 1 of 3 in phase 5 (05-03 complete)
+Plan: 2 of 3 in phase 5 (05-02, 05-03 complete)
 Status: In Progress
-Last activity: 2026-02-13 - Completed 05-03 landing page
+Last activity: 2026-02-13 - Completed 05-02 equipment index
 
-Progress: [########░░] 83%
+Progress: [########░░] 87%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 10
+- Total plans completed: 11
 - Average duration: 8 min
-- Total execution time: 1.2 hours
+- Total execution time: 1.4 hours
 
 **By Phase:**
 
@@ -31,10 +31,10 @@ Progress: [########░░] 83%
 | 02-static-pages-seo | 3 | 30min | 10min |
 | 03-search-autocomplete | 2 | 9min | 4.5min |
 | 04-not-found-flow | 2 | 13min | 6.5min |
-| 05-content-depth-launch | 1 | 7min | 7min |
+| 05-content-depth-launch | 2 | 18min | 9min |
 
 **Recent Trend:**
-- Last 5 plans: 6min, 6min, 7min, 7min
+- Last 5 plans: 6min, 7min, 7min, 11min
 - Trend: stable
 
 *Updated after each plan completion*
@@ -76,6 +76,8 @@ Recent decisions affecting current work:
 - [04-02] Manufacturer detection uses hardcoded list of 8 known brands
 - [04-02] Deduplication removes related machines already in partial matches
 - [04-02] Not-found page uses static list (can't access slug in not-found.tsx)
+- [05-02] Added size prop to ClassificationBadge for compact display in cards
+- [05-02] Split equipment into Machines and Technology Terms sections
 - [05-03] Removed SearchBar from homepage to differentiate from tool page
 - [05-03] Two CTA buttons (hero + how-it-works) for multiple conversion points
 
@@ -90,5 +92,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-13
-Stopped at: Completed 05-03-PLAN.md (landing page)
+Stopped at: Completed 05-02-PLAN.md (equipment index)
 Resume file: None
