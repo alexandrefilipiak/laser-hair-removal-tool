@@ -187,3 +187,51 @@ export function getEquipmentBySlug(slug: string): EquipmentEntry | undefined {
 export function getAllEquipmentSlugs(): string[] {
   return entries.map((entry) => entry.slug);
 }
+
+/**
+ * Get all equipment entries
+ *
+ * Provides access to the full equipment dataset for filtering and display.
+ *
+ * @returns Array of all equipment entries (machines and technology terms)
+ *
+ * @example
+ * const allEquipment = getAllEquipment();
+ * const machines = allEquipment.filter(isMachine);
+ */
+export function getAllEquipment(): EquipmentEntry[] {
+  return entries;
+}
+
+/**
+ * Get related machines from the same manufacturer
+ *
+ * Useful for "Related Machines" sections and "Did you mean?" suggestions.
+ *
+ * @param manufacturer - The manufacturer name to filter by (case-insensitive)
+ * @param excludeSlug - Optional slug to exclude from results (e.g., current machine)
+ * @param limit - Maximum number of results to return (default: 3)
+ * @returns Array of machine entries from the same manufacturer
+ *
+ * @example
+ * // Get other Candela machines excluding GentleMax Pro
+ * getRelatedByManufacturer('Candela', 'gentlemax-pro');
+ * // Returns: [GentleLase Pro, VelaShape, ...]
+ *
+ * @example
+ * // Get up to 5 Cynosure machines
+ * getRelatedByManufacturer('Cynosure', undefined, 5);
+ */
+export function getRelatedByManufacturer(
+  manufacturer: string,
+  excludeSlug?: string,
+  limit: number = 3
+): MachineEntry[] {
+  const normalizedManufacturer = manufacturer.toLowerCase();
+
+  return entries
+    .filter(isMachine)
+    .filter((m) => m.manufacturer.toLowerCase() === normalizedManufacturer)
+    .filter((m) => !excludeSlug || m.slug !== excludeSlug)
+    .slice(0, limit);
+}
