@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-12)
 ## Current Position
 
 Phase: 4 of 5 (Not Found Flow) - IN PROGRESS
-Plan: 1 of 3 in phase 4 (complete)
+Plan: 2 of 3 in phase 4 (complete)
 Status: Executing
-Last activity: 2026-02-13 - Completed 04-01-PLAN.md
+Last activity: 2026-02-13 - Completed 04-02-PLAN.md
 
-Progress: [########░░] 80%
+Progress: [#########░] 87%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8
+- Total plans completed: 9
 - Average duration: 8 min
-- Total execution time: 1.0 hours
+- Total execution time: 1.1 hours
 
 **By Phase:**
 
@@ -30,10 +30,10 @@ Progress: [########░░] 80%
 | 01-data-foundation | 2 | 19min | 9.5min |
 | 02-static-pages-seo | 3 | 30min | 10min |
 | 03-search-autocomplete | 2 | 9min | 4.5min |
-| 04-not-found-flow | 1 | 6min | 6min |
+| 04-not-found-flow | 2 | 13min | 6.5min |
 
 **Recent Trend:**
-- Last 5 plans: 15min, 3min, 6min, 6min
+- Last 5 plans: 3min, 6min, 6min, 7min
 - Trend: stable
 
 *Updated after each plan completion*
@@ -71,6 +71,10 @@ Recent decisions affecting current work:
 - [04-01] Threshold 0.5 for loose search vs 0.3 for strict search
 - [04-01] Limit loose search to 5 results for concise suggestions
 - [04-01] Case-insensitive manufacturer matching
+- [04-02] NotFoundSuggestions is a client component using useLooseSearch hook
+- [04-02] Manufacturer detection uses hardcoded list of 8 known brands
+- [04-02] Deduplication removes related machines already in partial matches
+- [04-02] Not-found page uses static list (can't access slug in not-found.tsx)
 
 ### Pending Todos
 
@@ -83,5 +87,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-13
-Stopped at: Completed 04-01-PLAN.md
+Stopped at: Completed 04-02-PLAN.md
 Resume file: None
