@@ -8,6 +8,7 @@ import type { EquipmentEntry } from '@/lib/equipment';
  * Fuse.js configuration for equipment search
  *
  * - Keys are weighted: name (2), aliases (1.5), manufacturer (1), slug (0.5)
+ * - Rich content fields indexed at low weight (0.3) for content search
  * - Threshold 0.3 is stricter than default 0.6 for better relevance
  * - ignoreLocation: true matches anywhere in string
  * - includeMatches: true enables highlighting functionality
@@ -19,6 +20,11 @@ const fuseOptions: IFuseOptions<EquipmentEntry> = {
     { name: 'aliases', weight: 1.5 },
     { name: 'manufacturer', weight: 1 },
     { name: 'slug', weight: 0.5 },
+    // Rich content fields for deeper search (lower weight since less relevant to naming)
+    { name: 'richContent.overview', weight: 0.3 },
+    { name: 'richContent.howItWorks', weight: 0.3 },
+    { name: 'richContent.typicalUses', weight: 0.3 },
+    { name: 'richContent.keyFeatures', weight: 0.3 },
   ],
   // Fuzzy matching configuration
   threshold: 0.3, // Stricter than default 0.6 for better relevance
@@ -42,8 +48,12 @@ const fuseOptions: IFuseOptions<EquipmentEntry> = {
  * const results = useSearch(equipment, 'gentlemax');
  * // Returns matches for GentleMax Pro, GentleMax (aliases), etc.
  *
- * @note Only MachineEntry has manufacturer field. Fuse.js handles undefined
- * fields gracefully by skipping that key for entries without it.
+ * @example
+ * const results = useSearch(equipment, 'vacuum');
+ * // Returns LightSheer Duet (matches richContent.howItWorks)
+ *
+ * @note Only MachineEntry has manufacturer and richContent fields. Fuse.js
+ * handles undefined fields gracefully by skipping that key for entries without it.
  */
 export function useSearch(
   equipment: EquipmentEntry[],
