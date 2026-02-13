@@ -4,6 +4,7 @@ import { useState, useRef, useId, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useSearch } from '@/hooks/useSearch';
 import { useDebounce } from '@/hooks/useDebounce';
+import { useNotFoundSuggestions } from '@/hooks/useNotFoundSuggestions';
 import type { EquipmentEntry } from '@/lib/equipment';
 import { SearchResultItem } from './SearchResultItem';
 import { NotFoundSuggestions } from './NotFoundSuggestions';
@@ -47,10 +48,13 @@ export function SearchBar({ equipment }: SearchBarProps) {
   const debouncedQuery = useDebounce(query, 150);
   const results = useSearch(equipment, debouncedQuery);
 
-  // Reset active index when results change
+  // Get suggestions for empty state (used for keyboard navigation count)
+  const suggestions = useNotFoundSuggestions(equipment, debouncedQuery);
+
+  // Reset active index when results or suggestions change
   useEffect(() => {
     setActiveIndex(-1);
-  }, [results]);
+  }, [results, suggestions]);
 
   // Click outside handler
   useEffect(() => {
@@ -72,11 +76,18 @@ export function SearchBar({ equipment }: SearchBarProps) {
 
   // Keyboard navigation handler
   function handleKeyDown(event: React.KeyboardEvent<HTMLInputElement>) {
-    if (!isOpen || results.length === 0) {
-      // Open dropdown on any key if we have query
-      if (query.trim() && !isOpen) {
-        setIsOpen(true);
-      }
+    // Open dropdown on any key if we have query
+    if (query.trim() && !isOpen) {
+      setIsOpen(true);
+    }
+
+    // Determine which list we're navigating (results or suggestions)
+    const hasResults = results.length > 0;
+    const hasSuggestions = suggestions.length > 0;
+    const itemCount = hasResults ? results.length : suggestions.length;
+
+    // No items to navigate
+    if (!isOpen || itemCount === 0) {
       return;
     }
 
@@ -84,25 +95,30 @@ export function SearchBar({ equipment }: SearchBarProps) {
       case 'ArrowDown':
         event.preventDefault();
         setActiveIndex((prev) =>
-          prev < results.length - 1 ? prev + 1 : 0
+          prev < itemCount - 1 ? prev + 1 : 0
         );
         break;
 
       case 'ArrowUp':
         event.preventDefault();
         setActiveIndex((prev) =>
-          prev > 0 ? prev - 1 : results.length - 1
+          prev > 0 ? prev - 1 : itemCount - 1
         );
         break;
 
       case 'Enter':
         event.preventDefault();
-        if (activeIndex >= 0 && results[activeIndex]) {
-          const slug = results[activeIndex].item.slug;
-          router.push(`/is-it-a-real-laser/${slug}`);
-          setIsOpen(false);
-          setQuery('');
-          setActiveIndex(-1);
+        if (activeIndex >= 0) {
+          // Navigate to the selected item
+          const slug = hasResults
+            ? results[activeIndex].item.slug
+            : suggestions[activeIndex]?.slug;
+          if (slug) {
+            router.push(`/is-it-a-real-laser/${slug}`);
+            setIsOpen(false);
+            setQuery('');
+            setActiveIndex(-1);
+          }
         }
         break;
 
@@ -119,7 +135,7 @@ export function SearchBar({ equipment }: SearchBarProps) {
 
       case 'End':
         event.preventDefault();
-        setActiveIndex(results.length - 1);
+        setActiveIndex(itemCount - 1);
         break;
     }
   }
@@ -213,10 +229,12 @@ export function SearchBar({ equipment }: SearchBarProps) {
           <NotFoundSuggestions
             query={debouncedQuery}
             equipment={equipment}
+            activeIndex={activeIndex}
             onSelect={(slug) => {
               router.push(`/is-it-a-real-laser/${slug}`);
               setIsOpen(false);
               setQuery('');
+              setActiveIndex(-1);
             }}
           />
         </div>

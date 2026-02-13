@@ -1,24 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import { useLooseSearch } from '@/hooks/useLooseSearch';
-import { getRelatedByManufacturer, isMachine } from '@/lib/equipment';
-import type { EquipmentEntry, MachineEntry } from '@/lib/equipment';
+import { useNotFoundSuggestions } from '@/hooks/useNotFoundSuggestions';
+import { isMachine } from '@/lib/equipment';
+import type { EquipmentEntry } from '@/lib/equipment';
 import { ClassificationBadge } from './ClassificationBadge';
-
-/**
- * Known manufacturers for detection in search queries
- */
-const KNOWN_MANUFACTURERS = [
-  'Candela',
-  'Cynosure',
-  'Lumenis',
-  'Alma',
-  'Cutera',
-  'Quanta',
-  'InMode',
-  'Lutronic',
-];
 
 interface NotFoundSuggestionsProps {
   /** User's search query */
@@ -27,6 +13,8 @@ interface NotFoundSuggestionsProps {
   equipment: EquipmentEntry[];
   /** Optional callback when suggestion clicked */
   onSelect?: (slug: string) => void;
+  /** Active index for keyboard navigation (-1 = none) */
+  activeIndex?: number;
 }
 
 /**
@@ -37,75 +25,83 @@ interface NotFoundSuggestionsProps {
  * 2. Related machines from detected manufacturer (if query contains a known brand)
  * 3. Always shows "Browse all equipment" fallback link
  *
+ * Supports keyboard navigation via activeIndex prop.
+ *
  * Used in:
  * - SearchBar empty state (no exact matches)
- * - Could be used in 404 pages with client-side rendering
  *
  * @example
  * <NotFoundSuggestions
  *   query="genle max"
  *   equipment={allEquipment}
  *   onSelect={(slug) => router.push(`/is-it-a-real-laser/${slug}`)}
+ *   activeIndex={0}
  * />
  */
 export function NotFoundSuggestions({
   query,
   equipment,
   onSelect,
+  activeIndex = -1,
 }: NotFoundSuggestionsProps) {
-  // Get partial matches using loose search
-  const partialMatches = useLooseSearch(equipment, query);
+  // Get flat list of suggestions
+  const suggestions = useNotFoundSuggestions(equipment, query);
 
-  // Detect manufacturer in query (case-insensitive)
-  const normalizedQuery = query.toLowerCase();
-  const detectedManufacturer = KNOWN_MANUFACTURERS.find((m) =>
-    normalizedQuery.includes(m.toLowerCase())
-  );
-
-  // Get related machines by manufacturer (if detected)
-  const relatedMachines: MachineEntry[] = detectedManufacturer
-    ? getRelatedByManufacturer(detectedManufacturer, undefined, 3)
-    : [];
-
-  // Deduplicate: filter out related machines already in partial matches
-  const partialMatchSlugs = new Set(partialMatches.map((r) => r.item.slug));
-  const uniqueRelated = relatedMachines.filter(
-    (m) => !partialMatchSlugs.has(m.slug)
-  );
+  // Group suggestions by type for display
+  const partialMatches = suggestions.filter((s) => s.type === 'partial');
+  const relatedMachines = suggestions.filter((s) => s.type === 'related');
 
   // Check if we have any suggestions to show
   const hasPartialMatches = partialMatches.length > 0;
-  const hasRelated = uniqueRelated.length > 0;
+  const hasRelated = relatedMachines.length > 0;
+
+  // Get detected manufacturer for display
+  const detectedManufacturer = relatedMachines.length > 0
+    ? relatedMachines[0].manufacturer
+    : null;
+
+  // Calculate index offset for related machines
+  const relatedIndexOffset = partialMatches.length;
 
   return (
-    <div className="text-left" role="status" aria-live="polite">
+    <div className="text-left" role="listbox" aria-label="Suggestions">
       {/* Partial matches - "Did you mean?" */}
       {hasPartialMatches && (
         <div className="mb-4">
           <p className="text-sm font-medium text-gray-700 mb-2">Did you mean?</p>
           <ul className="space-y-1">
-            {partialMatches.slice(0, 3).map((result) => {
-              const item = result.item;
+            {partialMatches.map((suggestion, index) => {
+              const item = suggestion.item;
               const machine = isMachine(item);
+              const isActive = index === activeIndex;
 
               return (
-                <li key={item.slug}>
+                <li
+                  key={suggestion.slug}
+                  id={`suggestion-${index}`}
+                  role="option"
+                  aria-selected={isActive}
+                >
                   <Link
-                    href={`/is-it-a-real-laser/${item.slug}`}
+                    href={`/is-it-a-real-laser/${suggestion.slug}`}
                     onClick={(e) => {
                       if (onSelect) {
                         e.preventDefault();
-                        onSelect(item.slug);
+                        onSelect(suggestion.slug);
                       }
                     }}
-                    className="flex items-center justify-between gap-3 py-1.5 text-blue-600 hover:text-blue-800 font-medium"
+                    className={`flex items-center justify-between gap-3 py-1.5 px-2 rounded-lg font-medium transition-colors ${
+                      isActive
+                        ? 'bg-blue-50 text-blue-700'
+                        : 'text-blue-600 hover:text-blue-800 hover:bg-gray-50'
+                    }`}
                   >
                     <span className="truncate">
-                      <span className="font-semibold">{item.name}</span>
-                      {machine && (
-                        <span className="text-gray-500 font-normal">
+                      <span className="font-semibold">{suggestion.name}</span>
+                      {machine && suggestion.manufacturer && (
+                        <span className={isActive ? 'text-blue-600' : 'text-gray-500'}>
                           {' '}
-                          by {item.manufacturer}
+                          by {suggestion.manufacturer}
                         </span>
                       )}
                     </span>
@@ -131,31 +127,45 @@ export function NotFoundSuggestions({
             Related {detectedManufacturer} machines:
           </p>
           <ul className="space-y-1">
-            {uniqueRelated.map((machine) => (
-              <li key={machine.slug}>
-                <Link
-                  href={`/is-it-a-real-laser/${machine.slug}`}
-                  onClick={(e) => {
-                    if (onSelect) {
-                      e.preventDefault();
-                      onSelect(machine.slug);
-                    }
-                  }}
-                  className="flex items-center justify-between gap-3 py-1.5 text-blue-600 hover:text-blue-800 font-medium"
+            {relatedMachines.map((suggestion, index) => {
+              const globalIndex = relatedIndexOffset + index;
+              const isActive = globalIndex === activeIndex;
+
+              return (
+                <li
+                  key={suggestion.slug}
+                  id={`suggestion-${globalIndex}`}
+                  role="option"
+                  aria-selected={isActive}
                 >
-                  <span className="truncate">
-                    <span className="font-semibold">{machine.name}</span>
-                    <span className="text-gray-500 font-normal">
-                      {' '}
-                      by {machine.manufacturer}
+                  <Link
+                    href={`/is-it-a-real-laser/${suggestion.slug}`}
+                    onClick={(e) => {
+                      if (onSelect) {
+                        e.preventDefault();
+                        onSelect(suggestion.slug);
+                      }
+                    }}
+                    className={`flex items-center justify-between gap-3 py-1.5 px-2 rounded-lg font-medium transition-colors ${
+                      isActive
+                        ? 'bg-blue-50 text-blue-700'
+                        : 'text-blue-600 hover:text-blue-800 hover:bg-gray-50'
+                    }`}
+                  >
+                    <span className="truncate">
+                      <span className="font-semibold">{suggestion.name}</span>
+                      <span className={isActive ? 'text-blue-600' : 'text-gray-500'}>
+                        {' '}
+                        by {suggestion.manufacturer}
+                      </span>
                     </span>
-                  </span>
-                  <span className="flex-shrink-0">
-                    <ClassificationBadge technologyType={machine.technologyType} />
-                  </span>
-                </Link>
-              </li>
-            ))}
+                    <span className="flex-shrink-0">
+                      <ClassificationBadge technologyType={suggestion.item.technologyType} />
+                    </span>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
       )}
