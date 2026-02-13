@@ -49,12 +49,12 @@ Plans:
   6. sitemap.xml lists all machine pages and robots.txt allows crawler access
   7. Pages render correctly on mobile devices (responsive layout)
   8. Unknown brand searches (if user navigates to non-existent slug) show "ask your clinic what brand" messaging
-**Plans:** 2 plans
+**Plans:** 3 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
-- [ ] 02-03: TBD
+- [ ] 02-01-PLAN.md - Bootstrap Next.js 15 with Tailwind CSS and root layout
+- [ ] 02-02-PLAN.md - Create UI components (classification badges, details, disclaimer)
+- [ ] 02-03-PLAN.md - Dynamic [slug] route, SEO infrastructure, and verification
 
 ### Phase 3: Search & Autocomplete
 **Goal**: Users can search by typing and see instant fuzzy-matched suggestions
