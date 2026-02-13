@@ -94,16 +94,28 @@ export function SearchBar({ equipment }: SearchBarProps) {
     switch (event.key) {
       case 'ArrowDown':
         event.preventDefault();
-        setActiveIndex((prev) =>
-          prev < itemCount - 1 ? prev + 1 : 0
-        );
+        setActiveIndex((prev) => {
+          const next = prev < itemCount - 1 ? prev + 1 : prev;
+          // Scroll the item into view
+          setTimeout(() => {
+            const element = document.getElementById(`result-${next}`);
+            element?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+          }, 0);
+          return next;
+        });
         break;
 
       case 'ArrowUp':
         event.preventDefault();
-        setActiveIndex((prev) =>
-          prev > 0 ? prev - 1 : itemCount - 1
-        );
+        setActiveIndex((prev) => {
+          const next = prev > 0 ? prev - 1 : 0;
+          // Scroll the item into view
+          setTimeout(() => {
+            const element = document.getElementById(`result-${next}`);
+            element?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+          }, 0);
+          return next;
+        });
         break;
 
       case 'Enter':
@@ -131,11 +143,19 @@ export function SearchBar({ equipment }: SearchBarProps) {
       case 'Home':
         event.preventDefault();
         setActiveIndex(0);
+        setTimeout(() => {
+          const element = document.getElementById('result-0');
+          element?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+        }, 0);
         break;
 
       case 'End':
         event.preventDefault();
         setActiveIndex(itemCount - 1);
+        setTimeout(() => {
+          const element = document.getElementById(`result-${itemCount - 1}`);
+          element?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+        }, 0);
         break;
     }
   }
