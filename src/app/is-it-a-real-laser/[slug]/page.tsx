@@ -36,6 +36,7 @@ export async function generateStaticParams() {
  * Generate metadata for equipment pages
  *
  * Different metadata patterns for machines vs technology terms.
+ * Uses richContent.overview for richer SEO descriptions when available.
  */
 export async function generateMetadata({
   params,
@@ -53,15 +54,22 @@ export async function generateMetadata({
   if (isMachine(equipment)) {
     const isRealLaser = equipment.technologyType === 'laser';
     const classification = isRealLaser ? 'Real Laser' : 'Not a Laser';
+
+    // Use richContent.overview if available, fallback to notes
+    const contentDescription = equipment.richContent?.overview || equipment.notes || '';
+
     return {
       title: `${equipment.name} - ${classification}`,
-      description: `Is ${equipment.name} by ${equipment.manufacturer} a real laser? ${classification}. Brand tier: ${equipment.brandTier}. ${equipment.notes || ''}`.slice(
+      description: `Is ${equipment.name} by ${equipment.manufacturer} a real laser? ${classification}. ${contentDescription}`.slice(
         0,
         160
       ),
       openGraph: {
         title: `${equipment.name} - ${classification}`,
-        description: `${equipment.manufacturer} ${equipment.name}: ${classification}`,
+        description: `${equipment.manufacturer} ${equipment.name}: ${classification}. ${contentDescription}`.slice(
+          0,
+          200
+        ),
       },
     };
   }
