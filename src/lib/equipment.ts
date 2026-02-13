@@ -42,6 +42,23 @@ export interface SkinTypeInfo {
 }
 
 /**
+ * Rich content for SEO - detailed machine descriptions
+ *
+ * Each field provides unique content for search engines.
+ * Total content should exceed 100 words per machine.
+ */
+export interface RichContent {
+  /** 2-3 sentence general overview of the machine */
+  overview: string;
+  /** Technical explanation of device operation (wavelength, energy delivery, cooling) */
+  howItWorks: string;
+  /** Common clinical applications and treatment areas */
+  typicalUses: string;
+  /** Distinguishing characteristics and features */
+  keyFeatures: string;
+}
+
+/**
  * Machine entry - clinical lasers, home devices, multi-purpose equipment
  *
  * Discriminated by `type: 'machine'`
@@ -74,6 +91,8 @@ export interface MachineEntry {
   family: string | null;
   /** Delivery method slug for runtime linking, e.g., "shr" */
   deliveryMethod: string | null;
+  /** Rich content for SEO (optional for backwards compatibility) */
+  richContent: RichContent | null;
 }
 
 /**
