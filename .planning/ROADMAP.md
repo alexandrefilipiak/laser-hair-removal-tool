@@ -70,8 +70,8 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
+- [ ] 03-01-PLAN.md - Search hooks (useDebounce, useSearch with Fuse.js)
+- [ ] 03-02-PLAN.md - Search UI components and homepage integration
 
 ### Phase 4: Not Found Flow
 **Goal**: Unknown machine searches provide helpful suggestions instead of dead ends
