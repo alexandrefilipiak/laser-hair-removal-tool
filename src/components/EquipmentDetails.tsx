@@ -67,10 +67,15 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
       </div>
 
       {/* Machine Name and Manufacturer */}
-      <header className="mb-6 text-center">
+      <header className="mb-4 text-center">
         <h1 className="text-2xl font-bold text-gray-900 md:text-3xl">{name}</h1>
         <p className="mt-1 text-base text-gray-600 md:text-lg">{manufacturer}</p>
       </header>
+
+      {/* Disclaimer - subtle inline notice */}
+      <div className="mb-8 flex justify-center">
+        <Disclaimer />
+      </div>
 
       {/* Info Grid */}
       <dl className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
@@ -132,9 +137,6 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
           <p className="mt-2 text-sm text-gray-700 md:text-base">{notes}</p>
         </section>
       )}
-
-      {/* Disclaimer */}
-      <Disclaimer />
 
       {/* Rich Content - at bottom for SEO */}
       {richContent && (

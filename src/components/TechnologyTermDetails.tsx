@@ -55,9 +55,14 @@ export function TechnologyTermDetails({ term }: TechnologyTermDetailsProps) {
       </div>
 
       {/* Term Name */}
-      <header className="mb-6 text-center">
+      <header className="mb-4 text-center">
         <h1 className="text-2xl font-bold text-gray-900 md:text-3xl">{name}</h1>
       </header>
+
+      {/* Disclaimer - subtle inline notice */}
+      <div className="mb-8 flex justify-center">
+        <Disclaimer />
+      </div>
 
       {/* What It Is - prominent paragraph */}
       <section className="mb-6">
@@ -81,7 +86,7 @@ export function TechnologyTermDetails({ term }: TechnologyTermDetailsProps) {
 
       {/* Ask Your Clinic - highlight box if present */}
       {askYourClinic && (
-        <section className="mb-6 rounded-lg border border-blue-200 bg-blue-50 p-4 md:p-6">
+        <section className="rounded-lg border border-blue-200 bg-blue-50 p-4 md:p-6">
           <h2 className="mb-2 flex items-center gap-2 text-base font-semibold text-blue-800 md:text-lg">
             <svg
               className="h-5 w-5"
@@ -100,9 +105,6 @@ export function TechnologyTermDetails({ term }: TechnologyTermDetailsProps) {
           <p className="text-sm text-blue-700 md:text-base">{askYourClinic}</p>
         </section>
       )}
-
-      {/* Disclaimer */}
-      <Disclaimer />
     </article>
   );
 }
