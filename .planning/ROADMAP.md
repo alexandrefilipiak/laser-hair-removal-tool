@@ -84,7 +84,8 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 04-01: TBD
+- [ ] 04-01-PLAN.md - Data utilities and loose search hook
+- [ ] 04-02-PLAN.md - Not found UI components and integration
 
 ### Phase 5: Content Depth & Launch
 **Goal**: Complete content layer with technology clarification, skin type info, and homepage
@@ -114,7 +115,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 1. Data Foundation | 2/2 | Complete | 2026-02-12 |
 | 2. Static Pages & SEO | 3/3 | Complete | 2026-02-13 |
 | 3. Search & Autocomplete | 2/2 | Complete | 2026-02-13 |
-| 4. Not Found Flow | 0/1 | Not started | - |
+| 4. Not Found Flow | 0/2 | Not started | - |
 | 5. Content Depth & Launch | 0/3 | Not started | - |
 
 ---
