@@ -98,12 +98,12 @@ Plans:
   4. Each machine page has 300+ words of unique content (not just templated specs)
   5. Homepage exists with link to equipment checker tool and descriptive text explaining purpose
   6. Tool page displays browseable index of all equipment at bottom for discovery
-**Plans:** 2 plans
+**Plans:** 3 plans
 
 Plans:
-- [ ] 05-01: TBD
-- [ ] 05-02: TBD
-- [ ] 05-03: TBD
+- [ ] 05-01-PLAN.md - Data enrichment with richContent for 300+ word machine pages
+- [ ] 05-02-PLAN.md - Browseable equipment index for tool page discovery
+- [ ] 05-03-PLAN.md - Homepage enhancement with value proposition and CTA
 
 ## Progress
 
