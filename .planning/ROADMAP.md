@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Data Foundation** - Equipment database and TypeScript type system
 - [x] **Phase 2: Static Pages & SEO** - Individual machine pages with SSG and schema markup
 - [x] **Phase 3: Search & Autocomplete** - Fuzzy search with real-time suggestions
-- [ ] **Phase 4: Not Found Flow** - Partial matches and related machine suggestions
+- [x] **Phase 4: Not Found Flow** - Partial matches and related machine suggestions
 - [ ] **Phase 5: Content Depth & Launch** - Technology clarification, skin type info, and homepage
 
 ## Phase Details
@@ -84,8 +84,8 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md - Data utilities and loose search hook
-- [ ] 04-02-PLAN.md - Not found UI components and integration
+- [x] 04-01-PLAN.md - Data utilities and loose search hook
+- [x] 04-02-PLAN.md - Not found UI components and integration
 
 ### Phase 5: Content Depth & Launch
 **Goal**: Complete content layer with technology clarification, skin type info, and homepage
@@ -115,7 +115,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 1. Data Foundation | 2/2 | Complete | 2026-02-12 |
 | 2. Static Pages & SEO | 3/3 | Complete | 2026-02-13 |
 | 3. Search & Autocomplete | 2/2 | Complete | 2026-02-13 |
-| 4. Not Found Flow | 0/2 | Not started | - |
+| 4. Not Found Flow | 2/2 | Complete | 2026-02-13 |
 | 5. Content Depth & Launch | 0/3 | Not started | - |
 
 ---
