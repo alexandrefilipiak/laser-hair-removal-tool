@@ -55,13 +55,17 @@ export function useSearch(
     [equipment]
   );
 
-  // Normalize query: trim whitespace, return empty array if empty
-  const normalizedQuery = query.trim();
-  if (!normalizedQuery) {
-    return [];
-  }
+  // Memoize search results to prevent unnecessary re-renders
+  // This is critical for keyboard navigation - without memoization,
+  // each render creates a new array reference which triggers useEffect
+  // dependencies and resets activeIndex
+  const results = useMemo(() => {
+    const normalizedQuery = query.trim();
+    if (!normalizedQuery) {
+      return [];
+    }
+    return fuse.search(normalizedQuery, { limit: 8 });
+  }, [fuse, query]);
 
-  // Perform search with limit of 8 results
-  const results = fuse.search(normalizedQuery, { limit: 8 });
   return results;
 }
