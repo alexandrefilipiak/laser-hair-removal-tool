@@ -2,7 +2,7 @@
  * Equipment details component
  *
  * Full layout for displaying machine information including
- * classification badge, specifications, and disclaimer.
+ * classification badge, specifications, rich content, and disclaimer.
  */
 
 import Link from 'next/link';
@@ -18,7 +18,7 @@ interface EquipmentDetailsProps {
 /**
  * Full machine detail layout
  *
- * Displays all classification layers and specifications
+ * Displays all classification layers, specifications, and rich content
  * in a mobile-first responsive design.
  */
 export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
@@ -32,6 +32,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
     purposeBuilt,
     coolingMethod,
     notes,
+    richContent,
   } = equipment;
 
   return (
@@ -70,6 +71,35 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
         <h1 className="text-2xl font-bold text-gray-900 md:text-3xl">{name}</h1>
         <p className="mt-1 text-base text-gray-600 md:text-lg">{manufacturer}</p>
       </header>
+
+      {/* Rich Content - Overview */}
+      {richContent && (
+        <section className="mb-8 space-y-6">
+          {/* Overview */}
+          <div>
+            <h2 className="text-lg font-semibold text-gray-900">Overview</h2>
+            <p className="mt-2 text-gray-700 leading-relaxed">{richContent.overview}</p>
+          </div>
+
+          {/* How It Works */}
+          <div>
+            <h2 className="text-lg font-semibold text-gray-900">How It Works</h2>
+            <p className="mt-2 text-gray-700 leading-relaxed">{richContent.howItWorks}</p>
+          </div>
+
+          {/* Typical Uses */}
+          <div>
+            <h2 className="text-lg font-semibold text-gray-900">Typical Uses</h2>
+            <p className="mt-2 text-gray-700 leading-relaxed">{richContent.typicalUses}</p>
+          </div>
+
+          {/* Key Features */}
+          <div>
+            <h2 className="text-lg font-semibold text-gray-900">Key Features</h2>
+            <p className="mt-2 text-gray-700 leading-relaxed">{richContent.keyFeatures}</p>
+          </div>
+        </section>
+      )}
 
       {/* Info Grid */}
       <dl className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
