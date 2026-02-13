@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-12)
 
 **Core value:** Consumers can instantly determine if a machine is a real laser or not
-**Current focus:** Phase 4 - Not Found Flow (COMPLETE)
+**Current focus:** Phase 5 - Content Depth Launch (IN PROGRESS)
 
 ## Current Position
 
-Phase: 4 of 5 (Not Found Flow) - COMPLETE
-Plan: 2 of 2 in phase 4 (complete)
-Status: Phase Complete
-Last activity: 2026-02-13 - Completed Phase 4 with gap fixes
+Phase: 5 of 5 (Content Depth Launch) - IN PROGRESS
+Plan: 1 of 3 in phase 5 (05-03 complete)
+Status: In Progress
+Last activity: 2026-02-13 - Completed 05-03 landing page
 
-Progress: [########░░] 80%
+Progress: [########░░] 83%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 9
+- Total plans completed: 10
 - Average duration: 8 min
-- Total execution time: 1.1 hours
+- Total execution time: 1.2 hours
 
 **By Phase:**
 
@@ -31,9 +31,10 @@ Progress: [########░░] 80%
 | 02-static-pages-seo | 3 | 30min | 10min |
 | 03-search-autocomplete | 2 | 9min | 4.5min |
 | 04-not-found-flow | 2 | 13min | 6.5min |
+| 05-content-depth-launch | 1 | 7min | 7min |
 
 **Recent Trend:**
-- Last 5 plans: 3min, 6min, 6min, 7min
+- Last 5 plans: 6min, 6min, 7min, 7min
 - Trend: stable
 
 *Updated after each plan completion*
@@ -75,6 +76,8 @@ Recent decisions affecting current work:
 - [04-02] Manufacturer detection uses hardcoded list of 8 known brands
 - [04-02] Deduplication removes related machines already in partial matches
 - [04-02] Not-found page uses static list (can't access slug in not-found.tsx)
+- [05-03] Removed SearchBar from homepage to differentiate from tool page
+- [05-03] Two CTA buttons (hero + how-it-works) for multiple conversion points
 
 ### Pending Todos
 
@@ -87,5 +90,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-13
-Stopped at: Phase 4 complete, ready for Phase 5
+Stopped at: Completed 05-03-PLAN.md (landing page)
 Resume file: None
