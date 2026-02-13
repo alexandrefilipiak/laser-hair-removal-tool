@@ -200,11 +200,12 @@ export function SearchBar({ equipment }: SearchBarProps) {
         onFocus={handleFocus}
         onKeyDown={handleKeyDown}
         placeholder="Search by device name, brand, or technology..."
-        className="w-full py-4 pl-14 pr-5 text-lg rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-shadow"
+        className="w-full text-lg rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-shadow"
         style={{
           backgroundColor: '#1e293b',
           color: '#f1f5f9',
           border: '1px solid #334155',
+          padding: '1rem 1.25rem 1rem 3.5rem',
         }}
       />
 
