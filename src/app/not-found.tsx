@@ -1,0 +1,100 @@
+/**
+ * Global 404 page
+ *
+ * Handles all not-found routes. Shows equipment-specific messaging
+ * when the path is under /is-it-a-real-laser/.
+ */
+
+'use client';
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
+export default function NotFound() {
+  const pathname = usePathname();
+  const isEquipmentRoute = pathname?.startsWith('/is-it-a-real-laser/');
+
+  if (isEquipmentRoute) {
+    return (
+      <main className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto">
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+            Equipment Not Found
+          </h1>
+
+          <p className="text-base sm:text-lg text-gray-600 mb-6">
+            We don&apos;t have this equipment in our database yet.
+          </p>
+
+          <div className="rounded-lg border border-blue-200 bg-blue-50 p-4 sm:p-6 mb-8">
+            <p className="text-base sm:text-lg font-semibold text-blue-800">
+              Ask your clinic what brand and model they use
+            </p>
+            <p className="mt-2 text-sm sm:text-base text-blue-700">
+              Reputable clinics will tell you the exact equipment brand (like
+              Candela, Lumenis, or Cynosure). If they can&apos;t or won&apos;t
+              tell you, that&apos;s a red flag.
+            </p>
+          </div>
+
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-sm sm:text-base font-medium text-white transition-colors hover:bg-gray-700"
+          >
+            <svg
+              className="h-4 w-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              />
+            </svg>
+            Back to Home
+          </Link>
+        </div>
+      </main>
+    );
+  }
+
+  // Generic 404 for other routes
+  return (
+    <main className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="max-w-2xl mx-auto text-center">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          Page Not Found
+        </h1>
+
+        <p className="text-base sm:text-lg text-gray-600 mb-8">
+          The page you&apos;re looking for doesn&apos;t exist.
+        </p>
+
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-sm sm:text-base font-medium text-white transition-colors hover:bg-gray-700"
+        >
+          <svg
+            className="h-4 w-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            />
+          </svg>
+          Back to Home
+        </Link>
+      </div>
+    </main>
+  );
+}

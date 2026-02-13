@@ -5,6 +5,7 @@
  * classification badge, specifications, and disclaimer.
  */
 
+import Link from 'next/link';
 import type { MachineEntry } from '@/lib/equipment';
 import { ClassificationBadge } from './ClassificationBadge';
 import { BrandTierBadge } from './BrandTierBadge';
@@ -35,6 +36,30 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
 
   return (
     <article className="mx-auto max-w-2xl px-4 py-6 md:py-8">
+      {/* Back to search link */}
+      <nav className="mb-6">
+        <Link
+          href="/is-it-a-real-laser"
+          className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
+        >
+          <svg
+            className="h-4 w-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            />
+          </svg>
+          Search Equipment
+        </Link>
+      </nav>
+
       {/* Classification Badge - prominent, centered */}
       <div className="mb-6 flex justify-center">
         <ClassificationBadge technologyType={technologyType} isRealLaser={null} />
