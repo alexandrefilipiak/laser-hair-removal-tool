@@ -1,4 +1,5 @@
 import { SearchBar } from '@/components/SearchBar';
+import { EquipmentIndex } from '@/components/EquipmentIndex';
 import equipmentData from '@/data/equipment.json';
 import type { EquipmentEntry } from '@/lib/equipment';
 
@@ -13,7 +14,8 @@ export const metadata = {
 
 export default function IsItARealLaserPage() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+    <main className="min-h-screen px-4 sm:px-6 lg:px-8 py-12">
+      {/* Search Section - centered */}
       <div className="w-full max-w-3xl mx-auto text-center">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
           Is It a Real Laser?
@@ -31,6 +33,11 @@ export default function IsItARealLaserPage() {
         <p className="text-sm text-gray-500">
           Search by device name, brand, or technology type
         </p>
+      </div>
+
+      {/* Equipment Index - full width with max-w-6xl */}
+      <div className="w-full max-w-6xl mx-auto">
+        <EquipmentIndex equipment={equipment} />
       </div>
     </main>
   );
