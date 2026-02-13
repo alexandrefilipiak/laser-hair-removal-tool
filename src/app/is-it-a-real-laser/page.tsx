@@ -24,7 +24,7 @@ export default function IsItARealLaserPage() {
   return (
     <main style={{ backgroundColor: '#0f172a', minHeight: '100vh' }}>
       {/* Hero Section */}
-      <section style={{ borderBottom: '1px solid #1e293b' }}>
+      <section style={{ backgroundColor: '#0f172a' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 text-center">
           {/* Title */}
           <h1 className="font-extrabold tracking-tight mb-4" style={{ fontSize: 'clamp(2.5rem, 8vw, 4rem)', lineHeight: 1.1, color: '#f8fafc' }}>
@@ -67,15 +67,18 @@ export default function IsItARealLaserPage() {
       </section>
 
       {/* Equipment Database */}
-      <section className="px-4 sm:px-6 lg:px-8 py-12">
+      <section
+        className="px-4 sm:px-6 lg:px-8 py-12"
+        style={{ backgroundColor: '#0f172a' }}
+      >
         <div className="max-w-6xl mx-auto">
           <EquipmentIndex equipment={equipment} />
         </div>
       </section>
 
       {/* Footer */}
-      <footer style={{ borderTop: '1px solid #1e293b', padding: '1.5rem 0' }}>
-        <p className="text-center" style={{ fontSize: '0.75rem', color: '#64748b' }}>
+      <footer style={{ backgroundColor: '#0f172a', padding: '2rem 0 1.5rem' }}>
+        <p className="text-center" style={{ fontSize: '0.75rem', color: '#475569' }}>
           Informational content only — not medical advice
         </p>
       </footer>
