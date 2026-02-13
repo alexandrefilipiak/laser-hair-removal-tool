@@ -659,7 +659,7 @@
     "brandTier": "consumer",
     "skinTypes": {
       "fitzpatrickRange": "I-IV",
-      "displayText": "Light to medium skin tones only. Not safe for darker skin."
+      "displayText": "Designed for Fitzpatrick I-IV. Consult your provider for skin type assessment."
     },
     "purposeBuilt": true,
     "coolingMethod": null,
@@ -691,7 +691,7 @@
     "brandTier": "consumer",
     "skinTypes": {
       "fitzpatrickRange": "I-IV",
-      "displayText": "Light to medium skin tones only. Not safe for darker skin."
+      "displayText": "Designed for Fitzpatrick I-IV. Consult your provider for skin type assessment."
     },
     "purposeBuilt": true,
     "coolingMethod": null,
