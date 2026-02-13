@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-12)
 
 **Core value:** Consumers can instantly determine if a machine is a real laser or not
-**Current focus:** Phase 5 - Content Depth Launch (IN PROGRESS)
+**Current focus:** Phase 5 - Content Depth Launch (COMPLETE)
 
 ## Current Position
 
-Phase: 5 of 5 (Content Depth Launch) - IN PROGRESS
-Plan: 2 of 3 in phase 5 (05-02, 05-03 complete)
-Status: In Progress
-Last activity: 2026-02-13 - Completed 05-02 equipment index
+Phase: 5 of 5 (Content Depth Launch) - COMPLETE
+Plan: 3 of 3 in phase 5 (05-01, 05-02, 05-03 complete)
+Status: Complete
+Last activity: 2026-02-13 - Completed 05-01 rich content
 
-Progress: [########░░] 87%
+Progress: [##########] 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 11
-- Average duration: 8 min
-- Total execution time: 1.4 hours
+- Total plans completed: 12
+- Average duration: 9 min
+- Total execution time: 1.6 hours
 
 **By Phase:**
 
@@ -31,10 +31,10 @@ Progress: [########░░] 87%
 | 02-static-pages-seo | 3 | 30min | 10min |
 | 03-search-autocomplete | 2 | 9min | 4.5min |
 | 04-not-found-flow | 2 | 13min | 6.5min |
-| 05-content-depth-launch | 2 | 18min | 9min |
+| 05-content-depth-launch | 3 | 33min | 11min |
 
 **Recent Trend:**
-- Last 5 plans: 6min, 7min, 7min, 11min
+- Last 5 plans: 7min, 7min, 11min, 7min, 15min
 - Trend: stable
 
 *Updated after each plan completion*
@@ -76,6 +76,9 @@ Recent decisions affecting current work:
 - [04-02] Manufacturer detection uses hardcoded list of 8 known brands
 - [04-02] Deduplication removes related machines already in partial matches
 - [04-02] Not-found page uses static list (can't access slug in not-found.tsx)
+- [05-01] RichContent fields: overview, howItWorks, typicalUses, keyFeatures for SEO coverage
+- [05-01] Search weight 0.3 for richContent fields (lower than name/aliases)
+- [05-01] Conditional rendering of richContent sections in EquipmentDetails
 - [05-02] Added size prop to ClassificationBadge for compact display in cards
 - [05-02] Split equipment into Machines and Technology Terms sections
 - [05-03] Removed SearchBar from homepage to differentiate from tool page
@@ -83,7 +86,7 @@ Recent decisions affecting current work:
 
 ### Pending Todos
 
-None yet.
+None.
 
 ### Blockers/Concerns
 
@@ -92,5 +95,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-13
-Stopped at: Completed 05-02-PLAN.md (equipment index)
+Stopped at: Completed 05-01-PLAN.md (rich content) - ALL PHASES COMPLETE
 Resume file: None
