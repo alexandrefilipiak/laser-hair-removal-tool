@@ -1,0 +1,54 @@
+/**
+ * Equipment not found page
+ *
+ * Custom 404 page for unknown equipment slugs.
+ * Provides helpful guidance to ask clinics about their equipment.
+ */
+
+import Link from 'next/link';
+
+export default function EquipmentNotFound() {
+  return (
+    <div className="mx-auto max-w-2xl px-4 py-8 md:py-12">
+      <h1 className="mb-4 text-2xl font-bold text-gray-900 md:text-3xl">
+        Equipment Not Found
+      </h1>
+
+      <p className="mb-6 text-base text-gray-600 md:text-lg">
+        We don&apos;t have this equipment in our database yet.
+      </p>
+
+      <div className="rounded-lg border border-blue-200 bg-blue-50 p-4 md:p-6">
+        <p className="text-base font-semibold text-blue-800 md:text-lg">
+          Ask your clinic what brand and model they use
+        </p>
+        <p className="mt-2 text-sm text-blue-700 md:text-base">
+          Reputable clinics will tell you the exact equipment brand (like Candela,
+          Lumenis, or Cynosure). If they can&apos;t or won&apos;t tell you, that&apos;s a red
+          flag.
+        </p>
+      </div>
+
+      <Link
+        href="/"
+        className="mt-8 inline-flex items-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-700 md:text-base"
+      >
+        <svg
+          className="h-4 w-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M10 19l-7-7m0 0l7-7m-7 7h18"
+          />
+        </svg>
+        Back to Home
+      </Link>
+    </div>
+  );
+}
