@@ -241,6 +241,7 @@ export function SearchBar({ equipment }: SearchBarProps) {
           style={{
             backgroundColor: '#1e293b',
             border: '1px solid #334155',
+            textAlign: 'left',
           }}
         >
           {results.map((result, index) => (
@@ -257,10 +258,12 @@ export function SearchBar({ equipment }: SearchBarProps) {
       {/* Empty state with suggestions */}
       {showEmptyState && (
         <div
-          className="absolute z-50 w-full mt-2 rounded-xl p-6"
+          className="absolute z-50 w-full mt-2 rounded-xl"
           style={{
             backgroundColor: '#1e293b',
             border: '1px solid #334155',
+            padding: '1.25rem 1rem',
+            textAlign: 'left',
           }}
         >
           <p className="mb-4 text-sm" style={{ color: '#94a3b8' }}>

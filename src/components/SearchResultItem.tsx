@@ -51,7 +51,8 @@ export function SearchResultItem({
     >
       <Link
         href={`/is-it-a-real-laser/${item.slug}`}
-        className="flex items-center justify-between gap-3 px-4 py-3"
+        className="flex items-center justify-between gap-3"
+        style={{ padding: '0.75rem 1rem', textAlign: 'left' }}
       >
         <div className="flex-1 min-w-0">
           {/* Equipment name with match highlighting */}
