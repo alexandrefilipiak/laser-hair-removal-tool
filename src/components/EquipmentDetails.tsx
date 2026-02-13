@@ -140,7 +140,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
 
       {/* Rich Content - at bottom for SEO */}
       {richContent && (
-        <section className="mt-8 space-y-6 border-t border-gray-200 pt-8">
+        <section className="mt-8 border-t border-gray-200 pt-8">
           {/* Overview */}
           <div>
             <h2 className="text-lg font-semibold text-gray-900">Overview</h2>
@@ -148,19 +148,19 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
           </div>
 
           {/* How It Works */}
-          <div>
+          <div className="mt-8">
             <h2 className="text-lg font-semibold text-gray-900">How It Works</h2>
             <p className="mt-2 text-gray-700 leading-relaxed">{richContent.howItWorks}</p>
           </div>
 
           {/* Typical Uses */}
-          <div>
+          <div className="mt-8">
             <h2 className="text-lg font-semibold text-gray-900">Typical Uses</h2>
             <p className="mt-2 text-gray-700 leading-relaxed">{richContent.typicalUses}</p>
           </div>
 
           {/* Key Features */}
-          <div>
+          <div className="mt-8">
             <h2 className="text-lg font-semibold text-gray-900">Key Features</h2>
             <p className="mt-2 text-gray-700 leading-relaxed">{richContent.keyFeatures}</p>
           </div>
