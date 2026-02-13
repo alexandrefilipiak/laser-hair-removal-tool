@@ -5,14 +5,14 @@
 See: .planning/PROJECT.md (updated 2026-02-12)
 
 **Core value:** Consumers can instantly determine if a machine is a real laser or not
-**Current focus:** Phase 5 - Content Depth Launch (COMPLETE)
+**Current focus:** v1.0 MILESTONE COMPLETE
 
 ## Current Position
 
 Phase: 5 of 5 (Content Depth Launch) - COMPLETE
 Plan: 3 of 3 in phase 5 (05-01, 05-02, 05-03 complete)
-Status: Complete
-Last activity: 2026-02-13 - Completed 05-01 rich content
+Status: Milestone Complete
+Last activity: 2026-02-13 - Phase 5 complete with UX refinements
 
 Progress: [##########] 100%
 
@@ -83,6 +83,10 @@ Recent decisions affecting current work:
 - [05-02] Split equipment into Machines and Technology Terms sections
 - [05-03] Removed SearchBar from homepage to differentiate from tool page
 - [05-03] Two CTA buttons (hero + how-it-works) for multiple conversion points
+- [05-VER] Rich content sections moved to end of page (after disclaimer)
+- [05-VER] Disclaimer redesigned as subtle amber pill at top (below title)
+- [05-VER] Tria safety language changed to informational ("Designed for Fitzpatrick I-IV")
+- [05-VER] No "safe/not safe" language anywhere - liability word policy
 
 ### Pending Todos
 
