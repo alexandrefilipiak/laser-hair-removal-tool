@@ -13,7 +13,7 @@ This roadmap delivers a consumer-facing equipment verification tool in 5 phases.
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Data Foundation** - Equipment database and TypeScript type system
-- [ ] **Phase 2: Static Pages & SEO** - Individual machine pages with SSG and schema markup
+- [x] **Phase 2: Static Pages & SEO** - Individual machine pages with SSG and schema markup
 - [ ] **Phase 3: Search & Autocomplete** - Fuzzy search with real-time suggestions
 - [ ] **Phase 4: Not Found Flow** - Partial matches and related machine suggestions
 - [ ] **Phase 5: Content Depth & Launch** - Technology clarification, skin type info, and homepage
@@ -52,9 +52,9 @@ Plans:
 **Plans:** 3 plans
 
 Plans:
-- [ ] 02-01-PLAN.md - Bootstrap Next.js 15 with Tailwind CSS and root layout
-- [ ] 02-02-PLAN.md - Create UI components (classification badges, details, disclaimer)
-- [ ] 02-03-PLAN.md - Dynamic [slug] route, SEO infrastructure, and verification
+- [x] 02-01-PLAN.md - Bootstrap Next.js 15 with Tailwind CSS and root layout
+- [x] 02-02-PLAN.md - Create UI components (classification badges, details, disclaimer)
+- [x] 02-03-PLAN.md - Dynamic [slug] route, SEO infrastructure, and verification
 
 ### Phase 3: Search & Autocomplete
 **Goal**: Users can search by typing and see instant fuzzy-matched suggestions
@@ -112,7 +112,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Data Foundation | 2/2 | Complete | 2026-02-12 |
-| 2. Static Pages & SEO | 0/3 | Not started | - |
+| 2. Static Pages & SEO | 3/3 | Complete | 2026-02-13 |
 | 3. Search & Autocomplete | 0/2 | Not started | - |
 | 4. Not Found Flow | 0/1 | Not started | - |
 | 5. Content Depth & Launch | 0/3 | Not started | - |
