@@ -11,13 +11,15 @@ export function EquipmentCard({ equipment }: EquipmentCardProps) {
   return (
     <Link
       href={`/is-it-a-real-laser/${equipment.slug}`}
-      className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:shadow-md transition-all"
+      className="group block p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-blue-200 hover:-translate-y-0.5 transition-all duration-200"
     >
-      <div className="flex items-start justify-between gap-2">
-        <div className="min-w-0">
-          <h4 className="font-medium text-gray-900 truncate">{equipment.name}</h4>
+      <div className="flex items-start justify-between gap-3">
+        <div className="min-w-0 flex-1">
+          <h4 className="font-semibold text-gray-900 truncate group-hover:text-blue-600 transition-colors">
+            {equipment.name}
+          </h4>
           {isMachine(equipment) && (
-            <p className="text-sm text-gray-500">{equipment.manufacturer}</p>
+            <p className="text-sm text-gray-500 mt-0.5">{equipment.manufacturer}</p>
           )}
         </div>
         <div className="flex-shrink-0">

@@ -165,49 +165,55 @@ export function SearchBar({ equipment }: SearchBarProps) {
 
   return (
     <div ref={containerRef} className="relative w-full max-w-2xl mx-auto">
-      {/* Search icon */}
-      <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
-        <svg
-          className="w-5 h-5 text-gray-400"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-          />
-        </svg>
-      </div>
+      {/* Search container with glow effect */}
+      <div className="relative group">
+        {/* Glow effect on focus */}
+        <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl opacity-0 group-focus-within:opacity-20 blur transition-opacity duration-300" />
 
-      {/* Search input */}
-      <input
-        ref={inputRef}
-        type="text"
-        role="combobox"
-        aria-expanded={showDropdown}
-        aria-controls={listboxId}
-        aria-autocomplete="list"
-        aria-activedescendant={
-          activeIndex >= 0 ? `result-${activeIndex}` : undefined
-        }
-        value={query}
-        onChange={handleChange}
-        onFocus={handleFocus}
-        onKeyDown={handleKeyDown}
-        placeholder="Search equipment by name or brand..."
-        className="w-full py-4 pl-12 pr-4 text-lg bg-white border-2 border-gray-200 rounded-xl shadow-sm focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
-      />
+        {/* Search icon */}
+        <div className="absolute inset-y-0 left-0 flex items-center pl-5 pointer-events-none z-10">
+          <svg
+            className="w-5 h-5 text-gray-400 group-focus-within:text-blue-500 transition-colors"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+        </div>
+
+        {/* Search input */}
+        <input
+          ref={inputRef}
+          type="text"
+          role="combobox"
+          aria-expanded={showDropdown}
+          aria-controls={listboxId}
+          aria-autocomplete="list"
+          aria-activedescendant={
+            activeIndex >= 0 ? `result-${activeIndex}` : undefined
+          }
+          value={query}
+          onChange={handleChange}
+          onFocus={handleFocus}
+          onKeyDown={handleKeyDown}
+          placeholder="Search by device name, brand, or technology..."
+          className="relative w-full py-4 pl-14 pr-5 text-lg bg-white border border-gray-200 rounded-2xl shadow-lg focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-100 transition-all duration-200 placeholder:text-gray-400"
+        />
+      </div>
 
       {/* Results dropdown */}
       {showDropdown && (
         <ul
           id={listboxId}
           role="listbox"
-          className="absolute z-50 w-full mt-2 bg-white border border-gray-200 rounded-xl shadow-lg max-h-96 overflow-auto"
+          className="absolute z-50 w-full mt-3 bg-white border border-gray-100 rounded-2xl shadow-xl max-h-96 overflow-auto"
         >
           {results.map((result, index) => (
             <SearchResultItem
@@ -222,9 +228,9 @@ export function SearchBar({ equipment }: SearchBarProps) {
 
       {/* Empty state with suggestions */}
       {showEmptyState && (
-        <div className="absolute z-50 w-full mt-2 bg-white border border-gray-200 rounded-xl shadow-lg p-6">
-          <p className="text-gray-600 mb-4">
-            No exact match for &quot;{debouncedQuery}&quot;
+        <div className="absolute z-50 w-full mt-3 bg-white border border-gray-100 rounded-2xl shadow-xl p-6">
+          <p className="text-gray-500 mb-4 text-sm">
+            No exact match for &ldquo;{debouncedQuery}&rdquo;
           </p>
           <NotFoundSuggestions
             query={debouncedQuery}
