@@ -11,33 +11,28 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
   const terms = equipment.filter(isTechnologyTerm);
 
   return (
-    <section className="pt-8">
-      {/* Section Header */}
-      <div className="text-center mb-10">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-          Browse All Equipment
-        </h2>
-        <p className="text-gray-600 max-w-xl mx-auto">
-          Explore our database of verified laser and IPL devices
-        </p>
-      </div>
-
+    <div>
       {/* Machines Section */}
-      <div className="mb-12">
-        <div className="flex items-center gap-3 mb-6">
-          <div style={{ width: '32px', height: '32px', background: 'linear-gradient(to bottom right, #3b82f6, #4f46e5)' }} className="rounded-lg flex items-center justify-center">
-            <svg style={{ width: '16px', height: '16px' }} className="text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-            </svg>
-          </div>
-          <h3 className="text-xl font-semibold text-gray-900">
+      <div className="mb-10">
+        <div className="flex items-center gap-3 mb-5">
+          <h2 style={{ color: '#f1f5f9', fontSize: '1.25rem', fontWeight: 600 }}>
             Machines
-          </h3>
-          <span className="px-2.5 py-0.5 bg-gray-100 text-gray-600 text-sm font-medium rounded-full">
+          </h2>
+          <span style={{
+            backgroundColor: '#1e293b',
+            color: '#94a3b8',
+            fontSize: '0.75rem',
+            padding: '0.25rem 0.625rem',
+            borderRadius: '9999px'
+          }}>
             {machines.length}
           </span>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+          gap: '0.75rem'
+        }}>
           {machines.map((machine) => (
             <EquipmentCard key={machine.slug} equipment={machine} />
           ))}
@@ -46,25 +41,30 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
 
       {/* Technology Terms Section */}
       <div>
-        <div className="flex items-center gap-3 mb-6">
-          <div style={{ width: '32px', height: '32px', background: 'linear-gradient(to bottom right, #f59e0b, #ea580c)' }} className="rounded-lg flex items-center justify-center">
-            <svg style={{ width: '16px', height: '16px' }} className="text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
-            </svg>
-          </div>
-          <h3 className="text-xl font-semibold text-gray-900">
+        <div className="flex items-center gap-3 mb-5">
+          <h2 style={{ color: '#f1f5f9', fontSize: '1.25rem', fontWeight: 600 }}>
             Technology Terms
-          </h3>
-          <span className="px-2.5 py-0.5 bg-gray-100 text-gray-600 text-sm font-medium rounded-full">
+          </h2>
+          <span style={{
+            backgroundColor: '#1e293b',
+            color: '#94a3b8',
+            fontSize: '0.75rem',
+            padding: '0.25rem 0.625rem',
+            borderRadius: '9999px'
+          }}>
             {terms.length}
           </span>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+          gap: '0.75rem'
+        }}>
           {terms.map((term) => (
             <EquipmentCard key={term.slug} equipment={term} />
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }
