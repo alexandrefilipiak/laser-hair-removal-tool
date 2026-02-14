@@ -17,8 +17,8 @@ export function EquipmentCard({ equipment }: EquipmentCardProps) {
         border: '1px solid #E8E4DF',
       }}
     >
-      <div className="flex items-start justify-between gap-3">
-        <div className="min-w-0 flex-1">
+      <div className="flex flex-col gap-3">
+        <div>
           <h4
             className="font-semibold transition-colors group-hover:text-[#5E8B7E]"
             style={{ color: '#2D2D2D', lineHeight: 1.3 }}
@@ -33,12 +33,13 @@ export function EquipmentCard({ equipment }: EquipmentCardProps) {
                 fontSize: '0.75rem',
               }}
             >
+              {equipment.brandTier === 'premium-clinical' && '🥇 '}
               {equipment.manufacturer}
             </p>
           )}
         </div>
-        <div className="flex-shrink-0">
-          <ClassificationBadge badgeType={getBadgeType(equipment)} size="small" />
+        <div>
+          <ClassificationBadge badgeType={getBadgeType(equipment)} />
         </div>
       </div>
     </Link>

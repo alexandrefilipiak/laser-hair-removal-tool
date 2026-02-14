@@ -67,6 +67,7 @@ export function SearchResultItem({
                 marginTop: '0.125rem',
               }}
             >
+              {item.brandTier === 'premium-clinical' && '🥇 '}
               <HighlightMatch
                 text={item.manufacturer}
                 matches={result.matches}
@@ -78,7 +79,7 @@ export function SearchResultItem({
 
         {/* Classification badge */}
         <div className="flex-shrink-0">
-          <ClassificationBadge badgeType={getBadgeType(item)} size="small" />
+          <ClassificationBadge badgeType={getBadgeType(item)} />
         </div>
       </Link>
     </li>

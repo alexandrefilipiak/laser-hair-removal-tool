@@ -106,12 +106,13 @@ export function NotFoundSuggestions({
                             marginLeft: '0.5rem',
                           }}
                         >
+                          {item.brandTier === 'premium-clinical' && '🥇 '}
                           {suggestion.manufacturer}
                         </span>
                       )}
                     </span>
                     <span className="flex-shrink-0">
-                      <ClassificationBadge badgeType={getBadgeType(item)} size="small" />
+                      <ClassificationBadge badgeType={getBadgeType(item)} />
                     </span>
                   </Link>
                 </li>
@@ -171,11 +172,12 @@ export function NotFoundSuggestions({
                           marginLeft: '0.5rem',
                         }}
                       >
+                        {isMachine(suggestion.item) && suggestion.item.brandTier === 'premium-clinical' && '🥇 '}
                         {suggestion.manufacturer}
                       </span>
                     </span>
                     <span className="flex-shrink-0">
-                      <ClassificationBadge badgeType={getBadgeType(suggestion.item)} size="small" />
+                      <ClassificationBadge badgeType={getBadgeType(suggestion.item)} />
                     </span>
                   </Link>
                 </li>
