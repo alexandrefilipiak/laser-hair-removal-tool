@@ -16,6 +16,7 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
       <div style={{ marginBottom: '3.5rem' }}>
         <div className="flex items-center gap-3" style={{ marginBottom: '1.25rem' }}>
           <h2
+            id="machines"
             style={{
               color: '#2D2D2D',
               fontSize: '1.125rem',

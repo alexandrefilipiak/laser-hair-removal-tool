@@ -190,7 +190,7 @@ export function NotFoundSuggestions({
         }}
       >
         <Link
-          href="/is-it-a-real-laser"
+          href="#machines"
           className="inline-flex items-center gap-2 font-medium transition-colors hover:text-[#4A7466]"
           style={{ color: '#5E8B7E', fontSize: '0.875rem' }}
         >
