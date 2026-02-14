@@ -7,9 +7,38 @@
 
 import Link from 'next/link';
 import type { MachineEntry } from '@/lib/equipment';
+import { getRelatedByManufacturer } from '@/lib/equipment';
 import { ClassificationBadge } from './ClassificationBadge';
 import { BrandTierBadge } from './BrandTierBadge';
 import { Disclaimer } from './Disclaimer';
+
+/**
+ * Expand cooling method abbreviations for clarity
+ */
+function formatCoolingMethod(method: string | null): string {
+  if (!method) return 'Not specified';
+
+  const expansions: Record<string, string> = {
+    'DCD': 'DCD (Dynamic Cooling Device)',
+    'dcd': 'DCD (Dynamic Cooling Device)',
+  };
+
+  const expanded = expansions[method];
+  if (expanded) return expanded;
+
+  // Capitalize first letter for other methods
+  return method.charAt(0).toUpperCase() + method.slice(1);
+}
+
+/**
+ * Split text into sentences for bullet list display
+ */
+function splitIntoSentences(text: string): string[] {
+  return text
+    .split(/(?<=[.!?])\s+/)
+    .map(s => s.trim())
+    .filter(s => s.length > 0);
+}
 
 interface EquipmentDetailsProps {
   equipment: MachineEntry;
@@ -20,6 +49,7 @@ interface EquipmentDetailsProps {
  */
 export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
   const {
+    slug,
     name,
     manufacturer,
     technologyType,
@@ -31,6 +61,9 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
     notes,
     richContent,
   } = equipment;
+
+  // Get related machines from the same manufacturer
+  const relatedMachines = getRelatedByManufacturer(manufacturer, slug, 3);
 
   return (
     <main
@@ -251,9 +284,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
               Cooling
             </dt>
             <dd className="mt-2 text-sm" style={{ color: '#2D2D2D' }}>
-              {coolingMethod
-                ? coolingMethod.charAt(0).toUpperCase() + coolingMethod.slice(1)
-                : 'Not specified'}
+              {formatCoolingMethod(coolingMethod)}
             </dd>
           </div>
         </dl>
@@ -346,9 +377,17 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
               >
                 Typical Uses
               </h2>
-              <p className="leading-relaxed" style={{ color: '#6B6560' }}>
-                {richContent.typicalUses}
-              </p>
+              <ul style={{ color: '#6B6560', paddingLeft: '1.5rem', listStyleType: 'disc' }}>
+                {splitIntoSentences(richContent.typicalUses).map((sentence, index) => (
+                  <li
+                    key={index}
+                    className="leading-relaxed"
+                    style={{ marginBottom: '0.5rem', paddingLeft: '0.25rem' }}
+                  >
+                    {sentence}
+                  </li>
+                ))}
+              </ul>
             </div>
 
             {/* Key Features */}
@@ -367,6 +406,62 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
               <p className="leading-relaxed" style={{ color: '#6B6560' }}>
                 {richContent.keyFeatures}
               </p>
+            </div>
+          </section>
+        )}
+
+        {/* Related Machines */}
+        {relatedMachines.length > 0 && (
+          <section className="mt-12">
+            <div
+              style={{
+                height: '1px',
+                backgroundColor: '#E8E4DF',
+                marginBottom: '2rem',
+              }}
+            />
+            <h2
+              style={{
+                fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
+                color: '#2D2D2D',
+                fontSize: '1rem',
+                fontWeight: 600,
+                marginBottom: '1rem',
+              }}
+            >
+              More from {manufacturer}
+            </h2>
+            <div className="flex flex-wrap gap-2">
+              {relatedMachines.map((machine) => (
+                <Link
+                  key={machine.slug}
+                  href={`/is-it-a-real-laser/${machine.slug}`}
+                  className="inline-flex items-center gap-2 transition-all hover:border-[#5E8B7E]"
+                  style={{
+                    backgroundColor: '#FFFFFF',
+                    border: '1px solid #E8E4DF',
+                    borderRadius: '9999px',
+                    padding: '0.5rem 1rem',
+                    fontSize: '0.875rem',
+                    color: '#2D2D2D',
+                    textDecoration: 'none',
+                  }}
+                >
+                  <span>{machine.name}</span>
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#6B6560"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ))}
             </div>
           </section>
         )}
