@@ -84,10 +84,11 @@ export function SearchBar({ equipment }: SearchBarProps) {
     // Determine which list we're navigating (results or suggestions)
     const hasResults = results.length > 0;
     const hasSuggestions = suggestions.length > 0;
-    const itemCount = hasResults ? results.length : suggestions.length;
+    // In empty state, add +1 for "Browse all equipment" option
+    const itemCount = hasResults ? results.length : suggestions.length + 1;
 
-    // No items to navigate
-    if (!isOpen || itemCount === 0) {
+    // No items to navigate (in empty state we still have "Browse all" so itemCount >= 1)
+    if (!isOpen) {
       return;
     }
 
@@ -121,12 +122,19 @@ export function SearchBar({ equipment }: SearchBarProps) {
       case 'Enter':
         event.preventDefault();
         if (activeIndex >= 0) {
-          // Navigate to the selected item
-          const slug = hasResults
-            ? results[activeIndex].item.slug
-            : suggestions[activeIndex]?.slug;
-          if (slug) {
+          if (hasResults) {
+            // Navigate to the selected result
+            const slug = results[activeIndex].item.slug;
             router.push(`/is-it-a-real-laser/${slug}`);
+            setIsOpen(false);
+            setQuery('');
+            setActiveIndex(-1);
+          } else if (activeIndex === suggestions.length) {
+            // "Browse all equipment" is selected - scroll to #machines
+            handleBrowseAll();
+          } else if (suggestions[activeIndex]?.slug) {
+            // Navigate to a suggestion
+            router.push(`/is-it-a-real-laser/${suggestions[activeIndex].slug}`);
             setIsOpen(false);
             setQuery('');
             setActiveIndex(-1);
@@ -176,6 +184,18 @@ export function SearchBar({ equipment }: SearchBarProps) {
     } else {
       setIsOpen(false);
       setActiveIndex(-1);
+    }
+  }
+
+  // Handle "Browse all equipment" selection
+  function handleBrowseAll() {
+    setIsOpen(false);
+    setQuery('');
+    setActiveIndex(-1);
+    // Scroll to the machines section
+    const machinesSection = document.getElementById('machines');
+    if (machinesSection) {
+      machinesSection.scrollIntoView({ behavior: 'smooth' });
     }
   }
 
@@ -307,6 +327,7 @@ export function SearchBar({ equipment }: SearchBarProps) {
               setQuery('');
               setActiveIndex(-1);
             }}
+            onBrowseAll={handleBrowseAll}
           />
         </div>
       )}

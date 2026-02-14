@@ -13,6 +13,8 @@ interface NotFoundSuggestionsProps {
   equipment: EquipmentEntry[];
   /** Optional callback when suggestion clicked */
   onSelect?: (slug: string) => void;
+  /** Callback when "Browse all" is selected */
+  onBrowseAll?: () => void;
   /** Active index for keyboard navigation (-1 = none) */
   activeIndex?: number;
 }
@@ -24,6 +26,7 @@ export function NotFoundSuggestions({
   query,
   equipment,
   onSelect,
+  onBrowseAll,
   activeIndex = -1,
 }: NotFoundSuggestionsProps) {
   // Get flat list of suggestions
@@ -44,6 +47,10 @@ export function NotFoundSuggestions({
 
   // Calculate index offset for related machines
   const relatedIndexOffset = partialMatches.length;
+
+  // "Browse all" is the last item
+  const browseAllIndex = suggestions.length;
+  const isBrowseAllActive = activeIndex === browseAllIndex;
 
   return (
     <div className="text-left" role="listbox" aria-label="Suggestions">
@@ -182,8 +189,11 @@ export function NotFoundSuggestions({
         </div>
       )}
 
-      {/* Always show fallback */}
+      {/* Always show fallback - keyboard navigable */}
       <div
+        id={`result-${browseAllIndex}`}
+        role="option"
+        aria-selected={isBrowseAllActive}
         style={{
           paddingTop: '0.75rem',
           borderTop: '1px solid #E8E4DF',
@@ -191,8 +201,18 @@ export function NotFoundSuggestions({
       >
         <Link
           href="#machines"
-          className="inline-flex items-center gap-2 font-medium transition-colors hover:text-[#4A7466]"
-          style={{ color: '#5E8B7E', fontSize: '0.875rem' }}
+          onClick={(e) => {
+            if (onBrowseAll) {
+              e.preventDefault();
+              onBrowseAll();
+            }
+          }}
+          className="inline-flex items-center gap-2 font-medium transition-colors py-2 px-3 -mx-3 rounded-lg"
+          style={{
+            color: isBrowseAllActive ? '#4A7466' : '#5E8B7E',
+            fontSize: '0.875rem',
+            backgroundColor: isBrowseAllActive ? 'rgba(94, 139, 126, 0.08)' : 'transparent',
+          }}
         >
           <span>Browse all equipment</span>
           <svg
