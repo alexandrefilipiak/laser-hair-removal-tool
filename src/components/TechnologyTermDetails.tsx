@@ -10,6 +10,7 @@ import type { TechnologyTermEntry } from '@/lib/equipment';
 import { getTermBadgeType } from '@/lib/equipment';
 import { ClassificationBadge } from './ClassificationBadge';
 import { Disclaimer } from './Disclaimer';
+import { Footer } from './Footer';
 
 interface TechnologyTermDetailsProps {
   term: TechnologyTermEntry;
@@ -168,20 +169,7 @@ export function TechnologyTermDetails({ term }: TechnologyTermDetailsProps) {
           </section>
         )}
 
-        {/* Footer */}
-        <footer
-          className="text-center"
-          style={{
-            borderTop: '1px solid #E8E4DF',
-            paddingTop: '2rem',
-            marginTop: '3rem',
-            paddingBottom: '1rem',
-          }}
-        >
-          <p style={{ color: '#6B6560', fontSize: '0.75rem', letterSpacing: '0.02em' }}>
-            Informational content only — not medical advice
-          </p>
-        </footer>
+        <Footer />
       </article>
     </main>
   );

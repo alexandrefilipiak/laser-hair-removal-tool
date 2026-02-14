@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Footer } from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -138,18 +139,10 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Footer note */}
-      <p
-        style={{
-          position: 'absolute',
-          bottom: '1.5rem',
-          fontSize: '0.75rem',
-          color: '#6B6560',
-          letterSpacing: '0.02em',
-        }}
-      >
-        Informational only — not medical advice
-      </p>
+      {/* Footer */}
+      <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0 }}>
+        <Footer />
+      </div>
     </main>
   );
 }

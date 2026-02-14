@@ -16,6 +16,7 @@ import {
 } from '@/lib/equipment';
 import { EquipmentDetails } from '@/components/EquipmentDetails';
 import { TechnologyTermDetails } from '@/components/TechnologyTermDetails';
+import { IPLDetails } from '@/components/IPLDetails';
 import { JsonLd } from '@/components/JsonLd';
 import { generateProductSchema, generateTechTermSchema } from '@/lib/schema';
 
@@ -74,6 +75,20 @@ export async function generateMetadata({
     };
   }
 
+  // Special metadata for IPL page (the definitive "is IPL a laser" resource)
+  if (slug === 'ipl') {
+    return {
+      title: 'IPL vs Laser Hair Removal — Is IPL a Real Laser?',
+      description:
+        'IPL is not a laser. Learn the difference between IPL and real laser hair removal, which branded IPL devices to watch for, and what to ask your clinic.',
+      openGraph: {
+        title: 'IPL vs Laser Hair Removal — Is IPL a Real Laser?',
+        description:
+          'IPL is not a laser. Learn the difference between IPL and real laser hair removal, which branded IPL devices to watch for, and what to ask your clinic.',
+      },
+    };
+  }
+
   // Technology term metadata
   return {
     title: `${equipment.name} - Is it a Real Laser?`,
@@ -111,6 +126,16 @@ export default async function EquipmentPage({
 
   // Technology term entry
   if (isTechnologyTerm(equipment)) {
+    // Special custom page for IPL
+    if (slug === 'ipl') {
+      return (
+        <>
+          <JsonLd data={generateTechTermSchema(equipment)} />
+          <IPLDetails term={equipment} />
+        </>
+      );
+    }
+
     return (
       <>
         <JsonLd data={generateTechTermSchema(equipment)} />

@@ -11,6 +11,7 @@ import { getRelatedByManufacturer, getMachineBadgeType } from '@/lib/equipment';
 import { ClassificationBadge } from './ClassificationBadge';
 import { BrandTierBadge } from './BrandTierBadge';
 import { Disclaimer } from './Disclaimer';
+import { Footer } from './Footer';
 
 /**
  * Expand cooling method abbreviations for clarity
@@ -412,12 +413,13 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
 
         {/* Related Machines */}
         {relatedMachines.length > 0 && (
-          <section className="mt-12">
+          <section style={{ marginTop: '3rem' }}>
             <div
               style={{
+                width: '100%',
                 height: '1px',
                 backgroundColor: '#E8E4DF',
-                marginBottom: '2rem',
+                marginBottom: '1.5rem',
               }}
             />
             <h2
@@ -466,20 +468,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
           </section>
         )}
 
-        {/* Footer */}
-        <footer
-          className="text-center"
-          style={{
-            borderTop: '1px solid #E8E4DF',
-            paddingTop: '2rem',
-            marginTop: '3rem',
-            paddingBottom: '1rem',
-          }}
-        >
-          <p style={{ color: '#6B6560', fontSize: '0.75rem', letterSpacing: '0.02em' }}>
-            Informational content only — not medical advice
-          </p>
-        </footer>
+        <Footer />
       </article>
     </main>
   );
