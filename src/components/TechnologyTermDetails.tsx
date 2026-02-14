@@ -65,9 +65,9 @@ export function TechnologyTermDetails({ term }: TechnologyTermDetailsProps) {
         <header className="text-center" style={{ marginBottom: '1.25rem' }}>
           <h1
             style={{
-              fontFamily: 'var(--font-inter), system-ui, sans-serif',
+              fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
               fontSize: 'clamp(1.75rem, 5vw, 2.5rem)',
-              fontWeight: 700,
+              fontWeight: 600,
               letterSpacing: '-0.02em',
               color: '#2D2D2D',
               lineHeight: 1.1,
@@ -113,7 +113,7 @@ export function TechnologyTermDetails({ term }: TechnologyTermDetailsProps) {
         <section style={{ marginBottom: '2rem' }}>
           <h2
             style={{
-              fontFamily: 'var(--font-inter), system-ui, sans-serif',
+              fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
               color: '#2D2D2D',
               fontSize: '1.125rem',
               fontWeight: 600,

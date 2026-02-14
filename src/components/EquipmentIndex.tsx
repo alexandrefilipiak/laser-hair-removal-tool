@@ -21,7 +21,7 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
               fontSize: '1.125rem',
               fontWeight: 600,
               letterSpacing: '-0.01em',
-              fontFamily: 'var(--font-inter), system-ui, sans-serif',
+              fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
             }}
           >
             Machines
@@ -62,7 +62,7 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
               fontSize: '1.125rem',
               fontWeight: 600,
               letterSpacing: '-0.01em',
-              fontFamily: 'var(--font-inter), system-ui, sans-serif',
+              fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
             }}
           >
             Technology Terms

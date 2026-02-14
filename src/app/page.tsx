@@ -20,7 +20,7 @@ export default function Home() {
         {/* Eyebrow text */}
         <p
           style={{
-            fontFamily: 'var(--font-inter), system-ui, sans-serif',
+            fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
             fontSize: '0.75rem',
             fontWeight: 500,
             letterSpacing: '0.15em',
@@ -35,9 +35,9 @@ export default function Home() {
         {/* Main headline */}
         <h1
           style={{
-            fontFamily: 'var(--font-inter), system-ui, sans-serif',
+            fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
             fontSize: 'clamp(2.5rem, 7vw, 4rem)',
-            fontWeight: 700,
+            fontWeight: 600,
             lineHeight: 1.1,
             letterSpacing: '-0.02em',
             color: '#2D2D2D',
@@ -114,9 +114,9 @@ export default function Home() {
             <div key={stat.label} style={{ textAlign: 'center' }}>
               <div
                 style={{
-                  fontFamily: 'var(--font-inter), system-ui, sans-serif',
+                  fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
                   fontSize: '1.5rem',
-                  fontWeight: 700,
+                  fontWeight: 600,
                   color: '#2D2D2D',
                 }}
               >

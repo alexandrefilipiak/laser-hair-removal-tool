@@ -77,9 +77,9 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
         <header className="mb-4 text-center">
           <h1
             style={{
-              fontFamily: 'var(--font-inter), system-ui, sans-serif',
+              fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
               fontSize: 'clamp(1.75rem, 5vw, 2.5rem)',
-              fontWeight: 700,
+              fontWeight: 600,
               letterSpacing: '-0.02em',
               color: '#2D2D2D',
               lineHeight: 1.1,
@@ -301,7 +301,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
             <div>
               <h2
                 style={{
-                  fontFamily: 'var(--font-inter), system-ui, sans-serif',
+                  fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
                   color: '#2D2D2D',
                   fontSize: '1.125rem',
                   fontWeight: 600,
@@ -319,7 +319,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
             <div className="mt-8">
               <h2
                 style={{
-                  fontFamily: 'var(--font-inter), system-ui, sans-serif',
+                  fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
                   color: '#2D2D2D',
                   fontSize: '1.125rem',
                   fontWeight: 600,
@@ -337,7 +337,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
             <div className="mt-8">
               <h2
                 style={{
-                  fontFamily: 'var(--font-inter), system-ui, sans-serif',
+                  fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
                   color: '#2D2D2D',
                   fontSize: '1.125rem',
                   fontWeight: 600,
@@ -355,7 +355,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
             <div className="mt-8">
               <h2
                 style={{
-                  fontFamily: 'var(--font-inter), system-ui, sans-serif',
+                  fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
                   color: '#2D2D2D',
                   fontSize: '1.125rem',
                   fontWeight: 600,
