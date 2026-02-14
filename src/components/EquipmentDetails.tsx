@@ -7,7 +7,7 @@
 
 import Link from 'next/link';
 import type { MachineEntry } from '@/lib/equipment';
-import { getRelatedByManufacturer } from '@/lib/equipment';
+import { getRelatedByManufacturer, getMachineBadgeType } from '@/lib/equipment';
 import { ClassificationBadge } from './ClassificationBadge';
 import { BrandTierBadge } from './BrandTierBadge';
 import { Disclaimer } from './Disclaimer';
@@ -103,7 +103,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
 
         {/* Classification Badge - prominent, centered */}
         <div className="mb-6 flex justify-center">
-          <ClassificationBadge technologyType={technologyType} isRealLaser={null} />
+          <ClassificationBadge badgeType={getMachineBadgeType(equipment)} />
         </div>
 
         {/* Machine Name and Manufacturer */}

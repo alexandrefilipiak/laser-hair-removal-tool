@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useNotFoundSuggestions } from '@/hooks/useNotFoundSuggestions';
-import { isMachine } from '@/lib/equipment';
+import { isMachine, getBadgeType } from '@/lib/equipment';
 import type { EquipmentEntry } from '@/lib/equipment';
 import { ClassificationBadge } from './ClassificationBadge';
 
@@ -111,11 +111,7 @@ export function NotFoundSuggestions({
                       )}
                     </span>
                     <span className="flex-shrink-0">
-                      {machine ? (
-                        <ClassificationBadge technologyType={item.technologyType} size="small" />
-                      ) : (
-                        <ClassificationBadge isRealLaser={item.isRealLaser} size="small" />
-                      )}
+                      <ClassificationBadge badgeType={getBadgeType(item)} size="small" />
                     </span>
                   </Link>
                 </li>
@@ -179,7 +175,7 @@ export function NotFoundSuggestions({
                       </span>
                     </span>
                     <span className="flex-shrink-0">
-                      <ClassificationBadge technologyType={suggestion.item.technologyType} size="small" />
+                      <ClassificationBadge badgeType={getBadgeType(suggestion.item)} size="small" />
                     </span>
                   </Link>
                 </li>

@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import type { FuseResult } from 'fuse.js';
 import type { EquipmentEntry } from '@/lib/equipment';
-import { isMachine } from '@/lib/equipment';
+import { isMachine, getBadgeType } from '@/lib/equipment';
 import { ClassificationBadge } from './ClassificationBadge';
 import { HighlightMatch } from './HighlightMatch';
 
@@ -78,11 +78,7 @@ export function SearchResultItem({
 
         {/* Classification badge */}
         <div className="flex-shrink-0">
-          {machine ? (
-            <ClassificationBadge technologyType={item.technologyType} size="small" />
-          ) : (
-            <ClassificationBadge isRealLaser={item.isRealLaser} size="small" />
-          )}
+          <ClassificationBadge badgeType={getBadgeType(item)} size="small" />
         </div>
       </Link>
     </li>

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { EquipmentEntry } from '@/lib/equipment';
-import { isMachine } from '@/lib/equipment';
+import { isMachine, getBadgeType } from '@/lib/equipment';
 import { ClassificationBadge } from './ClassificationBadge';
 
 interface EquipmentCardProps {
@@ -38,11 +38,7 @@ export function EquipmentCard({ equipment }: EquipmentCardProps) {
           )}
         </div>
         <div className="flex-shrink-0">
-          <ClassificationBadge
-            technologyType={isMachine(equipment) ? equipment.technologyType : undefined}
-            isRealLaser={!isMachine(equipment) ? equipment.isRealLaser : null}
-            size="small"
-          />
+          <ClassificationBadge badgeType={getBadgeType(equipment)} size="small" />
         </div>
       </div>
     </Link>

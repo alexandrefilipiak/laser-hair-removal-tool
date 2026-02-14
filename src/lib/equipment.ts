@@ -22,6 +22,22 @@ import equipmentData from '../data/equipment.json';
 export type BrandTier = 'premium-clinical' | 'standard-clinical' | 'consumer' | 'unknown';
 
 /**
+ * Classification for technology terms
+ * Used to determine which badge to display
+ */
+export type TermClassification = 'real-laser' | 'verify-brand' | 'ask-clinic' | 'not-laser';
+
+/**
+ * Badge types for the 5-badge classification system
+ */
+export type BadgeType =
+  | 'real-laser'           // ✅ Real Laser (sage green)
+  | 'verify-brand'         // ✅ Real Laser — Verify the Brand (amber/gold)
+  | 'limited-use'          // ⚠️ Real Laser — Limited Use (muted amber)
+  | 'ask-clinic'           // ❓ Ask Your Clinic (muted rose)
+  | 'not-laser';           // ❌ Not a Laser (soft coral)
+
+/**
  * Core technology type - what the device fundamentally is
  */
 export type TechnologyType = 'laser' | 'ipl' | 'led' | 'rf';
@@ -110,6 +126,14 @@ export interface TechnologyTermEntry {
   technologyType: TermTechnologyType;
   /** Whether this is a real laser - null for ambiguous terms like SHR */
   isRealLaser: boolean | null;
+  /**
+   * Badge classification for display
+   * - 'real-laser': Verified real laser technology
+   * - 'verify-brand': Real laser tech, but verify the specific brand/model
+   * - 'ask-clinic': Could be laser or IPL, ask for specifics
+   * - 'not-laser': Definitely not a laser (IPL, RF, etc.)
+   */
+  classification: TermClassification;
   /** Brief 1-2 sentence explanation */
   whatItIs: string;
   /** Detailed explanation of why this matters */
@@ -253,4 +277,58 @@ export function getRelatedByManufacturer(
     .filter((m) => m.manufacturer.toLowerCase() === normalizedManufacturer)
     .filter((m) => !excludeSlug || m.slug !== excludeSlug)
     .slice(0, limit);
+}
+
+// =============================================================================
+// Badge Classification
+// =============================================================================
+
+/**
+ * Derive the badge type for a machine entry
+ *
+ * Logic:
+ * - If not a laser technology → "not-laser"
+ * - If unknown brand tier → "limited-use"
+ * - If consumer device → "limited-use"
+ * - If not purpose-built for hair removal → "limited-use"
+ * - If premium-clinical or standard-clinical → "real-laser"
+ */
+export function getMachineBadgeType(machine: MachineEntry): BadgeType {
+  // Not a laser technology
+  if (machine.technologyType !== 'laser') {
+    return 'not-laser';
+  }
+
+  // Real laser but with limitations
+  if (machine.brandTier === 'unknown') {
+    return 'limited-use';
+  }
+  if (machine.brandTier === 'consumer') {
+    return 'limited-use';
+  }
+  if (!machine.purposeBuilt) {
+    return 'limited-use';
+  }
+
+  // Verified real laser from established manufacturer
+  return 'real-laser';
+}
+
+/**
+ * Derive the badge type for a technology term entry
+ *
+ * Uses the classification field directly
+ */
+export function getTermBadgeType(term: TechnologyTermEntry): BadgeType {
+  return term.classification;
+}
+
+/**
+ * Get the badge type for any equipment entry
+ */
+export function getBadgeType(entry: EquipmentEntry): BadgeType {
+  if (isMachine(entry)) {
+    return getMachineBadgeType(entry);
+  }
+  return getTermBadgeType(entry);
 }

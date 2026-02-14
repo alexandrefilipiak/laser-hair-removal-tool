@@ -7,6 +7,7 @@
 
 import Link from 'next/link';
 import type { TechnologyTermEntry } from '@/lib/equipment';
+import { getTermBadgeType } from '@/lib/equipment';
 import { ClassificationBadge } from './ClassificationBadge';
 import { Disclaimer } from './Disclaimer';
 
@@ -58,7 +59,7 @@ export function TechnologyTermDetails({ term }: TechnologyTermDetailsProps) {
 
         {/* Classification Badge - prominent, centered */}
         <div className="flex justify-center" style={{ marginBottom: '1.5rem' }}>
-          <ClassificationBadge isRealLaser={isRealLaser} />
+          <ClassificationBadge badgeType={getTermBadgeType(term)} />
         </div>
 
         {/* Term Name */}
