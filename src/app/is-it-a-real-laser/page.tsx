@@ -22,42 +22,94 @@ const popularSearches = [
 
 export default function IsItARealLaserPage() {
   return (
-    <main style={{ backgroundColor: '#0f172a', minHeight: '100vh' }}>
+    <main
+      style={{
+        backgroundColor: '#FAF9F7',
+        minHeight: '100vh',
+        position: 'relative',
+      }}
+    >
       {/* Hero Section */}
-      <section style={{ backgroundColor: '#0f172a' }}>
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 text-center">
+      <section style={{ position: 'relative', paddingTop: '5rem', paddingBottom: '3rem' }}>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center" style={{ position: 'relative', zIndex: 1 }}>
+          {/* Eyebrow */}
+          <p
+            style={{
+              fontFamily: 'var(--font-inter), system-ui, sans-serif',
+              fontSize: '0.7rem',
+              fontWeight: 500,
+              letterSpacing: '0.15em',
+              textTransform: 'uppercase',
+              color: '#5E8B7E',
+              marginBottom: '1rem',
+            }}
+          >
+            Equipment Database
+          </p>
+
           {/* Title */}
-          <h1 className="font-extrabold tracking-tight mb-4" style={{ fontSize: 'clamp(2.5rem, 8vw, 4rem)', lineHeight: 1.1, color: '#f8fafc' }}>
-            Is It a <span style={{ color: '#3b82f6' }}>Real Laser</span>?
+          <h1
+            style={{
+              fontFamily: 'var(--font-inter), system-ui, sans-serif',
+              fontSize: 'clamp(2rem, 6vw, 3.5rem)',
+              fontWeight: 700,
+              lineHeight: 1.1,
+              letterSpacing: '-0.02em',
+              color: '#2D2D2D',
+              marginBottom: '1rem',
+            }}
+          >
+            Is It a Real Laser?
           </h1>
 
           {/* Subtitle */}
-          <p className="mb-8 max-w-2xl mx-auto" style={{ fontSize: '1.125rem', color: '#94a3b8' }}>
-            Verify any hair removal device instantly. Search {machineCount}+ machines from Candela, Cynosure, Lumenis, and more.
+          <p
+            style={{
+              fontSize: 'clamp(0.95rem, 2vw, 1.125rem)',
+              lineHeight: 1.6,
+              color: '#6B6560',
+              marginBottom: '2.5rem',
+              maxWidth: '520px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+          >
+            Search {machineCount}+ machines from Candela, Cynosure, Lumenis, and more.
           </p>
 
           {/* Search Bar */}
-          <div className="max-w-xl mx-auto mb-6">
+          <div className="max-w-xl mx-auto mb-5">
             <SearchBar equipment={equipment} />
           </div>
 
           {/* Popular Searches */}
-          <div className="flex flex-wrap items-center justify-center gap-2">
-            <span style={{ color: '#64748b', fontSize: '0.875rem' }}>Try:</span>
+          <div className="flex flex-wrap items-center justify-center gap-3" style={{ marginTop: '1.5rem' }}>
+            <span
+              style={{
+                color: '#6B6560',
+                fontSize: '0.75rem',
+                fontWeight: 500,
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+              }}
+            >
+              Popular
+            </span>
             {popularSearches.map((item) => (
               <Link
                 key={item.slug}
                 href={`/is-it-a-real-laser/${item.slug}`}
                 style={{
-                  backgroundColor: '#1e293b',
-                  color: '#cbd5e1',
-                  fontSize: '0.875rem',
-                  padding: '0.375rem 0.875rem',
+                  backgroundColor: '#FFFFFF',
+                  color: '#2D2D2D',
+                  fontSize: '0.8rem',
+                  padding: '0.4rem 0.9rem',
                   borderRadius: '9999px',
-                  border: '1px solid #334155',
-                  transition: 'all 0.15s'
+                  border: '1px solid #E8E4DF',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s',
                 }}
-                className="hover:bg-[#334155] hover:text-white"
+                className="hover:border-[#5E8B7E] hover:text-[#5E8B7E]"
               >
                 {item.name}
               </Link>
@@ -66,10 +118,26 @@ export default function IsItARealLaserPage() {
         </div>
       </section>
 
+      {/* Divider line */}
+      <div
+        style={{
+          maxWidth: '64rem',
+          margin: '0 auto',
+          padding: '0 1rem',
+        }}
+      >
+        <div
+          style={{
+            height: '1px',
+            backgroundColor: '#E8E4DF',
+          }}
+        />
+      </div>
+
       {/* Equipment Database */}
       <section
         className="px-4 sm:px-6 lg:px-8"
-        style={{ backgroundColor: '#0f172a', paddingTop: '2rem', paddingBottom: '3rem' }}
+        style={{ paddingTop: '3rem', paddingBottom: '4rem' }}
       >
         <div className="max-w-6xl mx-auto">
           <EquipmentIndex equipment={equipment} />
@@ -77,8 +145,21 @@ export default function IsItARealLaserPage() {
       </section>
 
       {/* Footer */}
-      <footer style={{ backgroundColor: '#0f172a', paddingTop: '2rem', paddingBottom: '1.5rem' }}>
-        <p className="text-center" style={{ fontSize: '0.75rem', color: '#475569' }}>
+      <footer
+        style={{
+          paddingTop: '1.5rem',
+          paddingBottom: '1.5rem',
+          borderTop: '1px solid #E8E4DF',
+        }}
+      >
+        <p
+          className="text-center"
+          style={{
+            fontSize: '0.75rem',
+            color: '#6B6560',
+            letterSpacing: '0.02em',
+          }}
+        >
           Informational content only — not medical advice
         </p>
       </footer>

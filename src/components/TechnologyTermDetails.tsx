@@ -16,95 +16,171 @@ interface TechnologyTermDetailsProps {
 
 /**
  * Full technology term detail layout
- *
- * Different from machine details - focuses on explanation
- * rather than specifications.
  */
 export function TechnologyTermDetails({ term }: TechnologyTermDetailsProps) {
   const { name, isRealLaser, whatItIs, whyItMatters, askYourClinic } = term;
 
   return (
-    <article className="mx-auto max-w-2xl px-4 py-6 md:py-8">
-      {/* Back to search link */}
-      <nav className="mb-6">
-        <Link
-          href="/is-it-a-real-laser"
-          className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
-        >
-          <svg
-            className="h-4 w-4"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
+    <main
+      style={{
+        backgroundColor: '#FAF9F7',
+        minHeight: '100vh',
+        position: 'relative',
+      }}
+    >
+      <article className="mx-auto max-w-2xl px-4 py-8 md:py-12" style={{ position: 'relative', zIndex: 1 }}>
+        {/* Back to search link */}
+        <nav style={{ marginBottom: '2.5rem' }}>
+          <Link
+            href="/is-it-a-real-laser"
+            className="inline-flex items-center gap-2 text-sm transition-colors hover:text-[#5E8B7E]"
+            style={{ color: '#6B6560' }}
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M10 19l-7-7m0 0l7-7m-7 7h18"
-            />
-          </svg>
-          Search Equipment
-        </Link>
-      </nav>
-
-      {/* Classification Badge - prominent, centered */}
-      <div className="mb-6 flex justify-center">
-        <ClassificationBadge isRealLaser={isRealLaser} />
-      </div>
-
-      {/* Term Name */}
-      <header className="mb-4 text-center">
-        <h1 className="text-2xl font-bold text-gray-900 md:text-3xl">{name}</h1>
-      </header>
-
-      {/* Disclaimer - subtle inline notice */}
-      <div className="mb-8 flex justify-center">
-        <Disclaimer />
-      </div>
-
-      {/* What It Is - prominent paragraph */}
-      <section className="mb-6">
-        <h2 className="mb-2 text-lg font-semibold text-gray-800 md:text-xl">
-          What It Is
-        </h2>
-        <p className="text-base leading-relaxed text-gray-700 md:text-lg">
-          {whatItIs}
-        </p>
-      </section>
-
-      {/* Why It Matters - explanatory section */}
-      <section className="mb-6">
-        <h2 className="mb-2 text-lg font-semibold text-gray-800 md:text-xl">
-          Why It Matters
-        </h2>
-        <p className="text-sm leading-relaxed text-gray-600 md:text-base">
-          {whyItMatters}
-        </p>
-      </section>
-
-      {/* Ask Your Clinic - highlight box if present */}
-      {askYourClinic && (
-        <section className="rounded-lg border border-blue-200 bg-blue-50 p-4 md:p-6">
-          <h2 className="mb-2 flex items-center gap-2 text-base font-semibold text-blue-800 md:text-lg">
             <svg
-              className="h-5 w-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
+              className="h-4 w-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
               aria-hidden="true"
             >
               <path
-                fillRule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clipRule="evenodd"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"
               />
             </svg>
-            Ask Your Clinic
+            <span style={{ letterSpacing: '0.02em' }}>
+              Back to Search
+            </span>
+          </Link>
+        </nav>
+
+        {/* Classification Badge - prominent, centered */}
+        <div className="flex justify-center" style={{ marginBottom: '1.5rem' }}>
+          <ClassificationBadge isRealLaser={isRealLaser} />
+        </div>
+
+        {/* Term Name */}
+        <header className="text-center" style={{ marginBottom: '1.25rem' }}>
+          <h1
+            style={{
+              fontFamily: 'var(--font-inter), system-ui, sans-serif',
+              fontSize: 'clamp(1.75rem, 5vw, 2.5rem)',
+              fontWeight: 700,
+              letterSpacing: '-0.02em',
+              color: '#2D2D2D',
+              lineHeight: 1.1,
+            }}
+          >
+            {name}
+          </h1>
+        </header>
+
+        {/* Disclaimer - subtle inline notice */}
+        <div className="flex justify-center" style={{ marginBottom: '3rem' }}>
+          <Disclaimer />
+        </div>
+
+        {/* What It Is - prominent section */}
+        <section
+          className="rounded-xl"
+          style={{
+            backgroundColor: '#FFFFFF',
+            border: '1px solid #E8E4DF',
+            padding: '1.5rem',
+            marginBottom: '2rem',
+          }}
+        >
+          <h2
+            style={{
+              color: '#5E8B7E',
+              fontSize: '0.7rem',
+              fontWeight: 500,
+              textTransform: 'uppercase',
+              letterSpacing: '0.1em',
+              marginBottom: '1rem',
+            }}
+          >
+            What It Is
           </h2>
-          <p className="text-sm text-blue-700 md:text-base">{askYourClinic}</p>
+          <p className="leading-relaxed" style={{ color: '#2D2D2D', fontSize: '1.0625rem', lineHeight: 1.7 }}>
+            {whatItIs}
+          </p>
         </section>
-      )}
-    </article>
+
+        {/* Why It Matters */}
+        <section style={{ marginBottom: '2rem' }}>
+          <h2
+            style={{
+              fontFamily: 'var(--font-inter), system-ui, sans-serif',
+              color: '#2D2D2D',
+              fontSize: '1.125rem',
+              fontWeight: 600,
+              marginBottom: '1rem',
+            }}
+          >
+            Why It Matters
+          </h2>
+          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7 }}>
+            {whyItMatters}
+          </p>
+        </section>
+
+        {/* Ask Your Clinic - highlight box if present */}
+        {askYourClinic && (
+          <section
+            className="rounded-xl"
+            style={{
+              backgroundColor: 'rgba(94, 139, 126, 0.06)',
+              border: '1px solid rgba(94, 139, 126, 0.15)',
+              padding: '1.5rem',
+              marginBottom: '2rem',
+            }}
+          >
+            <h2
+              className="flex items-center gap-2"
+              style={{
+                color: '#5E8B7E',
+                fontSize: '0.875rem',
+                fontWeight: 600,
+                marginBottom: '0.75rem',
+              }}
+            >
+              <svg
+                className="h-5 w-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                aria-hidden="true"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              Ask Your Clinic
+            </h2>
+            <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7 }}>
+              {askYourClinic}
+            </p>
+          </section>
+        )}
+
+        {/* Footer */}
+        <footer
+          className="text-center"
+          style={{
+            borderTop: '1px solid #E8E4DF',
+            paddingTop: '2rem',
+            marginTop: '3rem',
+          }}
+        >
+          <p style={{ color: '#6B6560', fontSize: '0.75rem', letterSpacing: '0.02em' }}>
+            Informational content only — not medical advice
+          </p>
+        </footer>
+      </article>
+    </main>
   );
 }

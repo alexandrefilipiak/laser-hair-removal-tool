@@ -191,12 +191,12 @@ export function SearchBar({ equipment }: SearchBarProps) {
           position: 'relative',
           display: 'flex',
           alignItems: 'center',
-          backgroundColor: '#1e293b',
-          border: '1px solid #334155',
-          borderRadius: '0.75rem',
+          backgroundColor: '#FFFFFF',
+          border: '1px solid #E8E4DF',
+          borderRadius: '9999px',
           transition: 'border-color 0.2s, box-shadow 0.2s',
         }}
-        className="focus-within:border-blue-500 focus-within:ring-2 focus-within:ring-blue-500/20"
+        className="focus-within:border-[#5E8B7E] focus-within:ring-2 focus-within:ring-[rgba(94,139,126,0.15)]"
       >
         {/* Search icon */}
         <div
@@ -209,7 +209,7 @@ export function SearchBar({ equipment }: SearchBarProps) {
           }}
         >
           <svg
-            style={{ width: '20px', height: '20px', color: '#64748b' }}
+            style={{ width: '20px', height: '20px', color: '#6B6560' }}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -243,7 +243,7 @@ export function SearchBar({ equipment }: SearchBarProps) {
           style={{
             flex: 1,
             backgroundColor: 'transparent',
-            color: '#f1f5f9',
+            color: '#2D2D2D',
             fontSize: '1rem',
             padding: '0.875rem 1rem 0.875rem 0.75rem',
             border: 'none',
@@ -257,10 +257,11 @@ export function SearchBar({ equipment }: SearchBarProps) {
         <ul
           id={listboxId}
           role="listbox"
-          className="absolute z-50 w-full mt-2 rounded-xl max-h-96 overflow-auto"
+          className="absolute z-50 w-full mt-3 rounded-2xl max-h-96 overflow-auto"
           style={{
-            backgroundColor: '#1e293b',
-            border: '1px solid #334155',
+            backgroundColor: '#FFFFFF',
+            border: '1px solid #E8E4DF',
+            boxShadow: '0 10px 40px rgba(0, 0, 0, 0.08)',
             textAlign: 'left',
           }}
         >
@@ -278,15 +279,22 @@ export function SearchBar({ equipment }: SearchBarProps) {
       {/* Empty state with suggestions */}
       {showEmptyState && (
         <div
-          className="absolute z-50 w-full mt-2 rounded-xl"
+          className="absolute z-50 w-full mt-3 rounded-2xl"
           style={{
-            backgroundColor: '#1e293b',
-            border: '1px solid #334155',
+            backgroundColor: '#FFFFFF',
+            border: '1px solid #E8E4DF',
+            boxShadow: '0 10px 40px rgba(0, 0, 0, 0.08)',
             padding: '1.25rem 1rem',
             textAlign: 'left',
           }}
         >
-          <p className="mb-4 text-sm" style={{ color: '#94a3b8' }}>
+          <p
+            className="mb-4 text-sm"
+            style={{
+              color: '#6B6560',
+              fontSize: '0.75rem',
+            }}
+          >
             No exact match for &ldquo;{debouncedQuery}&rdquo;
           </p>
           <NotFoundSuggestions

@@ -19,24 +19,6 @@ interface NotFoundSuggestionsProps {
 
 /**
  * "Did you mean?" suggestions component for empty search states
- *
- * Shows:
- * 1. Partial matches from loose fuzzy search (threshold 0.5)
- * 2. Related machines from detected manufacturer (if query contains a known brand)
- * 3. Always shows "Browse all equipment" fallback link
- *
- * Supports keyboard navigation via activeIndex prop.
- *
- * Used in:
- * - SearchBar empty state (no exact matches)
- *
- * @example
- * <NotFoundSuggestions
- *   query="genle max"
- *   equipment={allEquipment}
- *   onSelect={(slug) => router.push(`/is-it-a-real-laser/${slug}`)}
- *   activeIndex={0}
- * />
  */
 export function NotFoundSuggestions({
   query,
@@ -68,7 +50,18 @@ export function NotFoundSuggestions({
       {/* Partial matches - "Did you mean?" */}
       {hasPartialMatches && (
         <div className="mb-4">
-          <p className="text-sm font-medium mb-2" style={{ color: '#cbd5e1' }}>Did you mean?</p>
+          <p
+            className="text-sm font-medium mb-2"
+            style={{
+              color: '#6B6560',
+              fontSize: '0.75rem',
+              fontWeight: 500,
+              textTransform: 'uppercase',
+              letterSpacing: '0.05em',
+            }}
+          >
+            Did you mean?
+          </p>
           <ul className="space-y-1">
             {partialMatches.map((suggestion, index) => {
               const item = suggestion.item;
@@ -78,7 +71,7 @@ export function NotFoundSuggestions({
               return (
                 <li
                   key={suggestion.slug}
-                  id={`suggestion-${index}`}
+                  id={`result-${index}`}
                   role="option"
                   aria-selected={isActive}
                 >
@@ -90,26 +83,31 @@ export function NotFoundSuggestions({
                         onSelect(suggestion.slug);
                       }
                     }}
-                    className="flex items-center justify-between gap-3 py-1.5 px-2 rounded-lg font-medium transition-colors"
+                    className="flex items-center justify-between gap-3 py-2 px-3 rounded-lg font-medium transition-all"
                     style={{
-                      backgroundColor: isActive ? '#334155' : 'transparent',
-                      color: isActive ? '#93c5fd' : '#60a5fa',
+                      backgroundColor: isActive ? 'rgba(94, 139, 126, 0.08)' : 'transparent',
+                      color: isActive ? '#5E8B7E' : '#2D2D2D',
                     }}
                   >
                     <span className="truncate">
                       <span className="font-semibold">{suggestion.name}</span>
                       {machine && suggestion.manufacturer && (
-                        <span style={{ color: '#94a3b8' }}>
-                          {' '}
-                          by {suggestion.manufacturer}
+                        <span
+                          style={{
+                            color: '#6B6560',
+                            fontSize: '0.7rem',
+                            marginLeft: '0.5rem',
+                          }}
+                        >
+                          {suggestion.manufacturer}
                         </span>
                       )}
                     </span>
                     <span className="flex-shrink-0">
                       {machine ? (
-                        <ClassificationBadge technologyType={item.technologyType} />
+                        <ClassificationBadge technologyType={item.technologyType} size="small" />
                       ) : (
-                        <ClassificationBadge isRealLaser={item.isRealLaser} />
+                        <ClassificationBadge isRealLaser={item.isRealLaser} size="small" />
                       )}
                     </span>
                   </Link>
@@ -123,7 +121,16 @@ export function NotFoundSuggestions({
       {/* Related machines by manufacturer */}
       {hasRelated && (
         <div className="mb-4">
-          <p className="text-sm font-medium mb-2" style={{ color: '#cbd5e1' }}>
+          <p
+            className="text-sm font-medium mb-2"
+            style={{
+              color: '#6B6560',
+              fontSize: '0.75rem',
+              fontWeight: 500,
+              textTransform: 'uppercase',
+              letterSpacing: '0.05em',
+            }}
+          >
             Related {detectedManufacturer} machines:
           </p>
           <ul className="space-y-1">
@@ -134,7 +141,7 @@ export function NotFoundSuggestions({
               return (
                 <li
                   key={suggestion.slug}
-                  id={`suggestion-${globalIndex}`}
+                  id={`result-${globalIndex}`}
                   role="option"
                   aria-selected={isActive}
                 >
@@ -146,21 +153,26 @@ export function NotFoundSuggestions({
                         onSelect(suggestion.slug);
                       }
                     }}
-                    className="flex items-center justify-between gap-3 py-1.5 px-2 rounded-lg font-medium transition-colors"
+                    className="flex items-center justify-between gap-3 py-2 px-3 rounded-lg font-medium transition-all"
                     style={{
-                      backgroundColor: isActive ? '#334155' : 'transparent',
-                      color: isActive ? '#93c5fd' : '#60a5fa',
+                      backgroundColor: isActive ? 'rgba(94, 139, 126, 0.08)' : 'transparent',
+                      color: isActive ? '#5E8B7E' : '#2D2D2D',
                     }}
                   >
                     <span className="truncate">
                       <span className="font-semibold">{suggestion.name}</span>
-                      <span style={{ color: '#94a3b8' }}>
-                        {' '}
-                        by {suggestion.manufacturer}
+                      <span
+                        style={{
+                          color: '#6B6560',
+                          fontSize: '0.7rem',
+                          marginLeft: '0.5rem',
+                        }}
+                      >
+                        {suggestion.manufacturer}
                       </span>
                     </span>
                     <span className="flex-shrink-0">
-                      <ClassificationBadge technologyType={suggestion.item.technologyType} />
+                      <ClassificationBadge technologyType={suggestion.item.technologyType} size="small" />
                     </span>
                   </Link>
                 </li>
@@ -171,13 +183,32 @@ export function NotFoundSuggestions({
       )}
 
       {/* Always show fallback */}
-      <Link
-        href="/is-it-a-real-laser"
-        className="font-medium"
-        style={{ color: '#60a5fa' }}
+      <div
+        style={{
+          paddingTop: '0.75rem',
+          borderTop: '1px solid #E8E4DF',
+        }}
       >
-        Browse all equipment
-      </Link>
+        <Link
+          href="/is-it-a-real-laser"
+          className="inline-flex items-center gap-2 font-medium transition-colors hover:text-[#4A7466]"
+          style={{ color: '#5E8B7E', fontSize: '0.875rem' }}
+        >
+          <span>Browse all equipment</span>
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </Link>
+      </div>
     </div>
   );
 }

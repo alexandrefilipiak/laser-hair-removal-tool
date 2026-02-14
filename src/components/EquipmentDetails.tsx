@@ -17,9 +17,6 @@ interface EquipmentDetailsProps {
 
 /**
  * Full machine detail layout
- *
- * Displays all classification layers, specifications, and rich content
- * in a mobile-first responsive design.
  */
 export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
   const {
@@ -36,136 +33,354 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
   } = equipment;
 
   return (
-    <article className="mx-auto max-w-2xl px-4 py-6 md:py-8">
-      {/* Back to search link */}
-      <nav className="mb-6">
-        <Link
-          href="/is-it-a-real-laser"
-          className="inline-flex items-center gap-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
-        >
-          <svg
-            className="h-4 w-4"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
+    <main
+      style={{
+        backgroundColor: '#FAF9F7',
+        minHeight: '100vh',
+        position: 'relative',
+      }}
+    >
+      <article className="mx-auto max-w-2xl px-4 py-8 md:py-12" style={{ position: 'relative', zIndex: 1 }}>
+        {/* Back to search link */}
+        <nav className="mb-8">
+          <Link
+            href="/is-it-a-real-laser"
+            className="inline-flex items-center gap-2 text-sm transition-colors hover:text-[#5E8B7E]"
+            style={{ color: '#6B6560' }}
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            <svg
+              className="h-4 w-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              />
+            </svg>
+            <span style={{ letterSpacing: '0.02em' }}>
+              Back to Search
+            </span>
+          </Link>
+        </nav>
+
+        {/* Classification Badge - prominent, centered */}
+        <div className="mb-6 flex justify-center">
+          <ClassificationBadge technologyType={technologyType} isRealLaser={null} />
+        </div>
+
+        {/* Machine Name and Manufacturer */}
+        <header className="mb-4 text-center">
+          <h1
+            style={{
+              fontFamily: 'var(--font-inter), system-ui, sans-serif',
+              fontSize: 'clamp(1.75rem, 5vw, 2.5rem)',
+              fontWeight: 700,
+              letterSpacing: '-0.02em',
+              color: '#2D2D2D',
+              lineHeight: 1.1,
+            }}
+          >
+            {name}
+          </h1>
+          <p
+            className="mt-2"
+            style={{
+              color: '#6B6560',
+              fontSize: '0.875rem',
+              letterSpacing: '0.02em',
+            }}
+          >
+            {manufacturer}
+          </p>
+        </header>
+
+        {/* Disclaimer - subtle inline notice */}
+        <div className="flex justify-center" style={{ marginTop: '1.5rem', marginBottom: '2.5rem' }}>
+          <Disclaimer />
+        </div>
+
+        {/* Info Grid */}
+        <dl className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-4">
+          {/* Brand Tier */}
+          <div
+            className="rounded-xl p-4"
+            style={{
+              backgroundColor: '#FFFFFF',
+              border: '1px solid #E8E4DF',
+            }}
+          >
+            <dt
+              style={{
+                color: '#6B6560',
+                fontSize: '0.7rem',
+                fontWeight: 500,
+                textTransform: 'uppercase',
+                letterSpacing: '0.1em',
+              }}
+            >
+              Brand Tier
+            </dt>
+            <dd className="mt-2">
+              <BrandTierBadge tier={brandTier} />
+            </dd>
+          </div>
+
+          {/* Purpose */}
+          <div
+            className="rounded-xl p-4"
+            style={{
+              backgroundColor: '#FFFFFF',
+              border: '1px solid #E8E4DF',
+            }}
+          >
+            <dt
+              style={{
+                color: '#6B6560',
+                fontSize: '0.7rem',
+                fontWeight: 500,
+                textTransform: 'uppercase',
+                letterSpacing: '0.1em',
+              }}
+            >
+              Purpose
+            </dt>
+            <dd className="mt-2 text-sm" style={{ color: '#2D2D2D' }}>
+              {purposeBuilt ? 'Purpose-built for hair removal' : 'Multi-purpose platform'}
+            </dd>
+          </div>
+
+          {/* Technology */}
+          <div
+            className="rounded-xl p-4"
+            style={{
+              backgroundColor: '#FFFFFF',
+              border: '1px solid #E8E4DF',
+            }}
+          >
+            <dt
+              style={{
+                color: '#6B6560',
+                fontSize: '0.7rem',
+                fontWeight: 500,
+                textTransform: 'uppercase',
+                letterSpacing: '0.1em',
+              }}
+            >
+              Technology
+            </dt>
+            <dd className="mt-2 text-sm" style={{ color: '#5E8B7E', fontWeight: 500 }}>
+              {technologyType.charAt(0).toUpperCase() + technologyType.slice(1)}
+            </dd>
+          </div>
+
+          {/* Wavelengths */}
+          <div
+            className="rounded-xl p-4"
+            style={{
+              backgroundColor: '#FFFFFF',
+              border: '1px solid #E8E4DF',
+            }}
+          >
+            <dt
+              style={{
+                color: '#6B6560',
+                fontSize: '0.7rem',
+                fontWeight: 500,
+                textTransform: 'uppercase',
+                letterSpacing: '0.1em',
+              }}
+            >
+              Wavelengths
+            </dt>
+            <dd
+              className="mt-2 text-sm"
+              style={{
+                color: '#2D2D2D',
+              }}
+            >
+              {wavelengths.length > 0 ? wavelengths.join(' · ') : 'Not specified'}
+            </dd>
+          </div>
+
+          {/* Skin Types */}
+          <div
+            className="rounded-xl p-4"
+            style={{
+              backgroundColor: '#FFFFFF',
+              border: '1px solid #E8E4DF',
+            }}
+          >
+            <dt
+              style={{
+                color: '#6B6560',
+                fontSize: '0.7rem',
+                fontWeight: 500,
+                textTransform: 'uppercase',
+                letterSpacing: '0.1em',
+              }}
+            >
+              Skin Types
+            </dt>
+            <dd className="mt-2 text-sm" style={{ color: '#2D2D2D' }}>
+              {skinTypes.displayText}
+            </dd>
+          </div>
+
+          {/* Cooling */}
+          <div
+            className="rounded-xl p-4"
+            style={{
+              backgroundColor: '#FFFFFF',
+              border: '1px solid #E8E4DF',
+            }}
+          >
+            <dt
+              style={{
+                color: '#6B6560',
+                fontSize: '0.7rem',
+                fontWeight: 500,
+                textTransform: 'uppercase',
+                letterSpacing: '0.1em',
+              }}
+            >
+              Cooling
+            </dt>
+            <dd className="mt-2 text-sm" style={{ color: '#2D2D2D' }}>
+              {coolingMethod
+                ? coolingMethod.charAt(0).toUpperCase() + coolingMethod.slice(1)
+                : 'Not specified'}
+            </dd>
+          </div>
+        </dl>
+
+        {/* Notes section */}
+        {notes && (
+          <section
+            className="mt-6 rounded-xl p-4"
+            style={{
+              backgroundColor: 'rgba(94, 139, 126, 0.06)',
+              border: '1px solid rgba(94, 139, 126, 0.15)',
+            }}
+          >
+            <h2
+              style={{
+                color: '#5E8B7E',
+                fontSize: '0.7rem',
+                fontWeight: 500,
+                textTransform: 'uppercase',
+                letterSpacing: '0.1em',
+                marginBottom: '0.5rem',
+              }}
+            >
+              Notes
+            </h2>
+            <p className="text-sm leading-relaxed" style={{ color: '#6B6560' }}>
+              {notes}
+            </p>
+          </section>
+        )}
+
+        {/* Rich Content - at bottom for SEO */}
+        {richContent && (
+          <section className="mt-12">
+            {/* Divider */}
+            <div
+              style={{
+                height: '1px',
+                backgroundColor: '#E8E4DF',
+                marginBottom: '2.5rem',
+              }}
             />
-          </svg>
-          Search Equipment
-        </Link>
-      </nav>
 
-      {/* Classification Badge - prominent, centered */}
-      <div className="mb-6 flex justify-center">
-        <ClassificationBadge technologyType={technologyType} isRealLaser={null} />
-      </div>
+            {/* Overview */}
+            <div>
+              <h2
+                style={{
+                  fontFamily: 'var(--font-inter), system-ui, sans-serif',
+                  color: '#2D2D2D',
+                  fontSize: '1.125rem',
+                  fontWeight: 600,
+                  marginBottom: '0.75rem',
+                }}
+              >
+                Overview
+              </h2>
+              <p className="leading-relaxed" style={{ color: '#6B6560' }}>
+                {richContent.overview}
+              </p>
+            </div>
 
-      {/* Machine Name and Manufacturer */}
-      <header className="mb-4 text-center">
-        <h1 className="text-2xl font-bold text-gray-900 md:text-3xl">{name}</h1>
-        <p className="mt-1 text-base text-gray-600 md:text-lg">{manufacturer}</p>
-      </header>
+            {/* How It Works */}
+            <div className="mt-8">
+              <h2
+                style={{
+                  fontFamily: 'var(--font-inter), system-ui, sans-serif',
+                  color: '#2D2D2D',
+                  fontSize: '1.125rem',
+                  fontWeight: 600,
+                  marginBottom: '0.75rem',
+                }}
+              >
+                How It Works
+              </h2>
+              <p className="leading-relaxed" style={{ color: '#6B6560' }}>
+                {richContent.howItWorks}
+              </p>
+            </div>
 
-      {/* Disclaimer - subtle inline notice */}
-      <div className="mb-8 flex justify-center">
-        <Disclaimer />
-      </div>
+            {/* Typical Uses */}
+            <div className="mt-8">
+              <h2
+                style={{
+                  fontFamily: 'var(--font-inter), system-ui, sans-serif',
+                  color: '#2D2D2D',
+                  fontSize: '1.125rem',
+                  fontWeight: 600,
+                  marginBottom: '0.75rem',
+                }}
+              >
+                Typical Uses
+              </h2>
+              <p className="leading-relaxed" style={{ color: '#6B6560' }}>
+                {richContent.typicalUses}
+              </p>
+            </div>
 
-      {/* Info Grid */}
-      <dl className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
-        {/* Brand Tier */}
-        <div className="rounded-lg border border-gray-100 bg-white p-4 shadow-sm">
-          <dt className="text-sm font-medium text-gray-500">Brand Tier</dt>
-          <dd className="mt-1">
-            <BrandTierBadge tier={brandTier} />
-          </dd>
-        </div>
+            {/* Key Features */}
+            <div className="mt-8">
+              <h2
+                style={{
+                  fontFamily: 'var(--font-inter), system-ui, sans-serif',
+                  color: '#2D2D2D',
+                  fontSize: '1.125rem',
+                  fontWeight: 600,
+                  marginBottom: '0.75rem',
+                }}
+              >
+                Key Features
+              </h2>
+              <p className="leading-relaxed" style={{ color: '#6B6560' }}>
+                {richContent.keyFeatures}
+              </p>
+            </div>
+          </section>
+        )}
 
-        {/* Purpose */}
-        <div className="rounded-lg border border-gray-100 bg-white p-4 shadow-sm">
-          <dt className="text-sm font-medium text-gray-500">Purpose</dt>
-          <dd className="mt-1 text-sm text-gray-900 md:text-base">
-            {purposeBuilt ? 'Purpose-built for hair removal' : 'Multi-purpose platform'}
-          </dd>
-        </div>
-
-        {/* Technology */}
-        <div className="rounded-lg border border-gray-100 bg-white p-4 shadow-sm">
-          <dt className="text-sm font-medium text-gray-500">Technology</dt>
-          <dd className="mt-1 text-sm text-gray-900 md:text-base">
-            {technologyType.charAt(0).toUpperCase() + technologyType.slice(1)}
-          </dd>
-        </div>
-
-        {/* Wavelengths */}
-        <div className="rounded-lg border border-gray-100 bg-white p-4 shadow-sm">
-          <dt className="text-sm font-medium text-gray-500">Wavelengths</dt>
-          <dd className="mt-1 text-sm text-gray-900 md:text-base">
-            {wavelengths.length > 0 ? wavelengths.join(', ') : 'Not specified'}
-          </dd>
-        </div>
-
-        {/* Skin Types */}
-        <div className="rounded-lg border border-gray-100 bg-white p-4 shadow-sm">
-          <dt className="text-sm font-medium text-gray-500">Skin Types</dt>
-          <dd className="mt-1 text-sm text-gray-900 md:text-base">
-            {skinTypes.displayText}
-          </dd>
-        </div>
-
-        {/* Cooling */}
-        <div className="rounded-lg border border-gray-100 bg-white p-4 shadow-sm">
-          <dt className="text-sm font-medium text-gray-500">Cooling</dt>
-          <dd className="mt-1 text-sm text-gray-900 md:text-base">
-            {coolingMethod
-              ? coolingMethod.charAt(0).toUpperCase() + coolingMethod.slice(1)
-              : 'Not specified'}
-          </dd>
-        </div>
-      </dl>
-
-      {/* Notes section */}
-      {notes && (
-        <section className="mt-6">
-          <h2 className="text-sm font-medium text-gray-500">Notes</h2>
-          <p className="mt-2 text-sm text-gray-700 md:text-base">{notes}</p>
-        </section>
-      )}
-
-      {/* Rich Content - at bottom for SEO */}
-      {richContent && (
-        <section className="mt-8 border-t border-gray-200 pt-8">
-          {/* Overview */}
-          <div>
-            <h2 className="text-lg font-semibold text-gray-900">Overview</h2>
-            <p className="mt-2 text-gray-700 leading-relaxed">{richContent.overview}</p>
-          </div>
-
-          {/* How It Works */}
-          <div className="mt-8">
-            <h2 className="text-lg font-semibold text-gray-900">How It Works</h2>
-            <p className="mt-2 text-gray-700 leading-relaxed">{richContent.howItWorks}</p>
-          </div>
-
-          {/* Typical Uses */}
-          <div className="mt-8">
-            <h2 className="text-lg font-semibold text-gray-900">Typical Uses</h2>
-            <p className="mt-2 text-gray-700 leading-relaxed">{richContent.typicalUses}</p>
-          </div>
-
-          {/* Key Features */}
-          <div className="mt-8">
-            <h2 className="text-lg font-semibold text-gray-900">Key Features</h2>
-            <p className="mt-2 text-gray-700 leading-relaxed">{richContent.keyFeatures}</p>
-          </div>
-        </section>
-      )}
-    </article>
+        {/* Footer */}
+        <footer
+          className="mt-12 pt-6 text-center"
+          style={{ borderTop: '1px solid #E8E4DF' }}
+        >
+          <p style={{ color: '#6B6560', fontSize: '0.75rem', letterSpacing: '0.02em' }}>
+            Informational content only — not medical advice
+          </p>
+        </footer>
+      </article>
+    </main>
   );
 }

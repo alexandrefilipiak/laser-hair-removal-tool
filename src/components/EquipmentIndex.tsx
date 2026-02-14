@@ -13,26 +13,40 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
   return (
     <div>
       {/* Machines Section */}
-      <div style={{ marginBottom: '3rem' }}>
-        <div className="flex items-center gap-3" style={{ marginBottom: '1.5rem' }}>
-          <h2 style={{ color: '#f1f5f9', fontSize: '1.25rem', fontWeight: 600 }}>
+      <div style={{ marginBottom: '3.5rem' }}>
+        <div className="flex items-center gap-3" style={{ marginBottom: '1.25rem' }}>
+          <h2
+            style={{
+              color: '#2D2D2D',
+              fontSize: '1.125rem',
+              fontWeight: 600,
+              letterSpacing: '-0.01em',
+              fontFamily: 'var(--font-inter), system-ui, sans-serif',
+            }}
+          >
             Machines
           </h2>
-          <span style={{
-            backgroundColor: '#1e293b',
-            color: '#94a3b8',
-            fontSize: '0.75rem',
-            padding: '0.25rem 0.625rem',
-            borderRadius: '9999px'
-          }}>
+          <span
+            style={{
+              backgroundColor: 'rgba(94, 139, 126, 0.1)',
+              color: '#5E8B7E',
+              fontSize: '0.7rem',
+              fontWeight: 500,
+              padding: '0.2rem 0.6rem',
+              borderRadius: '9999px',
+              border: '1px solid rgba(94, 139, 126, 0.2)',
+            }}
+          >
             {machines.length}
           </span>
         </div>
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
-          gap: '0.75rem'
-        }}>
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+            gap: '0.75rem',
+          }}
+        >
           {machines.map((machine) => (
             <EquipmentCard key={machine.slug} equipment={machine} />
           ))}
@@ -41,25 +55,39 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
 
       {/* Technology Terms Section */}
       <div>
-        <div className="flex items-center gap-3" style={{ marginBottom: '1.5rem' }}>
-          <h2 style={{ color: '#f1f5f9', fontSize: '1.25rem', fontWeight: 600 }}>
+        <div className="flex items-center gap-3" style={{ marginBottom: '1.25rem' }}>
+          <h2
+            style={{
+              color: '#2D2D2D',
+              fontSize: '1.125rem',
+              fontWeight: 600,
+              letterSpacing: '-0.01em',
+              fontFamily: 'var(--font-inter), system-ui, sans-serif',
+            }}
+          >
             Technology Terms
           </h2>
-          <span style={{
-            backgroundColor: '#1e293b',
-            color: '#94a3b8',
-            fontSize: '0.75rem',
-            padding: '0.25rem 0.625rem',
-            borderRadius: '9999px'
-          }}>
+          <span
+            style={{
+              backgroundColor: 'rgba(94, 139, 126, 0.1)',
+              color: '#5E8B7E',
+              fontSize: '0.7rem',
+              fontWeight: 500,
+              padding: '0.2rem 0.6rem',
+              borderRadius: '9999px',
+              border: '1px solid rgba(94, 139, 126, 0.2)',
+            }}
+          >
             {terms.length}
           </span>
         </div>
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
-          gap: '0.75rem'
-        }}>
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+            gap: '0.75rem',
+          }}
+        >
           {terms.map((term) => (
             <EquipmentCard key={term.slug} equipment={term} />
           ))}

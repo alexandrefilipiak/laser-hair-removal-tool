@@ -3,6 +3,7 @@
  *
  * Displays "Real Laser", "Not a Laser", or "Ask Your Clinic" status
  * based on the equipment classification.
+ * Styled with warm, premium wellness colors.
  */
 
 interface ClassificationBadgeProps {
@@ -14,13 +15,32 @@ interface ClassificationBadgeProps {
   size?: 'default' | 'small';
 }
 
+/** Warm wellness color configurations for each classification */
+const colorConfig = {
+  realLaser: {
+    backgroundColor: 'rgba(94, 139, 126, 0.12)',
+    color: '#5E8B7E',
+    borderColor: 'rgba(94, 139, 126, 0.25)',
+  },
+  notLaser: {
+    backgroundColor: 'rgba(196, 107, 92, 0.12)',
+    color: '#C46B5C',
+    borderColor: 'rgba(196, 107, 92, 0.25)',
+  },
+  askClinic: {
+    backgroundColor: 'rgba(196, 145, 62, 0.12)',
+    color: '#C4913E',
+    borderColor: 'rgba(196, 145, 62, 0.25)',
+  },
+};
+
 /**
  * Badge showing laser classification status
  *
  * Three states:
- * - true: "Real Laser" (green)
- * - false: "Not a Laser" (red)
- * - null: "Ask Your Clinic" (yellow) - for ambiguous technologies
+ * - true: "Real Laser" (sage green)
+ * - false: "Not a Laser" (soft coral)
+ * - null: "Ask Your Clinic" (warm amber)
  */
 export function ClassificationBadge({
   isRealLaser,
@@ -34,17 +54,27 @@ export function ClassificationBadge({
   // Size-based styling
   const sizeClasses =
     size === 'small'
-      ? 'px-2 py-0.5 text-xs gap-1'
+      ? 'px-3 py-1 text-xs gap-1'
       : 'px-3 py-1.5 text-sm gap-1.5 md:px-4 md:py-2 md:text-base';
 
   const iconSize = size === 'small' ? 'h-3 w-3' : 'h-4 w-4 md:h-5 md:w-5';
 
+  // Small badges allow text wrapping for longer labels
+  const smallBadgeStyle = size === 'small' ? { maxWidth: '5.5rem', textAlign: 'center' as const, lineHeight: 1.3 } : {};
+
   // Determine badge content and styling based on classification
   if (classification === true) {
+    const colors = colorConfig.realLaser;
     return (
       <span
         role="status"
-        className={`inline-flex items-center rounded-full border border-green-200 bg-green-100 font-semibold text-green-800 ${sizeClasses}`}
+        className={`inline-flex items-center flex-wrap justify-center rounded-full font-semibold ${sizeClasses}`}
+        style={{
+          backgroundColor: colors.backgroundColor,
+          color: colors.color,
+          border: `1px solid ${colors.borderColor}`,
+          ...smallBadgeStyle,
+        }}
       >
         <svg
           className={iconSize}
@@ -64,10 +94,17 @@ export function ClassificationBadge({
   }
 
   if (classification === false) {
+    const colors = colorConfig.notLaser;
     return (
       <span
         role="status"
-        className={`inline-flex items-center rounded-full border border-red-200 bg-red-100 font-semibold text-red-800 ${sizeClasses}`}
+        className={`inline-flex items-center flex-wrap justify-center rounded-full font-semibold ${sizeClasses}`}
+        style={{
+          backgroundColor: colors.backgroundColor,
+          color: colors.color,
+          border: `1px solid ${colors.borderColor}`,
+          ...smallBadgeStyle,
+        }}
       >
         <svg
           className={iconSize}
@@ -87,10 +124,17 @@ export function ClassificationBadge({
   }
 
   // null case: ambiguous classification
+  const colors = colorConfig.askClinic;
   return (
     <span
       role="status"
-      className={`inline-flex items-center rounded-full border border-yellow-200 bg-yellow-100 font-semibold text-yellow-800 ${sizeClasses}`}
+      className={`inline-flex items-center flex-wrap justify-center rounded-full font-semibold ${sizeClasses}`}
+      style={{
+        backgroundColor: colors.backgroundColor,
+        color: colors.color,
+        border: `1px solid ${colors.borderColor}`,
+        ...smallBadgeStyle,
+      }}
     >
       <svg
         className={iconSize}

@@ -15,7 +15,7 @@ interface HighlightMatchProps {
  * Renders text with matched characters highlighted
  *
  * Uses Fuse.js match indices to wrap matched portions in <mark> tags
- * with yellow highlight styling.
+ * with sage green highlight styling.
  *
  * @example
  * <HighlightMatch
@@ -54,7 +54,15 @@ export function HighlightMatch({
 
     // Add matched text with highlight
     segments.push(
-      <mark key={`match-${i}`} className="bg-yellow-200 rounded">
+      <mark
+        key={`match-${i}`}
+        style={{
+          backgroundColor: 'rgba(94, 139, 126, 0.2)',
+          color: '#5E8B7E',
+          borderRadius: '2px',
+          padding: '0 2px',
+        }}
+      >
         {text.slice(start, end + 1)}
       </mark>
     );

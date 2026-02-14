@@ -2,7 +2,7 @@
  * Medical disclaimer component
  *
  * Subtle inline notice for equipment detail pages.
- * Designed to inform without dominating - visually light but accessible.
+ * Designed to inform without dominating - visually subtle but accessible.
  */
 
 interface DisclaimerProps {
@@ -23,14 +23,20 @@ export function Disclaimer({ variant = 'compact' }: DisclaimerProps) {
       <div
         role="note"
         aria-label="Content disclaimer"
-        className="inline-flex items-center gap-2 rounded-full bg-amber-50 px-4 py-2 text-sm text-amber-800"
+        className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm"
+        style={{
+          backgroundColor: 'rgba(107, 101, 96, 0.06)',
+          border: '1px solid rgba(107, 101, 96, 0.12)',
+          color: '#6B6560',
+        }}
       >
         <svg
-          className="h-4 w-4 flex-shrink-0 text-amber-500"
+          className="h-4 w-4 flex-shrink-0"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
           aria-hidden="true"
+          style={{ color: '#6B6560' }}
         >
           <path
             strokeLinecap="round"
@@ -52,9 +58,13 @@ export function Disclaimer({ variant = 'compact' }: DisclaimerProps) {
     <aside
       role="complementary"
       aria-label="Medical disclaimer"
-      className="rounded-lg border border-gray-100 bg-gray-50/50 px-4 py-3 text-center"
+      className="rounded-lg px-4 py-3 text-center"
+      style={{
+        backgroundColor: 'rgba(107, 101, 96, 0.04)',
+        border: '1px solid rgba(107, 101, 96, 0.1)',
+      }}
     >
-      <p className="text-xs leading-relaxed text-gray-500">
+      <p className="text-xs leading-relaxed" style={{ color: '#6B6560' }}>
         This tool provides general information about laser hair removal equipment
         for educational purposes only. Individual results vary based on skin type,
         hair color, and other factors. Always consult with a qualified practitioner

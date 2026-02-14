@@ -18,17 +18,6 @@ interface SearchResultItemProps {
 
 /**
  * Individual search result row with highlighted name and classification badge
- *
- * Renders as an li element with proper ARIA attributes for combobox pattern.
- * Shows equipment name (highlighted), manufacturer for machines, and
- * classification badge on the right.
- *
- * @example
- * <SearchResultItem
- *   result={fuseResults[0]}
- *   isActive={activeIndex === 0}
- *   index={0}
- * />
  */
 export function SearchResultItem({
   result,
@@ -44,19 +33,23 @@ export function SearchResultItem({
       role="option"
       aria-selected={isActive}
       style={{
-        borderBottom: '1px solid #334155',
-        backgroundColor: isActive ? '#334155' : 'transparent',
+        borderBottom: '1px solid #E8E4DF',
+        backgroundColor: isActive ? 'rgba(94, 139, 126, 0.08)' : 'transparent',
+        transition: 'background-color 0.15s',
       }}
-      className="last:border-b-0 transition-colors hover:bg-[#334155]"
+      className="last:border-b-0"
     >
       <Link
         href={`/is-it-a-real-laser/${item.slug}`}
-        className="flex items-center justify-between gap-3"
-        style={{ padding: '0.75rem 1rem', textAlign: 'left' }}
+        className="flex items-center justify-between gap-3 hover:bg-[rgba(94,139,126,0.05)]"
+        style={{ padding: '0.875rem 1.25rem', textAlign: 'left' }}
       >
         <div className="flex-1 min-w-0">
           {/* Equipment name with match highlighting */}
-          <div className="font-medium truncate" style={{ color: '#f1f5f9' }}>
+          <div
+            className="font-medium truncate"
+            style={{ color: isActive ? '#5E8B7E' : '#2D2D2D' }}
+          >
             <HighlightMatch
               text={item.name}
               matches={result.matches}
@@ -66,7 +59,14 @@ export function SearchResultItem({
 
           {/* Manufacturer for machines */}
           {machine && (
-            <div className="text-sm truncate" style={{ color: '#94a3b8' }}>
+            <div
+              className="text-sm truncate"
+              style={{
+                color: '#6B6560',
+                fontSize: '0.7rem',
+                marginTop: '0.125rem',
+              }}
+            >
               <HighlightMatch
                 text={item.manufacturer}
                 matches={result.matches}
@@ -79,9 +79,9 @@ export function SearchResultItem({
         {/* Classification badge */}
         <div className="flex-shrink-0">
           {machine ? (
-            <ClassificationBadge technologyType={item.technologyType} />
+            <ClassificationBadge technologyType={item.technologyType} size="small" />
           ) : (
-            <ClassificationBadge isRealLaser={item.isRealLaser} />
+            <ClassificationBadge isRealLaser={item.isRealLaser} size="small" />
           )}
         </div>
       </Link>
