@@ -174,6 +174,7 @@ export function TechnologyTermDetails({ term }: TechnologyTermDetailsProps) {
             borderTop: '1px solid #E8E4DF',
             paddingTop: '2rem',
             marginTop: '3rem',
+            paddingBottom: '1rem',
           }}
         >
           <p style={{ color: '#6B6560', fontSize: '0.75rem', letterSpacing: '0.02em' }}>
