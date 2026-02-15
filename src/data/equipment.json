@@ -695,7 +695,7 @@
     },
     "purposeBuilt": true,
     "coolingMethod": null,
-    "notes": "Compact home-use laser for smaller areas like face and bikini line. Same diode laser technology as Tria 4X with smaller treatment window. Lower power than clinical devices.",
+    "notes": "Compact home-use laser for smaller areas like face and bikini line. Same diode laser technology as Tria 4X with smaller treatment window. FDA-cleared for home use. Results require substantially more sessions than clinical treatment. It IS a real laser, but with consumer-grade power levels.",
     "aliases": [
       "tria precision laser",
       "tria beauty precision"
@@ -809,7 +809,7 @@
     "technologyType": "wavelength",
     "isRealLaser": true,
     "classification": "verify-brand",
-    "whatItIs": "755nm is the wavelength of Alexandrite lasers, one of the most effective for hair removal on lighter skin tones.",
+    "whatItIs": "755nm is the wavelength of Alexandrite lasers, one of the most effective for hair removal on lighter skin tones. If your clinic uses Alexandrite, it is a real laser.",
     "whyItMatters": "When used in a true laser system, 755nm Alexandrite is gold standard for hair removal on Fitzpatrick skin types I-IV. The wavelength is well-absorbed by melanin in hair follicles. Premium devices like GentleLase and GentleMax Pro use this wavelength.",
     "askYourClinic": "What brand is your 755nm Alexandrite laser?",
     "aliases": [
@@ -826,7 +826,7 @@
     "technologyType": "wavelength",
     "isRealLaser": null,
     "classification": "verify-brand",
-    "whatItIs": "810nm (sometimes listed as 808nm) is the wavelength of diode lasers, the most common type used for hair removal.",
+    "whatItIs": "810nm (sometimes listed as 808nm) is the wavelength of diode lasers, the most common type used for hair removal. If your clinic uses an 810nm diode, it is a real laser.",
     "whyItMatters": "This is critical: the wavelength alone tells you almost nothing about treatment quality. A $3,000 machine from Alibaba uses 810nm. A $100,000 LightSheer uses 810nm. Same wavelength, drastically different results. The wavelength is just physics - what matters is the power output, spot size, pulse duration, cooling system, and overall engineering quality. When a clinic says 810nm diode laser, you must ask WHAT BRAND AND MODEL. A generic 810nm diode could be an excellent clinical device or a cheap import.",
     "askYourClinic": "What brand and model of 810nm diode laser do you use? How much did the device cost? How long have you had it?",
     "aliases": [
@@ -845,7 +845,7 @@
     "technologyType": "wavelength",
     "isRealLaser": true,
     "classification": "verify-brand",
-    "whatItIs": "1064nm is the wavelength of Nd:YAG lasers, specifically designed to be safe for darker skin tones.",
+    "whatItIs": "1064nm is the wavelength of Nd:YAG lasers, specifically designed to be safe for darker skin tones. If your clinic uses Nd:YAG, it is a real laser.",
     "whyItMatters": "1064nm penetrates deeper into the skin and is less absorbed by melanin in the epidermis, making it safe for Fitzpatrick skin types V-VI where other wavelengths would cause burns. Premium devices like GentleYAG use this wavelength. It is also used as the second wavelength in dual-wavelength systems.",
     "askYourClinic": "What brand is your Nd:YAG laser?",
     "aliases": [
@@ -871,5 +871,24 @@
       "755 1064",
       "alexandrite ndyag"
     ]
+  },
+  {
+  "type": "technology-term",
+  "slug": "ipl",
+  "name": "IPL (Intense Pulsed Light)",
+  "technologyType": "ipl",
+  "isRealLaser": false,
+  "classification": "not-laser",
+  "whatItIs": "IPL stands for Intense Pulsed Light. It uses broad-spectrum light (multiple wavelengths at once) rather than a single focused wavelength like a laser.",
+  "whyItMatters": "IPL is NOT a laser. While IPL can reduce hair growth, it is a fundamentally different technology. Lasers deliver a single, concentrated wavelength that precisely targets hair follicles. IPL scatters broad-spectrum light across the skin, making it less targeted and typically requiring more sessions for comparable results. Many clinics advertise 'laser hair removal' while actually using IPL devices. Branded versions of IPL include Sciton BBL, Alma AFT, E-Light, OPT, and DPL. All are IPL regardless of their marketing names.",
+  "askYourClinic": "Do you use a laser or an IPL device? What is the specific brand and model?",
+  "aliases": [
+    "intense pulsed light",
+    "ipl laser",
+    "ipl hair removal",
+    "pulsed light",
+    "broad spectrum light",
+    "flashlamp"
+  ] 
   }
 ]

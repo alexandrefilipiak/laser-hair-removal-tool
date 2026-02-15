@@ -17,6 +17,9 @@ import {
 import { EquipmentDetails } from '@/components/EquipmentDetails';
 import { TechnologyTermDetails } from '@/components/TechnologyTermDetails';
 import { IPLDetails } from '@/components/IPLDetails';
+import { DiodeLaserDetails } from '@/components/DiodeLaserDetails';
+import { AlexandriteLaserDetails } from '@/components/AlexandriteLaserDetails';
+import { NdYAGLaserDetails } from '@/components/NdYAGLaserDetails';
 import { JsonLd } from '@/components/JsonLd';
 import { generateProductSchema, generateTechTermSchema } from '@/lib/schema';
 
@@ -78,13 +81,55 @@ export async function generateMetadata({
   // Special metadata for IPL page (the definitive "is IPL a laser" resource)
   if (slug === 'ipl') {
     return {
-      title: 'IPL vs Laser Hair Removal — Is IPL a Real Laser?',
+      title: 'IPL vs Laser Hair Removal — Is IPL a Real Laser? | LaserHairRemovalMap',
       description:
-        'IPL is not a laser. Learn the difference between IPL and real laser hair removal, which branded IPL devices to watch for, and what to ask your clinic.',
+        'IPL vs laser: IPL is not a laser. Learn the difference between IPL and real laser hair removal, which branded IPL devices to watch for, and what to ask your clinic.',
       openGraph: {
-        title: 'IPL vs Laser Hair Removal — Is IPL a Real Laser?',
+        title: 'IPL vs Laser Hair Removal — Is IPL a Real Laser? | LaserHairRemovalMap',
         description:
-          'IPL is not a laser. Learn the difference between IPL and real laser hair removal, which branded IPL devices to watch for, and what to ask your clinic.',
+          'IPL vs laser: IPL is not a laser. Learn the difference between IPL and real laser hair removal, which branded IPL devices to watch for, and what to ask your clinic.',
+      },
+    };
+  }
+
+  // Special metadata for 810nm Diode page
+  if (slug === '810nm') {
+    return {
+      title: '810nm Diode Laser for Hair Removal — What You Need to Know | LaserHairRemovalMap',
+      description:
+        '810nm is the wavelength of diode lasers, the most common type for hair removal. But wavelength alone tells you nothing about quality. Learn what questions to ask.',
+      openGraph: {
+        title: '810nm Diode Laser for Hair Removal — What You Need to Know | LaserHairRemovalMap',
+        description:
+          '810nm is the wavelength of diode lasers, the most common type for hair removal. But wavelength alone tells you nothing about quality. Learn what questions to ask.',
+      },
+    };
+  }
+
+  // Special metadata for 755nm Alexandrite page
+  if (slug === '755nm') {
+    return {
+      title: '755nm Alexandrite Laser for Hair Removal — What You Need to Know | LaserHairRemovalMap',
+      description:
+        '755nm is the wavelength of Alexandrite lasers, gold standard for lighter skin tones. But wavelength alone tells you nothing about quality. Learn what questions to ask.',
+      openGraph: {
+        title: '755nm Alexandrite Laser for Hair Removal — What You Need to Know | LaserHairRemovalMap',
+        description:
+          '755nm is the wavelength of Alexandrite lasers, gold standard for lighter skin tones. But wavelength alone tells you nothing about quality. Learn what questions to ask.',
+      },
+    };
+  }
+
+  // Special metadata for 1064nm Nd:YAG page
+  if (slug === '1064nm') {
+    return {
+      title: '1064nm Nd:YAG Laser for Hair Removal — Safe for Darker Skin | LaserHairRemovalMap',
+      description:
+        '1064nm Nd:YAG is the safest wavelength for darker skin tones. But device quality matters—especially when treating darker skin. Learn what questions to ask.',
+      openGraph: {
+        title: '1064nm Nd:YAG Laser for Hair Removal — Safe for Darker Skin | LaserHairRemovalMap',
+        description:
+          '1064nm Nd:YAG is the safest wavelength for darker skin tones. But device quality matters—especially when treating darker skin. Learn what questions to ask.',
       },
     };
   }
@@ -132,6 +177,36 @@ export default async function EquipmentPage({
         <>
           <JsonLd data={generateTechTermSchema(equipment)} />
           <IPLDetails term={equipment} />
+        </>
+      );
+    }
+
+    // Special custom page for 810nm Diode
+    if (slug === '810nm') {
+      return (
+        <>
+          <JsonLd data={generateTechTermSchema(equipment)} />
+          <DiodeLaserDetails term={equipment} />
+        </>
+      );
+    }
+
+    // Special custom page for 755nm Alexandrite
+    if (slug === '755nm') {
+      return (
+        <>
+          <JsonLd data={generateTechTermSchema(equipment)} />
+          <AlexandriteLaserDetails term={equipment} />
+        </>
+      );
+    }
+
+    // Special custom page for 1064nm Nd:YAG
+    if (slug === '1064nm') {
+      return (
+        <>
+          <JsonLd data={generateTechTermSchema(equipment)} />
+          <NdYAGLaserDetails term={equipment} />
         </>
       );
     }

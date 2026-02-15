@@ -41,6 +41,14 @@ function splitIntoSentences(text: string): string[] {
     .filter(s => s.length > 0);
 }
 
+/**
+ * Get laser class based on brand tier
+ */
+function getLaserClass(brandTier: string): string {
+  if (brandTier === 'consumer') return 'Class 1 Consumer';
+  return 'Class IV Medical';
+}
+
 interface EquipmentDetailsProps {
   equipment: MachineEntry;
 }
@@ -208,7 +216,9 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
               Technology
             </dt>
             <dd className="mt-2 text-sm" style={{ color: '#5E8B7E', fontWeight: 500 }}>
-              {technologyType.charAt(0).toUpperCase() + technologyType.slice(1)}
+              {technologyType === 'laser'
+                ? `Laser · ${getLaserClass(brandTier)}`
+                : technologyType.charAt(0).toUpperCase() + technologyType.slice(1)}
             </dd>
           </div>
 
