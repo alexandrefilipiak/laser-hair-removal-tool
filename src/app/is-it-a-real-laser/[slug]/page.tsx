@@ -20,6 +20,8 @@ import { IPLDetails } from '@/components/IPLDetails';
 import { DiodeLaserDetails } from '@/components/DiodeLaserDetails';
 import { AlexandriteLaserDetails } from '@/components/AlexandriteLaserDetails';
 import { NdYAGLaserDetails } from '@/components/NdYAGLaserDetails';
+import { DualWavelengthLaserDetails } from '@/components/DualWavelengthLaserDetails';
+import { TriWavelengthLaserDetails } from '@/components/TriWavelengthLaserDetails';
 import { JsonLd } from '@/components/JsonLd';
 import { generateProductSchema, generateTechTermSchema } from '@/lib/schema';
 
@@ -134,6 +136,34 @@ export async function generateMetadata({
     };
   }
 
+  // Special metadata for Dual Wavelength page
+  if (slug === 'dual-wavelength') {
+    return {
+      title: 'Dual Wavelength Laser (755nm + 1064nm) — The Gold Standard | LaserHairRemovalMap',
+      description:
+        'Dual wavelength lasers combine 755nm Alexandrite and 1064nm Nd:YAG for all skin types. But brand matters—budget imports exist. Learn what questions to ask.',
+      openGraph: {
+        title: 'Dual Wavelength Laser (755nm + 1064nm) — The Gold Standard | LaserHairRemovalMap',
+        description:
+          'Dual wavelength lasers combine 755nm Alexandrite and 1064nm Nd:YAG for all skin types. But brand matters—budget imports exist. Learn what questions to ask.',
+      },
+    };
+  }
+
+  // Special metadata for Tri-Wavelength page
+  if (slug === 'tri-wavelength') {
+    return {
+      title: 'Tri-Wavelength (755nm + 808nm + 1064nm) | LaserHairRemovalMap',
+      description:
+        'Tri-wavelength laser hair removal combines 755nm Alexandrite, 808nm Diode, and 1064nm Nd:YAG. Learn which machines are clinical-grade and which are budget imports.',
+      openGraph: {
+        title: 'Tri-Wavelength (755nm + 808nm + 1064nm) | LaserHairRemovalMap',
+        description:
+          'Tri-wavelength laser hair removal combines 755nm Alexandrite, 808nm Diode, and 1064nm Nd:YAG. Learn which machines are clinical-grade and which are budget imports.',
+      },
+    };
+  }
+
   // Technology term metadata
   return {
     title: `${equipment.name} - Is it a Real Laser?`,
@@ -207,6 +237,26 @@ export default async function EquipmentPage({
         <>
           <JsonLd data={generateTechTermSchema(equipment)} />
           <NdYAGLaserDetails term={equipment} />
+        </>
+      );
+    }
+
+    // Special custom page for Dual Wavelength
+    if (slug === 'dual-wavelength') {
+      return (
+        <>
+          <JsonLd data={generateTechTermSchema(equipment)} />
+          <DualWavelengthLaserDetails term={equipment} />
+        </>
+      );
+    }
+
+    // Special custom page for Tri-Wavelength
+    if (slug === 'tri-wavelength') {
+      return (
+        <>
+          <JsonLd data={generateTechTermSchema(equipment)} />
+          <TriWavelengthLaserDetails term={equipment} />
         </>
       );
     }

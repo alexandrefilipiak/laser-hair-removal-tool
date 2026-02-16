@@ -16,7 +16,7 @@ export function Footer() {
       }}
     >
       <p style={{ color: '#6B6560', fontSize: '0.75rem', letterSpacing: '0.02em' }}>
-        Informational content only. Not medical advice
+        For informational purposes only. Not medical advice.
       </p>
     </footer>
   );

@@ -79,7 +79,8 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
           <p
             style={{
               color: '#6B6560',
-              fontSize: '0.875rem',
+              fontSize: '0.9375rem',
+              lineHeight: 1.7,
               letterSpacing: '0.01em',
             }}
           >

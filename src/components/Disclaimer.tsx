@@ -46,8 +46,7 @@ export function Disclaimer({ variant = 'compact' }: DisclaimerProps) {
           />
         </svg>
         <span>
-          Informational only — not medical advice.{' '}
-          <span className="hidden sm:inline">Consult a qualified practitioner.</span>
+          For informational purposes only. Not medical advice.
         </span>
       </div>
     );

@@ -1,10 +1,11 @@
 /**
  * Classification badge component
  *
- * Displays one of 5 classification badges based on equipment type:
- * - Real Laser (sage green) - verified laser, established manufacturer
- * - Real Laser — Verify the Brand (amber/gold) - real laser tech, quality depends on brand
- * - Real Laser — Limited Use (muted amber) - real laser but not clinical grade
+ * Displays one of 6 classification badges based on equipment type:
+ * - Real Laser (sage green) - verified, established, purpose-built
+ * - Real Laser — Multi-Purpose (soft teal) - premium brand, not hair-removal specific
+ * - Real Laser — Verify the Brand (amber) - real laser tech, quality depends on machine
+ * - Real Laser — Home Device (muted amber) - real laser but consumer-grade
  * - Ask Your Clinic (muted rose) - could be laser or IPL
  * - Not a Laser (soft coral) - IPL or non-laser technology
  */
@@ -25,12 +26,17 @@ const colorConfig: Record<BadgeType, { backgroundColor: string; color: string; b
     color: '#5E8B7E',
     borderColor: 'rgba(94, 139, 126, 0.25)',
   },
+  'multi-purpose': {
+    backgroundColor: 'rgba(74, 158, 148, 0.12)',
+    color: '#4A9E94',
+    borderColor: 'rgba(74, 158, 148, 0.25)',
+  },
   'verify-brand': {
     backgroundColor: 'rgba(184, 150, 78, 0.12)',
     color: '#B8964E',
     borderColor: 'rgba(184, 150, 78, 0.25)',
   },
-  'limited-use': {
+  'home-device': {
     backgroundColor: 'rgba(196, 145, 62, 0.12)',
     color: '#C4913E',
     borderColor: 'rgba(196, 145, 62, 0.25)',
@@ -50,8 +56,9 @@ const colorConfig: Record<BadgeType, { backgroundColor: string; color: string; b
 /** Badge labels and icons for each type */
 const badgeContent: Record<BadgeType, { label: string; icon: 'check' | 'warning' | 'question' | 'x' }> = {
   'real-laser': { label: 'Real Laser', icon: 'check' },
-  'verify-brand': { label: 'Real Laser — Verify the Brand', icon: 'check' },
-  'limited-use': { label: 'Real Laser — Limited Use', icon: 'warning' },
+  'multi-purpose': { label: 'Real Laser · Multi-Purpose', icon: 'check' },
+  'verify-brand': { label: 'Real Laser · Verify the Brand', icon: 'check' },
+  'home-device': { label: 'Real Laser · Home Device', icon: 'check' },
   'ask-clinic': { label: 'Ask Your Clinic', icon: 'question' },
   'not-laser': { label: 'Not a Laser', icon: 'x' },
 };
@@ -110,28 +117,28 @@ export function ClassificationBadge({ badgeType, size = 'default' }: Classificat
   const content = badgeContent[badgeType];
 
   // Size-based styling
-  const sizeClasses =
-    size === 'small'
-      ? 'px-2 py-1 text-xs gap-1'
-      : 'px-3 py-1.5 text-sm gap-1.5 md:px-4 md:py-2 md:text-base';
+  const isSmall = size === 'small';
+  const sizeClasses = isSmall
+    ? 'px-1.5 py-0.5 gap-0.5'
+    : 'px-3 py-1.5 text-sm gap-1.5 md:px-4 md:py-2 md:text-base';
 
-  const iconSize = size === 'small' ? 'h-3 w-3 flex-shrink-0' : 'h-4 w-4 md:h-5 md:w-5 flex-shrink-0';
+  const iconSize = isSmall ? 'h-2.5 w-2.5 flex-shrink-0' : 'h-4 w-4 md:h-5 md:w-5 flex-shrink-0';
 
-  // Small badges allow text wrapping for longer labels
-  const smallBadgeStyle =
-    size === 'small'
-      ? { maxWidth: '6.5rem', textAlign: 'center' as const, lineHeight: 1.2 }
-      : {};
+  // Small badges use rounded corners; large badges are pills
+  const borderRadius = isSmall ? 'rounded' : 'rounded-full';
 
   return (
     <span
       role="status"
-      className={`inline-flex items-center flex-wrap justify-center rounded-full font-semibold ${sizeClasses}`}
+      className={`inline-flex items-center justify-center font-medium ${borderRadius} ${sizeClasses}`}
       style={{
         backgroundColor: colors.backgroundColor,
         color: colors.color,
         border: `1px solid ${colors.borderColor}`,
-        ...smallBadgeStyle,
+        fontSize: isSmall ? '0.625rem' : '0.8125rem',
+        lineHeight: isSmall ? 1.3 : undefined,
+        maxWidth: isSmall ? '5.5rem' : undefined,
+        textAlign: isSmall ? 'center' : undefined,
       }}
     >
       <BadgeIcon type={content.icon} className={iconSize} />

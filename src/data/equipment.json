@@ -763,6 +763,27 @@
     ]
   },
   {
+    "type": "technology-term",
+    "slug": "tri-wavelength",
+    "name": "Tri-Wavelength (755nm + 808nm + 1064nm)",
+    "technologyType": "wavelength",
+    "isRealLaser": true,
+    "classification": "verify-brand",
+    "whatItIs": "Tri-wavelength systems combine 755nm Alexandrite, 808nm Diode, and 1064nm Nd:YAG in a single device.",
+    "askYourClinic": "What brand is your tri-wavelength laser?",
+    "aliases": [
+      "tri wavelength laser",
+      "triple wavelength laser",
+      "triple wavelength",
+      "tri wavelength",
+      "3 wavelength laser",
+      "three wavelength laser",
+      "755 808 1064",
+      "755 810 1064",
+      "three wave laser"
+    ]
+  },
+  {
   "type": "technology-term",
   "slug": "ipl",
   "name": "IPL (Intense Pulsed Light)",

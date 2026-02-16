@@ -27,10 +27,11 @@ export function EquipmentCard({ equipment }: EquipmentCardProps) {
           </h4>
           {isMachine(equipment) && (
             <p
-              className="text-sm mt-0.5"
+              className="mt-0.5"
               style={{
                 color: '#6B6560',
-                fontSize: '0.75rem',
+                fontSize: '0.9375rem',
+                lineHeight: 1.7,
               }}
             >
               {equipment.brandTier === 'premium-clinical' && '🥇 '}

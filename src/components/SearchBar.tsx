@@ -259,7 +259,7 @@ export function SearchBar({ equipment }: SearchBarProps) {
           onChange={handleChange}
           onFocus={handleFocus}
           onKeyDown={handleKeyDown}
-          placeholder="Search by device name, brand, or technology..."
+          placeholder="Type the machine name your clinic uses..."
           style={{
             flex: 1,
             backgroundColor: 'transparent',

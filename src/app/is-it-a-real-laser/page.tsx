@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer';
 import equipmentData from '@/data/equipment.json';
 import type { EquipmentEntry } from '@/lib/equipment';
 import Link from 'next/link';
+import { ShareButtons } from '@/components/ShareButtons';
 
 const equipment = equipmentData as EquipmentEntry[];
 const machineCount = equipment.filter(e => e.type === 'machine').length;
@@ -92,7 +93,7 @@ export default function IsItARealLaserPage() {
                   style={{
                     backgroundColor: '#FFFFFF',
                     color: '#2D2D2D',
-                    fontSize: '0.8rem',
+                    fontSize: '0.9375rem',
                     padding: '0.4rem 0.9rem',
                     borderRadius: '9999px',
                     border: '1px solid #E8E4DF',
@@ -133,7 +134,7 @@ export default function IsItARealLaserPage() {
               <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
               <line x1="12" y1="17" x2="12.01" y2="17" />
             </svg>
-            <p style={{ color: '#6B6560', fontSize: '0.875rem' }}>
+            <p style={{ color: '#6B6560', fontSize: '0.9375rem', lineHeight: 1.7 }}>
               Not sure?{' '}
               <span style={{ color: '#2D2D2D' }}>
                 Ask your clinic: "What brand and model of laser do you use?"
@@ -143,15 +144,18 @@ export default function IsItARealLaserPage() {
 
           {/* IPL vs Laser Comparison Image */}
           <div style={{ marginTop: '1.5rem', display: 'flex', justifyContent: 'center' }}>
-            <img
-              src="/ipl-vs-laser.png"
-              alt="IPL vs Real Laser comparison"
-              style={{
-                width: '420px',
-                maxWidth: '90%',
-                height: 'auto',
-              }}
-            />
+            <Link href="/is-it-a-real-laser/ipl">
+              <img
+                src="/ipl-vs-laser.png"
+                alt="IPL vs Real Laser comparison"
+                style={{
+                  width: '420px',
+                  maxWidth: '90%',
+                  height: 'auto',
+                  cursor: 'pointer',
+                }}
+              />
+            </Link>
           </div>
 
           {/* Three Types of Hair Removal Laser */}
@@ -188,7 +192,7 @@ export default function IsItARealLaserPage() {
                 <Link href="/is-it-a-real-laser/755nm" style={{ color: '#5E8B7E', fontWeight: 600, fontSize: '0.9375rem', textDecoration: 'none' }} className="hover:underline">
                   755nm Alexandrite
                 </Link>
-                <p style={{ color: '#6B6560', fontSize: '0.8125rem', lineHeight: 1.6, marginTop: '0.5rem' }}>
+                <p style={{ color: '#6B6560', fontSize: '0.9375rem', lineHeight: 1.7, marginTop: '0.5rem' }}>
                   Most effective for lighter skin tones (Fitzpatrick I-IV). Found in machines like GentleLase and GentleMax Pro.
                 </p>
               </div>
@@ -205,7 +209,7 @@ export default function IsItARealLaserPage() {
                 <Link href="/is-it-a-real-laser/810nm" style={{ color: '#5E8B7E', fontWeight: 600, fontSize: '0.9375rem', textDecoration: 'none' }} className="hover:underline">
                   810nm Diode
                 </Link>
-                <p style={{ color: '#6B6560', fontSize: '0.8125rem', lineHeight: 1.6, marginTop: '0.5rem' }}>
+                <p style={{ color: '#6B6560', fontSize: '0.9375rem', lineHeight: 1.7, marginTop: '0.5rem' }}>
                   The most common type. Works across a range of skin tones. Found in machines like LightSheer and Soprano.
                 </p>
               </div>
@@ -222,7 +226,7 @@ export default function IsItARealLaserPage() {
                 <Link href="/is-it-a-real-laser/1064nm" style={{ color: '#5E8B7E', fontWeight: 600, fontSize: '0.9375rem', textDecoration: 'none' }} className="hover:underline">
                   1064nm Nd:YAG
                 </Link>
-                <p style={{ color: '#6B6560', fontSize: '0.8125rem', lineHeight: 1.6, marginTop: '0.5rem' }}>
+                <p style={{ color: '#6B6560', fontSize: '0.9375rem', lineHeight: 1.7, marginTop: '0.5rem' }}>
                   Safest for darker skin tones (Fitzpatrick V-VI). Found in machines like GentleYAG and Clarity II.
                 </p>
               </div>
@@ -231,8 +235,8 @@ export default function IsItARealLaserPage() {
               style={{
                 marginTop: '1rem',
                 color: '#6B6560',
-                fontSize: '0.8125rem',
-                lineHeight: 1.6,
+                fontSize: '0.9375rem',
+                lineHeight: 1.7,
                 textAlign: 'center',
               }}
             >
@@ -291,10 +295,10 @@ export default function IsItARealLaserPage() {
             <p
               style={{
                 color: '#6B6560',
-                fontSize: '0.8rem',
+                fontSize: '0.9375rem',
                 textAlign: 'center',
                 marginBottom: '0.75rem',
-                lineHeight: 1.5,
+                lineHeight: 1.7,
               }}
             >
               Despite how they&apos;re marketed, these technologies use Intense Pulsed Light, not laser:
@@ -323,9 +327,9 @@ export default function IsItARealLaserPage() {
                   style={{
                     backgroundColor: 'rgba(196, 107, 92, 0.12)',
                     color: '#C46B5C',
-                    fontSize: '0.75rem',
+                    fontSize: '0.9375rem',
                     fontWeight: 500,
-                    padding: '0.3rem 0.7rem',
+                    padding: '0.4rem 0.9rem',
                     borderRadius: '9999px',
                     textDecoration: 'none',
                     transition: 'all 0.2s',
@@ -352,7 +356,7 @@ export default function IsItARealLaserPage() {
                 href="/is-it-a-real-laser/ipl"
                 style={{
                   color: '#C46B5C',
-                  fontSize: '0.8rem',
+                  fontSize: '0.9375rem',
                   fontWeight: 500,
                   textDecoration: 'none',
                   display: 'inline-flex',
@@ -406,12 +410,12 @@ export default function IsItARealLaserPage() {
                 justifyContent: 'center',
               }}
             >
-              <Link href="/is-it-a-real-laser/equipment-costs">
+              <Link href="/is-it-a-real-laser/equipment-costs" style={{ display: 'block', width: '70%', margin: '0 auto' }}>
                 <img
                   src="/laser-hair-removal-alibaba-and-candela.png"
                   alt="Comparison of budget Alibaba laser machine vs premium Candela equipment"
                   style={{
-                    width: '70%',
+                    width: '100%',
                     height: 'auto',
                     display: 'block',
                     cursor: 'pointer',
@@ -424,7 +428,7 @@ export default function IsItARealLaserPage() {
                 href="/is-it-a-real-laser/equipment-costs"
                 style={{
                   color: '#5E8B7E',
-                  fontSize: '0.875rem',
+                  fontSize: '0.9375rem',
                   fontWeight: 500,
                   textDecoration: 'none',
                   display: 'inline-flex',
@@ -475,6 +479,34 @@ export default function IsItARealLaserPage() {
       >
         <div className="max-w-6xl mx-auto">
           <EquipmentIndex equipment={equipment} />
+        </div>
+      </section>
+
+      {/* Share CTA */}
+      <section className="px-4 sm:px-6 lg:px-8" style={{ paddingBottom: '3rem' }}>
+        <div
+          className="rounded-xl text-center mx-auto"
+          style={{
+            backgroundColor: 'rgba(94, 139, 126, 0.08)',
+            border: '1px solid rgba(94, 139, 126, 0.2)',
+            padding: '1.25rem 1.5rem',
+            maxWidth: '600px',
+          }}
+        >
+          <p
+            style={{
+              color: '#2D2D2D',
+              fontSize: '1rem',
+              fontWeight: 500,
+              lineHeight: 1.6,
+            }}
+          >
+            Own a clinic with premium equipment? Share this tool with your clients: it helps them understand why your investment matters.
+          </p>
+          <ShareButtons
+            url="https://laserhairremovalmap.com/is-it-a-real-laser"
+            title="Is It a Real Hair Removal Laser? - Equipment Checker"
+          />
         </div>
       </section>
 
