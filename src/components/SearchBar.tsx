@@ -262,7 +262,7 @@ export function SearchBar({ equipment }: SearchBarProps) {
           onChange={handleChange}
           onFocus={handleFocus}
           onKeyDown={handleKeyDown}
-          placeholder={isMobile ? "Machine name..." : "Type the machine name your clinic uses..."}
+          placeholder={isMobile ? "Type the machine name..." : "Type the machine name your clinic uses..."}
           className="peer flex-1 h-full bg-transparent text-[#2D2D2D] text-base md:text-lg placeholder:text-[#9A9590] pl-5 md:pl-6 pr-16 md:pr-36 border-none outline-none"
         />
 
