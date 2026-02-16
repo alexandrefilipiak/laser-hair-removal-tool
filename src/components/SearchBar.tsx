@@ -33,6 +33,7 @@ export function SearchBar({ equipment }: SearchBarProps) {
   const [query, setQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
+  const [isMobile, setIsMobile] = useState(false);
 
   // Refs
   const containerRef = useRef<HTMLDivElement>(null);
@@ -50,6 +51,14 @@ export function SearchBar({ equipment }: SearchBarProps) {
 
   // Get suggestions for empty state (used for keyboard navigation count)
   const suggestions = useNotFoundSuggestions(equipment, debouncedQuery);
+
+  // Detect mobile for shorter placeholder
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   // Reset active index when results or suggestions change
   useEffect(() => {
@@ -253,8 +262,8 @@ export function SearchBar({ equipment }: SearchBarProps) {
           onChange={handleChange}
           onFocus={handleFocus}
           onKeyDown={handleKeyDown}
-          placeholder="Type the machine name your clinic uses..."
-          className="peer flex-1 h-full bg-transparent text-[#2D2D2D] text-base md:text-lg placeholder:text-[#9A9590] pl-5 md:pl-6 pr-28 md:pr-36 border-none outline-none"
+          placeholder={isMobile ? "Machine name..." : "Type the machine name your clinic uses..."}
+          className="peer flex-1 h-full bg-transparent text-[#2D2D2D] text-base md:text-lg placeholder:text-[#9A9590] pl-5 md:pl-6 pr-16 md:pr-36 border-none outline-none"
         />
 
         {/* Search button */}
