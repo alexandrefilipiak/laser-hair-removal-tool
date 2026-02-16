@@ -1,8 +1,7 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  // Enable static export for production
-  output: 'export',
+  // Using default output for Vercel (supports API routes)
 };
 
 export default nextConfig;
