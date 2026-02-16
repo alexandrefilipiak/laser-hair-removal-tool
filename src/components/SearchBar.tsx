@@ -199,6 +199,28 @@ export function SearchBar({ equipment }: SearchBarProps) {
     }
   }
 
+  // Handle search button click
+  function handleSearchClick() {
+    if (activeIndex >= 0 && results.length > 0) {
+      // Navigate to the highlighted result
+      const slug = results[activeIndex].item.slug;
+      router.push(`/is-it-a-real-laser/${slug}`);
+      setIsOpen(false);
+      setQuery('');
+      setActiveIndex(-1);
+    } else if (results.length > 0) {
+      // Navigate to the first result
+      const slug = results[0].item.slug;
+      router.push(`/is-it-a-real-laser/${slug}`);
+      setIsOpen(false);
+      setQuery('');
+      setActiveIndex(-1);
+    } else {
+      // No results - focus the input
+      inputRef.current?.focus();
+    }
+  }
+
   const hasResults = results.length > 0;
   const showDropdown = isOpen && hasResults;
   const showEmptyState = isOpen && debouncedQuery.trim() && !hasResults;
@@ -260,6 +282,7 @@ export function SearchBar({ equipment }: SearchBarProps) {
           onFocus={handleFocus}
           onKeyDown={handleKeyDown}
           placeholder="Type the machine name your clinic uses..."
+          className="pr-24 md:pr-28"
           style={{
             flex: 1,
             backgroundColor: 'transparent',
@@ -270,6 +293,30 @@ export function SearchBar({ equipment }: SearchBarProps) {
             outline: 'none',
           }}
         />
+
+        {/* Search button */}
+        <button
+          type="button"
+          onClick={handleSearchClick}
+          aria-label="Search"
+          className="absolute right-1.5 top-1/2 -translate-y-1/2 h-9 md:h-10 px-3 md:px-5 rounded-full bg-[#5E8B7E] hover:bg-[#4A7566] active:bg-[#3D6356] text-white font-medium text-sm transition-colors duration-200 flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#5E8B7E]/50 focus:ring-offset-2"
+        >
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+          <span className="hidden md:inline">Search</span>
+        </button>
       </div>
 
       {/* Results dropdown */}
