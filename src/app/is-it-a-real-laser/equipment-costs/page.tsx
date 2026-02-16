@@ -704,29 +704,44 @@ export default function EquipmentCostsPage() {
           </p>
 
           {/* Leading Chinese Factory Screenshot */}
-          <figure style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
-            <a
-              href="/leading_chinese_factory.png"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl overflow-hidden transition-opacity hover:opacity-90"
+          <figure style={{ marginBottom: '1.5rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <a
+                href="/leading_chinese_factory.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl overflow-hidden transition-opacity hover:opacity-90"
+                style={{
+                  border: '1px solid #E8E4DF',
+                  width: '85%',
+                  display: 'block',
+                  cursor: 'zoom-in',
+                }}
+              >
+                <img
+                  src="/leading_chinese_factory.png"
+                  alt="Alibaba manufacturer profile showing factory size and production capacity"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    display: 'block',
+                  }}
+                />
+              </a>
+            </div>
+            {/* Mobile caption */}
+            <figcaption
+              className="md:hidden"
               style={{
-                border: '1px solid #E8E4DF',
-                width: '85%',
-                display: 'block',
-                cursor: 'zoom-in',
+                color: '#5A5550',
+                fontSize: '0.8125rem',
+                textAlign: 'center',
+                marginTop: '0.75rem',
+                lineHeight: 1.5,
               }}
             >
-              <img
-                src="/leading_chinese_factory.png"
-                alt="Alibaba manufacturer profile showing factory size and production capacity"
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                  display: 'block',
-                }}
-              />
-            </a>
+              This isn&apos;t a garage operation. 145 staff. 6 private labels. $2.3M in revenue. &quot;#4 leading factory for Aesthetic medicine&quot;
+            </figcaption>
           </figure>
 
           {/* Damning detail callout */}
