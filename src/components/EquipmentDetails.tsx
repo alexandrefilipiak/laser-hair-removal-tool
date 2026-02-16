@@ -32,16 +32,6 @@ function formatCoolingMethod(method: string | null): string {
 }
 
 /**
- * Split text into sentences for bullet list display
- */
-function splitIntoSentences(text: string): string[] {
-  return text
-    .split(/(?<=[.!?])\s+/)
-    .map(s => s.trim())
-    .filter(s => s.length > 0);
-}
-
-/**
  * Get laser class based on brand tier
  */
 function getLaserClass(brandTier: string): string {
@@ -389,13 +379,13 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
                 Typical Uses
               </h2>
               <ul style={{ color: '#6B6560', paddingLeft: '1.5rem', listStyleType: 'disc' }}>
-                {splitIntoSentences(richContent.typicalUses).map((sentence, index) => (
+                {richContent.typicalUses.map((use, index) => (
                   <li
                     key={index}
                     className="leading-relaxed"
                     style={{ marginBottom: '0.5rem', paddingLeft: '0.25rem' }}
                   >
-                    {sentence}
+                    {use}
                   </li>
                 ))}
               </ul>

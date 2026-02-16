@@ -1,14 +1,36 @@
 [
   {
+  "type": "machine",
+  "slug": "gentlemax-pro-plus",
+  "name": "GentleMax Pro Plus",
+  "manufacturer": "Candela",
+  "technologyType": "laser",
+  "wavelengths": ["755nm", "1064nm"],
+  "brandTier": "premium-clinical",
+  "skinTypes": {
+    "fitzpatrickRange": "I-VI",
+    "displayText": "All skin tones (dual wavelength system)"
+  },
+  "purposeBuilt": true,
+  "coolingMethod": "DCD",
+  "notes": "Latest generation GentleMax. Larger spot sizes (up to 26mm), higher energy, faster repetition rates than the GentleMax Pro.",
+  "aliases": ["gentle max pro plus", "gentlemaxproplus", "candela gentlemax pro plus", "gmpp"],
+  "family": "candela-gentlemax",
+  "deliveryMethod": null,
+  "richContent": {
+    "overview": "Candela's most powerful dual-wavelength system. Successor to the GentleMax Pro with larger spot sizes, higher energy output, and faster treatment speeds.",
+    "howItWorks": "Same dual-wavelength approach (755nm Alexandrite + 1064nm Nd:YAG) with DCD cooling. Spot sizes up to 26mm and higher energy levels allow faster, more effective treatments than the Pro.",
+    "typicalUses": ["All body areas and Fitzpatrick I-VI", "Clinics upgrading from GentleMax Pro for faster throughput"],
+    "keyFeatures": "Spot sizes up to 26mm (vs 24mm on the Pro). Higher energy output for more effective treatment of coarse or resistant hair. The most expensive purpose-built hair removal laser on the market."
+  }
+},
+  {
     "type": "machine",
     "slug": "gentlemax-pro",
     "name": "GentleMax Pro",
     "manufacturer": "Candela",
     "technologyType": "laser",
-    "wavelengths": [
-      "755nm",
-      "1064nm"
-    ],
+    "wavelengths": ["755nm", "1064nm"],
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
@@ -17,18 +39,14 @@
     "purposeBuilt": true,
     "coolingMethod": "DCD",
     "notes": "Dual-wavelength Alexandrite + Nd:YAG. Gold standard for versatility. Dynamic Cooling Device (DCD) provides cryogen spray before each pulse.",
-    "aliases": [
-      "gentle max pro",
-      "gentlemaxpro",
-      "candela gentlemax pro"
-    ],
+    "aliases": ["gentle max pro", "gentlemaxpro", "candela gentlemax pro"],
     "family": "candela-gentlemax",
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The GentleMax Pro is Candela's flagship dual-wavelength laser system, combining 755nm Alexandrite and 1064nm Nd:YAG wavelengths in a single platform. It represents the gold standard in clinical hair removal technology and is one of the most widely used professional laser systems worldwide.",
-      "howItWorks": "The device delivers concentrated light energy through either the Alexandrite or Nd:YAG laser depending on skin type. The 755nm wavelength targets melanin effectively in lighter skin, while the 1064nm penetrates deeper for darker skin tones. The patented Dynamic Cooling Device (DCD) sprays cryogen milliseconds before each pulse, protecting the epidermis while allowing the laser to reach hair follicles.",
-      "typicalUses": "Commonly used for permanent hair reduction on all body areas including face, underarms, bikini, legs, back, and chest. The dual wavelength capability makes it suitable for treating patients across the full Fitzpatrick skin type spectrum from I to VI.",
-      "keyFeatures": "Distinguished by its DCD cooling technology that significantly reduces discomfort during treatment. Features adjustable spot sizes up to 24mm for fast treatment of large areas. The dual wavelength system eliminates the need for separate devices when treating diverse patient populations."
+      "overview": "Candela's dual-wavelength system combining 755nm Alexandrite and 1064nm Nd:YAG. One of the most widely used professional hair removal lasers worldwide.",
+      "howItWorks": "The 755nm targets melanin effectively in lighter skin, while the 1064nm penetrates deeper for darker skin tones. The patented Dynamic Cooling Device (DCD) sprays cryogen milliseconds before each pulse, protecting the skin while the laser reaches hair follicles.",
+      "typicalUses": ["Permanent hair reduction on all body areas", "Full Fitzpatrick I-VI range with wavelength switching"],
+      "keyFeatures": "Adjustable spot sizes up to 24mm for fast treatment of large areas. The DCD cooling significantly reduces discomfort compared to contact cooling methods."
     }
   },
   {
@@ -37,10 +55,7 @@
     "name": "GentleMax",
     "manufacturer": "Candela",
     "technologyType": "laser",
-    "wavelengths": [
-      "755nm",
-      "1064nm"
-    ],
+    "wavelengths": ["755nm", "1064nm"],
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
@@ -49,17 +64,14 @@
     "purposeBuilt": true,
     "coolingMethod": "DCD",
     "notes": "Predecessor to GentleMax Pro. Dual-wavelength Alexandrite + Nd:YAG.",
-    "aliases": [
-      "gentle max",
-      "candela gentlemax"
-    ],
+    "aliases": ["gentle max", "candela gentlemax"],
     "family": "candela-gentlemax",
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The GentleMax was Candela's original dual-wavelength laser system that established the standard for versatile hair removal treatment. As the predecessor to the GentleMax Pro, it introduced the concept of combining Alexandrite and Nd:YAG wavelengths in one device.",
-      "howItWorks": "Utilizing both 755nm Alexandrite and 1064nm Nd:YAG laser technologies, the GentleMax delivers targeted energy to hair follicles. The system employs Candela's Dynamic Cooling Device technology, which releases a burst of cryogen spray to protect skin surface while the laser energy penetrates to the follicle.",
-      "typicalUses": "Designed for hair removal across all body areas and skin types. The ability to switch between wavelengths allows practitioners to treat lighter-skinned patients with Alexandrite and darker-skinned patients with Nd:YAG during the same session.",
-      "keyFeatures": "The GentleMax pioneered the dual-wavelength approach that became the industry standard. It includes the same DCD cooling system found in newer models and offers reliable performance that many clinics continue to use alongside newer equipment."
+      "overview": "Candela's original dual-wavelength system. Predecessor to the GentleMax Pro. Still widely used in clinics.",
+      "howItWorks": "Same dual-wavelength approach as the GentleMax Pro (755nm Alexandrite + 1064nm Nd:YAG) with DCD cryogen cooling. Practitioners switch wavelengths based on patient skin type.",
+      "typicalUses": ["Hair removal across all body areas and skin types", "Clinics often run it alongside newer equipment"],
+      "keyFeatures": "Pioneered the dual-wavelength approach that became the industry standard. Same DCD cooling as newer models."
     }
   },
   {
@@ -68,9 +80,7 @@
     "name": "GentleLase",
     "manufacturer": "Candela",
     "technologyType": "laser",
-    "wavelengths": [
-      "755nm"
-    ],
+    "wavelengths": ["755nm"],
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-IV",
@@ -79,17 +89,14 @@
     "purposeBuilt": true,
     "coolingMethod": "DCD",
     "notes": "755nm Alexandrite only. Excellent for lighter skin tones with dark hair.",
-    "aliases": [
-      "gentle lase",
-      "candela gentlelase"
-    ],
+    "aliases": ["gentle lase", "candela gentlelase"],
     "family": "candela-gentlelase",
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The GentleLase is Candela's dedicated 755nm Alexandrite laser, optimized specifically for hair removal on lighter skin types. It delivers exceptional results for patients with Fitzpatrick skin types I through IV who have dark hair.",
-      "howItWorks": "The 755nm Alexandrite wavelength is highly absorbed by melanin in hair follicles, making it extremely effective at disabling hair growth. The laser energy heats the follicle while the Dynamic Cooling Device protects surrounding skin with precisely timed cryogen spray delivered before each pulse.",
-      "typicalUses": "Ideal for treating patients with fair to medium skin tones and dark hair. Commonly used on face, underarms, bikini area, legs, and arms. The Alexandrite wavelength provides faster treatment times compared to other laser types due to its excellent melanin absorption.",
-      "keyFeatures": "The GentleLase offers the fastest hair removal treatments available for appropriate skin types due to the 755nm wavelength's superior melanin absorption. The DCD cooling system allows for higher fluence treatments while maintaining patient comfort and safety."
+      "overview": "Candela's dedicated 755nm Alexandrite laser, optimized for hair removal on lighter skin types (Fitzpatrick I-IV) with dark hair.",
+      "howItWorks": "The 755nm wavelength is highly absorbed by melanin, making it extremely effective at disabling hair follicles. DCD cryogen spray protects surrounding skin before each pulse.",
+      "typicalUses": ["Fair to medium skin with dark hair", "All body areas: face, underarms, bikini, legs, arms"],
+      "keyFeatures": "Fastest treatment times among laser types for appropriate skin tones due to superior melanin absorption at 755nm."
     }
   },
   {
@@ -98,9 +105,7 @@
     "name": "GentleLase Pro",
     "manufacturer": "Candela",
     "technologyType": "laser",
-    "wavelengths": [
-      "755nm"
-    ],
+    "wavelengths": ["755nm"],
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-IV",
@@ -109,18 +114,14 @@
     "purposeBuilt": true,
     "coolingMethod": "DCD",
     "notes": "Updated GentleLase with larger spot sizes and faster repetition rates.",
-    "aliases": [
-      "gentle lase pro",
-      "gentlelasepro",
-      "candela gentlelase pro"
-    ],
+    "aliases": ["gentle lase pro", "gentlelasepro", "candela gentlelase pro"],
     "family": "candela-gentlelase",
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The GentleLase Pro is an enhanced version of Candela's Alexandrite laser platform, featuring improved speed and larger treatment spot sizes. It maintains the excellent results of the original GentleLase while significantly reducing treatment times.",
-      "howItWorks": "Like its predecessor, the GentleLase Pro uses 755nm Alexandrite laser energy that targets melanin in hair follicles. The upgraded system delivers faster repetition rates, allowing more pulses per second. The DCD cooling technology continues to protect skin with cryogen spray synchronized to each laser pulse.",
-      "typicalUses": "Used for rapid hair removal on patients with lighter skin tones. The larger spot sizes make it particularly efficient for treating large body areas like full legs, back, and chest. Also effective for smaller areas requiring precision like upper lip and chin.",
-      "keyFeatures": "The Pro version features spot sizes up to 24mm, significantly larger than standard handpieces. Faster repetition rates mean full leg treatments can be completed in under 30 minutes. The system maintains Candela's reputation for reliability and consistent clinical outcomes."
+      "overview": "Enhanced version of Candela's Alexandrite laser with improved speed and larger spot sizes.",
+      "howItWorks": "Same 755nm Alexandrite technology as the GentleLase with faster repetition rates and DCD cooling.",
+      "typicalUses": ["Large body areas (full legs, back, chest) treated faster than original GentleLase", "Also effective for smaller precision areas"],
+      "keyFeatures": "Spot sizes up to 24mm. Full leg treatments in under 30 minutes."
     }
   },
   {
@@ -129,9 +130,7 @@
     "name": "GentleYAG",
     "manufacturer": "Candela",
     "technologyType": "laser",
-    "wavelengths": [
-      "1064nm"
-    ],
+    "wavelengths": ["1064nm"],
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
@@ -140,18 +139,14 @@
     "purposeBuilt": true,
     "coolingMethod": "DCD",
     "notes": "1064nm Nd:YAG only. Safe for darker skin tones where Alexandrite cannot be used.",
-    "aliases": [
-      "gentle yag",
-      "candela gentleyag",
-      "gentleyag pro"
-    ],
+    "aliases": ["gentle yag", "candela gentleyag", "gentleyag pro"],
     "family": null,
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The GentleYAG is Candela's dedicated 1064nm Nd:YAG laser system, specifically designed for hair removal on darker skin types where shorter wavelength lasers pose risks. It provides safe and effective treatment for Fitzpatrick skin types V and VI.",
-      "howItWorks": "The 1064nm wavelength penetrates deeper into the skin and is less absorbed by epidermal melanin compared to shorter wavelengths. This allows the laser energy to reach hair follicles without overheating the skin surface. The longer wavelength combined with DCD cooling makes treatment safe for patients with high melanin content in their skin.",
-      "typicalUses": "Essential for treating patients with darker skin tones who cannot safely use Alexandrite or diode lasers. Commonly used on all body areas including face, bikini, underarms, and legs. Also used for treating tanned patients when other wavelengths would be unsafe.",
-      "keyFeatures": "The GentleYAG fills a critical need in clinics serving diverse patient populations. The 1064nm wavelength's deeper penetration also makes it effective for treating coarser hair. DCD cooling enables comfortable treatments even at the higher fluences required for the Nd:YAG wavelength."
+      "overview": "Candela's dedicated 1064nm Nd:YAG laser, designed specifically for safe hair removal on darker skin types (Fitzpatrick V-VI).",
+      "howItWorks": "The 1064nm wavelength penetrates deeper and is less absorbed by epidermal melanin, allowing it to reach follicles without overheating darker skin. DCD cooling adds an extra layer of protection.",
+      "typicalUses": ["Darker skin tones that cannot safely use Alexandrite or diode lasers", "Also used on tanned patients"],
+      "keyFeatures": "Fills a critical need for clinics serving diverse populations. Deeper penetration also effective for coarser hair."
     }
   },
   {
@@ -160,10 +155,7 @@
     "name": "Nordlys",
     "manufacturer": "Candela",
     "technologyType": "laser",
-    "wavelengths": [
-      "755nm",
-      "1064nm"
-    ],
+    "wavelengths": ["755nm", "1064nm"],
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
@@ -172,17 +164,14 @@
     "purposeBuilt": false,
     "coolingMethod": "contact cooling",
     "notes": "Multi-application platform (formerly Ellipse). Hair removal is one of many applications. Not purpose-built for hair removal.",
-    "aliases": [
-      "ellipse nordlys",
-      "candela nordlys"
-    ],
+    "aliases": ["ellipse nordlys", "candela nordlys"],
     "family": null,
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The Nordlys is Candela's multi-application aesthetic platform, formerly known as the Ellipse system. While capable of hair removal, it is designed as a versatile device for multiple skin treatments including vascular lesions, pigmentation, and skin rejuvenation.",
-      "howItWorks": "The Nordlys platform supports multiple handpiece attachments for different applications. For hair removal, it uses either Alexandrite or Nd:YAG laser energy depending on the handpiece selected. The system employs contact cooling rather than the DCD cryogen system found in dedicated Gentle series devices.",
-      "typicalUses": "Used in clinics that require a single device for multiple aesthetic treatments. Hair removal is one of many available applications alongside treatment of rosacea, sun damage, age spots, and skin tightening. Most commonly found in medical spas offering diverse treatment menus.",
-      "keyFeatures": "The main advantage of the Nordlys is its versatility across multiple treatment modalities. However, it is not purpose-built for hair removal, meaning dedicated hair removal devices may offer superior results for that specific application. Contact cooling differs from the DCD system in dedicated lasers."
+      "overview": "Candela's multi-application aesthetic platform (formerly Ellipse). Hair removal is one of many capabilities, not its primary focus.",
+      "howItWorks": "Supports multiple handpiece attachments. For hair removal, it uses Alexandrite or Nd:YAG depending on the handpiece selected. Uses contact cooling rather than the DCD system found in the Gentle series.",
+      "typicalUses": ["Clinics offering diverse treatment menus (rosacea, sun damage, skin tightening) alongside hair removal"],
+      "keyFeatures": "Versatile across many treatments, but dedicated hair removal devices like the Gentle series may deliver better results for that specific application."
     }
   },
   {
@@ -191,9 +180,7 @@
     "name": "Vectus",
     "manufacturer": "Cynosure",
     "technologyType": "laser",
-    "wavelengths": [
-      "810nm"
-    ],
+    "wavelengths": ["810nm"],
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-V",
@@ -202,16 +189,14 @@
     "purposeBuilt": true,
     "coolingMethod": "contact cooling",
     "notes": "810nm diode laser with Skintel melanin reader for personalized settings. Large spot size for fast treatment.",
-    "aliases": [
-      "cynosure vectus"
-    ],
+    "aliases": ["cynosure vectus"],
     "family": null,
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The Vectus is Cynosure's premium 810nm diode laser designed specifically for high-volume hair removal. It features the largest spot size available in a diode laser system, enabling extremely fast treatment of large body areas.",
-      "howItWorks": "The 810nm diode wavelength provides an optimal balance between melanin absorption and tissue penetration. The Vectus delivers laser energy through a large rectangular spot size while integrated contact cooling protects the skin surface. The Skintel melanin reader measures patient skin type in real-time to recommend appropriate settings.",
-      "typicalUses": "Designed for fast treatment of large body areas including full back, chest, and legs. The large spot size makes the Vectus particularly popular in busy clinics where treatment speed directly impacts patient throughput. Effective for Fitzpatrick skin types I through V.",
-      "keyFeatures": "The Skintel melanin reader is a unique feature that objectively measures skin melanin content rather than relying on visual assessment. The large spot size significantly reduces treatment time compared to standard diode lasers. Advanced sapphire contact cooling maintains patient comfort during high-fluence treatments."
+      "overview": "Cynosure's premium 810nm diode laser with the largest spot size available in a diode system. Built for high-volume clinics.",
+      "howItWorks": "The Skintel melanin reader measures patient skin type objectively to recommend settings, rather than relying on visual assessment. Sapphire contact cooling protects the skin.",
+      "typicalUses": ["Fast treatment of large body areas (back, chest, legs)", "High-volume practices where speed matters"],
+      "keyFeatures": "Skintel melanin reader removes guesswork from parameter selection. Large spot size significantly reduces treatment time."
     }
   },
   {
@@ -220,10 +205,7 @@
     "name": "Elite+",
     "manufacturer": "Cynosure",
     "technologyType": "laser",
-    "wavelengths": [
-      "755nm",
-      "1064nm"
-    ],
+    "wavelengths": ["755nm", "1064nm"],
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
@@ -232,18 +214,14 @@
     "purposeBuilt": true,
     "coolingMethod": "contact cooling",
     "notes": "Dual-wavelength Alexandrite + Nd:YAG. Predecessor to Elite iQ.",
-    "aliases": [
-      "elite plus",
-      "cynosure elite+",
-      "cynosure elite plus"
-    ],
+    "aliases": ["elite plus", "cynosure elite+", "cynosure elite plus"],
     "family": "cynosure-elite",
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The Elite+ is Cynosure's dual-wavelength laser platform combining 755nm Alexandrite and 1064nm Nd:YAG in one system. It provides flexibility to treat all skin types and serves as the predecessor to the newer Elite iQ system.",
-      "howItWorks": "The system allows practitioners to select either the 755nm Alexandrite for lighter skin types or the 1064nm Nd:YAG for darker skin types. Both wavelengths can be used during the same treatment session for patients with mixed skin characteristics. Contact cooling through a sapphire window protects the epidermis during treatment.",
-      "typicalUses": "Suitable for hair removal across all body areas and all Fitzpatrick skin types. The dual wavelength capability makes it ideal for clinics with diverse patient populations. Also used for vascular lesion treatment and skin rejuvenation applications.",
-      "keyFeatures": "The Elite+ offers Cynosure's proven dual-wavelength technology at a lower price point than the Elite iQ. The system provides reliable performance and consistent results. Many clinics continue to operate Elite+ systems alongside newer equipment due to their track record."
+      "overview": "Cynosure's dual-wavelength system (755nm Alexandrite + 1064nm Nd:YAG). Predecessor to the Elite iQ.",
+      "howItWorks": "Practitioners select wavelength based on skin type. Both can be used in the same session. Sapphire contact cooling protects the epidermis.",
+      "typicalUses": ["All body areas and Fitzpatrick I-VI", "Clinics with diverse patient populations"],
+      "keyFeatures": "Proven dual-wavelength technology. Many clinics still run Elite+ systems alongside newer equipment due to their reliability."
     }
   },
   {
@@ -252,10 +230,7 @@
     "name": "Elite iQ",
     "manufacturer": "Cynosure",
     "technologyType": "laser",
-    "wavelengths": [
-      "755nm",
-      "1064nm"
-    ],
+    "wavelengths": ["755nm", "1064nm"],
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
@@ -264,17 +239,14 @@
     "purposeBuilt": true,
     "coolingMethod": "contact cooling",
     "notes": "Latest generation dual-wavelength laser from Cynosure. Skintel melanin reader for customized settings.",
-    "aliases": [
-      "eliteiq",
-      "cynosure elite iq"
-    ],
+    "aliases": ["eliteiq", "cynosure elite iq"],
     "family": "cynosure-elite",
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The Elite iQ is Cynosure's latest generation dual-wavelength laser system, representing their most advanced hair removal platform. It combines intelligent features with proven Alexandrite and Nd:YAG wavelengths for optimized treatment across all skin types.",
-      "howItWorks": "The system integrates the Skintel melanin reader to objectively measure skin type and recommend treatment parameters. Both 755nm Alexandrite and 1064nm Nd:YAG wavelengths are available, with intelligent software guiding wavelength selection based on Skintel readings. Enhanced contact cooling maintains patient comfort at higher fluences.",
-      "typicalUses": "Designed for versatile hair removal across all body areas and skin types. The intelligent features make it particularly useful for training new practitioners and ensuring consistent treatments. Commonly found in high-end dermatology practices and medical spas.",
-      "keyFeatures": "The Skintel integration represents a significant advancement in personalized treatment settings. The Elite iQ includes enhanced user interface and treatment guidance compared to the Elite+. Larger spot sizes and faster repetition rates reduce treatment times while maintaining efficacy."
+      "overview": "Cynosure's latest dual-wavelength system with Skintel melanin reader for objective skin type measurement.",
+      "howItWorks": "Skintel reads skin melanin content and recommends wavelength and parameters. Both 755nm Alexandrite and 1064nm Nd:YAG available. Enhanced contact cooling.",
+      "typicalUses": ["All body areas and skin types", "Useful for training new practitioners. Skintel guides parameter selection"],
+      "keyFeatures": "Skintel integration removes guesswork. Larger spot sizes and faster repetition rates than the Elite+."
     }
   },
   {
@@ -283,9 +255,7 @@
     "name": "Icon",
     "manufacturer": "Cynosure",
     "technologyType": "laser",
-    "wavelengths": [
-      "1064nm"
-    ],
+    "wavelengths": ["1064nm"],
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
@@ -294,16 +264,14 @@
     "purposeBuilt": false,
     "coolingMethod": "contact cooling",
     "notes": "Multi-application aesthetic platform. Hair removal is one of many treatments available. Not purpose-built for hair removal.",
-    "aliases": [
-      "cynosure icon"
-    ],
+    "aliases": ["cynosure icon"],
     "family": null,
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The Icon is Cynosure's multi-application aesthetic platform designed for practices requiring diverse treatment capabilities. While it includes hair removal functionality, it is primarily positioned as a versatile system for multiple skin treatments.",
-      "howItWorks": "The Icon uses 1064nm Nd:YAG laser energy for hair removal applications. The platform supports multiple handpieces for different aesthetic treatments including photofacials, scar treatment, and skin resurfacing. Contact cooling protects the skin surface during laser delivery.",
-      "typicalUses": "Found in practices offering comprehensive aesthetic services beyond hair removal. Hair removal on the Icon is typically performed on patients also receiving other treatments. Most commonly used for full aesthetic menus including wrinkle reduction, pigmentation treatment, and vascular lesions.",
-      "keyFeatures": "The Icon's strength is its versatility across multiple treatment modalities. However, as a multi-application device, it may not match the hair removal efficiency of purpose-built systems. The 1064nm wavelength provides safe treatment for darker skin types but may require more sessions than dedicated hair removal lasers."
+      "overview": "Cynosure's multi-application platform. Hair removal is one of many capabilities, not its primary purpose.",
+      "howItWorks": "Uses 1064nm Nd:YAG for hair removal. Supports multiple handpieces for other treatments (photofacials, scar treatment, skin resurfacing). Contact cooling protects skin.",
+      "typicalUses": ["Practices offering comprehensive aesthetic services beyond just hair removal"],
+      "keyFeatures": "Versatile platform, but may not match dedicated hair removal systems for efficiency. Safe for darker skin types via the 1064nm wavelength."
     }
   },
   {
@@ -312,9 +280,7 @@
     "name": "LightSheer",
     "manufacturer": "Lumenis",
     "technologyType": "laser",
-    "wavelengths": [
-      "810nm"
-    ],
+    "wavelengths": ["810nm"],
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-V",
@@ -323,17 +289,14 @@
     "purposeBuilt": true,
     "coolingMethod": "contact cooling",
     "notes": "Original 810nm diode laser. Industry standard for diode technology.",
-    "aliases": [
-      "light sheer",
-      "lumenis lightsheer"
-    ],
+    "aliases": ["light sheer", "lumenis lightsheer"],
     "family": "lumenis-lightsheer",
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The LightSheer is Lumenis's foundational 810nm diode laser that established the standard for diode-based hair removal. It represents proven technology that has been refined over decades of clinical use worldwide.",
-      "howItWorks": "The 810nm diode wavelength targets melanin in hair follicles while being absorbed less by epidermal melanin than shorter wavelengths. The LightSheer delivers energy through contact cooling handpieces that protect the skin surface. Pulse duration and fluence can be adjusted for different hair types and skin tones.",
-      "typicalUses": "Effective for hair removal on Fitzpatrick skin types I through V. Commonly used for all body areas including face, bikini, underarms, legs, and back. The original LightSheer established clinical protocols that remain standard practice for diode laser treatment.",
-      "keyFeatures": "The LightSheer introduced the concept of high-powered diode technology for permanent hair reduction. Its proven reliability makes it a workhorse in many established practices. The system provides consistent results with a well-documented safety profile developed over years of clinical use."
+      "overview": "Lumenis's original 810nm diode laser that established the standard for diode hair removal. Proven over decades of clinical use.",
+      "howItWorks": "810nm wavelength targets melanin in follicles while contact cooling protects the skin. Adjustable pulse duration and fluence for different hair types and skin tones.",
+      "typicalUses": ["All body areas for Fitzpatrick I-V", "The workhorse of many established practices"],
+      "keyFeatures": "One of the longest clinical track records of any hair removal laser. Well-documented safety profile."
     }
   },
   {
@@ -342,9 +305,7 @@
     "name": "LightSheer Duet",
     "manufacturer": "Lumenis",
     "technologyType": "laser",
-    "wavelengths": [
-      "810nm"
-    ],
+    "wavelengths": ["810nm"],
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-V",
@@ -353,18 +314,14 @@
     "purposeBuilt": true,
     "coolingMethod": "contact cooling",
     "notes": "Features vacuum-assisted high-speed handpiece for large areas and standard handpiece for precision work.",
-    "aliases": [
-      "light sheer duet",
-      "lumenis lightsheer duet",
-      "lightsheerduet"
-    ],
+    "aliases": ["light sheer duet", "lumenis lightsheer duet", "lightsheerduet"],
     "family": "lumenis-lightsheer",
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The LightSheer Duet is Lumenis's innovative dual-handpiece diode laser system featuring both high-speed and precision treatment capabilities. It introduced vacuum-assisted technology that revolutionized treatment speed for large body areas.",
-      "howItWorks": "The Duet features two handpieces: a large vacuum-assisted handpiece (HS) for rapid treatment of large areas and a standard handpiece (ET) for smaller areas. The vacuum technology draws skin into the treatment window, bringing hair follicles closer to the laser source while stretching blood vessels away. This allows effective treatment at lower fluences with reduced discomfort.",
-      "typicalUses": "The HS handpiece is used for rapid treatment of backs, legs, and chests where speed is essential. The ET handpiece handles detailed work on face, bikini lines, and underarms. This combination makes the Duet ideal for high-volume practices treating diverse body areas.",
-      "keyFeatures": "The vacuum-assisted handpiece can treat a full back in under 15 minutes. The lower fluence requirements mean treatments are more comfortable without compromising efficacy. The dual handpiece system provides flexibility to handle any treatment scenario in a single device."
+      "overview": "Lumenis's dual-handpiece diode laser featuring vacuum-assisted technology for dramatically faster treatments.",
+      "howItWorks": "Two handpieces: a large vacuum-assisted one (HS) for rapid coverage and a standard one (ET) for precision. The vacuum draws skin into the treatment window, bringing follicles closer to the laser and allowing effective treatment at lower, and less painful, fluences.",
+      "typicalUses": ["HS handpiece: backs, legs, chests in under 15 minutes", "ET handpiece: face, bikini, underarms"],
+      "keyFeatures": "Vacuum-assisted technology means faster treatments with less pain. No compromise on efficacy."
     }
   },
   {
@@ -373,9 +330,7 @@
     "name": "LightSheer Desire",
     "manufacturer": "Lumenis",
     "technologyType": "laser",
-    "wavelengths": [
-      "810nm"
-    ],
+    "wavelengths": ["810nm"],
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-V",
@@ -384,17 +339,14 @@
     "purposeBuilt": true,
     "coolingMethod": "contact cooling",
     "notes": "Enhanced version with improved ergonomics and treatment speed.",
-    "aliases": [
-      "light sheer desire",
-      "lumenis lightsheer desire"
-    ],
+    "aliases": ["light sheer desire", "lumenis lightsheer desire"],
     "family": "lumenis-lightsheer",
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The LightSheer Desire represents an enhanced version of Lumenis's diode laser platform, building on the success of the Duet with improved ergonomics and faster treatment capabilities. It maintains the proven dual-handpiece approach while adding user experience improvements.",
-      "howItWorks": "The Desire uses the same 810nm diode technology and vacuum-assisted handpiece design as the Duet. Improvements focus on handpiece ergonomics, making extended treatment sessions more comfortable for practitioners. Enhanced cooling systems maintain patient comfort during rapid treatment delivery.",
-      "typicalUses": "Used for the same applications as the Duet: rapid treatment of large areas with the HS handpiece and precision work with the ET handpiece. The improved ergonomics make it particularly suitable for busy practices performing multiple back-to-back treatments.",
-      "keyFeatures": "The Desire offers improved handpiece design that reduces practitioner fatigue during long treatment days. Enhanced user interface streamlines treatment setup. The system maintains the clinical efficacy of the Duet while improving the treatment experience for both practitioners and patients."
+      "overview": "Enhanced version of the LightSheer Duet with improved ergonomics for practitioners.",
+      "howItWorks": "Same 810nm diode and vacuum-assisted dual-handpiece system as the Duet. Improvements focus on handpiece design and cooling.",
+      "typicalUses": ["Same as LightSheer Duet: large areas and precision work", "Preferred in busy practices doing back-to-back treatments"],
+      "keyFeatures": "Reduced practitioner fatigue during long treatment days. Same clinical efficacy as the Duet."
     }
   },
   {
@@ -403,9 +355,7 @@
     "name": "LightSheer Quattro",
     "manufacturer": "Lumenis",
     "technologyType": "laser",
-    "wavelengths": [
-      "810nm"
-    ],
+    "wavelengths": ["810nm"],
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-V",
@@ -414,17 +364,14 @@
     "purposeBuilt": true,
     "coolingMethod": "contact cooling",
     "notes": "Latest in LightSheer family with four handpiece options for maximum versatility.",
-    "aliases": [
-      "light sheer quattro",
-      "lumenis lightsheer quattro"
-    ],
+    "aliases": ["light sheer quattro", "lumenis lightsheer quattro"],
     "family": "lumenis-lightsheer",
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The LightSheer Quattro is Lumenis's most advanced diode laser platform, offering four handpiece options for maximum treatment versatility. It represents the culmination of decades of diode laser development from the company that pioneered the technology.",
-      "howItWorks": "The Quattro maintains the proven 810nm diode wavelength with four distinct handpieces: extra-large vacuum-assisted for maximum speed, large vacuum-assisted for standard large areas, medium for versatile use, and small for precision work. Each handpiece is optimized for specific treatment scenarios with appropriate spot sizes and contact cooling.",
-      "typicalUses": "The extra-large handpiece handles full back or full leg treatments in record time. Medium and small handpieces provide precision for facial hair, bikini lines, and touch-up treatments. This versatility makes the Quattro suitable for any hair removal application.",
-      "keyFeatures": "Four handpiece options provide unmatched flexibility in a single device. The extra-large handpiece offers the fastest treatment speeds available in any diode laser system. Advanced software helps practitioners select optimal handpieces and settings for each treatment area."
+      "overview": "Lumenis's most advanced diode laser with four handpiece options for maximum versatility.",
+      "howItWorks": "Same proven 810nm diode with four handpieces: extra-large vacuum-assisted, large vacuum-assisted, medium, and small precision. Each optimized for specific treatment areas.",
+      "typicalUses": ["Extra-large: full back/legs at record speed", "Small: facial hair and touch-ups"],
+      "keyFeatures": "Four handpiece options cover any treatment scenario in a single device. Fastest treatment speeds available in any diode laser."
     }
   },
   {
@@ -433,10 +380,7 @@
     "name": "Splendor X",
     "manufacturer": "Lumenis",
     "technologyType": "laser",
-    "wavelengths": [
-      "755nm",
-      "1064nm"
-    ],
+    "wavelengths": ["755nm", "1064nm"],
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
@@ -445,17 +389,14 @@
     "purposeBuilt": true,
     "coolingMethod": "contact cooling",
     "notes": "Dual-wavelength Alexandrite + Nd:YAG with square spot shape for even coverage. Primarily designed for hair removal with additional capabilities.",
-    "aliases": [
-      "splendorx",
-      "lumenis splendor x"
-    ],
+    "aliases": ["splendorx", "lumenis splendor x"],
     "family": null,
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The Splendor X is Lumenis's dual-wavelength laser system featuring an innovative square spot shape for more uniform treatment coverage. It combines 755nm Alexandrite and 1064nm Nd:YAG wavelengths with advanced beam delivery technology.",
-      "howItWorks": "Unlike traditional round spots that leave gaps or overlap at the edges, the Splendor X uses a square beam shape for perfectly uniform coverage when treating in grid patterns. Both wavelengths can be blended simultaneously or used independently. The system includes contact cooling to protect skin during treatment.",
-      "typicalUses": "Designed for efficient hair removal across all skin types. The square spot shape is particularly advantageous for treating large, flat areas like backs and legs where uniform coverage is essential. Also capable of skin rejuvenation treatments using the same wavelengths.",
-      "keyFeatures": "The square spot shape eliminates the overlap and gaps inherent in round spot patterns, reducing treatment time while ensuring even coverage. The ability to blend both wavelengths simultaneously allows for customized treatment of patients with intermediate skin types or varied skin characteristics."
+      "overview": "Lumenis's dual-wavelength system (755nm + 1064nm) with an innovative square spot shape for uniform coverage.",
+      "howItWorks": "Unlike round spots that leave gaps or overlap, the square beam provides perfectly uniform coverage in grid patterns. Both wavelengths can be blended simultaneously or used independently. Contact cooling protects skin.",
+      "typicalUses": ["Large flat areas (backs, legs) where even coverage matters most", "All skin types with wavelength blending for intermediate tones"],
+      "keyFeatures": "Square spot eliminates overlap and gaps, reducing treatment time while ensuring even results. Wavelength blending is unique to this platform."
     }
   },
   {
@@ -464,9 +405,7 @@
     "name": "Soprano ICE Platinum",
     "manufacturer": "Alma",
     "technologyType": "laser",
-    "wavelengths": [
-      "810nm"
-    ],
+    "wavelengths": ["810nm"],
     "brandTier": "standard-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
@@ -475,19 +414,14 @@
     "purposeBuilt": true,
     "coolingMethod": "contact cooling",
     "notes": "810nm diode with SHR (Super Hair Removal) delivery method. Gradual heating approach for reduced discomfort.",
-    "aliases": [
-      "soprano ice",
-      "soprano platinum",
-      "alma soprano ice platinum",
-      "soprano"
-    ],
+    "aliases": ["soprano ice", "soprano platinum", "alma soprano ice platinum", "soprano"],
     "family": "alma-soprano",
     "deliveryMethod": "shr",
     "richContent": {
-      "overview": "The Soprano ICE Platinum is Alma Lasers' flagship hair removal system featuring SHR (Super Hair Removal) delivery technology. It uses an 810nm diode laser with a unique gradual heating approach that significantly reduces treatment discomfort compared to traditional methods.",
-      "howItWorks": "Instead of delivering high-energy single pulses, the Soprano ICE uses rapid, low-fluence pulses that gradually heat the hair follicle to the target temperature. The ICE cooling technology simultaneously cools the skin surface, making treatments virtually painless. This approach allows safe treatment across all skin types including tanned skin.",
-      "typicalUses": "Popular for treating patients who have found traditional laser hair removal too uncomfortable. The SHR technology enables treatment of all skin types including darker skin tones that cannot be safely treated with high-fluence systems. Effective for all body areas from face to full body.",
-      "keyFeatures": "The SHR delivery method represents a fundamentally different approach to laser hair removal. The continuous motion technique means no overlapping pulses or missed spots. The ICE cooling system maintains skin comfort throughout treatment, making it popular with patients who previously avoided laser treatment due to pain concerns."
+      "overview": "Alma's flagship hair removal laser using SHR (Super Hair Removal), a gradual heating approach that makes treatments virtually painless.",
+      "howItWorks": "Instead of high-energy single pulses, SHR delivers rapid low-fluence pulses that gradually heat the follicle. ICE cooling keeps the skin comfortable throughout. This allows safe treatment across all skin types, including tanned skin.",
+      "typicalUses": ["Patients who found traditional laser too painful", "All skin types including darker tones", "All body areas"],
+      "keyFeatures": "The SHR continuous motion technique means no overlapping pulses or missed spots. Pain levels significantly lower than traditional pulsed delivery."
     }
   },
   {
@@ -496,11 +430,7 @@
     "name": "Soprano Titanium",
     "manufacturer": "Alma",
     "technologyType": "laser",
-    "wavelengths": [
-      "755nm",
-      "810nm",
-      "1064nm"
-    ],
+    "wavelengths": ["755nm", "810nm", "1064nm"],
     "brandTier": "standard-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
@@ -509,16 +439,14 @@
     "purposeBuilt": true,
     "coolingMethod": "contact cooling",
     "notes": "Tri-wavelength laser combining Alexandrite, diode, and Nd:YAG. SHR delivery method.",
-    "aliases": [
-      "alma soprano titanium"
-    ],
+    "aliases": ["alma soprano titanium"],
     "family": "alma-soprano",
     "deliveryMethod": "shr",
     "richContent": {
-      "overview": "The Soprano Titanium is Alma Lasers' most advanced hair removal platform, combining three wavelengths (755nm Alexandrite, 810nm Diode, and 1064nm Nd:YAG) with the proven SHR delivery method. This tri-wavelength approach allows simultaneous targeting of different hair depths.",
-      "howItWorks": "The Titanium delivers all three wavelengths simultaneously through a single handpiece. The 755nm targets superficial hair structures, the 810nm reaches mid-depth follicles, and the 1064nm penetrates deepest. Combined with SHR's gradual heating approach and ICE cooling, this provides comprehensive hair follicle destruction at all depths while maintaining skin safety.",
-      "typicalUses": "Effective for all skin types and hair colors (excluding white/gray hair which lacks melanin). The tri-wavelength approach is particularly useful for treating patients with mixed hair characteristics or varying skin tones across body areas. Suitable for face, body, and all treatment areas.",
-      "keyFeatures": "The simultaneous tri-wavelength delivery is unique to the Soprano Titanium. This approach can treat a wider range of hair types in fewer sessions compared to single-wavelength systems. The combination of all three wavelengths with SHR technology provides maximum versatility in a single device."
+      "overview": "Alma's most advanced platform combining three wavelengths (755nm + 810nm + 1064nm) with SHR delivery in a single handpiece.",
+      "howItWorks": "Delivers all three wavelengths simultaneously: 755nm targets superficial hair, 810nm reaches mid-depth, 1064nm penetrates deepest. Combined with SHR gradual heating and ICE cooling.",
+      "typicalUses": ["All skin types and hair types (excluding white/gray)", "Patients with mixed hair characteristics or varying skin tones across body areas"],
+      "keyFeatures": "Simultaneous tri-wavelength delivery is unique to this platform. Treats a wider range of hair types in fewer sessions than single-wavelength systems."
     }
   },
   {
@@ -527,10 +455,7 @@
     "name": "Harmony XL Pro",
     "manufacturer": "Alma",
     "technologyType": "laser",
-    "wavelengths": [
-      "810nm",
-      "1064nm"
-    ],
+    "wavelengths": ["810nm", "1064nm"],
     "brandTier": "standard-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
@@ -539,18 +464,14 @@
     "purposeBuilt": false,
     "coolingMethod": "contact cooling",
     "notes": "Multi-application platform with hair removal as one of many uses. Effectiveness depends on which handpiece attachment is used. Not purpose-built for hair removal.",
-    "aliases": [
-      "harmony xl",
-      "alma harmony xl pro",
-      "alma harmony"
-    ],
+    "aliases": ["harmony xl", "alma harmony xl pro", "alma harmony"],
     "family": null,
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The Harmony XL Pro is Alma Lasers' multi-application aesthetic platform designed for clinics requiring diverse treatment capabilities. While it offers hair removal functionality, it is primarily a versatile system supporting over 15 different aesthetic applications.",
-      "howItWorks": "The platform accepts multiple handpiece modules for different treatments. For hair removal, it can use either 810nm diode or 1064nm Nd:YAG laser energy depending on the installed handpiece. Contact cooling protects the skin during treatment. Treatment parameters vary based on which module is in use.",
-      "typicalUses": "Found in aesthetic practices offering comprehensive treatment menus including skin rejuvenation, acne treatment, pigmentation correction, and vascular lesion treatment alongside hair removal. Most commonly used when hair removal is part of a broader treatment plan rather than the primary service.",
-      "keyFeatures": "The Harmony XL Pro's strength is its versatility, supporting more applications than any other single platform. However, as a multi-application device, it may not match dedicated hair removal systems for that specific application. Clinics must invest in appropriate hair removal handpieces separately from the base platform."
+      "overview": "Alma's multi-application platform supporting 15+ aesthetic treatments. Hair removal is available but not its primary focus.",
+      "howItWorks": "Uses interchangeable handpiece modules. For hair removal, either 810nm diode or 1064nm Nd:YAG depending on the installed handpiece. Contact cooling protects skin.",
+      "typicalUses": ["Practices offering comprehensive aesthetics (skin rejuvenation, acne, pigmentation) alongside hair removal"],
+      "keyFeatures": "Maximum versatility across treatments, but dedicated systems like the Soprano series will outperform it for hair removal specifically."
     }
   },
   {
@@ -559,10 +480,7 @@
     "name": "Clarity II",
     "manufacturer": "Lutronic",
     "technologyType": "laser",
-    "wavelengths": [
-      "755nm",
-      "1064nm"
-    ],
+    "wavelengths": ["755nm", "1064nm"],
     "brandTier": "standard-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
@@ -571,18 +489,14 @@
     "purposeBuilt": true,
     "coolingMethod": "air cooling",
     "notes": "Dual-wavelength Alexandrite + Nd:YAG with IntelliTrak technology for consistent coverage.",
-    "aliases": [
-      "clarity 2",
-      "lutronic clarity ii",
-      "lutronic clarity 2"
-    ],
+    "aliases": ["clarity 2", "lutronic clarity ii", "lutronic clarity 2"],
     "family": null,
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The Clarity II is Lutronic's dual-wavelength laser system combining 755nm Alexandrite and 1064nm Nd:YAG with innovative IntelliTrak guidance technology. It represents a modern approach to ensuring consistent treatment coverage and outcomes.",
-      "howItWorks": "The system delivers either Alexandrite or Nd:YAG wavelength depending on skin type and treatment requirements. The IntelliTrak technology uses sensors to guide practitioners for even coverage, preventing both missed areas and over-treatment of the same spots. Air cooling maintains skin comfort during treatment.",
-      "typicalUses": "Designed for hair removal across all skin types with the guidance of IntelliTrak technology. The dual wavelength capability treats the full Fitzpatrick scale. Particularly useful for training new practitioners to achieve consistent results.",
-      "keyFeatures": "The IntelliTrak guidance system sets the Clarity II apart from other dual-wavelength platforms. Real-time feedback helps ensure even coverage, which can be challenging with manual positioning alone. Air cooling provides comfort without consumable costs associated with cryogen-based systems."
+      "overview": "Lutronic's dual-wavelength system (755nm + 1064nm) with IntelliTrak sensor-guided coverage technology.",
+      "howItWorks": "IntelliTrak uses sensors to guide practitioners for even coverage, preventing missed areas and over-treatment. Air cooling instead of cryogen: no consumable costs.",
+      "typicalUses": ["All skin types with dual-wavelength flexibility", "Useful for training new practitioners. IntelliTrak guides treatment"],
+      "keyFeatures": "IntelliTrak guidance sets it apart from other dual-wavelength platforms. Air cooling eliminates consumable costs."
     }
   },
   {
@@ -591,9 +505,7 @@
     "name": "Diolaze XL",
     "manufacturer": "InMode",
     "technologyType": "laser",
-    "wavelengths": [
-      "810nm"
-    ],
+    "wavelengths": ["810nm"],
     "brandTier": "standard-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-V",
@@ -602,18 +514,14 @@
     "purposeBuilt": true,
     "coolingMethod": "contact cooling",
     "notes": "810nm diode laser with large spot size for fast treatment of large areas.",
-    "aliases": [
-      "diolaze",
-      "inmode diolaze xl",
-      "inmode diolaze"
-    ],
+    "aliases": ["diolaze", "inmode diolaze xl", "inmode diolaze"],
     "family": null,
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The Diolaze XL is InMode's dedicated 810nm diode laser designed for efficient hair removal with an emphasis on speed. It features one of the largest treatment spot sizes available in a diode system, enabling rapid coverage of large body areas.",
-      "howItWorks": "The 810nm diode wavelength effectively targets melanin in hair follicles while the extra-large spot size delivers energy across a broad area with each pulse. Built-in contact cooling through a sapphire window protects the skin surface. The system can deliver high fluence for effective treatment of coarse hair.",
-      "typicalUses": "Optimized for treating large body areas including backs, legs, and arms where speed is essential. The large spot size makes it efficient for high-volume practices. Effective for Fitzpatrick skin types I through V with appropriate parameter adjustment.",
-      "keyFeatures": "The extra-large spot size significantly reduces treatment time for large areas compared to standard diode handpieces. Built-in skin cooling maintains comfort without requiring external cooling systems. The system offers good value compared to premium-tier devices while delivering professional-grade results."
+      "overview": "InMode's dedicated 810nm diode laser built for speed. One of the largest spot sizes in any diode system.",
+      "howItWorks": "Extra-large spot size delivers 810nm energy across a broad area per pulse. Sapphire contact cooling protects skin. High fluence capability for coarse hair.",
+      "typicalUses": ["Large body areas (backs, legs, arms) where speed matters", "High-volume practices"],
+      "keyFeatures": "Good value compared to premium-tier devices while delivering professional-grade results. Large spot size significantly reduces treatment time."
     }
   },
   {
@@ -622,11 +530,7 @@
     "name": "Triton",
     "manufacturer": "InMode",
     "technologyType": "laser",
-    "wavelengths": [
-      "755nm",
-      "810nm",
-      "1064nm"
-    ],
+    "wavelengths": ["755nm", "810nm", "1064nm"],
     "brandTier": "standard-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
@@ -635,16 +539,14 @@
     "purposeBuilt": true,
     "coolingMethod": "contact cooling",
     "notes": "Tri-wavelength laser combining Alexandrite, diode, and Nd:YAG for maximum versatility.",
-    "aliases": [
-      "inmode triton"
-    ],
+    "aliases": ["inmode triton"],
     "family": null,
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The Triton is InMode's tri-wavelength laser platform that combines 755nm Alexandrite, 810nm Diode, and 1064nm Nd:YAG in a single system. This comprehensive approach enables treatment of all hair types and skin tones with wavelength selection based on individual patient characteristics.",
-      "howItWorks": "The system can deliver each wavelength individually or combine them based on treatment requirements. The Alexandrite wavelength targets melanin effectively in lighter skin, the Diode provides balanced penetration, and the Nd:YAG safely treats darker skin types. Contact cooling protects the epidermis during energy delivery.",
-      "typicalUses": "Designed for clinics serving diverse patient populations that require maximum treatment flexibility. Each wavelength can be selected based on patient skin type, hair color, and body area. The tri-wavelength capability eliminates the need for multiple laser systems.",
-      "keyFeatures": "Having all three wavelengths in one device provides significant cost savings compared to purchasing separate systems. The ability to customize wavelength selection for each patient optimizes results across all skin types. The Triton offers tri-wavelength capability at a lower price point than some competing systems."
+      "overview": "InMode's tri-wavelength platform (755nm + 810nm + 1064nm). All three wavelengths in one system.",
+      "howItWorks": "Each wavelength can be used individually or combined based on patient skin type and hair characteristics. Contact cooling protects skin during treatment.",
+      "typicalUses": ["Clinics serving diverse populations needing wavelength flexibility", "Eliminates the need for multiple laser systems"],
+      "keyFeatures": "Tri-wavelength capability at a lower price point than some competing systems. Significant cost savings versus purchasing separate devices."
     }
   },
   {
@@ -653,9 +555,7 @@
     "name": "Tria 4X",
     "manufacturer": "Tria Beauty",
     "technologyType": "laser",
-    "wavelengths": [
-      "810nm"
-    ],
+    "wavelengths": ["810nm"],
     "brandTier": "consumer",
     "skinTypes": {
       "fitzpatrickRange": "I-IV",
@@ -664,19 +564,14 @@
     "purposeBuilt": true,
     "coolingMethod": null,
     "notes": "Home-use diode laser. Significantly lower power than clinical devices (approximately 20 joules vs 100+ joules for clinical lasers). FDA-cleared for home use. Results require substantially more sessions than clinical treatment. It IS a real laser, but with consumer-grade power levels.",
-    "aliases": [
-      "tria 4x laser",
-      "tria laser",
-      "tria beauty 4x",
-      "tria home laser"
-    ],
+    "aliases": ["tria 4x laser", "tria laser", "tria beauty 4x", "tria home laser"],
     "family": "tria-home",
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The Tria 4X is an FDA-cleared home-use 810nm diode laser, making it one of the few true laser devices available for consumer purchase. Unlike IPL devices commonly marketed for home use, the Tria 4X contains an actual laser diode similar in type to professional devices.",
-      "howItWorks": "The device uses 810nm diode technology like professional systems but operates at approximately 20 joules compared to 100+ joules in clinical devices. This reduced power level allows safe home use without professional training but requires significantly more treatment sessions to achieve results. The small treatment window necessitates more time per session.",
-      "typicalUses": "Designed for maintenance between professional treatments or gradual hair reduction over many months of consistent use. Best suited for small areas like upper lip, chin, and underarms. The small spot size makes large area treatment impractical.",
-      "keyFeatures": "The Tria 4X is genuinely a real laser, not IPL, which distinguishes it from most home devices. The built-in skin sensor prevents operation on skin tones darker than Fitzpatrick IV for safety. While results require patience and many sessions, the device can achieve permanent hair reduction with consistent long-term use."
+      "overview": "One of the few true home-use laser devices. Uses an actual 810nm diode laser, not IPL like most home devices.",
+      "howItWorks": "Same 810nm diode technology as professional systems but at ~20 J/cm² versus 100+ J/cm² in clinical devices. Built-in skin sensor prevents use on skin darker than Fitzpatrick IV. Small treatment window requires more time per session.",
+      "typicalUses": ["Maintenance between professional treatments", "Small areas: upper lip, chin, underarms", "Impractical for large areas due to small spot size"],
+      "keyFeatures": "It IS a real laser, which distinguishes it from the vast majority of home devices (which are IPL). But consumer-grade power means significantly more sessions and slower results than clinical treatment."
     }
   },
   {
@@ -685,9 +580,7 @@
     "name": "Tria Precision",
     "manufacturer": "Tria Beauty",
     "technologyType": "laser",
-    "wavelengths": [
-      "810nm"
-    ],
+    "wavelengths": ["810nm"],
     "brandTier": "consumer",
     "skinTypes": {
       "fitzpatrickRange": "I-IV",
@@ -696,17 +589,14 @@
     "purposeBuilt": true,
     "coolingMethod": null,
     "notes": "Compact home-use laser for smaller areas like face and bikini line. Same diode laser technology as Tria 4X with smaller treatment window. FDA-cleared for home use. Results require substantially more sessions than clinical treatment. It IS a real laser, but with consumer-grade power levels.",
-    "aliases": [
-      "tria precision laser",
-      "tria beauty precision"
-    ],
+    "aliases": ["tria precision laser", "tria beauty precision"],
     "family": "tria-home",
     "deliveryMethod": null,
     "richContent": {
-      "overview": "The Tria Precision is a compact version of Tria's home-use diode laser, specifically designed for treating smaller, more detailed areas like facial hair and bikini lines. It uses the same genuine 810nm diode laser technology as the Tria 4X in a smaller form factor.",
-      "howItWorks": "Like the Tria 4X, the Precision uses an 810nm diode laser at consumer-safe power levels significantly lower than clinical devices. The smaller treatment window is optimized for precise targeting of individual hairs in sensitive areas. The device includes the same skin tone sensor to prevent use on darker skin types.",
-      "typicalUses": "Designed specifically for facial hair removal including upper lip, chin, and sideburns, as well as bikini line maintenance. The compact size and precision tip make it easier to navigate contoured facial areas than the larger Tria 4X. Not practical for large body areas.",
-      "keyFeatures": "The Precision's compact design makes it ideal for the smaller treatment areas where its limited treatment window is actually an advantage for accuracy. Same real diode laser technology as the Tria 4X ensures it is a genuine laser device. The ergonomic design is optimized for facial treatment positioning."
+      "overview": "Compact version of Tria's home-use diode laser, designed for smaller facial areas and bikini line.",
+      "howItWorks": "Same 810nm diode laser as the Tria 4X at consumer-safe power levels. Smaller treatment window optimized for precise targeting in sensitive areas. Same skin tone sensor as the 4X.",
+      "typicalUses": ["Facial hair: upper lip, chin, sideburns", "Bikini line maintenance", "Not practical for large body areas"],
+      "keyFeatures": "Compact design is actually an advantage for facial precision. Same real diode laser technology as the Tria 4X."
     }
   },
   {

@@ -28,14 +28,15 @@ export type BrandTier = 'premium-clinical' | 'standard-clinical' | 'consumer' | 
 export type TermClassification = 'real-laser' | 'verify-brand' | 'ask-clinic' | 'not-laser';
 
 /**
- * Badge types for the 5-badge classification system
+ * Badge types for the 6-badge classification system
  */
 export type BadgeType =
-  | 'real-laser'           // ✅ Real Laser (sage green)
-  | 'verify-brand'         // ✅ Real Laser — Verify the Brand (amber/gold)
-  | 'limited-use'          // ⚠️ Real Laser — Limited Use (muted amber)
-  | 'ask-clinic'           // ❓ Ask Your Clinic (muted rose)
-  | 'not-laser';           // ❌ Not a Laser (soft coral)
+  | 'real-laser'           // ✅ Real Laser (sage green) - purpose-built, established brand
+  | 'multi-purpose'        // ✅ Real Laser — Multi-Purpose (soft teal) - premium brand, not hair-removal specific
+  | 'verify-brand'         // ✅ Real Laser — Verify the Brand (amber) - wavelength entries
+  | 'home-device'          // ✅ Real Laser — Home Device (muted amber) - consumer-grade
+  | 'ask-clinic'           // ❓ Ask Your Clinic (muted rose) - could be laser or IPL
+  | 'not-laser';           // ❌ Not a Laser (soft coral) - IPL or non-laser
 
 /**
  * Core technology type - what the device fundamentally is
@@ -69,7 +70,7 @@ export interface RichContent {
   /** Technical explanation of device operation (wavelength, energy delivery, cooling) */
   howItWorks: string;
   /** Common clinical applications and treatment areas */
-  typicalUses: string;
+  typicalUses: string[];
   /** Distinguishing characteristics and features */
   keyFeatures: string;
 }
@@ -288,10 +289,10 @@ export function getRelatedByManufacturer(
  *
  * Logic:
  * - If not a laser technology → "not-laser"
- * - If unknown brand tier → "limited-use"
- * - If consumer device → "limited-use"
- * - If not purpose-built for hair removal → "limited-use"
- * - If premium-clinical or standard-clinical → "real-laser"
+ * - If consumer device → "home-device"
+ * - If premium/standard brand but not purpose-built → "multi-purpose"
+ * - If unknown brand → "multi-purpose" (can't fully verify)
+ * - If purpose-built with premium/standard brand → "real-laser"
  */
 export function getMachineBadgeType(machine: MachineEntry): BadgeType {
   // Not a laser technology
@@ -299,19 +300,23 @@ export function getMachineBadgeType(machine: MachineEntry): BadgeType {
     return 'not-laser';
   }
 
-  // Real laser but with limitations
-  if (machine.brandTier === 'unknown') {
-    return 'limited-use';
-  }
+  // Consumer-grade laser devices (Tria, etc.)
   if (machine.brandTier === 'consumer') {
-    return 'limited-use';
-  }
-  if (!machine.purposeBuilt) {
-    return 'limited-use';
+    return 'home-device';
   }
 
-  // Verified real laser from established manufacturer
-  return 'real-laser';
+  // Premium/standard brands
+  if (machine.brandTier === 'premium-clinical' || machine.brandTier === 'standard-clinical') {
+    // Purpose-built for hair removal = full endorsement
+    if (machine.purposeBuilt) {
+      return 'real-laser';
+    }
+    // Multi-purpose platform (Nordlys, Harmony XL Pro, etc.)
+    return 'multi-purpose';
+  }
+
+  // Unknown brands - treat as multi-purpose (can't fully verify quality)
+  return 'multi-purpose';
 }
 
 /**

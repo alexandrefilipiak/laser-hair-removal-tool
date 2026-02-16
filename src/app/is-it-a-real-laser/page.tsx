@@ -154,6 +154,92 @@ export default function IsItARealLaserPage() {
             />
           </div>
 
+          {/* Three Types of Hair Removal Laser */}
+          <div
+            style={{
+              marginTop: '2.5rem',
+              maxWidth: '800px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+          >
+            <h2
+              style={{
+                fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
+                fontSize: '1.125rem',
+                fontWeight: 600,
+                color: '#2D2D2D',
+                marginBottom: '1.25rem',
+                textAlign: 'center',
+              }}
+            >
+              Three Types of Hair Removal Laser
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {/* 755nm Alexandrite */}
+              <div
+                className="rounded-xl p-4"
+                style={{
+                  backgroundColor: '#FFFFFF',
+                  border: '1px solid #E8E4DF',
+                  textAlign: 'left',
+                }}
+              >
+                <Link href="/is-it-a-real-laser/755nm" style={{ color: '#5E8B7E', fontWeight: 600, fontSize: '0.9375rem', textDecoration: 'none' }} className="hover:underline">
+                  755nm Alexandrite
+                </Link>
+                <p style={{ color: '#6B6560', fontSize: '0.8125rem', lineHeight: 1.6, marginTop: '0.5rem' }}>
+                  Most effective for lighter skin tones (Fitzpatrick I-IV). Found in machines like GentleLase and GentleMax Pro.
+                </p>
+              </div>
+
+              {/* 810nm Diode */}
+              <div
+                className="rounded-xl p-4"
+                style={{
+                  backgroundColor: '#FFFFFF',
+                  border: '1px solid #E8E4DF',
+                  textAlign: 'left',
+                }}
+              >
+                <Link href="/is-it-a-real-laser/810nm" style={{ color: '#5E8B7E', fontWeight: 600, fontSize: '0.9375rem', textDecoration: 'none' }} className="hover:underline">
+                  810nm Diode
+                </Link>
+                <p style={{ color: '#6B6560', fontSize: '0.8125rem', lineHeight: 1.6, marginTop: '0.5rem' }}>
+                  The most common type. Works across a range of skin tones. Found in machines like LightSheer and Soprano.
+                </p>
+              </div>
+
+              {/* 1064nm Nd:YAG */}
+              <div
+                className="rounded-xl p-4"
+                style={{
+                  backgroundColor: '#FFFFFF',
+                  border: '1px solid #E8E4DF',
+                  textAlign: 'left',
+                }}
+              >
+                <Link href="/is-it-a-real-laser/1064nm" style={{ color: '#5E8B7E', fontWeight: 600, fontSize: '0.9375rem', textDecoration: 'none' }} className="hover:underline">
+                  1064nm Nd:YAG
+                </Link>
+                <p style={{ color: '#6B6560', fontSize: '0.8125rem', lineHeight: 1.6, marginTop: '0.5rem' }}>
+                  Safest for darker skin tones (Fitzpatrick V-VI). Found in machines like GentleYAG and Clarity II.
+                </p>
+              </div>
+            </div>
+            <p
+              style={{
+                marginTop: '1rem',
+                color: '#6B6560',
+                fontSize: '0.8125rem',
+                lineHeight: 1.6,
+                textAlign: 'center',
+              }}
+            >
+              Many premium machines combine two or three wavelengths in one device for maximum versatility.
+            </p>
+          </div>
+
           {/* Not Lasers Warning Section */}
           <div
             style={{
@@ -259,7 +345,6 @@ export default function IsItARealLaserPage() {
                 marginBottom: '0.75rem',
               }}
             >
-              Many clinics advertise &ldquo;laser hair removal&rdquo; while using these devices.
             </p>
 
             <div style={{ textAlign: 'center' }}>
@@ -276,7 +361,79 @@ export default function IsItARealLaserPage() {
                 }}
                 className="hover:underline"
               >
-                Learn why it matters
+                IPL vs Laser: Learn the difference
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+
+          {/* Not All Lasers Are Equal */}
+          <div
+            style={{
+              marginTop: '2.5rem',
+              maxWidth: '560px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+          >
+            <h2
+              style={{
+                fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
+                fontSize: '1.125rem',
+                fontWeight: 600,
+                color: '#2D2D2D',
+                marginBottom: '1rem',
+                textAlign: 'center',
+              }}
+            >
+              Watch the Brand: Not All Laser Machines Are Equal
+            </h2>
+            <div
+              style={{
+                marginBottom: '1rem',
+                display: 'flex',
+                justifyContent: 'center',
+              }}
+            >
+              <Link href="/is-it-a-real-laser/equipment-costs">
+                <img
+                  src="/laser-hair-removal-alibaba-and-candela.png"
+                  alt="Comparison of budget Alibaba laser machine vs premium Candela equipment"
+                  style={{
+                    width: '70%',
+                    height: 'auto',
+                    display: 'block',
+                    cursor: 'pointer',
+                  }}
+                />
+              </Link>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <Link
+                href="/is-it-a-real-laser/equipment-costs"
+                style={{
+                  color: '#5E8B7E',
+                  fontSize: '0.875rem',
+                  fontWeight: 500,
+                  textDecoration: 'none',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.35rem',
+                }}
+                className="hover:underline"
+              >
+                Why is laser hair removal so expensive?
                 <svg
                   width="14"
                   height="14"
