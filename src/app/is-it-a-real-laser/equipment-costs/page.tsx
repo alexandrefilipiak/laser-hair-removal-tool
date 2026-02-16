@@ -158,15 +158,22 @@ export default function EquipmentCostsPage() {
         {/* Alibaba vs Candela Comparison Image */}
         <figure style={{ marginBottom: '2rem' }}>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img
-              src="/laser-hair-removal-alibaba-and-candela.png"
-              alt="Chinese model from Alibaba: $2,799-2,899 | Used Candela model: $97,500 | Both offer 'laser hair removal'"
-              style={{
-                width: '96%',
-                height: 'auto',
-                display: 'block',
-              }}
-            />
+            <a
+              href="/laser-hair-removal-alibaba-and-candela.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ width: '96%', display: 'block', cursor: 'zoom-in' }}
+            >
+              <img
+                src="/laser-hair-removal-alibaba-and-candela.png"
+                alt="Chinese model from Alibaba: $2,799-2,899 | Used Candela model: $97,500 | Both offer 'laser hair removal'"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block',
+                }}
+              />
+            </a>
           </div>
           {/* Mobile caption */}
           <figcaption
@@ -520,10 +527,14 @@ export default function EquipmentCostsPage() {
 
           {/* Alibaba Screenshot */}
           <figure style={{ marginBottom: '1.5rem' }}>
-            <div
-              className="rounded-xl overflow-hidden"
+            <a
+              href="/alibaba-combo-machine.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl overflow-hidden block"
               style={{
                 border: '1px solid #E8E4DF',
+                cursor: 'zoom-in',
               }}
             >
               <img
@@ -535,7 +546,7 @@ export default function EquipmentCostsPage() {
                   display: 'block',
                 }}
               />
-            </div>
+            </a>
             <figcaption
               style={{
                 marginTop: '0.5rem',
@@ -550,10 +561,14 @@ export default function EquipmentCostsPage() {
 
           {/* Used Candela Screenshot */}
           <figure style={{ marginBottom: '1.5rem' }}>
-            <div
-              className="rounded-xl overflow-hidden"
+            <a
+              href="/used_candela.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl overflow-hidden block"
               style={{
                 border: '1px solid #E8E4DF',
+                cursor: 'zoom-in',
               }}
             >
               <img
@@ -565,7 +580,7 @@ export default function EquipmentCostsPage() {
                   display: 'block',
                 }}
               />
-            </div>
+            </a>
             <figcaption
               style={{
                 marginTop: '0.5rem',
