@@ -164,9 +164,6 @@ export function ContactForm() {
           autoComplete="email"
           required
         />
-        <p style={{ marginTop: '0.375rem', fontSize: '0.8125rem', color: '#5A5550' }}>
-          So we can reply to you
-        </p>
       </div>
 
       {/* Status message */}

@@ -63,15 +63,15 @@ export default function ContactPage() {
           <h1
             style={{
               fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
-              fontSize: 'clamp(1.75rem, 5vw, 2.5rem)',
+              fontSize: 'clamp(1.5rem, 4vw, 2rem)',
               fontWeight: 600,
               letterSpacing: '-0.02em',
               color: '#2D2D2D',
-              lineHeight: 1.1,
+              lineHeight: 1.2,
               marginBottom: '1rem',
             }}
           >
-            Get in Touch
+            Have Information About Equipment We Should Investigate?
           </h1>
           <p
             style={{
@@ -82,7 +82,7 @@ export default function ContactPage() {
               margin: '0 auto',
             }}
           >
-            Have a tip about equipment we should know about? Found an error? Just want to say hello? We&apos;d love to hear from you.
+            Have a tip about equipment we should know about? Found an error? We&apos;d love to hear from you.
           </p>
         </header>
 
@@ -121,19 +121,31 @@ export default function ContactPage() {
             }}
           >
             <li style={{ marginBottom: '0.5rem' }}>
-              Tips about equipment not in our database
+              Equipment not yet in our database
             </li>
             <li style={{ marginBottom: '0.5rem' }}>
-              Corrections to existing equipment info
+              Corrections to existing equipment information
             </li>
             <li style={{ marginBottom: '0.5rem' }}>
-              Industry insights about quality variations
+              Industry insights about machine quality and sourcing
             </li>
             <li>
-              Reports of clinics misrepresenting their equipment
+              Information about white-labeled or rebranded devices
             </li>
           </ul>
         </section>
+
+        {/* Privacy note */}
+        <p
+          className="text-center"
+          style={{
+            color: '#5A5550',
+            fontSize: '0.8125rem',
+            marginBottom: '2rem',
+          }}
+        >
+          Your information stays private. We never share contact details.
+        </p>
 
         <Footer />
       </article>
