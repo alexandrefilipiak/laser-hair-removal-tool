@@ -17,7 +17,7 @@ next-env.d.ts
 coverage/
 
 # Environment files
-.env.*
+.env*
 !.env.prod
 
 
