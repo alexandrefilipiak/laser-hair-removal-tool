@@ -764,29 +764,44 @@ export default function EquipmentCostsPage() {
           </p>
 
           {/* Repeat Buyer From USA Screenshot */}
-          <figure style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
-            <a
-              href="/repeat_buyer_from_usa.png"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl overflow-hidden transition-opacity hover:opacity-90"
+          <figure style={{ marginBottom: '1.5rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <a
+                href="/repeat_buyer_from_usa.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl overflow-hidden transition-opacity hover:opacity-90"
+                style={{
+                  border: '1px solid #E8E4DF',
+                  width: '70%',
+                  display: 'block',
+                  cursor: 'zoom-in',
+                }}
+              >
+                <img
+                  src="/repeat_buyer_from_usa.png"
+                  alt="Alibaba review showing repeat buyer from United States"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    display: 'block',
+                  }}
+                />
+              </a>
+            </div>
+            {/* Mobile caption */}
+            <figcaption
+              className="md:hidden"
               style={{
-                border: '1px solid #E8E4DF',
-                width: '70%',
-                display: 'block',
-                cursor: 'zoom-in',
+                color: '#5A5550',
+                fontSize: '0.8125rem',
+                textAlign: 'center',
+                marginTop: '0.75rem',
+                lineHeight: 1.5,
               }}
             >
-              <img
-                src="/repeat_buyer_from_usa.png"
-                alt="Alibaba review showing repeat buyer from United States"
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                  display: 'block',
-                }}
-              />
-            </a>
+              Here are 3 repeat buyers in the United States on December 2025, out of 3259 reviews total
+            </figcaption>
           </figure>
         </section>
 
