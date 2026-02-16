@@ -162,7 +162,8 @@ export default function EquipmentCostsPage() {
               href="/laser-hair-removal-alibaba-and-candela.png"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ width: '96%', display: 'block', cursor: 'zoom-in' }}
+              className="w-full md:w-[96%] block"
+              style={{ cursor: 'zoom-in' }}
             >
               <img
                 src="/laser-hair-removal-alibaba-and-candela.png"
@@ -680,11 +681,9 @@ export default function EquipmentCostsPage() {
                 href="/brand_might_not_exist.png"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xl overflow-hidden transition-opacity hover:opacity-90"
+                className="w-full md:w-[85%] rounded-xl overflow-hidden transition-opacity hover:opacity-90 block"
                 style={{
                   border: '1px solid #E8E4DF',
-                  width: '85%',
-                  display: 'block',
                   cursor: 'zoom-in',
                 }}
               >
@@ -725,11 +724,9 @@ export default function EquipmentCostsPage() {
                 href="/leading_chinese_factory.png"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xl overflow-hidden transition-opacity hover:opacity-90"
+                className="w-full md:w-[85%] rounded-xl overflow-hidden transition-opacity hover:opacity-90 block"
                 style={{
                   border: '1px solid #E8E4DF',
-                  width: '85%',
-                  display: 'block',
                   cursor: 'zoom-in',
                 }}
               >
@@ -785,11 +782,9 @@ export default function EquipmentCostsPage() {
                 href="/repeat_buyer_from_usa.png"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xl overflow-hidden transition-opacity hover:opacity-90"
+                className="w-full md:w-[70%] rounded-xl overflow-hidden transition-opacity hover:opacity-90 block"
                 style={{
                   border: '1px solid #E8E4DF',
-                  width: '70%',
-                  display: 'block',
                   cursor: 'zoom-in',
                 }}
               >
@@ -845,11 +840,9 @@ export default function EquipmentCostsPage() {
                 href="/unverifiable_claims.png"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xl overflow-hidden transition-opacity hover:opacity-90"
+                className="w-full md:w-[70%] rounded-xl overflow-hidden transition-opacity hover:opacity-90 block"
                 style={{
                   border: '1px solid #E8E4DF',
-                  width: '70%',
-                  display: 'block',
                   cursor: 'zoom-in',
                 }}
               >
@@ -894,11 +887,9 @@ export default function EquipmentCostsPage() {
                 href="/alibaba_fda_clearance.png"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xl overflow-hidden transition-opacity hover:opacity-90"
+                className="w-full md:w-[70%] rounded-xl overflow-hidden transition-opacity hover:opacity-90 block"
                 style={{
                   border: '1px solid #E8E4DF',
-                  width: '70%',
-                  display: 'block',
                   cursor: 'zoom-in',
                 }}
               >
