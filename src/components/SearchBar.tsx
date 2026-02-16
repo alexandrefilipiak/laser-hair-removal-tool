@@ -227,45 +227,17 @@ export function SearchBar({ equipment }: SearchBarProps) {
 
   return (
     <div ref={containerRef} className="relative w-full max-w-2xl mx-auto">
+      {/* Decorative glow effect on focus */}
+      <div
+        className="absolute -inset-1 rounded-full bg-gradient-to-r from-[#5E8B7E]/20 via-[#7BA99E]/20 to-[#5E8B7E]/20 opacity-0 blur-md transition-opacity duration-300 pointer-events-none peer-focus-within:opacity-100"
+        style={{ zIndex: -1 }}
+        aria-hidden="true"
+      />
+
       {/* Search input container */}
       <div
-        style={{
-          position: 'relative',
-          display: 'flex',
-          alignItems: 'center',
-          backgroundColor: '#FFFFFF',
-          border: '1px solid #E8E4DF',
-          borderRadius: '9999px',
-          transition: 'border-color 0.2s, box-shadow 0.2s',
-        }}
-        className="focus-within:border-[#5E8B7E] focus-within:ring-2 focus-within:ring-[rgba(94,139,126,0.15)]"
+        className="group relative flex items-center h-14 md:h-16 bg-white border-2 border-[#E8E4DF] rounded-full shadow-lg shadow-black/5 transition-all duration-200 ease-out hover:border-[#D4D0CB] hover:shadow-xl hover:shadow-black/8 focus-within:border-[#5E8B7E] focus-within:shadow-xl focus-within:shadow-[#5E8B7E]/10"
       >
-        {/* Search icon */}
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            paddingLeft: '1rem',
-            pointerEvents: 'none',
-          }}
-        >
-          <svg
-            style={{ width: '20px', height: '20px', color: '#5A5550' }}
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
-          </svg>
-        </div>
-
         {/* Search input */}
         <input
           ref={inputRef}
@@ -282,16 +254,7 @@ export function SearchBar({ equipment }: SearchBarProps) {
           onFocus={handleFocus}
           onKeyDown={handleKeyDown}
           placeholder="Type the machine name your clinic uses..."
-          className="pr-24 md:pr-28"
-          style={{
-            flex: 1,
-            backgroundColor: 'transparent',
-            color: '#2D2D2D',
-            fontSize: '1rem',
-            padding: '0.875rem 1rem 0.875rem 0.75rem',
-            border: 'none',
-            outline: 'none',
-          }}
+          className="peer flex-1 h-full bg-transparent text-[#2D2D2D] text-base md:text-lg placeholder:text-[#9A9590] pl-5 md:pl-6 pr-28 md:pr-36 border-none outline-none"
         />
 
         {/* Search button */}
@@ -299,10 +262,10 @@ export function SearchBar({ equipment }: SearchBarProps) {
           type="button"
           onClick={handleSearchClick}
           aria-label="Search"
-          className="absolute right-1.5 top-1/2 -translate-y-1/2 h-9 md:h-10 px-3 md:px-5 rounded-full bg-[#5E8B7E] hover:bg-[#4A7566] active:bg-[#3D6356] text-white font-medium text-sm transition-colors duration-200 flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#5E8B7E]/50 focus:ring-offset-2"
+          className="absolute right-2 top-1/2 -translate-y-1/2 h-10 md:h-12 px-4 md:px-6 rounded-full bg-[#5E8B7E] hover:bg-[#4A7566] active:bg-[#3D6356] text-white font-semibold text-sm md:text-base shadow-md shadow-[#5E8B7E]/25 hover:shadow-lg hover:shadow-[#5E8B7E]/30 transition-all duration-200 flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#5E8B7E]/50 focus:ring-offset-2"
         >
           <svg
-            className="w-4 h-4"
+            className="w-4 h-4 md:w-5 md:h-5"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -311,7 +274,7 @@ export function SearchBar({ equipment }: SearchBarProps) {
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth={2}
+              strokeWidth={2.5}
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
             />
           </svg>
