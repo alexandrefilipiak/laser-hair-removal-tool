@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/alexandrefilipiak/laser-hair-removal-tool#readme",
   "devDependencies": {
+    "@dotenvx/dotenvx": "^1.52.0",
     "@tailwindcss/postcss": "^4.1.18",
     "@types/node": "^25.2.3",
     "@types/react": "^19.2.14",
