@@ -534,7 +534,7 @@ export default function IsItARealLaserPage() {
       >
         Have information about equipment we should investigate?{' '}
         <Link
-          href="/contact"
+          href="/is-it-a-real-laser/contact"
           style={{ color: '#5E8B7E', fontWeight: 500 }}
           className="hover:underline"
         >

@@ -43,7 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
-      url: `${BASE_URL}/contact`,
+      url: `${BASE_URL}/is-it-a-real-laser/contact`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.5,

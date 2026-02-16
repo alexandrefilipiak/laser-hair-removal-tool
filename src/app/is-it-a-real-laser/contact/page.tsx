@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: 'Contact | LaserHairRemovalMap',
   description: 'Get in touch with us. Share tips about equipment, report issues, or ask questions about laser hair removal technology.',
   alternates: {
-    canonical: `${siteUrl}/contact`,
+    canonical: `${siteUrl}/is-it-a-real-laser/contact`,
   },
   openGraph: {
     title: 'Contact | LaserHairRemovalMap',
     description: 'Get in touch with us. Share tips about equipment, report issues, or ask questions about laser hair removal technology.',
-    url: `${siteUrl}/contact`,
+    url: `${siteUrl}/is-it-a-real-laser/contact`,
     siteName: 'LaserHairRemovalMap',
     type: 'website',
   },
