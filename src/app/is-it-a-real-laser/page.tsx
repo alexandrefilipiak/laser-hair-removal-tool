@@ -144,13 +144,12 @@ export default function IsItARealLaserPage() {
 
           {/* IPL vs Laser Comparison Image */}
           <div style={{ marginTop: '1.5rem', display: 'flex', justifyContent: 'center' }}>
-            <Link href="/is-it-a-real-laser/ipl">
+            <Link href="/is-it-a-real-laser/ipl" className="w-full md:w-auto">
               <img
                 src="/ipl-vs-laser.png"
                 alt="IPL vs Real Laser comparison"
+                className="w-full md:w-[420px]"
                 style={{
-                  width: '420px',
-                  maxWidth: '90%',
                   height: 'auto',
                   cursor: 'pointer',
                 }}
@@ -411,7 +410,7 @@ export default function IsItARealLaserPage() {
                 alignItems: 'center',
               }}
             >
-              <Link href="/is-it-a-real-laser/equipment-costs" style={{ display: 'block', width: '84%' }}>
+              <Link href="/is-it-a-real-laser/equipment-costs" className="block w-full md:w-[84%]">
                 <img
                   src="/laser-hair-removal-alibaba-and-candela.png"
                   alt="Chinese model from Alibaba: $2,799-2,899 | Used Candela model: $97,500 | Both offer 'laser hair removal'"
