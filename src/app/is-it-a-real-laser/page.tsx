@@ -422,6 +422,19 @@ export default function IsItARealLaserPage() {
                   }}
                 />
               </Link>
+              {/* Mobile caption */}
+              <p
+                className="md:hidden"
+                style={{
+                  color: '#5A5550',
+                  fontSize: '0.8125rem',
+                  textAlign: 'center',
+                  marginTop: '0.75rem',
+                  lineHeight: 1.5,
+                }}
+              >
+                Chinese model from Alibaba: $2,799-2,899. Used Candela model: $97,500. Both offer &apos;laser hair removal&apos;.
+              </p>
             </div>
             <div style={{ textAlign: 'center' }}>
               <Link

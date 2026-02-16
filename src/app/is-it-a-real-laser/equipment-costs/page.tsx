@@ -156,16 +156,31 @@ export default function EquipmentCostsPage() {
         </section>
 
         {/* Alibaba vs Candela Comparison Image */}
-        <figure style={{ marginBottom: '2rem', display: 'flex', justifyContent: 'center' }}>
-          <img
-            src="/laser-hair-removal-alibaba-and-candela.png"
-            alt="Chinese model from Alibaba: $2,799-2,899 | Used Candela model: $97,500 | Both offer 'laser hair removal'"
+        <figure style={{ marginBottom: '2rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <img
+              src="/laser-hair-removal-alibaba-and-candela.png"
+              alt="Chinese model from Alibaba: $2,799-2,899 | Used Candela model: $97,500 | Both offer 'laser hair removal'"
+              style={{
+                width: '96%',
+                height: 'auto',
+                display: 'block',
+              }}
+            />
+          </div>
+          {/* Mobile caption */}
+          <figcaption
+            className="md:hidden"
             style={{
-              width: '96%',
-              height: 'auto',
-              display: 'block',
+              color: '#5A5550',
+              fontSize: '0.8125rem',
+              textAlign: 'center',
+              marginTop: '0.75rem',
+              lineHeight: 1.5,
             }}
-          />
+          >
+            Chinese model from Alibaba: $2,799-2,899. Used Candela model: $97,500. Both offer &apos;laser hair removal&apos;.
+          </figcaption>
         </figure>
 
         {/* The Price Gap */}
