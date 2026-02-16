@@ -159,9 +159,9 @@ export default function EquipmentCostsPage() {
         <figure style={{ marginBottom: '2rem', display: 'flex', justifyContent: 'center' }}>
           <img
             src="/laser-hair-removal-alibaba-and-candela.png"
-            alt="Comparison of budget Alibaba laser machine vs premium Candela equipment"
+            alt="Chinese model from Alibaba: $2,799-2,899 | Used Candela model: $97,500 | Both offer 'laser hair removal'"
             style={{
-              width: '80%',
+              width: '96%',
               height: 'auto',
               display: 'block',
             }}

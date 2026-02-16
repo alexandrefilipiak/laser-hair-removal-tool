@@ -410,10 +410,10 @@ export default function IsItARealLaserPage() {
                 justifyContent: 'center',
               }}
             >
-              <Link href="/is-it-a-real-laser/equipment-costs" style={{ display: 'block', width: '70%', margin: '0 auto' }}>
+              <Link href="/is-it-a-real-laser/equipment-costs" style={{ display: 'block', width: '84%', margin: '0 auto' }}>
                 <img
                   src="/laser-hair-removal-alibaba-and-candela.png"
-                  alt="Comparison of budget Alibaba laser machine vs premium Candela equipment"
+                  alt="Chinese model from Alibaba: $2,799-2,899 | Used Candela model: $97,500 | Both offer 'laser hair removal'"
                   style={{
                     width: '100%',
                     height: 'auto',
