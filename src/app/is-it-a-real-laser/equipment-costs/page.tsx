@@ -873,29 +873,44 @@ export default function EquipmentCostsPage() {
           </p>
 
           {/* Alibaba FDA Clearance Screenshot */}
-          <figure style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
-            <a
-              href="/alibaba_fda_clearance.png"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl overflow-hidden transition-opacity hover:opacity-90"
+          <figure style={{ marginBottom: '1.5rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <a
+                href="/alibaba_fda_clearance.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl overflow-hidden transition-opacity hover:opacity-90"
+                style={{
+                  border: '1px solid #E8E4DF',
+                  width: '70%',
+                  display: 'block',
+                  cursor: 'zoom-in',
+                }}
+              >
+                <img
+                  src="/alibaba_fda_clearance.png"
+                  alt="Alibaba listing advertising OEM ODM USA 510K CE certification"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    display: 'block',
+                  }}
+                />
+              </a>
+            </div>
+            {/* Mobile caption */}
+            <figcaption
+              className="md:hidden"
               style={{
-                border: '1px solid #E8E4DF',
-                width: '70%',
-                display: 'block',
-                cursor: 'zoom-in',
+                color: '#5A5550',
+                fontSize: '0.8125rem',
+                textAlign: 'center',
+                marginTop: '0.75rem',
+                lineHeight: 1.5,
               }}
             >
-              <img
-                src="/alibaba_fda_clearance.png"
-                alt="Alibaba listing advertising OEM ODM USA 510K CE certification"
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                  display: 'block',
-                }}
-              />
-            </a>
+              On the supplier&apos;s popular products, a label reads &quot;OEM ODM USA 510K&quot; for $1,499. The same manufacturer sells FDA clearance as a feature.
+            </figcaption>
           </figure>
         </section>
 
