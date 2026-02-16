@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ContactForm } from '@/components/ContactForm';
-import { Footer } from '@/components/Footer';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://laserhairremovalmap.com';
 
@@ -141,13 +140,10 @@ export default function ContactPage() {
           style={{
             color: '#5A5550',
             fontSize: '0.8125rem',
-            marginBottom: '2rem',
           }}
         >
           Your information stays private. We never share contact details.
         </p>
-
-        <Footer />
       </article>
     </main>
   );
