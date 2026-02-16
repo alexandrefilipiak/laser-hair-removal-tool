@@ -229,7 +229,7 @@ export function SearchBar({ equipment }: SearchBarProps) {
           }}
         >
           <svg
-            style={{ width: '20px', height: '20px', color: '#6B6560' }}
+            style={{ width: '20px', height: '20px', color: '#5A5550' }}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -311,7 +311,7 @@ export function SearchBar({ equipment }: SearchBarProps) {
           <p
             className="mb-4 text-sm"
             style={{
-              color: '#6B6560',
+              color: '#5A5550',
               fontSize: '0.75rem',
             }}
           >

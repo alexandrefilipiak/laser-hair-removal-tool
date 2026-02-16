@@ -78,7 +78,7 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
           </h2>
           <p
             style={{
-              color: '#6B6560',
+              color: '#5A5550',
               fontSize: '0.9375rem',
               lineHeight: 1.7,
               letterSpacing: '0.01em',
@@ -112,7 +112,7 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
                   border: '1px solid',
                   borderColor: isActive ? '#5E8B7E' : '#E8E4DF',
                   backgroundColor: isActive ? '#5E8B7E' : '#FFFFFF',
-                  color: isActive ? '#FFFFFF' : '#6B6560',
+                  color: isActive ? '#FFFFFF' : '#5A5550',
                   cursor: 'pointer',
                   transition: 'all 0.2s',
                 }}
@@ -125,7 +125,7 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
                 onMouseLeave={(e) => {
                   if (!isActive) {
                     e.currentTarget.style.borderColor = '#E8E4DF';
-                    e.currentTarget.style.color = '#6B6560';
+                    e.currentTarget.style.color = '#5A5550';
                   }
                 }}
               >
@@ -151,7 +151,7 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
           <p
             style={{
               textAlign: 'center',
-              color: '#6B6560',
+              color: '#5A5550',
               fontSize: '0.9rem',
               padding: '2rem',
             }}

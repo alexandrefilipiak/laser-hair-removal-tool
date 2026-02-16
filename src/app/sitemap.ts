@@ -36,6 +36,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     },
+    {
+      url: `${BASE_URL}/is-it-a-real-laser/equipment-costs`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.85,
+    },
     ...equipmentPages,
   ];
 }

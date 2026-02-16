@@ -36,7 +36,7 @@ export function TechnologyTermDetails({ term }: TechnologyTermDetailsProps) {
           <Link
             href="/is-it-a-real-laser"
             className="inline-flex items-center gap-2 text-sm transition-colors hover:text-[#5E8B7E]"
-            style={{ color: '#6B6560' }}
+            style={{ color: '#5A5550' }}
           >
             <svg
               className="h-4 w-4"
@@ -124,7 +124,7 @@ export function TechnologyTermDetails({ term }: TechnologyTermDetailsProps) {
           >
             Why It Matters
           </h2>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7 }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7 }}>
             {whyItMatters}
           </p>
         </section>
@@ -144,7 +144,7 @@ export function TechnologyTermDetails({ term }: TechnologyTermDetailsProps) {
               className="flex items-center gap-2"
               style={{
                 color: '#5E8B7E',
-                fontSize: '0.875rem',
+                fontSize: '1rem',
                 fontWeight: 600,
                 marginBottom: '0.75rem',
               }}
@@ -163,7 +163,7 @@ export function TechnologyTermDetails({ term }: TechnologyTermDetailsProps) {
               </svg>
               Ask Your Clinic
             </h2>
-            <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7 }}>
+            <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7 }}>
               {askYourClinic}
             </p>
           </section>

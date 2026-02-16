@@ -45,7 +45,7 @@ export function IPLDetails({ term }: IPLDetailsProps) {
           <Link
             href="/is-it-a-real-laser"
             className="inline-flex items-center gap-2 text-sm transition-colors hover:text-[#5E8B7E]"
-            style={{ color: '#6B6560' }}
+            style={{ color: '#5A5550' }}
           >
             <svg
               className="h-4 w-4"
@@ -97,24 +97,24 @@ export function IPLDetails({ term }: IPLDetailsProps) {
             display: 'flex',
             flexWrap: 'wrap',
             justifyContent: 'center',
-            gap: '0.5rem 1rem',
+            gap: '0.25rem 0.5rem',
             marginBottom: '2.5rem',
-            fontSize: '0.8125rem',
+            fontSize: '0.875rem',
           }}
         >
-          <a href="#quick-answer" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">Quick Answer</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#how-ipl-differs" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">IPL vs Laser</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#why-it-matters" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">Why It Matters</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#branded-ipl" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">Branded IPL</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#is-ipl-worth-it" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">Is IPL Worth It?</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#user-experiences" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">User Experiences</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#what-to-ask" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">What to Ask</a>
+          <a href="#quick-answer" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">Quick Answer</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#how-ipl-differs" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">IPL vs Laser</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#why-it-matters" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">Why It Matters</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#branded-ipl" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">Branded IPL</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#is-ipl-worth-it" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">Is IPL Worth It?</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#user-experiences" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">User Experiences</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#what-to-ask" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">What to Ask</a>
         </nav>
 
         {/* Quick Answer */}
@@ -176,10 +176,10 @@ export function IPLDetails({ term }: IPLDetailsProps) {
             />
           </div>
 
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
             IPL emits multiple wavelengths (typically 500–1200nm) at once in a broad flash. The energy scatters across the skin rather than focusing on the follicle.
           </p>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8 }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
             A real laser concentrates a single wavelength (e.g. 755nm or 810nm) into one beam that penetrates directly to the hair follicle. The energy is precise and consistent.
           </p>
 
@@ -201,21 +201,21 @@ export function IPLDetails({ term }: IPLDetailsProps) {
           >
             Why This Matters for Hair Removal
           </h2>
-     <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1rem' }}>
+     <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
             The difference isn't just technical. It affects your results.
           </p>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
             IPL typically requires 8–12+ sessions compared to 6–8 for laser. Because IPL energy
             disperses, some follicles don't receive enough energy and survive. A head-to-head
             clinical trial comparing diode laser and IPL on the same patients found the laser
             was more effective at reducing hair. <a href="https://pubmed.ncbi.nlm.nih.gov/25229781/" target="_blank" rel="noopener noreferrer" style={{ fontStyle: 'italic', color: '#5E8B7E' }}>(Lasers in Medical Science, 2014)</a>
           </p>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
             Laser wavelengths can be chosen specifically for your skin type: 755nm for lighter
             skin, 1064nm for darker skin. IPL's broad spectrum makes it riskier for darker skin
             tones because the scattered light can be absorbed by skin pigment rather than hair pigment.
           </p>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
             There's also the risk of paradoxical hypertrichosis, where treatment actually
             stimulates new hair growth instead of removing it. Studies have found this occurs
             in roughly 3% of patients, primarily on the face and neck. The risk is higher when
@@ -223,12 +223,12 @@ export function IPLDetails({ term }: IPLDetailsProps) {
             Because IPL scatters energy less precisely, some follicles may receive this
             "stimulating" dose rather than a destructive one. <a href="https://pubmed.ncbi.nlm.nih.gov/34057666/" target="_blank" rel="noopener noreferrer" style={{ fontStyle: 'italic', color: '#5E8B7E' }}>(American Journal of Clinical Dermatology, 2021)</a>
           </p>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
             Long-term, the gap widens. A systematic review found Alexandrite laser achieved
             35–84% long-term hair reduction, Diode laser 32–69%, while IPL achieved only
             27–52%. <a href="https://www.tandfonline.com/doi/full/10.1080/14764172.2022.2075899" target="_blank" rel="noopener noreferrer" style={{ fontStyle: 'italic', color: '#5E8B7E' }}>(Journal of Cosmetic and Laser Therapy, 2022)</a>
           </p>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8 }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
             IPL sessions are often cheaper upfront but you need more of them. When you factor
             in the total cost and time, laser frequently works out similar or cheaper in the long run.
           </p>
@@ -247,7 +247,7 @@ export function IPLDetails({ term }: IPLDetailsProps) {
           >
             Branded IPL You Might Not Recognize
           </h2>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7, marginBottom: '1.25rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7, marginBottom: '1.25rem' }}>
             These are all IPL technology, despite their marketing names:
           </p>
 
@@ -268,10 +268,10 @@ export function IPLDetails({ term }: IPLDetailsProps) {
                     height: '100%',
                   }}
                 >
-                  <span style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '0.875rem', display: 'block' }}>
+                  <span style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '0.9375rem', display: 'block' }}>
                     {item.name}
                   </span>
-                  <span style={{ color: '#6B6560', fontSize: '0.8125rem' }}>{item.description}</span>
+                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>{item.description}</span>
                 </Link>
               </li>
             ))}
@@ -306,22 +306,22 @@ export function IPLDetails({ term }: IPLDetailsProps) {
           >
             Is IPL Still Worth Considering?
           </h2>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7, marginBottom: '1rem' }}>
             IPL is a legitimate technology with real uses. It can reduce hair growth, and premium
             devices like Sciton BBL are well-engineered machines.
           </p>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7, marginBottom: '1rem' }}>
             But the evidence gap is real. While long-term hair removal has been demonstrated for
             Alexandrite and Diode lasers, evidence for lasting results from IPL is still
             lacking. <a href="https://pubmed.ncbi.nlm.nih.gov/16405602/" target="_blank" rel="noopener noreferrer" style={{ fontStyle: 'italic', color: '#5E8B7E' }}>(Journal of the European Academy of Dermatology, 2006)</a>
           </p>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7, marginBottom: '1rem' }}>
           The equipment investment tells a story too. A clinical-grade laser like the Candela GentleMax Pro costs $80,000–$150,000. A quality IPL device costs $15,000–$30,000. Budget IPL machines can be found for as little as $2,000–$3,000. When a clinic charges significantly less than competitors, it's worth asking what equipment they invested in.
            </p>
            <p
             className="leading-relaxed"
             style={{
-              color: '#6B6560',
+              color: '#5A5550',
               lineHeight: 1.7,
             }}
           >
@@ -344,7 +344,7 @@ export function IPLDetails({ term }: IPLDetailsProps) {
           >
             What Real Users Say
           </h2>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7, marginBottom: '1.25rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7, marginBottom: '1.25rem' }}>
             Across forums and communities, a consistent pattern emerges. Users who tried IPL first
             and laser second overwhelmingly prefer laser for long-term results. Common themes include:
           </p>
@@ -358,7 +358,7 @@ export function IPLDetails({ term }: IPLDetailsProps) {
                 padding: '1rem 1.25rem',
                 margin: 0,
                 fontStyle: 'italic',
-                color: '#6B6560',
+                color: '#5A5550',
                 lineHeight: 1.7,
               }}
             >
@@ -374,7 +374,7 @@ export function IPLDetails({ term }: IPLDetailsProps) {
                 padding: '1rem 1.25rem',
                 margin: 0,
                 fontStyle: 'italic',
-                color: '#6B6560',
+                color: '#5A5550',
                 lineHeight: 1.7,
               }}
             >
@@ -390,7 +390,7 @@ export function IPLDetails({ term }: IPLDetailsProps) {
                 padding: '1rem 1.25rem',
                 margin: 0,
                 fontStyle: 'italic',
-                color: '#6B6560',
+                color: '#5A5550',
                 lineHeight: 1.7,
               }}
             >
@@ -435,7 +435,7 @@ export function IPLDetails({ term }: IPLDetailsProps) {
               </svg>
               What to Ask Your Clinic
             </h2>
-            <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7, marginBottom: '1rem' }}>
+            <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7, marginBottom: '1rem' }}>
               If you're unsure what your clinic uses, ask these two questions:
             </p>
             <ol
@@ -453,7 +453,7 @@ export function IPLDetails({ term }: IPLDetailsProps) {
                 "What is the specific brand and model?"
               </li>
             </ol>
-            <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7 }}>
+            <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7 }}>
               Once you have the answer,{' '}
               <Link
                 href="/is-it-a-real-laser"

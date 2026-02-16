@@ -37,7 +37,7 @@ export default function EquipmentCostsPage() {
           <Link
             href="/is-it-a-real-laser"
             className="inline-flex items-center gap-2 text-sm transition-colors hover:text-[#5E8B7E]"
-            style={{ color: '#6B6560' }}
+            style={{ color: '#5A5550' }}
           >
             <svg
               className="h-4 w-4"
@@ -69,18 +69,7 @@ export default function EquipmentCostsPage() {
               fontWeight: 500,
             }}
           >
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
-            </svg>
+            
             Equipment Guide
           </span>
         </div>
@@ -102,7 +91,7 @@ export default function EquipmentCostsPage() {
           <p
             style={{
               marginTop: '0.75rem',
-              color: '#6B6560',
+              color: '#5A5550',
               fontSize: '1.0625rem',
             }}
           >
@@ -121,22 +110,22 @@ export default function EquipmentCostsPage() {
             display: 'flex',
             flexWrap: 'wrap',
             justifyContent: 'center',
-            gap: '0.5rem 1rem',
+            gap: '0.25rem 0.5rem',
             marginBottom: '2.5rem',
-            fontSize: '0.8125rem',
+            fontSize: '0.875rem',
           }}
         >
-          <a href="#the-price-gap" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">The Price Gap</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#what-the-money-buys" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">What the Money Buys</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#combo-machines" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">The Combo Machine Red Flag</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#white-label" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">The White-Label Machine</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#american-laser" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">The "American Laser" Claim</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#how-to-protect-yourself" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">How to Protect Yourself</a>
+          <a href="#the-price-gap" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">The Price Gap</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#what-the-money-buys" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">What the Money Buys</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#combo-machines" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">Combo Machine Red Flag</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#white-label" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">White-Label Machine</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#american-laser" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">"American Laser" Claim</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#how-to-protect-yourself" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">How to Protect Yourself</a>
         </nav>
 
         {/* The Reality Section */}
@@ -192,16 +181,16 @@ export default function EquipmentCostsPage() {
           >
             What Laser Hair Removal Machines Actually Cost
           </h2>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
             Most consumers assume all "laser hair removal" uses similar equipment. The price range across machines tells a different story.
           </p>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1.5rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1.5rem' }}>
             Here are the price ranges for cheap Chinese brands you can find on Alibaba:
           </p>
 
-          {/* Budget Machines Table */}
+          {/* Budget Machines - Desktop Table (hidden on mobile) */}
           <div
-            className="rounded-xl overflow-hidden"
+            className="hidden md:block rounded-xl overflow-hidden"
             style={{
               border: '1px solid #E8E4DF',
               marginBottom: '2rem',
@@ -215,10 +204,10 @@ export default function EquipmentCostsPage() {
                 borderBottom: '1px solid #E8E4DF',
               }}
             >
-              <div style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '0.875rem' }}>Wavelength</div>
-              <div style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '0.875rem' }}>Cheap versions?</div>
-              <div style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '0.875rem' }}>Price range</div>
-              <div style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '0.875rem' }}>In US clinics</div>
+              <div style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '0.9375rem' }}>Wavelength</div>
+              <div style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '0.9375rem' }}>Cheap versions?</div>
+              <div style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '0.9375rem' }}>Price range</div>
+              <div style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '0.9375rem' }}>In US clinics</div>
             </div>
 
             {/* 810nm Diode Row */}
@@ -226,10 +215,10 @@ export default function EquipmentCostsPage() {
               className="grid grid-cols-4 gap-4 p-4"
               style={{ borderBottom: '1px solid #E8E4DF', backgroundColor: '#FFFFFF' }}
             >
-              <div style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '0.875rem' }}>810nm Diode</div>
-              <div style={{ color: '#5E8B7E', fontSize: '0.875rem' }}>Extremely common</div>
-              <div style={{ color: '#2D2D2D', fontSize: '0.875rem' }}>$2,000–$5,000</div>
-              <div style={{ color: '#6B6560', fontSize: '0.875rem' }}>High: the #1 budget import</div>
+              <div style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '0.9375rem' }}>810nm Diode</div>
+              <div style={{ color: '#5E8B7E', fontSize: '0.9375rem' }}>Extremely common</div>
+              <div style={{ color: '#2D2D2D', fontSize: '0.9375rem' }}>$2,000–$5,000</div>
+              <div style={{ color: '#5A5550', fontSize: '0.9375rem' }}>High: the #1 budget import</div>
             </div>
 
             {/* 755nm Alexandrite Row */}
@@ -237,10 +226,10 @@ export default function EquipmentCostsPage() {
               className="grid grid-cols-4 gap-4 p-4"
               style={{ borderBottom: '1px solid #E8E4DF', backgroundColor: '#FFFFFF' }}
             >
-              <div style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '0.875rem' }}>755nm Alexandrite</div>
-              <div style={{ color: '#5E8B7E', fontSize: '0.875rem' }}>Exists but less common</div>
-              <div style={{ color: '#2D2D2D', fontSize: '0.875rem' }}>$2,500–$8,000</div>
-              <div style={{ color: '#6B6560', fontSize: '0.875rem' }}>Lower: crystal is harder to clone</div>
+              <div style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '0.9375rem' }}>755nm Alexandrite</div>
+              <div style={{ color: '#5E8B7E', fontSize: '0.9375rem' }}>Exists but less common</div>
+              <div style={{ color: '#2D2D2D', fontSize: '0.9375rem' }}>$2,500–$8,000</div>
+              <div style={{ color: '#5A5550', fontSize: '0.9375rem' }}>Lower: crystal is harder to clone</div>
             </div>
 
             {/* 1064nm Nd:YAG Row */}
@@ -248,15 +237,99 @@ export default function EquipmentCostsPage() {
               className="grid grid-cols-4 gap-4 p-4"
               style={{ backgroundColor: '#FFFFFF' }}
             >
-              <div style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '0.875rem' }}>1064nm Nd:YAG</div>
-              <div style={{ color: '#5E8B7E', fontSize: '0.875rem' }}>Common, usually as combo machines</div>
-              <div style={{ color: '#2D2D2D', fontSize: '0.875rem' }}>$2,500–$10,000</div>
-              <div style={{ color: '#6B6560', fontSize: '0.875rem' }}>Medium: often bundled with 755nm + 808nm</div>
+              <div style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '0.9375rem' }}>1064nm Nd:YAG</div>
+              <div style={{ color: '#5E8B7E', fontSize: '0.9375rem' }}>Common, usually as combo machines</div>
+              <div style={{ color: '#2D2D2D', fontSize: '0.9375rem' }}>$2,500–$10,000</div>
+              <div style={{ color: '#5A5550', fontSize: '0.9375rem' }}>Medium: often bundled with 755nm + 808nm</div>
+            </div>
+          </div>
+
+          {/* Budget Machines - Mobile Cards (hidden on desktop) */}
+          <div className="md:hidden flex flex-col gap-3" style={{ marginBottom: '2rem' }}>
+            {/* 810nm Diode Card */}
+            <div
+              className="rounded-xl p-4"
+              style={{
+                backgroundColor: '#FFFFFF',
+                border: '1px solid #E8E4DF',
+              }}
+            >
+              <div style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '1rem', marginBottom: '0.75rem' }}>
+                810nm Diode
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Cheap versions?</span>
+                  <span style={{ color: '#5E8B7E', fontSize: '0.9375rem', fontWeight: 500 }}>Extremely common</span>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Price range</span>
+                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>$2,000–$5,000</span>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>In US clinics</span>
+                  <span style={{ color: '#5A5550', fontSize: '0.9375rem', textAlign: 'right' }}>High: the #1 budget import</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 755nm Alexandrite Card */}
+            <div
+              className="rounded-xl p-4"
+              style={{
+                backgroundColor: '#FFFFFF',
+                border: '1px solid #E8E4DF',
+              }}
+            >
+              <div style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '1rem', marginBottom: '0.75rem' }}>
+                755nm Alexandrite
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Cheap versions?</span>
+                  <span style={{ color: '#5E8B7E', fontSize: '0.9375rem', fontWeight: 500 }}>Exists but less common</span>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Price range</span>
+                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>$2,500–$8,000</span>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>In US clinics</span>
+                  <span style={{ color: '#5A5550', fontSize: '0.9375rem', textAlign: 'right' }}>Lower: crystal is harder to clone</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 1064nm Nd:YAG Card */}
+            <div
+              className="rounded-xl p-4"
+              style={{
+                backgroundColor: '#FFFFFF',
+                border: '1px solid #E8E4DF',
+              }}
+            >
+              <div style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '1rem', marginBottom: '0.75rem' }}>
+                1064nm Nd:YAG
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Cheap versions?</span>
+                  <span style={{ color: '#5E8B7E', fontSize: '0.9375rem', fontWeight: 500 }}>Common (as combos)</span>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Price range</span>
+                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>$2,500–$10,000</span>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>In US clinics</span>
+                  <span style={{ color: '#5A5550', fontSize: '0.9375rem', textAlign: 'right' }}>Medium: often bundled</span>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Established Manufacturers */}
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
             Compare that to what established manufacturers charge:
           </p>
 
@@ -275,7 +348,7 @@ export default function EquipmentCostsPage() {
               <div style={{ color: '#5E8B7E', fontWeight: 500, fontSize: '0.9375rem', marginBottom: '0.25rem' }}>
                 $80,000–$150,000
               </div>
-              <div style={{ color: '#6B6560', fontSize: '0.8125rem' }}>
+              <div style={{ color: '#5A5550', fontSize: '0.875rem' }}>
                 Dual wavelength (755nm + 1064nm)
               </div>
             </div>
@@ -294,7 +367,7 @@ export default function EquipmentCostsPage() {
               <div style={{ color: '#5E8B7E', fontWeight: 500, fontSize: '0.9375rem', marginBottom: '0.25rem' }}>
                 $60,000–$100,000
               </div>
-              <div style={{ color: '#6B6560', fontSize: '0.8125rem' }}>
+              <div style={{ color: '#5A5550', fontSize: '0.875rem' }}>
                 810nm diode with vacuum-assist
               </div>
             </div>
@@ -313,7 +386,7 @@ export default function EquipmentCostsPage() {
               <div style={{ color: '#5E8B7E', fontWeight: 500, fontSize: '0.9375rem', marginBottom: '0.25rem' }}>
                 $70,000–$120,000
               </div>
-              <div style={{ color: '#6B6560', fontSize: '0.8125rem' }}>
+              <div style={{ color: '#5A5550', fontSize: '0.875rem' }}>
                 Dual wavelength (755nm + 1064nm)
               </div>
             </div>
@@ -332,7 +405,7 @@ export default function EquipmentCostsPage() {
               <div style={{ color: '#5E8B7E', fontWeight: 500, fontSize: '0.9375rem', marginBottom: '0.25rem' }}>
                 $50,000–$90,000
               </div>
-              <div style={{ color: '#6B6560', fontSize: '0.8125rem' }}>
+              <div style={{ color: '#5A5550', fontSize: '0.875rem' }}>
                 Tri-wavelength (755 + 810 + 1064nm)
               </div>
             </div>
@@ -359,7 +432,7 @@ export default function EquipmentCostsPage() {
               <h3 style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '1rem', marginBottom: '0.5rem' }}>
                 Power output and consistency
               </h3>
-              <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8 }}>
+              <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
                 Premium machines deliver higher, more consistent energy per pulse. A cheap machine might advertise the same peak power but can't sustain it across a full treatment session. The result: some follicles get enough energy to be destroyed, others don't. That's why you come back for more sessions.
               </p>
             </div>
@@ -369,7 +442,7 @@ export default function EquipmentCostsPage() {
               <h3 style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '1rem', marginBottom: '0.5rem' }}>
                 Cooling systems
               </h3>
-              <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8 }}>
+              <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
                 Candela's Dynamic Cooling Device (DCD) sprays cryogen milliseconds before each pulse, precisely timed to protect your skin while the laser reaches the follicle. Budget machines use basic contact cooling or nothing at all. Better cooling means higher safe energy levels and less pain.
               </p>
             </div>
@@ -379,7 +452,7 @@ export default function EquipmentCostsPage() {
               <h3 style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '1rem', marginBottom: '0.5rem' }}>
                 Spot size and treatment speed
               </h3>
-              <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8 }}>
+              <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
                 Premium machines offer larger spot sizes (up to 24mm) for faster coverage. A LightSheer Duet can treat a full back in under 15 minutes. A budget machine with a small handpiece could take over an hour for the same area and miss spots.
               </p>
             </div>
@@ -389,7 +462,7 @@ export default function EquipmentCostsPage() {
               <h3 style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '1rem', marginBottom: '0.5rem' }}>
                 FDA clearance vs CE marking
               </h3>
-              <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8 }}>
+              <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
                 Most premium devices hold FDA 510(k) clearance, which requires clinical evidence of safety and efficacy. Many imports carry only a CE mark, which in some cases is a self-declared conformity mark, not an independent safety review.
               </p>
             </div>
@@ -399,7 +472,7 @@ export default function EquipmentCostsPage() {
               <h3 style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '1rem', marginBottom: '0.5rem' }}>
                 Calibration and manufacturer support
               </h3>
-              <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8 }}>
+              <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
                 Premium manufacturers provide ongoing calibration, software updates, and certified service technicians. When a budget machine drifts out of calibration, there's no manufacturer to call. The clinic may not even know it's delivering inconsistent energy.
               </p>
             </div>
@@ -409,7 +482,7 @@ export default function EquipmentCostsPage() {
               <h3 style={{ color: '#2D2D2D', fontWeight: 600, fontSize: '1rem', marginBottom: '0.5rem' }}>
                 Practitioner training
               </h3>
-              <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8 }}>
+              <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
                 Candela, Lumenis, and Cynosure provide clinical training with their machines. Budget importers ship a device and a manual. The operator's skill matters as much as the equipment and training is part of what that $100,000 buys.
               </p>
             </div>
@@ -451,7 +524,7 @@ export default function EquipmentCostsPage() {
             <figcaption
               style={{
                 marginTop: '0.5rem',
-                color: '#6B6560',
+                color: '#5A5550',
                 fontSize: '0.8125rem',
                 textAlign: 'center',
               }}
@@ -481,7 +554,7 @@ export default function EquipmentCostsPage() {
             <figcaption
               style={{
                 marginTop: '0.5rem',
-                color: '#6B6560',
+                color: '#5A5550',
                 fontSize: '0.8125rem',
                 textAlign: 'center',
                 lineHeight: 1.5,
@@ -506,10 +579,10 @@ export default function EquipmentCostsPage() {
             </p>
           </div>
 
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
             Legitimate tri-wavelength machines exist: the Alma Soprano Titanium and InMode Triton both cost $50,000–$90,000 and come with clinical training and service contracts.
           </p>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8 }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
             When a clinic advertises "triple wavelength laser" at prices well below competitors, the question isn't whether they have three wavelengths. It's whether those wavelengths are delivered by a machine built to clinical standards.
           </p>
         </section>
@@ -528,7 +601,7 @@ export default function EquipmentCostsPage() {
             The White-Label Machine
           </h2>
 
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
             This isn't just a cheap machine. It's designed to be untraceable. The manufacturer explicitly offers as standard services:
           </p>
 
@@ -596,7 +669,7 @@ export default function EquipmentCostsPage() {
             </a>
           </figure>
 
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1.5rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1.5rem' }}>
             The manufacturer behind the $850 machine we found operates a 6,000m² factory with 145 staff. They already run six private label brands. They have over 3,200 store reviews and $2.3 million in annual online revenue. This isn't a back-room operation, it's industrial-scale white-labeling.
           </p>
 
@@ -641,7 +714,7 @@ export default function EquipmentCostsPage() {
             </p>
           </div>
 
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1.5rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1.5rem' }}>
             Verified reviews on the listing include repeat buyers from the United States and France, all from late 2025. These machines are actively entering clinics right now.
           </p>
 
@@ -686,7 +759,7 @@ export default function EquipmentCostsPage() {
             The "American Laser" Claim
           </h2>
 
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
             Some of these manufacturers display test sheets from Coherent, a legitimate American laser component supplier, to suggest their machines use premium parts. The listing we found includes a magnified photo of a Coherent manufacturing test data sheet as a marketing image:
           </p>
 
@@ -716,11 +789,11 @@ export default function EquipmentCostsPage() {
             </a>
           </figure>
 
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
             Even if the diode bar inside is genuine, it's a single component. A laser diode bar doesn't make a clinical-grade machine any more than a German engine makes a kit car a Mercedes. The power supply stability, cooling system, beam delivery, calibration software, and safety interlocks are what separate an $850 machine from a $97,500 one.
           </p>
 
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1.5rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1.5rem' }}>
             The same manufacturer also lists a version advertising "OEM ODM USA 510K CE", implying they can provide FDA 510(k) documentation for their white-label machines. Legitimate manufacturers spend years and millions of dollars obtaining FDA clearance for each device.
           </p>
 
@@ -786,23 +859,23 @@ export default function EquipmentCostsPage() {
             How to Protect Yourself
           </h2>
 
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7, marginBottom: '1rem' }}>
             Ask your clinic directly: <strong style={{ color: '#2D2D2D' }}>"What brand and model of laser do you use?"</strong>
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '1.25rem' }}>
-            <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7 }}>
+            <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7 }}>
               <strong style={{ color: '#2D2D2D' }}>If they name a brand you can't find anywhere online:</strong> that's a red flag. White-labeled machines are designed to be unsearchable.
             </p>
-            <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7 }}>
+            <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7 }}>
               <strong style={{ color: '#2D2D2D' }}>If they can't or won't answer:</strong> that's a bigger red flag. Reputable clinics are proud of their equipment investment.
             </p>
-            <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7 }}>
+            <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7 }}>
               <strong style={{ color: '#2D2D2D' }}>If they say "we use our own proprietary technology":</strong> be skeptical. Clinics don't manufacture lasers. Candela, Lumenis, Alma, and Cynosure do.
             </p>
           </div>
 
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7 }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7 }}>
             Once you have the answer,{' '}
             <Link
               href="/is-it-a-real-laser"

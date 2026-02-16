@@ -27,7 +27,7 @@ export function Disclaimer({ variant = 'compact' }: DisclaimerProps) {
         style={{
           backgroundColor: 'rgba(107, 101, 96, 0.06)',
           border: '1px solid rgba(107, 101, 96, 0.12)',
-          color: '#6B6560',
+          color: '#5A5550',
         }}
       >
         <svg
@@ -36,7 +36,7 @@ export function Disclaimer({ variant = 'compact' }: DisclaimerProps) {
           stroke="currentColor"
           viewBox="0 0 24 24"
           aria-hidden="true"
-          style={{ color: '#6B6560' }}
+          style={{ color: '#5A5550' }}
         >
           <path
             strokeLinecap="round"
@@ -63,7 +63,7 @@ export function Disclaimer({ variant = 'compact' }: DisclaimerProps) {
         border: '1px solid rgba(107, 101, 96, 0.1)',
       }}
     >
-      <p className="text-xs leading-relaxed" style={{ color: '#6B6560' }}>
+      <p className="text-xs leading-relaxed" style={{ color: '#5A5550' }}>
         This tool provides general information about laser hair removal equipment
         for educational purposes only. Individual results vary based on skin type,
         hair color, and other factors. Always consult with a qualified practitioner

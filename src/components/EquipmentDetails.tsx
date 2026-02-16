@@ -78,7 +78,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
           <Link
             href="/is-it-a-real-laser"
             className="inline-flex items-center gap-2 text-sm transition-colors hover:text-[#5E8B7E]"
-            style={{ color: '#6B6560' }}
+            style={{ color: '#5A5550' }}
           >
             <svg
               className="h-4 w-4"
@@ -122,8 +122,8 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
           <p
             className="mt-2"
             style={{
-              color: '#6B6560',
-              fontSize: '0.875rem',
+              color: '#5A5550',
+              fontSize: '0.9375rem',
               letterSpacing: '0.02em',
             }}
           >
@@ -148,7 +148,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
           >
             <dt
               style={{
-                color: '#6B6560',
+                color: '#5A5550',
                 fontSize: '0.7rem',
                 fontWeight: 500,
                 textTransform: 'uppercase',
@@ -172,7 +172,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
           >
             <dt
               style={{
-                color: '#6B6560',
+                color: '#5A5550',
                 fontSize: '0.7rem',
                 fontWeight: 500,
                 textTransform: 'uppercase',
@@ -196,7 +196,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
           >
             <dt
               style={{
-                color: '#6B6560',
+                color: '#5A5550',
                 fontSize: '0.7rem',
                 fontWeight: 500,
                 textTransform: 'uppercase',
@@ -222,7 +222,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
           >
             <dt
               style={{
-                color: '#6B6560',
+                color: '#5A5550',
                 fontSize: '0.7rem',
                 fontWeight: 500,
                 textTransform: 'uppercase',
@@ -251,7 +251,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
           >
             <dt
               style={{
-                color: '#6B6560',
+                color: '#5A5550',
                 fontSize: '0.7rem',
                 fontWeight: 500,
                 textTransform: 'uppercase',
@@ -275,7 +275,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
           >
             <dt
               style={{
-                color: '#6B6560',
+                color: '#5A5550',
                 fontSize: '0.7rem',
                 fontWeight: 500,
                 textTransform: 'uppercase',
@@ -311,7 +311,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
             >
               Notes
             </h2>
-            <p className="text-sm leading-relaxed" style={{ color: '#6B6560' }}>
+            <p className="text-sm leading-relaxed" style={{ color: '#5A5550' }}>
               {notes}
             </p>
           </section>
@@ -342,7 +342,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
               >
                 Overview
               </h2>
-              <p className="leading-relaxed" style={{ color: '#6B6560' }}>
+              <p className="leading-relaxed" style={{ color: '#5A5550' }}>
                 {richContent.overview}
               </p>
             </div>
@@ -360,7 +360,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
               >
                 How It Works
               </h2>
-              <p className="leading-relaxed" style={{ color: '#6B6560' }}>
+              <p className="leading-relaxed" style={{ color: '#5A5550' }}>
                 {richContent.howItWorks}
               </p>
             </div>
@@ -378,7 +378,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
               >
                 Typical Uses
               </h2>
-              <ul style={{ color: '#6B6560', paddingLeft: '1.5rem', listStyleType: 'disc' }}>
+              <ul style={{ color: '#5A5550', paddingLeft: '1.5rem', listStyleType: 'disc' }}>
                 {richContent.typicalUses.map((use, index) => (
                   <li
                     key={index}
@@ -404,7 +404,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
               >
                 Key Features
               </h2>
-              <p className="leading-relaxed" style={{ color: '#6B6560' }}>
+              <p className="leading-relaxed" style={{ color: '#5A5550' }}>
                 {richContent.keyFeatures}
               </p>
             </div>
@@ -444,7 +444,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
                     border: '1px solid #E8E4DF',
                     borderRadius: '9999px',
                     padding: '0.5rem 1rem',
-                    fontSize: '0.875rem',
+                    fontSize: '0.9375rem',
                     color: '#2D2D2D',
                     textDecoration: 'none',
                   }}
@@ -455,7 +455,7 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
                     height="12"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="#6B6560"
+                    stroke="#5A5550"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"

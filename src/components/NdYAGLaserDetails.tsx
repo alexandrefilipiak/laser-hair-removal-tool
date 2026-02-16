@@ -52,7 +52,7 @@ export function NdYAGLaserDetails({ term }: NdYAGLaserDetailsProps) {
           <Link
             href="/is-it-a-real-laser"
             className="inline-flex items-center gap-2 text-sm transition-colors hover:text-[#5E8B7E]"
-            style={{ color: '#6B6560' }}
+            style={{ color: '#5A5550' }}
           >
             <svg
               className="h-4 w-4"
@@ -104,18 +104,18 @@ export function NdYAGLaserDetails({ term }: NdYAGLaserDetailsProps) {
             display: 'flex',
             flexWrap: 'wrap',
             justifyContent: 'center',
-            gap: '0.5rem 1rem',
+            gap: '0.25rem 0.5rem',
             marginBottom: '2.5rem',
-            fontSize: '0.8125rem',
+            fontSize: '0.875rem',
           }}
         >
-          <a href="#what-it-is" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">What It Is</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#the-brand-matters" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">The Brand Matters</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#ask-your-clinic" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">Ask Your Clinic</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#examples" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">Examples</a>
+          <a href="#what-it-is" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">What It Is</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#the-brand-matters" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">The Brand Matters</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#ask-your-clinic" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">Ask Your Clinic</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#examples" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">Examples</a>
         </nav>
 
         {/* What It Is */}
@@ -159,17 +159,17 @@ export function NdYAGLaserDetails({ term }: NdYAGLaserDetailsProps) {
           >
             The Brand Matters
           </h2>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
             Not all 1064nm Nd:YAG lasers are equal. Premium devices like the Candela GentleYAG cost
             $60,000+. Budget alternatives from Chinese manufacturers start at $2,500, often as
             multi-wavelength combo machines that bundle 755nm, 808nm, and 1064nm into one device
             for under $5,000.
           </p>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
             If your clinic claims to treat all skin types with a single device at significantly
             below-market pricing, it's worth asking about the specific brand and model.
           </p>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8 }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
             This matters especially for 1064nm. Patients with darker skin tones specifically seek
             Nd:YAG because it's the safest wavelength for their skin type. A poorly calibrated
             device increases the risk of burns and the consequences are more visible and more
@@ -223,7 +223,7 @@ export function NdYAGLaserDetails({ term }: NdYAGLaserDetailsProps) {
           >
             "What brand and model of Nd:YAG laser do you use?"
           </p>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7 }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7 }}>
             Once you have the answer,{' '}
             <Link
               href="/is-it-a-real-laser"
@@ -267,7 +267,7 @@ export function NdYAGLaserDetails({ term }: NdYAGLaserDetailsProps) {
                     border: '1px solid #E8E4DF',
                     borderRadius: '9999px',
                     padding: '0.5rem 1rem',
-                    fontSize: '0.875rem',
+                    fontSize: '0.9375rem',
                     color: '#2D2D2D',
                     textDecoration: 'none',
                   }}
@@ -278,7 +278,7 @@ export function NdYAGLaserDetails({ term }: NdYAGLaserDetailsProps) {
                     height="12"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="#6B6560"
+                    stroke="#5A5550"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"

@@ -53,7 +53,7 @@ export default function Home() {
           style={{
             fontSize: 'clamp(1rem, 2.5vw, 1.25rem)',
             lineHeight: 1.6,
-            color: '#6B6560',
+            color: '#5A5550',
             marginBottom: '2.5rem',
             maxWidth: '540px',
             marginLeft: 'auto',
@@ -127,7 +127,7 @@ export default function Home() {
                 style={{
                   fontSize: '0.75rem',
                   fontWeight: 500,
-                  color: '#6B6560',
+                  color: '#5A5550',
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em',
                 }}

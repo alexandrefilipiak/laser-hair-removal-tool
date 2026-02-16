@@ -52,7 +52,7 @@ export function DualWavelengthLaserDetails({ term }: DualWavelengthLaserDetailsP
           <Link
             href="/is-it-a-real-laser"
             className="inline-flex items-center gap-2 text-sm transition-colors hover:text-[#5E8B7E]"
-            style={{ color: '#6B6560' }}
+            style={{ color: '#5A5550' }}
           >
             <svg
               className="h-4 w-4"
@@ -104,18 +104,18 @@ export function DualWavelengthLaserDetails({ term }: DualWavelengthLaserDetailsP
             display: 'flex',
             flexWrap: 'wrap',
             justifyContent: 'center',
-            gap: '0.5rem 1rem',
+            gap: '0.25rem 0.5rem',
             marginBottom: '2.5rem',
-            fontSize: '0.8125rem',
+            fontSize: '0.875rem',
           }}
         >
-          <a href="#what-it-is" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">What It Is</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#the-brand-matters" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">The Brand Matters</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#ask-your-clinic" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">Ask Your Clinic</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#examples" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">Examples</a>
+          <a href="#what-it-is" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">What It Is</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#the-brand-matters" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">The Brand Matters</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#ask-your-clinic" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">Ask Your Clinic</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#examples" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">Examples</a>
         </nav>
 
         {/* What It Is */}
@@ -144,7 +144,7 @@ export function DualWavelengthLaserDetails({ term }: DualWavelengthLaserDetailsP
           <p className="leading-relaxed" style={{ color: '#2D2D2D', fontSize: '1.0625rem', lineHeight: 1.7 }}>
             {whatItIs}
           </p>
-          <p className="leading-relaxed" style={{ color: '#6B6560', fontSize: '1rem', lineHeight: 1.7, marginTop: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', fontSize: '1rem', lineHeight: 1.7, marginTop: '1rem' }}>
             The 755nm Alexandrite wavelength is highly effective for lighter skin tones (Fitzpatrick I-IV),
             while the 1064nm Nd:YAG wavelength safely treats darker skin tones (Fitzpatrick V-VI).
             Together, they allow practitioners to treat virtually any patient with a single machine.
@@ -164,12 +164,12 @@ export function DualWavelengthLaserDetails({ term }: DualWavelengthLaserDetailsP
           >
             The Brand Matters
           </h2>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
             Not all dual wavelength lasers are equal. A Candela GentleMax Pro costs $80,000–$150,000.
             A Cynosure Elite iQ runs $70,000–$120,000. These machines feature advanced cooling systems,
             consistent power output, and come with manufacturer training and service contracts.
           </p>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8 }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
             Budget dual-wavelength machines from Alibaba start at $3,000–$10,000. They may advertise
             the same wavelengths, but the quality of the laser source, cooling system, and calibration
             are fundamentally different. Same wavelengths, vastly different results.
@@ -210,12 +210,12 @@ export function DualWavelengthLaserDetails({ term }: DualWavelengthLaserDetailsP
             </svg>
             Ask Your Clinic
           </h2>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7, marginBottom: '1rem' }}>
             If your clinic says they use a "dual wavelength" or "755nm + 1064nm" laser, ask for the
             specific brand and model. Reputable clinics using premium equipment are typically proud
             to share this information. Names like GentleMax Pro, Elite iQ, and Clarity II are good signs.
           </p>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7 }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7 }}>
             <Link
               href="/is-it-a-real-laser"
               style={{ color: '#5E8B7E', fontWeight: 500, textDecoration: 'underline' }}
@@ -258,7 +258,7 @@ export function DualWavelengthLaserDetails({ term }: DualWavelengthLaserDetailsP
                     border: '1px solid #E8E4DF',
                     borderRadius: '9999px',
                     padding: '0.5rem 1rem',
-                    fontSize: '0.875rem',
+                    fontSize: '0.9375rem',
                     color: '#2D2D2D',
                     textDecoration: 'none',
                   }}
@@ -269,7 +269,7 @@ export function DualWavelengthLaserDetails({ term }: DualWavelengthLaserDetailsP
                     height="12"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="#6B6560"
+                    stroke="#5A5550"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"

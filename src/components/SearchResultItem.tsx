@@ -62,7 +62,7 @@ export function SearchResultItem({
             <div
               className="text-sm truncate"
               style={{
-                color: '#6B6560',
+                color: '#5A5550',
                 fontSize: '0.7rem',
                 marginTop: '0.125rem',
               }}

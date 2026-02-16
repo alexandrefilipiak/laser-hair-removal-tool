@@ -60,7 +60,7 @@ export function NotFoundSuggestions({
           <p
             className="text-sm font-medium mb-2"
             style={{
-              color: '#6B6560',
+              color: '#5A5550',
               fontSize: '0.75rem',
               fontWeight: 500,
               textTransform: 'uppercase',
@@ -101,7 +101,7 @@ export function NotFoundSuggestions({
                       {machine && suggestion.manufacturer && (
                         <span
                           style={{
-                            color: '#6B6560',
+                            color: '#5A5550',
                             fontSize: '0.7rem',
                             marginLeft: '0.5rem',
                           }}
@@ -128,7 +128,7 @@ export function NotFoundSuggestions({
           <p
             className="text-sm font-medium mb-2"
             style={{
-              color: '#6B6560',
+              color: '#5A5550',
               fontSize: '0.75rem',
               fontWeight: 500,
               textTransform: 'uppercase',
@@ -167,7 +167,7 @@ export function NotFoundSuggestions({
                       <span className="font-semibold">{suggestion.name}</span>
                       <span
                         style={{
-                          color: '#6B6560',
+                          color: '#5A5550',
                           fontSize: '0.7rem',
                           marginLeft: '0.5rem',
                         }}
@@ -208,7 +208,7 @@ export function NotFoundSuggestions({
           className="inline-flex items-center gap-2 font-medium transition-colors py-2 px-3 -mx-3 rounded-lg"
           style={{
             color: isBrowseAllActive ? '#4A7466' : '#5E8B7E',
-            fontSize: '0.875rem',
+            fontSize: '0.9375rem',
             backgroundColor: isBrowseAllActive ? 'rgba(94, 139, 126, 0.08)' : 'transparent',
           }}
         >

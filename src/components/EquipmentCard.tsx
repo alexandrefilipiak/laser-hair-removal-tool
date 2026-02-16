@@ -29,7 +29,7 @@ export function EquipmentCard({ equipment }: EquipmentCardProps) {
             <p
               className="mt-0.5"
               style={{
-                color: '#6B6560',
+                color: '#5A5550',
                 fontSize: '0.9375rem',
                 lineHeight: 1.7,
               }}

@@ -31,7 +31,7 @@ const tierConfig: Record<
   consumer: {
     label: 'Home Device',
     backgroundColor: 'rgba(107, 101, 96, 0.08)',
-    color: '#6B6560',
+    color: '#5A5550',
     borderColor: 'rgba(107, 101, 96, 0.15)',
   },
   unknown: {

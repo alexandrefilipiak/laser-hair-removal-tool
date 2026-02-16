@@ -5,8 +5,6 @@
  * educational content about diode lasers and quality variations.
  */
 
-
-
 import Link from 'next/link';
 import type { TechnologyTermEntry, EquipmentEntry } from '@/lib/equipment';
 import { getTermBadgeType, isMachine } from '@/lib/equipment';
@@ -14,11 +12,6 @@ import { ClassificationBadge } from './ClassificationBadge';
 import { Disclaimer } from './Disclaimer';
 import { Footer } from './Footer';
 import equipmentData from '@/data/equipment.json';
-import { equal } from 'assert'
-import { a } from 'node_modules/vitest/dist/chunks/suite.d.BJWk38HB'
-import { start } from 'repl'
-import { types } from 'util'
-import { it } from 'vitest'
 
 const equipment = equipmentData as EquipmentEntry[];
 
@@ -59,7 +52,7 @@ export function DiodeLaserDetails({ term }: DiodeLaserDetailsProps) {
           <Link
             href="/is-it-a-real-laser"
             className="inline-flex items-center gap-2 text-sm transition-colors hover:text-[#5E8B7E]"
-            style={{ color: '#6B6560' }}
+            style={{ color: '#5A5550' }}
           >
             <svg
               className="h-4 w-4"
@@ -111,16 +104,16 @@ export function DiodeLaserDetails({ term }: DiodeLaserDetailsProps) {
             display: 'flex',
             flexWrap: 'wrap',
             justifyContent: 'center',
-            gap: '0.5rem 1rem',
+            gap: '0.25rem 0.5rem',
             marginBottom: '2.5rem',
-            fontSize: '0.8125rem',
+            fontSize: '0.875rem',
           }}
         >
-          <a href="#what-it-is" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">What It Is</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#the-brand-matters" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">The Brand Matters</a>
-          <span style={{ color: '#E8E4DF' }}>·</span>
-          <a href="#ask-your-clinic" style={{ color: '#5E8B7E', textDecoration: 'none' }} className="hover:underline">Ask Your Clinic</a>
+          <a href="#what-it-is" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">What It Is</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#the-brand-matters" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">The Brand Matters</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#ask-your-clinic" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">Ask Your Clinic</a>
         </nav>
 
         {/* What It Is */}
@@ -164,11 +157,11 @@ export function DiodeLaserDetails({ term }: DiodeLaserDetailsProps) {
           >
             The Brand Matters
           </h2>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8, marginBottom: '1rem' }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
             Not all 810nm diode lasers are equal. The wavelength is just physics. What determines
             your results is the machine behind it.
           </p>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.8 }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
             A clinical-grade LightSheer Duet costs $60,000–$100,000. An unbranded import can cost
             as little as $3,000. Same wavelength, vastly different power output, cooling systems,
             and engineering quality.
@@ -221,7 +214,7 @@ export function DiodeLaserDetails({ term }: DiodeLaserDetailsProps) {
           >
             "What brand and model of 810nm diode laser do you use?"
           </p>
-          <p className="leading-relaxed" style={{ color: '#6B6560', lineHeight: 1.7 }}>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7 }}>
             Once you have the answer,{' '}
             <Link
               href="/is-it-a-real-laser"
@@ -265,7 +258,7 @@ export function DiodeLaserDetails({ term }: DiodeLaserDetailsProps) {
                     border: '1px solid #E8E4DF',
                     borderRadius: '9999px',
                     padding: '0.5rem 1rem',
-                    fontSize: '0.875rem',
+                    fontSize: '0.9375rem',
                     color: '#2D2D2D',
                     textDecoration: 'none',
                   }}
@@ -276,7 +269,7 @@ export function DiodeLaserDetails({ term }: DiodeLaserDetailsProps) {
                     height="12"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="#6B6560"
+                    stroke="#5A5550"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"

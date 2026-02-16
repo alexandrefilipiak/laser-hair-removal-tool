@@ -55,7 +55,7 @@ export default function IsItARealLaserPage() {
             style={{
               fontSize: 'clamp(0.95rem, 2vw, 1.125rem)',
               lineHeight: 1.6,
-              color: '#6B6560',
+              color: '#5A5550',
               marginBottom: '2.5rem',
               maxWidth: '520px',
               marginLeft: 'auto',
@@ -75,7 +75,7 @@ export default function IsItARealLaserPage() {
             <span
               style={{
                 display: 'block',
-                color: '#6B6560',
+                color: '#5A5550',
                 fontSize: '0.7rem',
                 fontWeight: 500,
                 letterSpacing: '0.1em',
@@ -134,7 +134,7 @@ export default function IsItARealLaserPage() {
               <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
               <line x1="12" y1="17" x2="12.01" y2="17" />
             </svg>
-            <p style={{ color: '#6B6560', fontSize: '0.9375rem', lineHeight: 1.7 }}>
+            <p style={{ color: '#5A5550', fontSize: '0.9375rem', lineHeight: 1.7 }}>
               Not sure?{' '}
               <span style={{ color: '#2D2D2D' }}>
                 Ask your clinic: "What brand and model of laser do you use?"
@@ -192,7 +192,7 @@ export default function IsItARealLaserPage() {
                 <Link href="/is-it-a-real-laser/755nm" style={{ color: '#5E8B7E', fontWeight: 600, fontSize: '0.9375rem', textDecoration: 'none' }} className="hover:underline">
                   755nm Alexandrite
                 </Link>
-                <p style={{ color: '#6B6560', fontSize: '0.9375rem', lineHeight: 1.7, marginTop: '0.5rem' }}>
+                <p style={{ color: '#5A5550', fontSize: '0.9375rem', lineHeight: 1.7, marginTop: '0.5rem' }}>
                   Most effective for lighter skin tones (Fitzpatrick I-IV). Found in machines like GentleLase and GentleMax Pro.
                 </p>
               </div>
@@ -209,7 +209,7 @@ export default function IsItARealLaserPage() {
                 <Link href="/is-it-a-real-laser/810nm" style={{ color: '#5E8B7E', fontWeight: 600, fontSize: '0.9375rem', textDecoration: 'none' }} className="hover:underline">
                   810nm Diode
                 </Link>
-                <p style={{ color: '#6B6560', fontSize: '0.9375rem', lineHeight: 1.7, marginTop: '0.5rem' }}>
+                <p style={{ color: '#5A5550', fontSize: '0.9375rem', lineHeight: 1.7, marginTop: '0.5rem' }}>
                   The most common type. Works across a range of skin tones. Found in machines like LightSheer and Soprano.
                 </p>
               </div>
@@ -226,7 +226,7 @@ export default function IsItARealLaserPage() {
                 <Link href="/is-it-a-real-laser/1064nm" style={{ color: '#5E8B7E', fontWeight: 600, fontSize: '0.9375rem', textDecoration: 'none' }} className="hover:underline">
                   1064nm Nd:YAG
                 </Link>
-                <p style={{ color: '#6B6560', fontSize: '0.9375rem', lineHeight: 1.7, marginTop: '0.5rem' }}>
+                <p style={{ color: '#5A5550', fontSize: '0.9375rem', lineHeight: 1.7, marginTop: '0.5rem' }}>
                   Safest for darker skin tones (Fitzpatrick V-VI). Found in machines like GentleYAG and Clarity II.
                 </p>
               </div>
@@ -234,7 +234,7 @@ export default function IsItARealLaserPage() {
             <p
               style={{
                 marginTop: '1rem',
-                color: '#6B6560',
+                color: '#5A5550',
                 fontSize: '0.9375rem',
                 lineHeight: 1.7,
                 textAlign: 'center',
@@ -294,7 +294,7 @@ export default function IsItARealLaserPage() {
 
             <p
               style={{
-                color: '#6B6560',
+                color: '#5A5550',
                 fontSize: '0.9375rem',
                 textAlign: 'center',
                 marginBottom: '0.75rem',
@@ -343,7 +343,7 @@ export default function IsItARealLaserPage() {
 
             <p
               style={{
-                color: '#6B6560',
+                color: '#5A5550',
                 fontSize: '0.75rem',
                 textAlign: 'center',
                 marginBottom: '0.75rem',
