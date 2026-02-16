@@ -1008,6 +1008,26 @@ export default function EquipmentCostsPage() {
           />
         </div>
 
+        {/* Contact CTA */}
+        <p
+          className="text-center"
+          style={{
+            color: '#5A5550',
+            fontSize: '0.9375rem',
+            marginTop: '2rem',
+          }}
+        >
+          Have information about equipment we should investigate?{' '}
+          <Link
+            href="/contact"
+            style={{ color: '#5E8B7E', fontWeight: 500 }}
+            className="hover:underline"
+          >
+            Get in touch
+          </Link>
+          .
+        </p>
+
         <Footer />
       </article>
     </main>
