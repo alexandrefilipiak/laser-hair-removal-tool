@@ -659,29 +659,44 @@ export default function EquipmentCostsPage() {
           </div>
 
           {/* Brand Might Not Exist Screenshot */}
-          <figure style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
-            <a
-              href="/brand_might_not_exist.png"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl overflow-hidden transition-opacity hover:opacity-90"
+          <figure style={{ marginBottom: '1.5rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <a
+                href="/brand_might_not_exist.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl overflow-hidden transition-opacity hover:opacity-90"
+                style={{
+                  border: '1px solid #E8E4DF',
+                  width: '85%',
+                  display: 'block',
+                  cursor: 'zoom-in',
+                }}
+              >
+                <img
+                  src="/brand_might_not_exist.png"
+                  alt="Alibaba listing showing custom branding options for laser machines"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    display: 'block',
+                  }}
+                />
+              </a>
+            </div>
+            {/* Mobile caption */}
+            <figcaption
+              className="md:hidden"
               style={{
-                border: '1px solid #E8E4DF',
-                width: '85%',
-                display: 'block',
-                cursor: 'zoom-in',
+                color: '#5A5550',
+                fontSize: '0.8125rem',
+                textAlign: 'center',
+                marginTop: '0.75rem',
+                lineHeight: 1.5,
               }}
             >
-              <img
-                src="/brand_might_not_exist.png"
-                alt="Alibaba listing showing custom branding options for laser machines"
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                  display: 'block',
-                }}
-              />
-            </a>
+              The same manufacturer&apos;s listing indicate: &quot;Print your LOGO on machine body and screen&quot;
+            </figcaption>
           </figure>
 
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1.5rem' }}>
