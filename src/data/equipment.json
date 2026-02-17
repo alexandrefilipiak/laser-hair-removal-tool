@@ -213,14 +213,14 @@
     },
     "purposeBuilt": true,
     "coolingMethod": "air cooling (SmartCool)",
-    "notes": "Dual-wavelength Alexandrite + Nd:YAG. Widely deployed across major US clinic chains.",
+    "notes": "Dual-wavelength Alexandrite + Nd:YAG.",
     "aliases": ["apogee elite", "cynosure apogee elite", "cynosure apogee", "apogee"],
     "family": "cynosure-elite",
     "deliveryMethod": null,
     "richContent": {
-      "overview": "Cynosure's dual-wavelength system (755nm Alexandrite + 1064nm Nd:YAG). Widely used in high-volume clinic chains across the US.",
+      "overview": "Cynosure's dual-wavelength system (755nm Alexandrite + 1064nm Nd:YAG).",
       "howItWorks": "Practitioners select wavelength based on skin type. Both can be used in the same session. SmartCool air cooling protects the skin before, during, and after each pulse.",
-      "typicalUses": ["All body areas and Fitzpatrick I-VI", "High-volume clinics with diverse patient populations"],
+      "typicalUses": ["All body areas and Fitzpatrick I-VI"],
       "keyFeatures": "Proven dual-wavelength platform with SmartCool integrated air cooling system."
     }
   },
