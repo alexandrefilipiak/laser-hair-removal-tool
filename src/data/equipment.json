@@ -199,7 +199,7 @@
       "keyFeatures": "Skintel melanin reader removes guesswork from parameter selection. Large spot size significantly reduces treatment time."
     }
   },
-  {
+{
     "type": "machine",
     "slug": "apogee-elite",
     "name": "Apogee Elite",
@@ -213,15 +213,15 @@
     },
     "purposeBuilt": true,
     "coolingMethod": "air cooling (SmartCool)",
-    "notes": "Dual-wavelength Alexandrite + Nd:YAG. Used across all 160+ LaserAway locations.",
+    "notes": "Dual-wavelength Alexandrite + Nd:YAG. Widely deployed across major US clinic chains.",
     "aliases": ["apogee elite", "cynosure apogee elite", "cynosure apogee", "apogee"],
     "family": "cynosure-elite",
     "deliveryMethod": null,
     "richContent": {
-      "overview": "Cynosure's dual-wavelength system (755nm Alexandrite + 1064nm Nd:YAG). Standard equipment across all LaserAway locations.",
+      "overview": "Cynosure's dual-wavelength system (755nm Alexandrite + 1064nm Nd:YAG). Widely used in high-volume clinic chains across the US.",
       "howItWorks": "Practitioners select wavelength based on skin type. Both can be used in the same session. SmartCool air cooling protects the skin before, during, and after each pulse.",
       "typicalUses": ["All body areas and Fitzpatrick I-VI", "High-volume clinics with diverse patient populations"],
-      "keyFeatures": "Proven dual-wavelength platform. LaserAway pairs it with their proprietary LaserSafe protocol which defaults to Nd:YAG for safety."
+      "keyFeatures": "Proven dual-wavelength platform with SmartCool integrated air cooling system."
     }
   },
   {
