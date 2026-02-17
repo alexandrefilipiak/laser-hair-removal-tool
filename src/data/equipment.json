@@ -201,6 +201,31 @@
   },
   {
     "type": "machine",
+    "slug": "apogee-elite",
+    "name": "Apogee Elite",
+    "manufacturer": "Cynosure",
+    "technologyType": "laser",
+    "wavelengths": ["755nm", "1064nm"],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (dual wavelength system)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "air cooling (SmartCool)",
+    "notes": "Dual-wavelength Alexandrite + Nd:YAG. Used across all 160+ LaserAway locations.",
+    "aliases": ["apogee elite", "cynosure apogee elite", "cynosure apogee", "apogee"],
+    "family": "cynosure-elite",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Cynosure's dual-wavelength system (755nm Alexandrite + 1064nm Nd:YAG). Standard equipment across all LaserAway locations.",
+      "howItWorks": "Practitioners select wavelength based on skin type. Both can be used in the same session. SmartCool air cooling protects the skin before, during, and after each pulse.",
+      "typicalUses": ["All body areas and Fitzpatrick I-VI", "High-volume clinics with diverse patient populations"],
+      "keyFeatures": "Proven dual-wavelength platform. LaserAway pairs it with their proprietary LaserSafe protocol which defaults to Nd:YAG for safety."
+    }
+  },
+  {
+    "type": "machine",
     "slug": "elite-plus",
     "name": "Elite+",
     "manufacturer": "Cynosure",
@@ -212,7 +237,7 @@
       "displayText": "All skin tones (dual wavelength system)"
     },
     "purposeBuilt": true,
-    "coolingMethod": "contact cooling",
+    "coolingMethod": "air cooling",
     "notes": "Dual-wavelength Alexandrite + Nd:YAG. Predecessor to Elite iQ.",
     "aliases": ["elite plus", "cynosure elite+", "cynosure elite plus"],
     "family": "cynosure-elite",
@@ -237,7 +262,7 @@
       "displayText": "All skin tones (dual wavelength system)"
     },
     "purposeBuilt": true,
-    "coolingMethod": "contact cooling",
+    "coolingMethod": "air cooling (Zimmer Cryo) + contact cooling",
     "notes": "Latest generation dual-wavelength laser from Cynosure. Skintel melanin reader for customized settings.",
     "aliases": ["eliteiq", "cynosure elite iq"],
     "family": "cynosure-elite",
