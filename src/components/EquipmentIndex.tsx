@@ -116,7 +116,7 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
               letterSpacing: '0.01em',
             }}
           >
-            Covering the most common devices used in US clinics
+            35 machines across 14 manufacturers — covering the most common devices used in US clinics
           </p>
         </div>
 
