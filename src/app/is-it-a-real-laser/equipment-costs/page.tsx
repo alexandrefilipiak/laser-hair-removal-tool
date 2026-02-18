@@ -688,6 +688,34 @@ export default function EquipmentCostsPage() {
               A &ldquo;Saint Lancy&rdquo; branded four-wavelength diode laser from Weifang Mingliang Electronics Co., Ltd.: $1,260. Note the &ldquo;Customization&rdquo; tab: same white-label playbook. Any clinic can put their own name on this.
             </figcaption>
           </figure>
+
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
+            Machines from manufacturers like Bomeitong (Beijing), Weifang Mingliang, and dozens of other OEM factories now advertise 755nm + 808nm + 940nm + 1064nm — four wavelengths in a single handpiece for around $1,200–$5,000.
+          </p>
+
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
+            The pitch sounds logical: tri-wavelength systems have a gap between 808nm and 1064nm. Adding 940nm fills that gap for &ldquo;more complete coverage.&rdquo; Some listings even include a diagram showing why four is better than three.
+          </p>
+
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
+            <strong style={{ color: '#2D2D2D' }}>Here&apos;s the problem:</strong> no premium manufacturer offers a four-wavelength system. Not Candela. Not Lumenis. Not Cynosure. Not Alma. These companies spend millions on R&amp;D and have concluded that three wavelengths (or two) are clinically sufficient when delivered with proper power, cooling, and pulse control.
+          </p>
+
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
+            The only places you&apos;ll find four-wavelength machines are on Alibaba, Made-in-China.com, and in clinics that bought from them.
+          </p>
+
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
+            <strong style={{ color: '#2D2D2D' }}>What the 940nm actually adds:</strong> Marginal. The clinical difference between a quality tri-wavelength system and a budget quad-wavelength system isn&apos;t the extra wavelength — it&apos;s the quality gap in everything else. Power stability across a full treatment session. Beam uniformity. Cooling precision. Pulse control. Calibration accuracy. These determine your results, not whether the spec sheet lists three wavelengths or four.
+          </p>
+
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
+            <strong style={{ color: '#2D2D2D' }}>The real purpose of the fourth wavelength is marketing.</strong> A clinic using a $1,260 quad-wavelength machine can say &ldquo;we use more wavelengths than the Soprano Titanium&rdquo; — and it&apos;s technically true. A consumer Googling &ldquo;4 wavelength vs 3 wavelength laser&rdquo; will find manufacturer-written content arguing that four is better. The spec-sheet comparison favors the budget machine. The clinical outcome does not.
+          </p>
+
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
+            <strong style={{ color: '#2D2D2D' }}>How to spot this:</strong> If a clinic advertises &ldquo;4-wavelength laser hair removal,&rdquo; ask the brand and model. If it&apos;s not from a manufacturer you can verify independently, or if the name doesn&apos;t appear anywhere outside that clinic&apos;s own marketing, you&apos;re likely looking at a white-labeled import with an extra wavelength added for the brochure.
+          </p>
         </section>
 
         {/* The White-Label Machine */}
