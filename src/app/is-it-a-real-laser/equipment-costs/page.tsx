@@ -121,6 +121,8 @@ export default function EquipmentCostsPage() {
           <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
           <a href="#combo-machines" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">Combo Machine Red Flag</a>
           <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <a href="#four-wavelengths" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">4 Wavelengths Escalation</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
           <a href="#white-label" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">White-Label Machine</a>
           <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
           <a href="#american-laser" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">"American Laser" Claim</a>
@@ -616,6 +618,76 @@ export default function EquipmentCostsPage() {
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
             When a clinic advertises "triple wavelength laser" at prices well below competitors, the question isn't whether they have three wavelengths. It's whether those wavelengths are delivered by a machine built to clinical standards.
           </p>
+        </section>
+
+        {/* The "4 Wavelengths" Marketing Escalation */}
+        <section id="four-wavelengths" style={{ marginBottom: '2.5rem' }}>
+          <h2
+            style={{
+              fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
+              color: '#2D2D2D',
+              fontSize: '1.25rem',
+              fontWeight: 600,
+              marginBottom: '1rem',
+            }}
+          >
+            The &ldquo;4 Wavelengths&rdquo; Marketing Escalation
+          </h2>
+
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1.5rem' }}>
+            The combo machine market has already evolved. As tri-wavelength machines flooded Alibaba, Chinese manufacturers needed a new edge. Their answer: add a fourth wavelength.
+          </p>
+
+          {/* Four wavelength image */}
+          <figure
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              marginBottom: '1.5rem',
+            }}
+          >
+            <a
+              href="/discount_four_wavelength_laser.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full md:w-[85%]"
+            >
+              <img
+                src="/discount_four_wavelength_laser.png"
+                alt="A 'Saint Lancy' branded four-wavelength diode laser from Weifang Mingliang Electronics Co., Ltd.: $1,260"
+                style={{
+                  width: '100%',
+                  borderRadius: '0.75rem',
+                  border: '1px solid #E8E4DF',
+                }}
+              />
+            </a>
+            <figcaption
+              className="md:hidden"
+              style={{
+                marginTop: '0.75rem',
+                color: '#5A5550',
+                fontSize: '0.8125rem',
+                textAlign: 'center',
+                lineHeight: 1.5,
+              }}
+            >
+              A &ldquo;Saint Lancy&rdquo; branded four-wavelength diode laser from Weifang Mingliang Electronics Co., Ltd.: $1,260. Note the &ldquo;Customization&rdquo; tab: same white-label playbook.
+            </figcaption>
+            <figcaption
+              className="hidden md:block"
+              style={{
+                marginTop: '0.75rem',
+                color: '#5A5550',
+                fontSize: '0.8125rem',
+                textAlign: 'center',
+                lineHeight: 1.5,
+              }}
+            >
+              A &ldquo;Saint Lancy&rdquo; branded four-wavelength diode laser from Weifang Mingliang Electronics Co., Ltd.: $1,260. Note the &ldquo;Customization&rdquo; tab: same white-label playbook. Any clinic can put their own name on this.
+            </figcaption>
+          </figure>
         </section>
 
         {/* The White-Label Machine */}
