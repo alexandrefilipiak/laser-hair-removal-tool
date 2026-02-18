@@ -61,7 +61,7 @@ export default function Home() {
           }}
         >
           Instantly verify if your clinic&apos;s hair removal device is a real laser,
-          IPL, or something else. Search 30+ machines from leading manufacturers.
+          IPL, or something else. Search 35 machines from 14 manufacturers.
         </p>
 
         {/* CTA Button */}
@@ -108,8 +108,8 @@ export default function Home() {
           }}
         >
           {[
-            { value: '30+', label: 'Devices' },
-            { value: '6', label: 'Brands' },
+            { value: '35', label: 'Devices' },
+            { value: '14', label: 'Brands' },
             { value: 'Free', label: 'Forever' },
           ].map((stat) => (
             <div key={stat.label} style={{ textAlign: 'center' }}>
