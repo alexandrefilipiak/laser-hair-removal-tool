@@ -624,6 +624,366 @@
       "keyFeatures": "Compact design is actually an advantage for facial precision. Same real diode laser technology as the Tria 4X."
     }
   },
+    {
+    "type": "machine",
+    "slug": "motus-ax",
+    "name": "Motus AX",
+    "manufacturer": "DEKA (El.En Group)",
+    "technologyType": "laser",
+    "wavelengths": [
+      "755nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (Moveo technology extends Alexandrite safety to darker skin)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact cooling (sapphire tip)",
+    "notes": "755nm Alexandrite with proprietary Moveo in-motion technology. Distributed in the US by Cartessa Aesthetics. Made in Italy by DEKA (spin-off of El.En Group).",
+    "aliases": [
+      "motus ax",
+      "deka motus ax",
+      "motus",
+      "cartessa motus"
+    ],
+    "family": "deka-motus",
+    "deliveryMethod": "moveo",
+    "richContent": {
+      "overview": "DEKA's Alexandrite laser that pioneered Moveo in-motion delivery. By gliding the sapphire-tipped handpiece continuously over the skin, it delivers energy at lower fluence per pulse with gradual heating - making treatments virtually painless while extending Alexandrite's effectiveness to darker skin tones.",
+      "howItWorks": "The Moveo handpiece's sapphire tip sits flush against the skin, dramatically reducing reflected energy (traditional Alexandrite loses 50%+ to reflection). Continuous gliding motion over small areas gradually heats follicles to destruction without the sharp 'rubber band snap' of traditional pulsed delivery. This allows safe treatment of darker skin types that would normally be risky with Alexandrite.",
+      "typicalUses": [
+        "All skin types including darker tones (Moveo mode)",
+        "Fine and light hair where Alexandrite excels",
+        "Patients who found traditional laser hair removal too painful"
+      ],
+      "keyFeatures": "Moveo technology fundamentally changed the Alexandrite hair removal experience. Near-zero pain without numbing cream. The sapphire tip's 100% energy absorption (versus ~50% loss from reflection with standard handpieces) means effective treatment at lower power settings."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "motus-az-plus",
+    "name": "Motus AZ+",
+    "manufacturer": "DEKA (El.En Group)",
+    "technologyType": "laser",
+    "wavelengths": [
+      "755nm",
+      "1064nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (dual wavelength with Moveo technology)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact cooling (sapphire tip)",
+    "notes": "Dual-wavelength Alexandrite + Nd:YAG with Moveo technology. Adds 1064nm Nd:YAG to the Motus AX platform for vascular treatments and expanded hair removal capabilities.",
+    "aliases": [
+      "motus az+",
+      "motus az plus",
+      "deka motus az+",
+      "motus az"
+    ],
+    "family": "deka-motus",
+    "deliveryMethod": "moveo",
+    "richContent": {
+      "overview": "Dual-wavelength upgrade to the Motus AX, adding 1064nm Nd:YAG alongside the 755nm Alexandrite. Both wavelengths benefit from Moveo in-motion delivery for pain-free treatment.",
+      "howItWorks": "Same Moveo sapphire-tip technology as the Motus AX, now with the option to switch to 1064nm Nd:YAG for vascular treatments and deeper penetration on darker skin. Multiple Moveo handpiece options cover hair removal (HR), vascular lesions (VL), pigmented lesions (PL), and skin rejuvenation (SR).",
+      "typicalUses": [
+        "Practices wanting both hair removal and vascular/skin treatments from one device",
+        "All skin types with dual-wavelength flexibility",
+        "Clinics prioritizing patient comfort"
+      ],
+      "keyFeatures": "Combines the pain-free Moveo experience with dual-wavelength versatility. Practices using the Motus AZ+ have reported significant revenue increases from the combination of pain-free marketing and expanded treatment menu."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "motus-pro",
+    "name": "Motus PRO",
+    "manufacturer": "DEKA (El.En Group)",
+    "technologyType": "laser",
+    "wavelengths": [
+      "755nm",
+      "1064nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (dual wavelength with Moveo + traditional delivery)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact cooling (sapphire tip)",
+    "notes": "Latest generation Motus platform. Adds traditional (pulsed) delivery mode alongside Moveo, plus larger 24mm spot for high-speed treatments. US distribution by Cartessa Aesthetics.",
+    "aliases": [
+      "motus pro",
+      "deka motus pro",
+      "cartessa motus pro"
+    ],
+    "family": "deka-motus",
+    "deliveryMethod": "moveo",
+    "richContent": {
+      "overview": "DEKA's most advanced Motus platform, offering both Moveo (pain-free in-motion) and traditional (high-speed pulsed) delivery modes. The new 24mm traditional spot size increases coverage by 78% for faster large-area treatments.",
+      "howItWorks": "Two delivery modes: Moveo for premium comfort-focused treatments, and Traditional for high-speed, high-volume sessions. The 24mm spot in traditional mode dramatically reduces treatment times for large areas like backs and full legs. Both modes feature integrated cooling.",
+      "typicalUses": [
+        "High-volume clinics needing speed (traditional mode) and comfort (Moveo mode)",
+        "Practices wanting to offer both premium pain-free and efficient express treatments",
+        "Full treatment menu with MoveoGlo skin rejuvenation protocol"
+      ],
+      "keyFeatures": "Best of both worlds: pain-free Moveo delivery for patient experience, plus 24mm traditional spot for speed when throughput matters. Successor to the Motus AZ+."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "excel-hr",
+    "name": "excel HR",
+    "manufacturer": "Cutera",
+    "technologyType": "laser",
+    "wavelengths": [
+      "755nm",
+      "1064nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (dual wavelength system)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact cooling (sapphire)",
+    "notes": "Cutera's dual-wavelength Alexandrite + Nd:YAG. Also handles vascular lesions, pigmented lesions, and Cutera's Laser Genesis skin revitalization.",
+    "aliases": [
+      "cutera excel hr",
+      "excel hr",
+      "cutera excel"
+    ],
+    "family": null,
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Cutera's dual-wavelength hair removal system combining a high-power 755nm Alexandrite and their proven long-pulse 1064nm Nd:YAG with sapphire contact cooling.",
+      "howItWorks": "The 755nm Alexandrite targets melanin efficiently for lighter skin types and finer hair, while the 1064nm Nd:YAG safely treats darker skin tones and tanned skin. Sapphire contact cooling provides constant skin protection throughout treatment.",
+      "typicalUses": [
+        "All skin types with wavelength selection based on Fitzpatrick type",
+        "Clinics wanting dual-wavelength plus vascular and pigment treatment capabilities"
+      ],
+      "keyFeatures": "Sapphire cooling is always on (not pulsed like cryogen systems), providing continuous skin protection. Also supports Cutera's Laser Genesis skin revitalization, adding revenue streams beyond hair removal."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "aerolase-neo-elite",
+    "name": "Neo Elite",
+    "manufacturer": "Aerolase",
+    "technologyType": "laser",
+    "wavelengths": [
+      "1064nm"
+    ],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones, especially suited for darker skin (Nd:YAG with 650-microsecond technology)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": null,
+    "notes": "1064nm Nd:YAG with unique 650-microsecond pulse technology. No cooling system, numbing, or contact gel needed. FDA-cleared for 36+ indications. Hair removal is one of many applications.",
+    "aliases": [
+      "aerolase neo elite",
+      "neo elite",
+      "aerolase neo",
+      "aerolase"
+    ],
+    "family": null,
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Aerolase's multi-application 1064nm Nd:YAG laser using proprietary 650-microsecond pulse technology. Unique in that it requires no cooling system, no numbing cream, and no contact gel - the handpiece doesn't even touch the skin.",
+      "howItWorks": "The 650-microsecond pulse duration is uniquely short, delivering high energy in brief bursts that heat the follicle while the surrounding skin's thermal relaxation time prevents damage. This eliminates the need for external cooling. The handpiece works at a distance from the skin (non-contact).",
+      "typicalUses": [
+        "Practices specializing in darker skin types (Fitzpatrick IV-VI)",
+        "Multi-service clinics (36+ FDA-cleared indications including acne, rosacea, veins, rejuvenation)",
+        "Clinics wanting zero consumable costs (no cooling supplies, gels, or tips)"
+      ],
+      "keyFeatures": "Zero consumables and no-contact delivery mean lower operating costs. Particularly strong for diverse patient populations. Not primarily designed for hair removal - it's a versatile dermatology platform where hair removal is one of many capabilities."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "mediostar",
+    "name": "MeDioStar",
+    "manufacturer": "Asclepion",
+    "technologyType": "laser",
+    "wavelengths": [
+      "810nm",
+      "940nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones including tanned skin (dual diode wavelengths)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact cooling (360° Peltier)",
+    "notes": "German-engineered dual-wavelength diode laser (810nm + 940nm). Up to 5000W power. Distributed in the US by Astanza. Asclepion is a German company with 48+ years in the laser industry.",
+    "aliases": [
+      "mediostar",
+      "asclepion mediostar",
+      "mediostar next pro",
+      "mediostar monolith",
+      "astanza mediostar"
+    ],
+    "family": "asclepion-mediostar",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Asclepion's flagship German-engineered diode laser, now in its 6th generation. Combines 810nm and 940nm wavelengths with up to 5000W power and the largest spot size (10 cm²) available in any diode system.",
+      "howItWorks": "Blends 80% 810nm (optimal melanin absorption) with 20% 940nm (deeper penetration) for effective treatment across all skin types. TAPER fiber-bundle technology delivers a perfectly flat beam profile, eliminating hot spots. 360° Peltier contact cooling protects skin before each pulse. SmoothPulse mode enables high-frequency, low-pain treatments.",
+      "typicalUses": [
+        "High-volume clinics (10 cm² Monolith XL treats full backs in ~5 minutes)",
+        "Year-round treatment including tanned skin",
+        "Practices wanting a modular system that grows with them"
+      ],
+      "keyFeatures": "Modular handpiece system (Monolith S, M, L, XL) lets clinics start small and expand. The 10 cm² XL spot is the largest on any diode system. German engineering with TAPER technology for perfectly uniform energy distribution. No hot spots means no striping or burns."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "fotona-dynamis",
+    "name": "SP Dynamis",
+    "manufacturer": "Fotona",
+    "technologyType": "laser",
+    "wavelengths": [
+      "1064nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (Nd:YAG wavelength)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "air cooling",
+    "notes": "Fotona's flagship multi-application Nd:YAG platform. Hair removal is one of many applications including skin rejuvenation (4D facelift), vascular, and surgical. Also available with Er:YAG for ablative treatments. Slovenian-made with 60+ years of laser manufacturing.",
+    "aliases": [
+      "fotona dynamis",
+      "sp dynamis",
+      "fotona sp dynamis",
+      "fotona hair removal"
+    ],
+    "family": "fotona-sp",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Fotona's premium Nd:YAG platform, widely used for hair reduction alongside a broad range of aesthetic and medical applications. Known for the FRAC3® three-dimensional treatment pattern and VSP (Variable Square Pulse) technology.",
+      "howItWorks": "Uses 1064nm Nd:YAG with Fotona's proprietary FRAC3® delivery, which creates a three-dimensional fractional pattern that targets hair follicles at multiple depths. VSP technology provides precisely controlled square pulses for optimal energy delivery. The optional S-11 high-performance scanner enables rapid treatment of large areas.",
+      "typicalUses": [
+        "All skin types, especially effective for darker skin (Nd:YAG safety)",
+        "Multi-application practices (hair removal, 4D facelift, vascular, surgical)",
+        "Clinics wanting a premium multi-purpose platform"
+      ],
+      "keyFeatures": "FRAC3® targets follicles at varying depths for thorough treatment. Fotona has 60+ years of laser manufacturing heritage. Not purpose-built for hair removal, but the Nd:YAG hair removal capability is well-proven. Often paired with Er:YAG in the dual-wavelength SP Dynamis configuration."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "thunder-mt",
+    "name": "Thunder MT",
+    "manufacturer": "Quanta System",
+    "technologyType": "laser",
+    "wavelengths": [
+      "755nm",
+      "1064nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (dual wavelength with Mixed Technology)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "air cooling (Qool-air)",
+    "notes": "Italian-engineered dual-wavelength laser with patented Quanta Mixed Technology® for simultaneous or sequential wavelength delivery. Distributed in the US by Cartessa Aesthetics.",
+    "aliases": [
+      "quanta thunder",
+      "thunder mt",
+      "quanta system thunder",
+      "thunder"
+    ],
+    "family": null,
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Quanta System's dual-wavelength platform (755nm Alexandrite + 1064nm Nd:YAG) with their patented Mixed Technology® that allows simultaneous delivery of both wavelengths in a single pulse.",
+      "howItWorks": "Two independent laser sources can fire individually or simultaneously via Mixed Technology®. Simultaneous mode combines Alexandrite's high melanin absorption with Nd:YAG's deep penetration in one pulse. The OptiScan TH scanner handpiece automatically delivers energy across wide areas with AutoMotion technology for even, low-pain treatment. Qool-air cooling system protects the skin.",
+      "typicalUses": [
+        "All skin types year-round (Mixed Technology extends Alexandrite safety to darker tones)",
+        "High-speed treatment of large areas via OptiScan TH scanner",
+        "Practices wanting wavelength flexibility plus vascular and rejuvenation capabilities"
+      ],
+      "keyFeatures": "Mixed Technology® is unique - no other system fires both Alexandrite and Nd:YAG simultaneously. OptiScan TH scanner with super-elliptical spot shape eliminates hot spots from overlapping. Italian engineering from Quanta System (also makes surgical and urological lasers)."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "venus-velocity",
+    "name": "Venus Velocity",
+    "manufacturer": "Venus Concept",
+    "technologyType": "laser",
+    "wavelengths": [
+      "810nm"
+    ],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (diode with adjustable parameters)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact cooling",
+    "notes": "810nm diode laser with real-time cooling. Venus Concept is known for subscription-based equipment financing models that lower barrier to entry for clinics.",
+    "aliases": [
+      "venus velocity",
+      "venus concept velocity"
+    ],
+    "family": null,
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Venus Concept's dedicated 810nm diode laser designed for hair removal across all skin types. Part of Venus Concept's ecosystem of aesthetic devices.",
+      "howItWorks": "810nm diode wavelength targets melanin in hair follicles. Real-time contact cooling protects the epidermis. Adjustable spot sizes and parameters for different body areas and skin types.",
+      "typicalUses": [
+        "All body areas for Fitzpatrick I-VI",
+        "Clinics using Venus Concept's subscription financing model"
+      ],
+      "keyFeatures": "Venus Concept's subscription model allows clinics to access professional equipment without large upfront investment. This has made the Velocity popular with newer practices and those expanding into laser hair removal."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "coolglide",
+    "name": "CoolGlide",
+    "manufacturer": "Cutera",
+    "technologyType": "laser",
+    "wavelengths": [
+      "1064nm"
+    ],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (Nd:YAG wavelength, especially suited for darker skin)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact cooling",
+    "notes": "1064nm Nd:YAG. Originally developed by Altus Medical, acquired by Cutera. One of the earliest Nd:YAG lasers specifically marketed for hair removal on darker skin.",
+    "aliases": [
+      "coolglide",
+      "cutera coolglide",
+      "altus coolglide",
+      "cool glide"
+    ],
+    "family": null,
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Cutera's 1064nm Nd:YAG laser, one of the pioneering systems for safe hair removal on darker skin types. Originally developed by Altus Medical before Cutera acquisition.",
+      "howItWorks": "The 1064nm Nd:YAG wavelength bypasses epidermal melanin to reach hair follicles safely on all skin types. Contact cooling protects the skin surface during treatment.",
+      "typicalUses": [
+        "Darker skin types (Fitzpatrick V-VI) where other wavelengths are unsafe",
+        "Year-round treatment including tanned skin",
+        "Clinics serving diverse populations"
+      ],
+      "keyFeatures": "Long clinical track record for safe treatment of darker skin. The CoolGlide name became almost synonymous with Nd:YAG hair removal. Many units still in active service despite the newer excel HR being available."
+    }
+  },
   {
     "type": "technology-term",
     "slug": "shr",
@@ -638,6 +998,23 @@
       "super hair removal",
       "shr laser",
       "shr treatment"
+    ]
+  },
+    {
+    "type": "technology-term",
+    "slug": "moveo",
+    "name": "Moveo (DEKA In-Motion Technology)",
+    "technologyType": "delivery-method",
+    "isRealLaser": null,
+    "classification": "ask-clinic",
+    "whatItIs": "Moveo is DEKA's proprietary in-motion delivery method for their Motus laser family. The sapphire-tipped handpiece glides continuously over the skin, delivering energy at lower fluence per pulse with gradual heating.",
+    "whyItMatters": "Moveo is a delivery method exclusive to DEKA/Cartessa Motus laser systems (Motus AX, Motus AZ+, Motus PRO). Unlike SHR which can be used on any device, Moveo is hardware-specific - if a clinic says they use Moveo, they should have a genuine DEKA Motus device. The sapphire tip's flush contact reduces energy reflection from ~50% to nearly zero, meaning more energy reaches the follicle at lower power settings.",
+    "askYourClinic": "What specific Motus model do you use? (Motus AX, AZ+, or PRO)",
+    "aliases": [
+      "moveo technology",
+      "deka moveo",
+      "motus moveo",
+      "moveo hr"
     ]
   },
   {

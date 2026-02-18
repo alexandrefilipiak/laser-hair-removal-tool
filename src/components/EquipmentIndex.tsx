@@ -1,9 +1,38 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import type { EquipmentEntry } from '@/lib/equipment';
 import { getBadgeType, isMachine } from '@/lib/equipment';
 import { EquipmentCard } from './EquipmentCard';
+
+// Brand tier sort order: premium first, then established, then consumer, then unknown
+const BRAND_TIER_ORDER: Record<string, number> = {
+  'premium-clinical': 0,
+  'standard-clinical': 1,
+  'consumer': 2,
+  'unknown': 3,
+};
+
+function sortEquipment(equipment: EquipmentEntry[]): EquipmentEntry[] {
+  return [...equipment].sort((a, b) => {
+    const aIsMachine = isMachine(a);
+    const bIsMachine = isMachine(b);
+
+    // Technology terms go last
+    if (!aIsMachine && bIsMachine) return 1;
+    if (aIsMachine && !bIsMachine) return -1;
+    if (!aIsMachine && !bIsMachine) return 0;
+
+    // Both are machines - sort by brand tier
+    const tierA = BRAND_TIER_ORDER[(a as { brandTier: string }).brandTier] ?? 99;
+    const tierB = BRAND_TIER_ORDER[(b as { brandTier: string }).brandTier] ?? 99;
+
+    if (tierA !== tierB) return tierA - tierB;
+
+    // Same tier - sort alphabetically by name
+    return a.name.localeCompare(b.name);
+  });
+}
 
 type FilterType = 'all' | 'gold-standard' | 'established' | 'multi-purpose' | 'verify-brand' | 'ask-clinic' | 'not-laser' | 'home-devices';
 
@@ -25,7 +54,10 @@ interface EquipmentIndexProps {
 export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
   const [activeFilter, setActiveFilter] = useState<FilterType>('all');
 
-  const filteredEquipment = equipment.filter((item) => {
+  // Sort equipment: premium brands first, then established, then home devices
+  const sortedEquipment = useMemo(() => sortEquipment(equipment), [equipment]);
+
+  const filteredEquipment = sortedEquipment.filter((item) => {
     if (activeFilter === 'all') return true;
 
     if (activeFilter === 'gold-standard') {
