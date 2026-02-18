@@ -893,7 +893,7 @@
       "fitzpatrickRange": "I-VI",
       "displayText": "All skin tones (dual wavelength with Mixed Technology)"
     },
-    "purposeBuilt": true,
+    "purposeBuilt": false,
     "coolingMethod": "air cooling (Qool-air)",
     "notes": "Italian-engineered dual-wavelength laser with patented Quanta Mixed Technology® for simultaneous or sequential wavelength delivery. Distributed in the US by Cartessa Aesthetics.",
     "aliases": [
@@ -912,7 +912,7 @@
         "High-speed treatment of large areas via OptiScan TH scanner",
         "Practices wanting wavelength flexibility plus vascular and rejuvenation capabilities"
       ],
-      "keyFeatures": "Mixed Technology® is unique - no other system fires both Alexandrite and Nd:YAG simultaneously. OptiScan TH scanner with super-elliptical spot shape eliminates hot spots from overlapping. Italian engineering from Quanta System (also makes surgical and urological lasers)."
+      "keyFeatures": "Mixed Technology® is unique: no other system fires both Alexandrite and Nd:YAG simultaneously. OptiScan TH scanner with super-elliptical spot shape eliminates hot spots from overlapping. Italian engineering from Quanta System (also makes surgical and urological lasers)."
     }
   },
   {
@@ -1183,6 +1183,25 @@
       "755 808 1064",
       "755 810 1064",
       "three wave laser"
+    ]
+  },
+  {
+    "type": "technology-term",
+    "slug": "quad-wavelength",
+    "name": "Quad-Wavelength (755nm + 808nm + 940nm + 1064nm)",
+    "technologyType": "wavelength",
+    "isRealLaser": true,
+    "classification": "verify-brand",
+    "whatItIs": "Quad-wavelength systems combine four diode wavelengths (755nm, 808nm, 940nm, and 1064nm) into a single handpiece. This configuration is almost exclusively found in budget Chinese-manufactured machines, not in premium clinical systems from established manufacturers.",
+    "whyItMatters": "Four wavelengths sounds like it should be better than three, but this is primarily a marketing differentiator used by Chinese OEM manufacturers to stand out from the flood of tri-wavelength machines on the market. The 940nm addition fills a minor gap between 808nm and 1064nm, but the clinical benefit over a quality tri-wavelength system is negligible. The critical issue is not the number of wavelengths. It is the quality of engineering behind them. A $3,000 quad-wavelength machine from Alibaba has four wavelengths on paper, but the power output per wavelength, pulse control precision, beam uniformity, and cooling system quality are not comparable to a $70,000 Soprano Titanium with three wavelengths. More wavelengths does not mean better results. When a clinic advertises '4-wavelength laser,' ask what brand and model they are using. If it is not from a recognized manufacturer, the extra wavelength is a spec-sheet talking point, not a clinical advantage.",
+    "askYourClinic": "What is the brand and model of your 4-wavelength laser? Who manufactures it? Is it FDA-cleared?",
+    "aliases": [
+      "quad wavelength",
+      "4 wavelength laser",
+      "four wavelength laser",
+      "4 wave laser",
+      "755 808 940 1064",
+      "quad wavelength diode"
     ]
   },
   {
