@@ -247,10 +247,35 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
             >
               Technology
             </dt>
-            <dd className="mt-2 text-sm" style={{ color: '#5E8B7E', fontWeight: 500 }}>
-              {technologyType === 'laser'
-                ? `Laser · ${getLaserClass(brandTier)}`
-                : technologyType.charAt(0).toUpperCase() + technologyType.slice(1)}
+            <dd className="mt-2 text-sm" style={{ color: '#5E8B7E', fontWeight: 500, display: 'flex', alignItems: 'center', gap: '0.375rem' }}>
+              <span>
+                {technologyType === 'laser'
+                  ? `Laser · ${getLaserClass(brandTier)}`
+                  : technologyType.charAt(0).toUpperCase() + technologyType.slice(1)}
+              </span>
+              {brandTier === 'consumer' && (
+                <Link
+                  href="/is-it-a-real-laser/home-laser-vs-clinical-laser"
+                  title="Learn about home lasers vs clinical lasers"
+                  style={{ color: '#5A5550', display: 'inline-flex' }}
+                  className="hover:text-[#5E8B7E] transition-colors"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                    <line x1="12" y1="17" x2="12.01" y2="17" />
+                  </svg>
+                </Link>
+              )}
             </dd>
           </div>
 
