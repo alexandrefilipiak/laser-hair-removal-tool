@@ -157,8 +157,29 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
             >
               Brand Tier
             </dt>
-            <dd className="mt-2">
+            <dd className="mt-2" style={{ display: 'flex', alignItems: 'center', gap: '0.375rem' }}>
               <BrandTierBadge tier={brandTier} />
+              <Link
+                href="/is-it-a-real-laser/equipment-costs"
+                title="Learn about equipment costs and brand tiers"
+                style={{ color: '#5A5550', display: 'inline-flex' }}
+                className="hover:text-[#5E8B7E] transition-colors"
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                  <line x1="12" y1="17" x2="12.01" y2="17" />
+                </svg>
+              </Link>
             </dd>
           </div>
 
