@@ -181,13 +181,28 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
             >
               Purpose
             </dt>
-            <dd className="mt-2 text-sm">
+            <dd className="mt-2 text-sm" style={{ color: '#2D2D2D', display: 'flex', alignItems: 'center', gap: '0.375rem' }}>
+              <span>{purposeBuilt ? 'Purpose-built for hair removal' : 'Multi-purpose platform'}</span>
               <Link
                 href="/is-it-a-real-laser/purpose-built-vs-multi-purpose"
-                style={{ color: '#5E8B7E', textDecoration: 'none' }}
-                className="hover:underline"
+                title="Learn about purpose-built vs multi-purpose lasers"
+                style={{ color: '#5A5550', display: 'inline-flex' }}
+                className="hover:text-[#5E8B7E] transition-colors"
               >
-                {purposeBuilt ? 'Purpose-built for hair removal' : 'Multi-purpose platform'}
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                  <line x1="12" y1="17" x2="12.01" y2="17" />
+                </svg>
               </Link>
             </dd>
           </div>
