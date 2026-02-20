@@ -175,30 +175,30 @@
     }
   },
   {
-    "type": "machine",
-    "slug": "vectus",
-    "name": "Vectus",
-    "manufacturer": "Cynosure",
-    "technologyType": "laser",
-    "wavelengths": ["810nm"],
-    "brandTier": "premium-clinical",
-    "skinTypes": {
-      "fitzpatrickRange": "I-V",
-      "displayText": "Light to medium-dark skin tones (diode wavelength)"
-    },
-    "purposeBuilt": true,
-    "coolingMethod": "contact cooling",
-    "notes": "810nm diode laser with Skintel melanin reader for personalized settings. Large spot size for fast treatment.",
-    "aliases": ["cynosure vectus"],
-    "family": null,
-    "deliveryMethod": null,
-    "richContent": {
-      "overview": "Cynosure's premium 810nm diode laser with the largest spot size available in a diode system. Built for high-volume clinics.",
-      "howItWorks": "The Skintel melanin reader measures patient skin type objectively to recommend settings, rather than relying on visual assessment. Sapphire contact cooling protects the skin.",
-      "typicalUses": ["Fast treatment of large body areas (back, chest, legs)", "High-volume practices where speed matters"],
-      "keyFeatures": "Skintel melanin reader removes guesswork from parameter selection. Large spot size significantly reduces treatment time."
-    }
+  "type": "machine",
+  "slug": "vectus",
+  "name": "Vectus",
+  "manufacturer": "Cynosure",
+  "technologyType": "laser",
+  "wavelengths": ["810nm"],
+  "brandTier": "premium-clinical",
+  "skinTypes": {
+    "fitzpatrickRange": "I-V",
+    "displayText": "Light to medium-dark skin tones (diode wavelength)"
   },
+  "purposeBuilt": true,
+  "coolingMethod": "contact cooling",
+  "notes": "810nm diode laser with Skintel melanin reader for personalized settings. Large spot size for fast treatment. Previously Palomar Vectus. Cynosure acquired Palomar Medical in 2013.",
+  "aliases": ["cynosure vectus", "palomar vectus"],
+  "family": null,
+  "deliveryMethod": null,
+  "richContent": {
+    "overview": "Cynosure's premium 810nm diode laser with the largest spot size available in a diode system. Built for high-volume clinics. Originally developed by Palomar Medical before Cynosure's acquisition in 2013.",
+    "howItWorks": "The Skintel melanin reader measures patient skin type objectively to recommend settings, rather than relying on visual assessment. Sapphire contact cooling protects the skin.",
+    "typicalUses": ["Fast treatment of large body areas (back, chest, legs)", "High-volume practices where speed matters"],
+    "keyFeatures": "Skintel melanin reader removes guesswork from parameter selection. Large spot size significantly reduces treatment time. Older units may still carry the Palomar branding."
+  }
+},
 {
     "type": "machine",
     "slug": "apogee-plus",
@@ -429,7 +429,7 @@
     "slug": "splendor-x",
     "name": "Splendor X",
     "manufacturer": "Lumenis",
-    "technologyType": "laser",
+      "technologyType": "laser",
     "wavelengths": ["755nm", "1064nm"],
     "brandTier": "premium-clinical",
     "skinTypes": {
@@ -686,6 +686,43 @@
     }
   },
   {
+  "type": "machine",
+  "slug": "motus-ay",
+  "name": "Motus AY",
+  "manufacturer": "DEKA (El.En Group)",
+  "technologyType": "laser",
+  "wavelengths": [
+    "755nm",
+    "1064nm"
+  ],
+  "brandTier": "premium-clinical",
+  "skinTypes": {
+    "fitzpatrickRange": "I-VI",
+    "displayText": "All skin tones (dual wavelength with Moveo technology)"
+  },
+  "purposeBuilt": true,
+  "coolingMethod": "contact cooling (sapphire tip)",
+  "notes": "Dual-wavelength Alexandrite + Nd:YAG with Moveo technology. Built on the Motus AX hair removal platform with added 1064nm Nd:YAG for vascular treatments. Up to 11 interchangeable handpieces with automatic recognition. Hair removal remains the primary design focus; vascular and pigmented lesion capabilities are secondary. Distributed in the US by Cartessa Aesthetics, internationally by Lynton (UK) and DEKA direct.",
+  "aliases": [
+    "motus ay",
+    "deka motus ay",
+    "cartessa motus ay"
+  ],
+  "family": "deka-motus",
+  "deliveryMethod": "moveo",
+  "richContent": {
+    "overview": "DEKA's dual-wavelength Motus platform combining 755nm Alexandrite and 1064nm Nd:YAG with Moveo in-motion delivery. Extends the Motus AX by adding Nd:YAG for vascular treatments and deeper penetration on darker skin, with up to 11 handpiece configurations and over 200 integrated treatment protocols.",
+    "howItWorks": "Same Moveo sapphire-tip technology as the Motus AX, with the addition of 1064nm Nd:YAG for vascular lesions and deeper hair follicle targeting. The system features automatic handpiece recognition and an energy accumulator that tracks delivery and signals when the treatment endpoint is reached. Peak power exceeds 6,000W at 755nm with pulse durations as short as 2ms.",
+    "typicalUses": [
+      "Pain-free hair removal on all skin types (Moveo mode)",
+      "Vascular lesions including leg telangiectasias (1064nm)",
+      "Benign pigmented lesions (Moveo PL handpiece)",
+      "Skin rejuvenation"
+    ],
+    "keyFeatures": "Bridges the Motus AX and AZ+ in DEKA's lineup. Up to 11 handpieces with automatic recognition covering hair removal (HR), vascular lesions (VL), pigmented lesions (PL), and skin rejuvenation (SR). Over 200 integrated protocols. Same pain-free Moveo delivery that defines the Motus family."
+  }
+  },
+  {
     "type": "machine",
     "slug": "motus-az-plus",
     "name": "Motus AZ+",
@@ -702,7 +739,7 @@
     },
     "purposeBuilt": true,
     "coolingMethod": "contact cooling (sapphire tip)",
-    "notes": "Dual-wavelength Alexandrite + Nd:YAG with Moveo technology. Adds 1064nm Nd:YAG to the Motus AX platform for vascular treatments and expanded hair removal capabilities.",
+    "notes": "Dual-wavelength Alexandrite + Nd:YAG with Moveo technology. Built on the same hair removal core as the Motus AX with expanded handpiece options for vascular, pigmented lesion, and skin rejuvenation treatments. Hair removal remains the primary design focus. Distributed in the US by Cartessa Aesthetics.",
     "aliases": [
       "motus az+",
       "motus az plus",
@@ -739,7 +776,7 @@
     },
     "purposeBuilt": true,
     "coolingMethod": "contact cooling (sapphire tip)",
-    "notes": "Latest generation Motus platform. Adds traditional (pulsed) delivery mode alongside Moveo, plus larger 24mm spot for high-speed treatments. US distribution by Cartessa Aesthetics.",
+    "notes": "Latest generation Motus platform. Adds traditional (pulsed) delivery mode alongside Moveo, plus larger 24mm spot for high-speed treatments. The broadest treatment menu in the Motus family, but the core engineering (Moveo technology, 755nm Alexandrite primary laser) still centers on hair removal. US distribution by Cartessa Aesthetics.",
     "aliases": [
       "motus pro",
       "deka motus pro",
@@ -755,7 +792,7 @@
         "Practices wanting to offer both premium pain-free and efficient express treatments",
         "Full treatment menu with MoveoGlo skin rejuvenation protocol"
       ],
-      "keyFeatures": "Best of both worlds: pain-free Moveo delivery for patient experience, plus 24mm traditional spot for speed when throughput matters. Successor to the Motus AZ+."
+      "keyFeatures": "Best of both worlds: pain-free Moveo delivery for patient experience, plus 24mm traditional spot for speed when throughput matters. The most versatile Motus platform — DEKA markets it for skin rejuvenation (MoveoGlo protocol) alongside hair removal — but the underlying engineering priorities still favor hair removal. Successor to the Motus AZ+."
     }
   },
   {

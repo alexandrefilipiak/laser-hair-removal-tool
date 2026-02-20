@@ -690,7 +690,7 @@ export default function EquipmentCostsPage() {
           </figure>
 
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
-            Machines from manufacturers like Bomeitong (Beijing), Weifang Mingliang, and dozens of other OEM factories now advertise 755nm + 808nm + 940nm + 1064nm — four wavelengths in a single handpiece for around $1,200–$5,000.
+            Machines from manufacturers like Bomeitong (Beijing), Weifang Mingliang, and dozens of other OEM factories now advertise 755nm + 808nm + 940nm + 1064nm. Four wavelengths in a single handpiece for around $1,200–$5,000.
           </p>
 
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
@@ -698,23 +698,23 @@ export default function EquipmentCostsPage() {
           </p>
 
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
-            <strong style={{ color: '#2D2D2D' }}>Here&apos;s the problem:</strong> no premium manufacturer offers a four-wavelength system. Not Candela. Not Lumenis. Not Cynosure. Not Alma. These companies spend millions on R&amp;D and have concluded that three wavelengths (or two) are clinically sufficient when delivered with proper power, cooling, and pulse control.
+            <strong style={{ color: '#2D2D2D' }}>Here&apos;s what matters: how the wavelengths are implemented, not that there are four.</strong>
           </p>
 
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
-            The only places you&apos;ll find four-wavelength machines are on Alibaba, Made-in-China.com, and in clinics that bought from them.
+            Budget machines cram all four wavelengths into a single handpiece firing simultaneously. The 940nm is a spec-sheet differentiator with negligible clinical benefit over a quality tri-wavelength system. The real quality gap is in everything else: power stability across a full treatment session, beam uniformity, cooling precision, pulse control, and calibration accuracy. These determine your results, not whether the spec sheet lists three wavelengths or four.
           </p>
 
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
-            <strong style={{ color: '#2D2D2D' }}>What the 940nm actually adds:</strong> Marginal. The clinical difference between a quality tri-wavelength system and a budget quad-wavelength system isn&apos;t the extra wavelength — it&apos;s the quality gap in everything else. Power stability across a full treatment session. Beam uniformity. Cooling precision. Pulse control. Calibration accuracy. These determine your results, not whether the spec sheet lists three wavelengths or four.
+            Premium manufacturers have taken a fundamentally different approach. The Sciton OMNI (launched June 2025, co-engineered with German laser specialists Asclepion) offers multiple wavelengths including 760nm, an 810/940nm blend, and 1060nm across separate dedicated handpieces with dual-port connectivity. Clinicians select the right wavelength for each patient&apos;s skin type and treatment area. That is wavelength selection, not wavelength stacking. At 5,000 watts with a price tag to match, it has nothing in common with a $1,260 Alibaba import except the marketing claim of multiple wavelengths.
           </p>
 
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
-            <strong style={{ color: '#2D2D2D' }}>The real purpose of the fourth wavelength is marketing.</strong> A clinic using a $1,260 quad-wavelength machine can say &ldquo;we use more wavelengths than the Soprano Titanium&rdquo; — and it&apos;s technically true. A consumer Googling &ldquo;4 wavelength vs 3 wavelength laser&rdquo; will find manufacturer-written content arguing that four is better. The spec-sheet comparison favors the budget machine. The clinical outcome does not.
+            <strong style={{ color: '#2D2D2D' }}>The real purpose of the fourth wavelength on budget machines is marketing.</strong> A clinic using a $1,260 quad-wavelength machine can say &ldquo;we use more wavelengths than the Soprano Titanium.&rdquo; And it&apos;s technically true. A consumer Googling &ldquo;4 wavelength vs 3 wavelength laser&rdquo; will find manufacturer-written content arguing that four is better. The spec-sheet comparison favors the budget machine. The clinical outcome does not.
           </p>
 
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
-            <strong style={{ color: '#2D2D2D' }}>How to spot this:</strong> If a clinic advertises &ldquo;4-wavelength laser hair removal,&rdquo; ask the brand and model. If it&apos;s not from a manufacturer you can verify independently, or if the name doesn&apos;t appear anywhere outside that clinic&apos;s own marketing, you&apos;re likely looking at a white-labeled import with an extra wavelength added for the brochure.
+            <strong style={{ color: '#2D2D2D' }}>How to spot this:</strong> If a clinic advertises &ldquo;4-wavelength laser hair removal,&rdquo; ask two questions. First, what is the brand and model? If the name doesn&apos;t appear anywhere outside that clinic&apos;s own marketing, you&apos;re likely looking at a white-labeled import. Second, are the wavelengths in separate handpieces or one combined handpiece? Separate handpieces (like the Sciton OMNI) means the clinician chooses the right wavelength for your skin. One combined handpiece firing everything at once means the machine was engineered for a brochure, not for your skin.
           </p>
         </section>
 
@@ -733,7 +733,7 @@ export default function EquipmentCostsPage() {
           </h2>
 
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
-            This isn't just a cheap machine. It's designed to be untraceable. The manufacturer explicitly offers as standard services:
+            These aren't just cheap machines. They are designed to be untraceable. The manufacturers explicitly offer as standard services:
           </p>
 
           {/* White-label services card */}
@@ -809,7 +809,7 @@ export default function EquipmentCostsPage() {
                 lineHeight: 1.5,
               }}
             >
-              The same manufacturer&apos;s listing indicate: &quot;Print your LOGO on machine body and screen&quot;
+              The $850's machine manufacturer indicates: &quot;Print your LOGO on machine body and screen&quot;
             </figcaption>
           </figure>
 

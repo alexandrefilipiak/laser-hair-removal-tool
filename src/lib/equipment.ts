@@ -337,3 +337,36 @@ export function getBadgeType(entry: EquipmentEntry): BadgeType {
   }
   return getTermBadgeType(entry);
 }
+
+// =============================================================================
+// Equipment Statistics
+// =============================================================================
+
+/**
+ * Equipment database statistics
+ */
+export interface EquipmentStats {
+  /** Total number of machine entries */
+  machineCount: number;
+  /** Number of unique manufacturers */
+  manufacturerCount: number;
+}
+
+/**
+ * Get statistics about the equipment database
+ *
+ * @returns Object with machine count and manufacturer count
+ *
+ * @example
+ * const stats = getEquipmentStats();
+ * console.log(`${stats.machineCount} machines from ${stats.manufacturerCount} manufacturers`);
+ */
+export function getEquipmentStats(): EquipmentStats {
+  const machines = entries.filter(isMachine);
+  const manufacturers = new Set(machines.map((m) => m.manufacturer));
+
+  return {
+    machineCount: machines.length,
+    manufacturerCount: manufacturers.size,
+  };
+}

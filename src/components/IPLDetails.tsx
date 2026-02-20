@@ -323,11 +323,22 @@ export function IPLDetails({ term }: IPLDetailsProps) {
             style={{
               color: '#5A5550',
               lineHeight: 1.7,
+              marginBottom: '1rem'
             }}
           >
             The issue isn't that IPL exists, it's that consumers deserve to know what technology
             is being used on their skin. If your clinic offers IPL and is transparent about it,
             that's fine. If they call it "laser hair removal", that's misleading.
+          </p>
+
+          <p
+            className="leading-relaxed"
+            style={{
+              color: '#5A5550',
+              lineHeight: 1.7,
+            }}
+          >
+          This mislabeling isn't limited to clinics. Even Forbes lists IPL devices alongside lasers in their 'best laser hair removal devices' roundup. If major publications can't get the distinction right, it's no surprise consumers don't know what they're paying for.
           </p>
         </section>
 

@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { Footer } from '@/components/Footer';
+import { getEquipmentStats } from '@/lib/equipment';
 
 export default function Home() {
+  const stats = getEquipmentStats();
   return (
     <main
       style={{
@@ -61,7 +63,7 @@ export default function Home() {
           }}
         >
           Instantly verify if your clinic&apos;s hair removal device is a real laser,
-          IPL, or something else. Search 35 machines from 14 manufacturers.
+          IPL, or something else. Search {stats.machineCount} machines from {stats.manufacturerCount} manufacturers.
         </p>
 
         {/* CTA Button */}
@@ -108,8 +110,8 @@ export default function Home() {
           }}
         >
           {[
-            { value: '35', label: 'Devices' },
-            { value: '14', label: 'Brands' },
+            { value: String(stats.machineCount), label: 'Devices' },
+            { value: String(stats.manufacturerCount), label: 'Brands' },
             { value: 'Free', label: 'Forever' },
           ].map((stat) => (
             <div key={stat.label} style={{ textAlign: 'center' }}>

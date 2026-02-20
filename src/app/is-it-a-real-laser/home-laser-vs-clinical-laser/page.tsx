@@ -14,7 +14,7 @@ import { ShareButtons } from '@/components/ShareButtons';
 export const metadata: Metadata = {
   title: 'Home Lasers vs Clinical Lasers | LaserHairRemovalMap',
   description:
-    'At-home lasers like the Tria 4X are real lasers. They\'re just not playing in the same league. Learn why clinical lasers deliver up to 100x more energy per pulse and what that means for your results.',
+    'At-home lasers like the Tria 4X are real lasers. But they\'re not playing in the same league. Learn why clinical lasers deliver up to 100x more energy per pulse and what that means for your results.',
   openGraph: {
     title: 'Home Lasers vs Clinical Lasers | LaserHairRemovalMap',
     description:
@@ -148,7 +148,7 @@ export default function HomeVsClinicalLasersPage() {
             The Surprise
           </h2>
           <p className="leading-relaxed" style={{ color: '#2D2D2D', fontSize: '1.0625rem', lineHeight: 1.7 }}>
-            At-home devices Tria 4X and Tria Precision are real lasers. They are just not playing in the same league as clinical lasers.
+            At-home devices Tria 4X and Tria Precision are real lasers. But they are not playing in the same league as clinical lasers.
           </p>
           <p className="leading-relaxed" style={{ color: '#2D2D2D', fontSize: '1.0625rem', lineHeight: 1.7, marginTop: '1rem' }}>
             The Tria Hair Removal Laser 4X, the most powerful home laser available, uses a real 810nm diode laser: the same wavelength used by professional clinical devices like the Lumenis LightSheer and Venus Velocity. It is FDA-cleared as an OTC (over-the-counter) device under product code OHT, a completely different regulatory category from the professional lasers used in clinics.
@@ -282,7 +282,7 @@ export default function HomeVsClinicalLasersPage() {
             }}
           >
             <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
-              <strong style={{ color: '#2D2D2D' }}>Two ways to measure the gap.</strong> Energy per pulse (joules) measures total power output — here the clinical laser wins by ~100x. Fluence (J/cm²) measures energy concentration at the skin surface. Here the clinical laser wins by 5-20x depending on spot size. Both metrics matter. The clinical device delivers dramatically more energy, across a dramatically larger treatment area, in a single pulse.
+              <strong style={{ color: '#2D2D2D' }}>Two ways to measure the gap.</strong> Energy per pulse (joules) measures total power output. Here the clinical laser wins by ~100x. Fluence (J/cm²) measures energy concentration at the skin surface. Here the clinical laser wins by 5-20x depending on spot size. Both metrics matter. The clinical device delivers dramatically more energy, across a dramatically larger treatment area, in a single pulse.
             </p>
           </div>
         </section>
@@ -304,7 +304,10 @@ export default function HomeVsClinicalLasersPage() {
             That power gap isn&apos;t a design flaw in the home device. It&apos;s a legal requirement.
           </p>
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
-            Professional lasers are classified as Class IV medical devices, meaning they can cause immediate tissue damage and require trained operators, protective eyewear, and controlled clinical environments. Home devices are Class 1 or Class 2, limited by regulation to energy levels that won&apos;t cause injury without medical supervision.
+            Professional lasers are classified as Class IV medical devices, meaning they can cause immediate tissue damage and require trained operators, protective eyewear, and controlled clinical environments. These machines don't plug into a standard wall socket. A device like the Candela GentleMax Pro requires a dedicated electrical circuit and professional installation by an electrician.
+          </p>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
+            Home devices are Class 1 or Class 2, limited by regulation to energy levels safe for unsupervised use, and they charge over USB or plug into a normal outlet.
           </p>
 
           {/* Regulation callout */}
@@ -317,7 +320,9 @@ export default function HomeVsClinicalLasersPage() {
             }}
           >
             <p className="leading-relaxed" style={{ color: '#2D2D2D', lineHeight: 1.8 }}>
-              <strong>The Tria uses the same 810nm diode wavelength as professional devices like the Lumenis LightSheer.</strong> Same wavelength. Same type of laser. The only difference is how much power the device is legally allowed to deliver. That single constraint is what separates a $300 home device from a $100,000 clinical system.
+              <strong>The Tria uses the same 810nm diode wavelength as professional devices like the Lumenis LightSheer.</strong> Same wavelength. Same type of laser. The main difference is how much power the device is legally allowed to deliver.
+              
+              Clinical devices also deliver energy through larger spot sizes, advanced cooling systems, and adjustable pulse durations that home devices simply don't have room for.
             </p>
           </div>
         </section>
