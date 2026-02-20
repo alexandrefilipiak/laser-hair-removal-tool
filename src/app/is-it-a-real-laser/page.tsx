@@ -471,10 +471,33 @@ export default function IsItARealLaserPage() {
             </div>
           </div>
 
+          {/* Section Separator */}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '1rem',
+              marginTop: '2.5rem',
+              marginBottom: '0.5rem',
+              maxWidth: '560px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+          >
+            <div style={{ flex: 1, height: '1px', backgroundColor: '#E8E4DF' }} />
+            <div style={{ display: 'flex', gap: '0.5rem' }}>
+              <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: '#D4CFC7' }} />
+              <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: '#D4CFC7' }} />
+              <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: '#D4CFC7' }} />
+            </div>
+            <div style={{ flex: 1, height: '1px', backgroundColor: '#E8E4DF' }} />
+          </div>
+
           {/* Not All Lasers Are Equal */}
           <div
             style={{
-              marginTop: '2.5rem',
+              marginTop: '2rem',
               maxWidth: '560px',
               marginLeft: 'auto',
               marginRight: 'auto',
@@ -541,6 +564,116 @@ export default function IsItARealLaserPage() {
                 className="hover:underline"
               >
                 Why is laser hair removal so expensive?
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+
+          {/* Section Separator */}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '1rem',
+              marginTop: '2.5rem',
+              marginBottom: '0.5rem',
+              maxWidth: '560px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+          >
+            <div style={{ flex: 1, height: '1px', backgroundColor: '#E8E4DF' }} />
+            <div style={{ display: 'flex', gap: '0.5rem' }}>
+              <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: '#D4CFC7' }} />
+              <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: '#D4CFC7' }} />
+              <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: '#D4CFC7' }} />
+            </div>
+            <div style={{ flex: 1, height: '1px', backgroundColor: '#E8E4DF' }} />
+          </div>
+
+          {/* Home Lasers vs Clinical Lasers */}
+          <div
+            style={{
+              marginTop: '2rem',
+              maxWidth: '560px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+          >
+            <h2
+              style={{
+                fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
+                fontSize: '1.125rem',
+                fontWeight: 600,
+                color: '#2D2D2D',
+                marginBottom: '1rem',
+                textAlign: 'center',
+              }}
+            >
+              Home Lasers vs Clinical Lasers
+            </h2>
+            <figure
+              style={{
+                marginBottom: '1rem',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+              }}
+            >
+              <Link href="/is-it-a-real-laser/home-laser-vs-clinical-laser" className="block w-full md:w-[50%]">
+                <img
+                  src="/laser-hair-removal-home-vs-clinical.png"
+                  alt="Home laser vs clinical laser comparison: Tria Hair Removal Laser 4X (home device, Class 1) next to Candela GentleMax Pro (clinical laser, Class IV). Both are real lasers, but the clinical device delivers roughly 100 times more energy per pulse."
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    display: 'block',
+                    cursor: 'pointer',
+                    borderRadius: '0.75rem',
+                  }}
+                />
+              </Link>
+              <figcaption
+                className="md:hidden"
+                style={{
+                  marginTop: '0.75rem',
+                  fontSize: '0.8125rem',
+                  color: '#5A5550',
+                  textAlign: 'center',
+                  lineHeight: 1.5,
+                  maxWidth: '90%',
+                }}
+              >
+                Left: Tria 4X, a home laser (~$300). Right: Candela GentleMax Pro, a clinical laser ($80,000–$150,000). Both are real lasers. The difference is power.
+              </figcaption>
+            </figure>
+            <div style={{ textAlign: 'center' }}>
+              <Link
+                href="/is-it-a-real-laser/home-laser-vs-clinical-laser"
+                style={{
+                  color: '#5E8B7E',
+                  fontSize: '0.9375rem',
+                  fontWeight: 500,
+                  textDecoration: 'none',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.35rem',
+                }}
+                className="hover:underline"
+              >
+                Why home lasers and clinical lasers aren&apos;t in the same league
                 <svg
                   width="14"
                   height="14"
