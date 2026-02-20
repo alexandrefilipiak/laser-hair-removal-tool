@@ -181,8 +181,14 @@ export function EquipmentDetails({ equipment }: EquipmentDetailsProps) {
             >
               Purpose
             </dt>
-            <dd className="mt-2 text-sm" style={{ color: '#2D2D2D' }}>
-              {purposeBuilt ? 'Purpose-built for hair removal' : 'Multi-purpose platform'}
+            <dd className="mt-2 text-sm">
+              <Link
+                href="/is-it-a-real-laser/purpose-built-vs-multi-purpose"
+                style={{ color: '#5E8B7E', textDecoration: 'none' }}
+                className="hover:underline"
+              >
+                {purposeBuilt ? 'Purpose-built for hair removal' : 'Multi-purpose platform'}
+              </Link>
             </dd>
           </div>
 
