@@ -381,6 +381,96 @@ export default function IsItARealLaserPage() {
             </div>
           </div>
 
+          {/* Purpose-Built vs Multi-Purpose */}
+          <div
+            style={{
+              marginTop: '2.5rem',
+              maxWidth: '560px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+          >
+            <h2
+              style={{
+                fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
+                fontSize: '1.125rem',
+                fontWeight: 600,
+                color: '#2D2D2D',
+                marginBottom: '1rem',
+                textAlign: 'center',
+              }}
+            >
+              Purpose-Built vs. Multi-Purpose Lasers
+            </h2>
+            <figure
+              style={{
+                marginBottom: '1rem',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+              }}
+            >
+              <Link href="/is-it-a-real-laser/purpose-built-vs-multi-purpose" className="block w-full md:w-[50%]">
+                <img
+                  src="/laser-hair-removal-single-vs-multi-purpose.png"
+                  alt="Purpose-built vs multi-purpose laser comparison: Candela GentleMax Pro (designed for laser hair removal) next to Candela Nordlys (designed for versatility). Both are professional devices from the same manufacturer, but with different design priorities."
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    display: 'block',
+                    cursor: 'pointer',
+                    borderRadius: '0.75rem',
+                  }}
+                />
+              </Link>
+              <figcaption
+                className="md:hidden"
+                style={{
+                  marginTop: '0.75rem',
+                  fontSize: '0.8125rem',
+                  color: '#5A5550',
+                  textAlign: 'center',
+                  lineHeight: 1.5,
+                  maxWidth: '90%',
+                }}
+              >
+                Left: Candela GentleMax Pro, purpose-built for hair removal. Right: Candela Nordlys, a multi-purpose platform handling hair removal, vascular, pigmentation, and more. Same manufacturer, different design priorities.{' '}
+                <Link href="/is-it-a-real-laser/purpose-built-vs-multi-purpose" style={{ color: '#5E8B7E' }} className="hover:underline">
+                  Learn more in our purpose-built vs multi-purpose guide.
+                </Link>
+              </figcaption>
+            </figure>
+            <div style={{ textAlign: 'center' }}>
+              <Link
+                href="/is-it-a-real-laser/purpose-built-vs-multi-purpose"
+                style={{
+                  color: '#5E8B7E',
+                  fontSize: '0.9375rem',
+                  fontWeight: 500,
+                  textDecoration: 'none',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.35rem',
+                }}
+                className="hover:underline"
+              >
+                What it means for your results
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+
           {/* Not All Lasers Are Equal */}
           <div
             style={{
@@ -410,7 +500,7 @@ export default function IsItARealLaserPage() {
                 alignItems: 'center',
               }}
             >
-              <Link href="/is-it-a-real-laser/equipment-costs" className="block w-full md:w-[84%]">
+              <Link href="/is-it-a-real-laser/equipment-costs" className="block w-full md:w-[60%]">
                 <img
                   src="/laser-hair-removal-alibaba-and-candela.png"
                   alt="Chinese model from Alibaba: $2,799-2,899 | Used Candela model: $97,500 | Both offer 'laser hair removal'"
