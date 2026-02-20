@@ -1,0 +1,557 @@
+{
+  "summary": {
+    "totalQuestions": 1713,
+    "totalVolume": 289680,
+    "themeCount": 57,
+    "topThemes": [
+      "general cost",
+      "permanence",
+      "pain and discomfort",
+      "how many sessions / treatments needed",
+      "at_home_devices",
+      "pregnancy safety",
+      "results_effectiveness",
+      "bikini area",
+      "shave before / preparation",
+      "face / facial"
+    ]
+  },
+  "themes": [
+    {
+      "category": "cost",
+      "theme": "general cost",
+      "totalVolume": 65060,
+      "avgDifficulty": 21.09,
+      "avgCPC": 8.06,
+      "questionCount": 710
+    },
+    {
+      "category": "effectiveness",
+      "theme": "permanence",
+      "totalVolume": 28220,
+      "avgDifficulty": 21.54,
+      "avgCPC": 11.48,
+      "questionCount": 45
+    },
+    {
+      "category": "conditions",
+      "theme": "pain and discomfort",
+      "totalVolume": 12560,
+      "avgDifficulty": 9.04,
+      "avgCPC": 10.49,
+      "questionCount": 181
+    },
+    {
+      "category": "timing",
+      "theme": "how many sessions / treatments needed",
+      "totalVolume": 12350,
+      "avgDifficulty": 9.15,
+      "avgCPC": 15.49,
+      "questionCount": 42
+    },
+    {
+      "category": "effectiveness",
+      "theme": "at_home_devices",
+      "totalVolume": 11480,
+      "avgDifficulty": 35.94,
+      "avgCPC": 1.72,
+      "questionCount": 48
+    },
+    {
+      "category": "conditions",
+      "theme": "pregnancy safety",
+      "totalVolume": 9570,
+      "avgDifficulty": 19.68,
+      "avgCPC": 18.77,
+      "questionCount": 175
+    },
+    {
+      "category": "effectiveness",
+      "theme": "results_effectiveness",
+      "totalVolume": 8770,
+      "avgDifficulty": 26.41,
+      "avgCPC": 8.21,
+      "questionCount": 32
+    },
+    {
+      "category": "body-areas",
+      "theme": "bikini area",
+      "totalVolume": 8570,
+      "avgDifficulty": 10.71,
+      "avgCPC": 11.92,
+      "questionCount": 68
+    },
+    {
+      "category": "timing",
+      "theme": "shave before / preparation",
+      "totalVolume": 7650,
+      "avgDifficulty": 5.67,
+      "avgCPC": 6.35,
+      "questionCount": 28
+    },
+    {
+      "category": "body-areas",
+      "theme": "face / facial",
+      "totalVolume": 7380,
+      "avgDifficulty": 14.32,
+      "avgCPC": 8.76,
+      "questionCount": 67
+    },
+    {
+      "category": "effectiveness",
+      "theme": "how_it_works",
+      "totalVolume": 6810,
+      "avgDifficulty": 39.67,
+      "avgCPC": 3.85,
+      "questionCount": 23
+    },
+    {
+      "category": "timing",
+      "theme": "how long / duration / time between sessions",
+      "totalVolume": 6820,
+      "avgDifficulty": 7.77,
+      "avgCPC": 15.39,
+      "questionCount": 32
+    },
+    {
+      "category": "safety",
+      "theme": "side effects and risks",
+      "totalVolume": 6120,
+      "avgDifficulty": 33.54,
+      "avgCPC": 7.47,
+      "questionCount": 32
+    },
+    {
+      "category": "safety",
+      "theme": "cancer concerns",
+      "totalVolume": 5270,
+      "avgDifficulty": 7.33,
+      "avgCPC": 9.19,
+      "questionCount": 33
+    },
+    {
+      "category": "body-areas",
+      "theme": "underarms / armpits",
+      "totalVolume": 4570,
+      "avgDifficulty": 11.87,
+      "avgCPC": 11.58,
+      "questionCount": 52
+    },
+    {
+      "category": "body-areas",
+      "theme": "full body",
+      "totalVolume": 4570,
+      "avgDifficulty": 19.15,
+      "avgCPC": 6.24,
+      "questionCount": 38
+    },
+    {
+      "category": "timing",
+      "theme": "before / preparation",
+      "totalVolume": 4570,
+      "avgDifficulty": 10.15,
+      "avgCPC": 4.82,
+      "questionCount": 18
+    },
+    {
+      "category": "timing",
+      "theme": "how often / frequency",
+      "totalVolume": 4480,
+      "avgDifficulty": 11.03,
+      "avgCPC": 10.87,
+      "questionCount": 30
+    },
+    {
+      "category": "body-areas",
+      "theme": "legs / thighs / calves",
+      "totalVolume": 3670,
+      "avgDifficulty": 12.18,
+      "avgCPC": 10.32,
+      "questionCount": 39
+    },
+    {
+      "category": "timing",
+      "theme": "shave after / post-shaving",
+      "totalVolume": 3620,
+      "avgDifficulty": 1.65,
+      "avgCPC": 11.52,
+      "questionCount": 20
+    },
+    {
+      "category": "conditions",
+      "theme": "tattoos",
+      "totalVolume": 3390,
+      "avgDifficulty": 1.73,
+      "avgCPC": 14.83,
+      "questionCount": 112
+    },
+    {
+      "category": "cost",
+      "theme": "insurance coverage",
+      "totalVolume": 3210,
+      "avgDifficulty": 12.92,
+      "avgCPC": 31.38,
+      "questionCount": 51
+    },
+    {
+      "category": "timing",
+      "theme": "aftercare / post-treatment care",
+      "totalVolume": 2880,
+      "avgDifficulty": 7.46,
+      "avgCPC": 3.85,
+      "questionCount": 18
+    },
+    {
+      "category": "effectiveness",
+      "theme": "hair_types_blonde",
+      "totalVolume": 2110,
+      "avgDifficulty": 2.53,
+      "avgCPC": 8.12,
+      "questionCount": 14
+    },
+    {
+      "category": "timing",
+      "theme": "workout / exercise / gym restrictions",
+      "totalVolume": 2010,
+      "avgDifficulty": 2.55,
+      "avgCPC": 20.86,
+      "questionCount": 15
+    },
+    {
+      "category": "cost",
+      "theme": "tipping",
+      "totalVolume": 1950,
+      "avgDifficulty": 9.4,
+      "avgCPC": 46.77,
+      "questionCount": 43
+    },
+    {
+      "category": "body-areas",
+      "theme": "pubic / private area",
+      "totalVolume": 1950,
+      "avgDifficulty": 9.64,
+      "avgCPC": 8.43,
+      "questionCount": 31
+    },
+    {
+      "category": "effectiveness",
+      "theme": "worth_it",
+      "totalVolume": 1940,
+      "avgDifficulty": 13.08,
+      "avgCPC": 13.67,
+      "questionCount": 12
+    },
+    {
+      "category": "timing",
+      "theme": "sun / tanning / sunscreen",
+      "totalVolume": 1690,
+      "avgDifficulty": 1.33,
+      "avgCPC": 0.0,
+      "questionCount": 22
+    },
+    {
+      "category": "body-areas",
+      "theme": "chin",
+      "totalVolume": 1530,
+      "avgDifficulty": 10.55,
+      "avgCPC": 13.87,
+      "questionCount": 18
+    },
+    {
+      "category": "timing",
+      "theme": "wax before / after",
+      "totalVolume": 1440,
+      "avgDifficulty": 4.1,
+      "avgCPC": 7.59,
+      "questionCount": 15
+    },
+    {
+      "category": "effectiveness",
+      "theme": "hair_types_gray_white",
+      "totalVolume": 1420,
+      "avgDifficulty": 2.0,
+      "avgCPC": 5.18,
+      "questionCount": 20
+    },
+    {
+      "category": "safety",
+      "theme": "skin damage and hyperpigmentation",
+      "totalVolume": 1310,
+      "avgDifficulty": 4.43,
+      "avgCPC": 9.92,
+      "questionCount": 24
+    },
+    {
+      "category": "conditions",
+      "theme": "PCOS and hormonal conditions",
+      "totalVolume": 1290,
+      "avgDifficulty": 5.67,
+      "avgCPC": 18.29,
+      "questionCount": 40
+    },
+    {
+      "category": "timing",
+      "theme": "healing / recovery / side effects timing",
+      "totalVolume": 1280,
+      "avgDifficulty": 1.73,
+      "avgCPC": 3.51,
+      "questionCount": 12
+    },
+    {
+      "category": "timing",
+      "theme": "swimming / pool / sauna",
+      "totalVolume": 1240,
+      "avgDifficulty": 0.69,
+      "avgCPC": 1.38,
+      "questionCount": 16
+    },
+    {
+      "category": "body-areas",
+      "theme": "back",
+      "totalVolume": 1230,
+      "avgDifficulty": 17.0,
+      "avgCPC": 6.68,
+      "questionCount": 17
+    },
+    {
+      "category": "conditions",
+      "theme": "age requirements",
+      "totalVolume": 1200,
+      "avgDifficulty": 9.0,
+      "avgCPC": 4.85,
+      "questionCount": 56
+    },
+    {
+      "category": "cost",
+      "theme": "value worth it",
+      "totalVolume": 1150,
+      "avgDifficulty": 20.33,
+      "avgCPC": 19.74,
+      "questionCount": 28
+    },
+    {
+      "category": "safety",
+      "theme": "burns and scarring",
+      "totalVolume": 1090,
+      "avgDifficulty": 3.27,
+      "avgCPC": 1.43,
+      "questionCount": 22
+    },
+    {
+      "category": "conditions",
+      "theme": "gender specific",
+      "totalVolume": 1070,
+      "avgDifficulty": 12.04,
+      "avgCPC": 9.98,
+      "questionCount": 45
+    },
+    {
+      "category": "body-areas",
+      "theme": "upper lip",
+      "totalVolume": 1050,
+      "avgDifficulty": 4.14,
+      "avgCPC": 11.23,
+      "questionCount": 14
+    },
+    {
+      "category": "timing",
+      "theme": "shower / bath",
+      "totalVolume": 1020,
+      "avgDifficulty": 2.73,
+      "avgCPC": 4.96,
+      "questionCount": 11
+    },
+    {
+      "category": "effectiveness",
+      "theme": "comparison_vs_electrolysis",
+      "totalVolume": 990,
+      "avgDifficulty": 8.36,
+      "avgCPC": 4.68,
+      "questionCount": 13
+    },
+    {
+      "category": "cost",
+      "theme": "deals packages",
+      "totalVolume": 890,
+      "avgDifficulty": 18.88,
+      "avgCPC": 28.27,
+      "questionCount": 23
+    },
+    {
+      "category": "effectiveness",
+      "theme": "stubble_shedding",
+      "totalVolume": 870,
+      "avgDifficulty": 1.5,
+      "avgCPC": 3.1,
+      "questionCount": 14
+    },
+    {
+      "category": "timing",
+      "theme": "makeup / skincare after",
+      "totalVolume": 840,
+      "avgDifficulty": 0.86,
+      "avgCPC": 0.0,
+      "questionCount": 12
+    },
+    {
+      "category": "conditions",
+      "theme": "medications (accutane and antibiotics)",
+      "totalVolume": 830,
+      "avgDifficulty": 0.0,
+      "avgCPC": 0.0,
+      "questionCount": 42
+    },
+    {
+      "category": "effectiveness",
+      "theme": "hair_types_red_ginger",
+      "totalVolume": 800,
+      "avgDifficulty": 6.67,
+      "avgCPC": 18.51,
+      "questionCount": 8
+    },
+    {
+      "category": "effectiveness",
+      "theme": "hair_types_fine_coarse_thick",
+      "totalVolume": 720,
+      "avgDifficulty": 9.25,
+      "avgCPC": 12.53,
+      "questionCount": 8
+    },
+    {
+      "category": "body-areas",
+      "theme": "arms",
+      "totalVolume": 680,
+      "avgDifficulty": 17.0,
+      "avgCPC": 8.68,
+      "questionCount": 8
+    },
+    {
+      "category": "timing",
+      "theme": "deodorant after / before",
+      "totalVolume": 680,
+      "avgDifficulty": 1.45,
+      "avgCPC": 0.0,
+      "questionCount": 10
+    },
+    {
+      "category": "timing",
+      "theme": "sex / intercourse after",
+      "totalVolume": 600,
+      "avgDifficulty": 0.2,
+      "avgCPC": 8.0,
+      "questionCount": 6
+    },
+    {
+      "category": "effectiveness",
+      "theme": "comparison_vs_waxing",
+      "totalVolume": 570,
+      "avgDifficulty": 7.71,
+      "avgCPC": 15.52,
+      "questionCount": 7
+    },
+    {
+      "category": "timing",
+      "theme": "lotion / moisturizer after",
+      "totalVolume": 560,
+      "avgDifficulty": 1.5,
+      "avgCPC": 0.0,
+      "questionCount": 10
+    },
+    {
+      "category": "conditions",
+      "theme": "skin types and dark skin",
+      "totalVolume": 530,
+      "avgDifficulty": 8.45,
+      "avgCPC": 8.26,
+      "questionCount": 22
+    },
+    {
+      "category": "effectiveness",
+      "theme": "not_working_failed",
+      "totalVolume": 510,
+      "avgDifficulty": 11.5,
+      "avgCPC": 6.5,
+      "questionCount": 10
+    },
+    {
+      "category": "body-areas",
+      "theme": "buttocks / perineal",
+      "totalVolume": 480,
+      "avgDifficulty": 5.25,
+      "avgCPC": 12.78,
+      "questionCount": 10
+    },
+    {
+      "category": "body-areas",
+      "theme": "chest / stomach / abdomen",
+      "totalVolume": 460,
+      "avgDifficulty": 8.5,
+      "avgCPC": 7.38,
+      "questionCount": 10
+    },
+    {
+      "category": "body-areas",
+      "theme": "ears / nose",
+      "totalVolume": 350,
+      "avgDifficulty": 3.0,
+      "avgCPC": 6.12,
+      "questionCount": 9
+    },
+    {
+      "category": "body-areas",
+      "theme": "eyebrows",
+      "totalVolume": 340,
+      "avgDifficulty": 6.0,
+      "avgCPC": 8.17,
+      "questionCount": 8
+    },
+    {
+      "category": "body-areas",
+      "theme": "neck",
+      "totalVolume": 300,
+      "avgDifficulty": 9.0,
+      "avgCPC": 10.85,
+      "questionCount": 5
+    },
+    {
+      "category": "timing",
+      "theme": "sweat / sweating after",
+      "totalVolume": 280,
+      "avgDifficulty": 3.67,
+      "avgCPC": 16.08,
+      "questionCount": 5
+    },
+    {
+      "category": "conditions",
+      "theme": "moles and birthmarks",
+      "totalVolume": 270,
+      "avgDifficulty": 0.0,
+      "avgCPC": 0.0,
+      "questionCount": 14
+    },
+    {
+      "category": "effectiveness",
+      "theme": "comparison_vs_ipl",
+      "totalVolume": 190,
+      "avgDifficulty": 8.0,
+      "avgCPC": 0.0,
+      "questionCount": 3
+    },
+    {
+      "category": "safety",
+      "theme": "eye safety",
+      "totalVolume": 60,
+      "avgDifficulty": 0.0,
+      "avgCPC": 0.0,
+      "questionCount": 3
+    },
+    {
+      "category": "body-areas",
+      "theme": "sideburns",
+      "totalVolume": 50,
+      "avgDifficulty": 7.0,
+      "avgCPC": 16.24,
+      "questionCount": 2
+    }
+  ]
+}

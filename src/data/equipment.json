@@ -201,6 +201,31 @@
   },
 {
     "type": "machine",
+    "slug": "apogee-plus",
+    "name": "Apogee+",
+    "manufacturer": "Cynosure",
+    "technologyType": "laser",
+    "wavelengths": ["755nm"],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-IV",
+      "displayText": "Light to medium skin tones (Alexandrite wavelength)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "air cooling (SmartCool)",
+    "notes": "755nm Alexandrite only. High fluence with large spot sizes (up to 15mm). Upgradable to Elite+ by adding 1064nm Nd:YAG module.",
+    "aliases": ["apogee plus", "cynosure apogee+", "cynosure apogee plus", "apogee +"],
+    "family": "cynosure-elite",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Cynosure's dedicated 755nm Alexandrite laser, built on proven Apogee platform technology. Designed for high fluence with large spot sizes for fast, effective hair removal on lighter skin tones.",
+      "howItWorks": "The 755nm Alexandrite wavelength has high melanin absorption for effective hair follicle destruction. SmartCool air cooling delivers continuous cold air before, during, and after each pulse. Spot sizes up to 15mm allow rapid treatment of large areas.",
+      "typicalUses": ["Hair removal on Fitzpatrick I-IV", "Large body areas (legs, back, chest) with fast treatment times", "Clinics that may later upgrade to dual-wavelength Elite+"],
+      "keyFeatures": "Permanently reduces hair by an average of 79% after just three treatments according to Cynosure data. Upgradable pathway to Elite+ for clinics wanting to add 1064nm Nd:YAG capability later. SmartCool integrated air cooling for patient comfort."
+    }
+  },
+  {
+    "type": "machine",
     "slug": "apogee-elite",
     "name": "Apogee Elite",
     "manufacturer": "Cynosure",
@@ -985,6 +1010,665 @@
     }
   },
   {
+    "type": "machine",
+    "slug": "bare-hr",
+    "name": "Bare HR",
+    "manufacturer": "Sciton",
+    "technologyType": "laser",
+    "wavelengths": [
+      "810nm",
+      "940nm",
+      "1060nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (tri-wavelength Blend Technology for darker skin safety)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact cooling (sapphire crystal at 5°C)",
+    "notes": "Sciton's dedicated hair removal platform launched in 2021. 4800W power. Two handpieces: standard 810nm and a Blend handpiece delivering 810+940+1060nm simultaneously. Won New Beauty 2022 Best of Beauty Innovation award.",
+    "aliases": [
+      "sciton bare hr",
+      "bare hr",
+      "bareit",
+      "sciton bareit",
+      "bare hr sciton"
+    ],
+    "family": "sciton-bare",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Sciton's first dedicated high-speed laser hair removal platform, launched in 2021. Built by the same company known for BBL and HALO, but unlike those IPL/hybrid devices, Bare HR is a true diode laser system with 4800 watts of power.",
+      "howItWorks": "Two handpiece options: a standard 810nm diode for general use, and a proprietary Blend handpiece that simultaneously delivers 810nm, 940nm, and 1060nm wavelengths. The Blend mode targets hair at multiple depths while reducing impact on epidermal melanin, making it safe for darker and tanned skin year-round. Sapphire crystal contact cooling at 5°C protects skin throughout treatment. Two treatment modes: Speed and Comfort.",
+      "typicalUses": [
+        "All skin types including darker and tanned skin (Blend mode)",
+        "High-volume clinics. Extra-large spot sizes (30x17mm) treat large areas in minutes",
+        "Practices already in the Sciton ecosystem (JOULE platform owners)"
+      ],
+      "keyFeatures": "4800W is among the highest power outputs of any diode system. Extra-large spot sizes (30x17mm and 30x9mm) are the largest on the market. Claimed 3x faster than competitor devices. Important note: Sciton also makes Forever Bare BBL, which is IPL. Bare HR is their true laser alternative."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "clearscan-yag",
+    "name": "ClearScan YAG",
+    "manufacturer": "Sciton",
+    "technologyType": "laser",
+    "wavelengths": [
+      "1064nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (Nd:YAG wavelength, especially suited for darker skin)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact cooling (250W thermoelectric chiller)",
+    "notes": "1064nm Nd:YAG with Large Area Pattern Generator (LAPG) for automated scanning. FDA-cleared for permanent hair reduction and PFB treatment. Also treats vascular lesions. Part of Sciton's JOULE/Profile platform.",
+    "aliases": [
+      "clearscan yag",
+      "sciton clearscan",
+      "clearscan",
+      "sciton clearscan yag",
+      "clear scan yag"
+    ],
+    "family": "sciton-joule",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Sciton's 1064nm Nd:YAG laser module, available on the JOULE and Profile platforms. FDA-cleared for permanent hair reduction and pseudofolliculitis barbae (PFB). Also handles vascular lesions, making it a dual-purpose module rather than a dedicated hair removal device.",
+      "howItWorks": "The Large Area Pattern Generator (LAPG) automatically scans a 30x30mm area with non-sequential spot placement, covering large areas 4x faster than manual hand-placed spots. A 250W thermoelectric contact chiller provides continuous cooling. The flat-top beam profile ensures uniform energy distribution with no hot spots.",
+      "typicalUses": [
+        "Darker skin types (Fitzpatrick IV-VI) where Nd:YAG is safest",
+        "Tanned patients who cannot use Alexandrite or diode",
+        "Practices using Sciton JOULE/Profile platform wanting to add hair removal capability"
+      ],
+      "keyFeatures": "LAPG scanner covers a full back in ~200 scans versus thousands of manual spots on other systems. No consumable costs. Part of Sciton's modular platform. Clinics can add it alongside BBL, HALO, and other Sciton modules. Not a standalone device."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "clearscan-alx",
+    "name": "ClearScan ALX",
+    "manufacturer": "Sciton",
+    "technologyType": "laser",
+    "wavelengths": [
+      "755nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-IV",
+      "displayText": "Light to medium skin tones (Alexandrite wavelength)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact cooling (thermoelectric chiller)",
+    "notes": "755nm Alexandrite module for Sciton JOULE platform. Same LAPG scanning technology as the ClearScan YAG. Designed for lighter skin types with dark hair.",
+    "aliases": [
+      "clearscan alx",
+      "sciton clearscan alx",
+      "clear scan alx",
+      "sciton alexandrite"
+    ],
+    "family": "sciton-joule",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Sciton's 755nm Alexandrite module for the JOULE platform. Shares the same LAPG scanning technology as the ClearScan YAG but at the Alexandrite wavelength for faster, more efficient treatment on lighter skin types.",
+      "howItWorks": "755nm Alexandrite has the highest melanin absorption of any hair removal wavelength, making it extremely effective for Fitzpatrick I-IV. The LAPG scanner automates coverage across large areas. Integrated thermoelectric contact cooling protects the skin.",
+      "typicalUses": [
+        "Light to medium skin types with dark hair",
+        "Clinics on the Sciton JOULE platform wanting Alexandrite capability alongside other modules"
+      ],
+      "keyFeatures": "Same fast LAPG scanning as the ClearScan YAG. Part of Sciton's modular ecosystem. Not a standalone device. It's a module added to JOULE or Profile platforms."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "forever-bare-bbl",
+    "name": "Forever Bare BBL",
+    "manufacturer": "Sciton",
+    "technologyType": "ipl",
+    "wavelengths": [],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-V",
+      "displayText": "Light to medium-dark skin tones"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact cooling (thermoelectric)",
+    "notes": "Sciton's BBL (BroadBand Light) hair removal treatment. This is NOT a laser. It is a premium IPL system. Part of the JOULE platform. Often confused with Sciton's actual laser products (Bare HR, ClearScan).",
+    "aliases": [
+      "forever bare bbl",
+      "sciton forever bare",
+      "forever bare",
+      "sciton bbl hair removal",
+      "bbl hair removal"
+    ],
+    "family": "sciton-joule",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Sciton's IPL-based hair removal treatment using their BroadBand Light (BBL) technology. This is NOT a laser. It is a premium Intense Pulsed Light system. Sciton is a reputable manufacturer, but Forever Bare BBL uses broad-spectrum light, not a focused laser wavelength.",
+      "howItWorks": "Uses Sciton's BBL flashlamp technology with interchangeable Smart Filters to deliver broad-spectrum light energy. The in-motion technique delivers multiple low-fluence pulses for gradual heating. While comfortable, it is fundamentally IPL technology and typically requires more sessions than true laser treatment for comparable results.",
+      "typicalUses": [
+        "Clinics already using Sciton JOULE platform who want to add hair removal without purchasing a separate laser",
+        "Patients who prefer a gentler, lower-intensity approach"
+      ],
+      "keyFeatures": "Important distinction: Sciton makes BOTH this IPL device AND true lasers (Bare HR, ClearScan YAG/ALX). If your clinic uses Sciton equipment, ask specifically whether it's Forever Bare BBL (IPL) or Bare HR / ClearScan (real laser). The Sciton name alone does not guarantee laser treatment."
+    }
+  },
+  {
+  "type": "machine",
+  "slug": "sciton-omni",
+  "name": "OMNI",
+  "manufacturer": "Sciton (co-engineered with Asclepion)",
+  "technologyType": "laser",
+  "wavelengths": [
+    "760nm",
+    "810nm",
+    "940nm",
+    "1060nm"
+  ],
+  "brandTier": "premium-clinical",
+  "skinTypes": {
+    "fitzpatrickRange": "I-VI",
+    "displayText": "All skin tones (multiple wavelengths and blend modes for darker skin safety)"
+  },
+  "purposeBuilt": true,
+  "coolingMethod": "contact cooling (sapphire) + Spritz aloe spray",
+  "notes": "Sciton's newest hair removal platform, launched June 2025. Co-engineered with Asclepion (makers of the MeDioStar). 5000W power. Standalone device (not a JOULE module). Multiple wavelength handpieces: 760nm, 810/940nm blend, 940nm vascular, and 1060nm. Dual-port connectivity allows two handpieces connected simultaneously. Four spot sizes available. Standard 110V outlet.",
+  "aliases": [
+    "sciton omni",
+    "omni laser",
+    "omni hair removal",
+    "omni sciton",
+    "omni laser hair removal"
+  ],
+  "family": null,
+  "deliveryMethod": null,
+  "richContent": {
+    "overview": "Sciton's newest and most advanced dedicated hair removal platform, launched in June 2025. Co-engineered in partnership with Asclepion (the German company behind the MeDioStar diode laser series). This is a standalone device, separate from Sciton's JOULE platform, and represents Sciton's most serious entry into dedicated laser hair removal.",
+    "howItWorks": "Multiple wavelength handpieces cover the full range: 760nm for lighter skin types, an 810/940nm blend for general use and darker skin, standalone 940nm for vascular work, and 1060nm for the deepest penetration on dark and tanned skin. Up to 5000W of power (handpiece dependent) with four spot sizes including what Sciton claims is the industry's largest. Flat-top beam profile ensures uniform energy with no hot spots. Rectangular spot design reduces overlap. Dual-port connectivity keeps two handpieces connected simultaneously for seamless switching between treatment areas. Integrated sapphire contact cooling plus optional Spritz aloe-based spray as a gel-free alternative.",
+    "typicalUses": [
+      "All skin types year-round including darker and tanned skin",
+      "High-volume clinics. Large spot sizes treat full backs in minutes",
+      "Practices wanting a premium standalone hair removal device outside the JOULE ecosystem"
+    ],
+    "keyFeatures": "Co-engineered with Asclepion brings German diode laser expertise to Sciton's platform. 5000W is among the highest power outputs available. Important context: Sciton also sells Forever Bare BBL (which is IPL, not laser). If a clinic says they use 'Sciton for hair removal', consumers should ask whether it's OMNI/Bare HR (real laser) or Forever Bare BBL (IPL). Optional single-use hygiene caps address the contact sanitation concern that some consumers have with shared handpieces."
+  }
+  },
+{
+    "type": "machine",
+    "slug": "syneron-elase",
+    "name": "eLase",
+    "manufacturer": "Syneron (now Candela Medical)",
+    "technologyType": "laser",
+    "wavelengths": [
+      "810nm"
+    ],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (diode laser + RF energy extends safety to darker skin)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact cooling",
+    "notes": "810nm diode laser with elos technology (combined diode laser + bipolar radiofrequency). The Motif LHR handpiece is specifically designed for hair removal. Syneron merged with Candela in 2010; the company now operates as Candela Medical.",
+    "aliases": [
+      "syneron elase",
+      "elase",
+      "syneron e-laser",
+      "elase motif",
+      "syneron candela elase"
+    ],
+    "family": "syneron-elos",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Syneron's dedicated hair removal platform using their proprietary elos (Electro-Optical Synergy) technology. Combines an 810nm diode laser with bipolar radiofrequency energy. Syneron merged with Candela in 2010. The company now operates as Candela Medical, which also makes the GentleMax Pro series.",
+      "howItWorks": "The elos approach uses the diode laser to pre-heat the hair follicle, then bipolar RF energy delivers additional heat directly to the follicle structure. Because the RF component doesn't depend on melanin absorption, it can disable follicles even when the laser alone wouldn't be sufficient, extending effectiveness to lighter hair colors and darker skin tones. The Motif LHR handpiece is the hair removal specific attachment.",
+      "typicalUses": [
+        "Hair removal across all skin types including darker tones",
+        "Clinics that purchased Syneron equipment before the Candela merger",
+        "Practices treating patients with lighter or finer hair where pure laser alone is less effective"
+      ],
+      "keyFeatures": "The RF component is what distinguishes Syneron devices from pure diode lasers. It allows effective treatment with lower optical energy, reducing burn risk on darker skin. If your clinic uses an eLase, it IS a real laser (with RF enhancement). Syneron is now part of Candela Medical, the same company behind the GentleMax Pro series."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "syneron-elos-plus",
+    "name": "elos Plus",
+    "manufacturer": "Syneron (now Candela Medical)",
+    "technologyType": "laser",
+    "wavelengths": [
+      "810nm"
+    ],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (diode laser + RF for extended safety)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact cooling",
+    "notes": "Multi-application platform using elos technology (810nm diode laser + bipolar RF). Hair removal via DSL handpiece is one of several applications including wrinkle treatment, vascular lesions, and fractional skin rejuvenation. Successor to the eMax.",
+    "aliases": [
+      "elos plus",
+      "syneron elos plus",
+      "syneron elos+",
+      "elos+",
+      "syneron candela elos plus"
+    ],
+    "family": "syneron-elos",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Syneron's updated multi-application platform, successor to the eMax. Uses elos technology combining 810nm diode laser with bipolar radiofrequency. Hair removal is performed with the DSL (Diode Laser) handpiece, but the platform also handles wrinkles, vascular lesions, and skin rejuvenation with other handpieces.",
+      "howItWorks": "Same elos principle as the eLase: diode laser pre-heats the target, then bipolar RF delivers additional energy independent of skin color. The DSL handpiece is the dedicated hair removal attachment operating at up to 3 Hz pulse rate. Multiple handpiece options (DSL, WRA, LV, LVA) plug in for different treatments.",
+      "typicalUses": [
+        "Multi-service practices wanting hair removal plus skin rejuvenation from one platform",
+        "All skin types including darker tones via the RF component",
+        "Clinics upgrading from the older eMax system"
+      ],
+      "keyFeatures": "Versatile multi-application platform, not purpose-built for hair removal alone. The DSL handpiece provides real diode laser hair removal with RF enhancement. If your clinic uses an elos Plus for hair removal, confirm they are using the DSL handpiece (diode laser), not the IPL-based applicators that are also available on this platform."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "syneron-emax",
+    "name": "eMax",
+    "manufacturer": "Syneron (now Candela Medical)",
+    "technologyType": "laser",
+    "wavelengths": [
+      "810nm"
+    ],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (varies by handpiece, laser or IPL depending on attachment)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact cooling",
+    "notes": "Syneron's original multi-application platform using elos technology. Hair removal via DSL/DS handpiece (810nm diode laser + RF). Also has IPL-based handpieces (SR, SRA) for other treatments. Important: the eMax platform includes BOTH laser and IPL handpieces. The technology used depends entirely on which handpiece is attached.",
+    "aliases": [
+      "syneron emax",
+      "emax",
+      "e-max",
+      "syneron e max",
+      "syneron candela emax"
+    ],
+    "family": "syneron-elos",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Syneron's original multi-application elos platform, one of the most versatile aesthetic systems ever made. Handles hair removal, skin rejuvenation, vein treatment, acne, skin tightening, and wrinkle reduction through interchangeable handpieces. Important: the eMax has BOTH diode laser handpieces (DSL/DS for hair removal) and IPL-based handpieces (SR/SRA for skin rejuvenation).",
+      "howItWorks": "The elos platform combines optical energy (either diode laser or IPL depending on the handpiece) with bipolar radiofrequency. For hair removal, the DSL handpiece uses an 810nm diode laser + RF with a 12x15mm spot size. For skin treatments, the SR/SRA handpieces use broadband light (IPL) + RF. The technology you receive depends entirely on which handpiece the clinic attaches.",
+      "typicalUses": [
+        "Established clinics that invested in the eMax ecosystem years ago",
+        "Practices offering a wide menu of aesthetic services from one platform",
+        "Many eMax systems are still in active service despite being older technology"
+      ],
+      "keyFeatures": "Critical distinction: ask your clinic WHICH HANDPIECE they use for hair removal. The DSL/DS handpiece = real diode laser (good). The SR/SRA handpiece = IPL (not a laser). Same machine, very different technology depending on the attachment. The eMax is from a reputable manufacturer (Syneron, now Candela Medical) and many clinics still run them reliably, but the platform is older and has been superseded by the elos Plus."
+    }
+  },
+ {
+    "type": "machine",
+    "slug": "deka-again",
+    "name": "Again",
+    "manufacturer": "DEKA (El.En Group)",
+    "technologyType": "laser",
+    "wavelengths": [
+      "755nm",
+      "1064nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (dual wavelength with Moveo technology)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact cooling (sapphire tip)",
+    "notes": "DEKA's high-power dual-wavelength Alexandrite + Nd:YAG laser with Moveo in-motion delivery. 30mm spot size, the largest in the industry for this laser type. Won the 2022 AMWC Award for Best Laser, Light and Energy-Based Device. Distributed in the US by Cartessa Aesthetics, in the UK by Lynton Lasers.",
+    "aliases": [
+      "deka again",
+      "again laser",
+      "deka again laser",
+      "cartessa again",
+      "lynton again"
+    ],
+    "family": "deka-again",
+    "deliveryMethod": "moveo",
+    "richContent": {
+      "overview": "DEKA's flagship high-power dual-wavelength laser designed for fast, pain-free hair removal and aesthetic treatments. Combines 755nm Alexandrite and 1064nm Nd:YAG with up to 13 standard handpiece spot sizes plus 4 Moveo handpieces (HR, PL, VL, SR). The 30mm spot size is the largest available in any Alexandrite/Nd:YAG system.",
+      "howItWorks": "Two laser sources fire independently or in combination. Standard handpieces deliver traditional pulsed energy for high-speed treatments. Moveo handpieces use DEKA's sapphire-tip in-motion technology that glides continuously over the skin, delivering energy at lower fluence per pulse for virtually painless treatment. The Moveo sapphire tip works in full contact with the skin, reducing reflected energy from approximately 50% to nearly zero, effectively doubling the energy reaching the follicle.",
+      "typicalUses": [
+        "All skin types year-round including darker tones via Moveo mode",
+        "High-volume clinics needing fast treatment (30mm spot covers large areas rapidly)",
+        "Practices wanting both hair removal and vascular/pigmented lesion/skin rejuvenation capabilities"
+      ],
+      "keyFeatures": "30mm spot size is the industry's largest for Alexandrite/Nd:YAG lasers. Moveo technology provides virtually painless treatments without numbing cream. Both standard pulsed and Moveo in-motion delivery modes. Wi-Fi enabled with remote diagnostics. DEKA makes both the Again family (high-speed, large spot) and the Motus family (comfort-focused, compact), both using Moveo technology."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "deka-again-pro",
+    "name": "Again PRO",
+    "manufacturer": "DEKA (El.En Group)",
+    "technologyType": "laser",
+    "wavelengths": [
+      "755nm",
+      "1064nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (dual wavelength with Moveo technology)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact cooling (sapphire tip)",
+    "notes": "Upgraded version of the Again with increased power levels, faster repetition rates, and new specific pulses for treating fine and fair hair. Ranked second only to Lutronic Clarity II in independent comparative testing. Distributed in the US by Cartessa Aesthetics.",
+    "aliases": [
+      "deka again pro",
+      "again pro",
+      "again pro laser",
+      "cartessa again pro"
+    ],
+    "family": "deka-again",
+    "deliveryMethod": "moveo",
+    "richContent": {
+      "overview": "The upgraded Again platform with increased power, faster treatment speeds, and new pulse profiles specifically designed for fine and fair hair. DEKA claims 50% faster treatment times compared to the original Again. Independent testing by Laserazor ranked it second only to the Lutronic Clarity II for overall hair removal efficacy.",
+      "howItWorks": "Same dual-wavelength approach as the Again (755nm Alexandrite + 1064nm Nd:YAG) with both standard and Moveo handpieces. The PRO version adds higher power output, faster repetition rates, and optimized pulse shapes for vascular treatments. Up to 13 standard spot sizes and 4 Moveo handpieces (HR for hair removal, PL for pigmented lesions, VL for vascular lesions, SR for skin rejuvenation). MoveoGlo stacked treatment protocol combines SR + VL + PL handpieces for comprehensive skin rejuvenation.",
+      "typicalUses": [
+        "All skin types including treatment of fine and fair hair (a traditionally difficult target)",
+        "High-volume clinics wanting maximum speed and versatility",
+        "Practices offering full aesthetic menus (hair removal, vascular, pigmentation, rejuvenation)"
+      ],
+      "keyFeatures": "Optimized pulse profiles for fine and fair hair set it apart from many competitors. Independent testing showed 91% hair reduction at 12 months. Plume protection mode activates during Moveo treatments for practitioner safety. Same Moveo technology as the Motus family but in a higher-power, larger-spot-size platform."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "deka-again-pro-plus",
+    "name": "Again PRO PLUS",
+    "manufacturer": "DEKA (El.En Group)",
+    "technologyType": "laser",
+    "wavelengths": [
+      "755nm",
+      "1064nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (dual wavelength with Moveo technology)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact cooling (sapphire tip)",
+    "notes": "Latest and most powerful version of the Again family. Up to 25 kW peak power. Same 13 standard handpiece spot sizes and 4 Moveo handpieces as the Again PRO. Distributed in the US by Cartessa Aesthetics.",
+    "aliases": [
+      "deka again pro plus",
+      "again pro plus",
+      "again pro+ laser",
+      "cartessa again pro plus"
+    ],
+    "family": "deka-again",
+    "deliveryMethod": "moveo",
+    "richContent": {
+      "overview": "DEKA's most powerful Again platform, the top of the line in their high-speed hair removal range. Up to 25 kW peak power with the same versatile handpiece ecosystem as the Again PRO. Represents DEKA's latest engineering in their dual-wavelength laser lineup.",
+      "howItWorks": "Same dual-wavelength architecture and handpiece system as the Again PRO, with further increased power levels for even faster treatment speeds. Both standard pulsed delivery and Moveo in-motion modes. All 13 standard spot sizes and 4 Moveo handpieces (HR, PL, VL, SR) are compatible. MoveoGlo stacked treatment protocol available for comprehensive skin rejuvenation.",
+      "typicalUses": [
+        "The busiest high-volume clinics needing absolute maximum speed",
+        "All skin types including fine and fair hair",
+        "Practices wanting the latest generation of DEKA's proven Again platform"
+      ],
+      "keyFeatures": "25 kW peak power is among the highest of any aesthetic laser system. Successor to the Again PRO with increased power while maintaining the same handpiece compatibility and treatment protocols. DEKA now offers four distinct hair removal families: Again (high-speed), Motus (comfort-focused), and both share Moveo technology."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "quanta-duetto-mt-evo",
+    "name": "Duetto MT EVO",
+    "manufacturer": "Quanta System",
+    "technologyType": "laser",
+    "wavelengths": [
+      "755nm",
+      "1064nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (dual wavelength with Mixed Technology)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact cooling (sapphire window) + air cooling",
+    "notes": "Italian-engineered dual-wavelength laser with Quanta Mixed Technology for simultaneous or sequential wavelength delivery. Predecessor to the Thunder MT. Handles hair removal, vascular lesions, pigmented lesions, skin rejuvenation, and active acne. Distributed in the US by Cartessa Aesthetics. Optional TWAIN IPL and Er:YAG handpieces available.",
+    "aliases": [
+      "quanta duetto",
+      "duetto mt",
+      "duetto mt evo",
+      "quanta system duetto",
+      "duetto"
+    ],
+    "family": "quanta-mixed-technology",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Quanta System's dual-wavelength platform using their patented Mixed Technology for simultaneous delivery of both 755nm Alexandrite and 1064nm Nd:YAG wavelengths. The Duetto MT EVO is the predecessor to the Thunder MT and remains widely used in clinics worldwide. Available with optional TWAIN IPL and Er:YAG handpieces for expanded treatment capabilities.",
+      "howItWorks": "Two independent laser sources (Alexandrite 755nm and Nd:YAG 1064nm) can fire individually or simultaneously via second-generation Quanta Mixed Technology. Simultaneous mode lets practitioners adjust the proportion between the two wavelengths, combining Alexandrite's high melanin absorption with Nd:YAG's deep penetration in customizable ratios. Spot sizes up to 18mm. Integrated contact cooling with sapphire window at three temperature settings, plus optional external air cooling.",
+      "typicalUses": [
+        "All skin types year-round (Mixed Technology extends Alexandrite safety to darker tones)",
+        "Multi-application clinics (hair removal, vascular, pigmentation, rejuvenation, acne)",
+        "Practices wanting the option to add IPL or Er:YAG capabilities via TWAIN modules"
+      ],
+      "keyFeatures": "Mixed Technology allows customizable wavelength blending, a feature unique to Quanta System devices. The TWAIN modular system lets clinics add IPL or Er:YAG handpieces at any time. Important: if your clinic uses a Duetto with the TWAIN IPL handpiece for hair removal, that specific treatment is IPL, not laser. Ask which handpiece is being used. The Duetto has been succeeded by the Thunder MT but many units remain in active clinical service."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "venus-epileve",
+    "name": "Venus Epileve",
+    "manufacturer": "Venus Concept",
+    "technologyType": "laser",
+    "wavelengths": [
+      "810nm"
+    ],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (diode with adjustable parameters)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact cooling",
+    "notes": "Venus Concept's compact tabletop 810nm diode laser. More affordable entry point than the Venus Velocity. FDA-cleared for hair removal, permanent hair reduction, and pseudofolliculitis barbae. Two treatment modes: PULSE and SLIDE. Part of Venus Concept's subscription-based equipment model.",
+    "aliases": [
+      "venus epileve",
+      "venus concept epileve",
+      "epileve"
+    ],
+    "family": null,
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Venus Concept's compact, tabletop diode laser designed as an affordable entry point for clinics adding hair removal services. Uses the same 810nm diode wavelength as the larger Venus Velocity but in a portable form factor with IoT connectivity for business analytics.",
+      "howItWorks": "810nm diode laser with real-time contact cooling that monitors applicator temperature 1,000 times per second. Two treatment modes: PULSE for traditional spot-by-spot delivery and SLIDE for continuous gliding motion over larger areas. Ergonomic applicator designed for ambidextrous use, plus optional footswitch operation. No disposables required.",
+      "typicalUses": [
+        "Newer or smaller clinics entering the hair removal market",
+        "Practices using Venus Concept's subscription financing to lower upfront costs",
+        "All body areas for Fitzpatrick I-VI"
+      ],
+      "keyFeatures": "Lower investment cost than the Venus Velocity makes it accessible for growing practices. IoT connectivity provides treatment data and business analytics. No disposable costs. Same subscription financing model as the Velocity. Compact tabletop design saves clinic floor space. It IS a real diode laser, not IPL, despite its lower price point compared to premium systems."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "venus-versa",
+    "name": "Venus Versa",
+    "manufacturer": "Venus Concept",
+    "technologyType": "ipl",
+    "wavelengths": [],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-IV",
+      "displayText": "Light to medium skin tones"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact cooling",
+    "notes": "Venus Concept's multi-application IPL platform. This is NOT a laser. Uses Intense Pulsed Light with SmartPulse technology. Hair removal is one of many applications including photofacials, acne treatment, skin resurfacing, and wrinkle reduction. FDA-cleared for hair removal on Fitzpatrick I-IV only.",
+    "aliases": [
+      "venus versa",
+      "venus concept versa",
+      "venus versa pro"
+    ],
+    "family": null,
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Venus Concept's multi-application Intense Pulsed Light (IPL) platform. This is NOT a laser. It uses broad-spectrum light with SmartPulse technology for hair removal alongside photofacials, acne treatment, skin resurfacing, and wrinkle reduction. Venus Concept sells both this IPL device and true diode lasers (Velocity, Epileve).",
+      "howItWorks": "Uses IPL (Intense Pulsed Light) with interchangeable applicators for different treatments. Hair removal applicators (HR650, HR690) use broad-spectrum light filtered to target melanin. SmartPulse technology aims to deliver consistent energy per pulse. Contact cooling protects the skin surface.",
+      "typicalUses": [
+        "Multi-service clinics wanting diverse treatments from one platform",
+        "Practices prioritizing versatility over dedicated hair removal performance",
+        "Light to medium skin tones only (Fitzpatrick I-IV for hair removal)"
+      ],
+      "keyFeatures": "Important distinction: Venus Concept makes BOTH this IPL device AND true diode lasers (Venus Velocity, Venus Epileve). If your clinic uses Venus Concept equipment for hair removal, ask specifically whether it is the Versa (IPL) or Velocity/Epileve (real diode laser). The Venus name alone does not guarantee laser treatment. IPL hair removal typically requires more sessions than true laser for comparable results."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "lutronic-clarity",
+    "name": "Clarity",
+    "manufacturer": "Lutronic (now Cynosure Lutronic)",
+    "technologyType": "laser",
+    "wavelengths": [
+      "755nm",
+      "1064nm"
+    ],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (dual wavelength system)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "air cooling (cryogen spray + air cooling)",
+    "notes": "Original dual-wavelength Alexandrite + Nd:YAG from Lutronic. Predecessor to the Clarity II. Still found in many clinics. Lutronic merged with Cynosure and now operates as Cynosure Lutronic.",
+    "aliases": [
+      "lutronic clarity",
+      "clarity laser",
+      "lutronic clarity 1",
+      "cynosure clarity"
+    ],
+    "family": "lutronic-clarity",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Lutronic's original dual-wavelength laser combining 755nm Alexandrite and 1064nm Nd:YAG. Predecessor to the widely acclaimed Clarity II. Many clinics still operate Clarity systems, which remain effective professional lasers. Lutronic has since merged with Cynosure and now operates as Cynosure Lutronic.",
+      "howItWorks": "Dual-wavelength system with 755nm targeting melanin efficiently for lighter skin types and 1064nm penetrating deeper for safe treatment of darker skin. Single fiber delivery for all spot sizes. Dual cooling system combines cryogen spray for instant skin protection with air cooling for sustained comfort.",
+      "typicalUses": [
+        "All skin types with dual-wavelength flexibility",
+        "Clinics that invested in Lutronic before the Clarity II launch",
+        "Practices still running proven equipment alongside newer devices"
+      ],
+      "keyFeatures": "The original Clarity established Lutronic's reputation in the hair removal market. It IS a real dual-wavelength laser and remains a capable professional device. The Clarity II added IntelliTrak guidance, temperature sensing, and faster repetition rates. If your clinic uses a Clarity (not Clarity II), you are still receiving genuine dual-wavelength laser treatment from a reputable manufacturer."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "quanta-light-evo",
+    "name": "Light EVO Series",
+    "manufacturer": "Quanta System",
+    "technologyType": "laser",
+    "wavelengths": [
+      "755nm",
+      "1064nm"
+    ],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (wavelength dependent)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact cooling (sapphire window)",
+    "notes": "Quanta System's modular multi-wavelength platform. Available in up to 10 configurations combining Alexandrite 755nm, Nd:YAG 1064nm, Nd:YAG FD 532nm, and optional 1320nm. Hair removal is one of many applications. Can add optional TWAIN IPL and Er:YAG handpieces. Distributed in the US by Cartessa Aesthetics.",
+    "aliases": [
+      "quanta light evo",
+      "light evo",
+      "quanta light series",
+      "quanta system light evo",
+      "light series evo"
+    ],
+    "family": null,
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Quanta System's modular multi-wavelength platform available in up to 10 different configurations. Can combine Alexandrite 755nm, Nd:YAG 1064nm, frequency-doubled Nd:YAG 532nm, and optional 1320nm for skin rejuvenation. Hair removal is one of many applications including vascular lesions, pigmented lesions, and skin tightening.",
+      "howItWorks": "Unlike the Thunder MT and Duetto MT, the Light EVO does not include Quanta Mixed Technology (no simultaneous wavelength firing). Each wavelength fires independently. Integrated contact cooling with sapphire window at three temperature settings. Optional TWAIN IPL and Er:YAG handpieces can be added for expanded treatment capabilities. Features Quanta's Power+ technology for high energy output.",
+      "typicalUses": [
+        "Multi-application clinics wanting a configurable platform",
+        "Practices that need hair removal plus vascular and pigmented lesion treatment",
+        "Clinics that may later want to add IPL or Er:YAG via TWAIN modules"
+      ],
+      "keyFeatures": "Highly configurable with up to 10 model variants. Does NOT include Mixed Technology (that is exclusive to the Thunder MT and Duetto MT). Italian-engineered by Quanta System. If your clinic uses a Light EVO for hair removal, it IS a real laser, but ask which wavelength they are using and confirm it is the laser handpiece, not the optional TWAIN IPL attachment."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "fotona-xp-dynamis",
+    "name": "XP Dynamis",
+    "manufacturer": "Fotona",
+    "technologyType": "laser",
+    "wavelengths": [
+      "1064nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (Nd:YAG wavelength)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "air cooling",
+    "notes": "Fotona's Nd:YAG-only platform. Simplified version of the SP Dynamis without the Er:YAG component. Hair removal is one of many applications including skin tightening, vascular lesions, and laser lipolysis. Same VSP and FRAC3 technology as the SP Dynamis.",
+    "aliases": [
+      "fotona xp dynamis",
+      "xp dynamis",
+      "fotona xp"
+    ],
+    "family": "fotona-sp",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Fotona's Nd:YAG-only platform, a streamlined version of the SP Dynamis without the Er:YAG laser component. Uses the same VSP (Variable Square Pulse) technology and FRAC3 three-dimensional treatment pattern for hair removal. Covers a wide range of non-ablative aesthetic and medical applications.",
+      "howItWorks": "1064nm Nd:YAG with Fotona's proprietary FRAC3 delivery, creating a three-dimensional fractional pattern that targets hair follicles at multiple depths. VSP technology provides precisely controlled square pulses. The optional S-11 high-performance scanner enables rapid treatment of large areas. Without the Er:YAG component, it cannot perform ablative resurfacing treatments.",
+      "typicalUses": [
+        "All skin types, especially effective for darker skin (Nd:YAG safety)",
+        "Multi-application practices not needing ablative resurfacing",
+        "Clinics wanting Fotona's proven Nd:YAG technology at a lower price point than the SP Dynamis"
+      ],
+      "keyFeatures": "Same core Nd:YAG technology as the SP Dynamis but without Er:YAG capability. Fotona has 60+ years of laser manufacturing heritage. Not purpose-built for hair removal. If your clinic uses a Fotona XP Dynamis, you are receiving genuine Nd:YAG laser treatment from a well-established manufacturer."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "fotona-dynamis-max",
+    "name": "Dynamis Max",
+    "manufacturer": "Fotona",
+    "technologyType": "laser",
+    "wavelengths": [
+      "1064nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (Nd:YAG wavelength)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "air cooling",
+    "notes": "Fotona's latest flagship multi-application Nd:YAG + Er:YAG platform. Successor to the SP Dynamis with enhanced capabilities. Hair removal is one of many applications including the Fotona4D facelift, skin resurfacing, vascular treatments, and surgical applications.",
+    "aliases": [
+      "fotona dynamis max",
+      "dynamis max",
+      "fotona max"
+    ],
+    "family": "fotona-sp",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Fotona's most advanced multi-application platform, the successor to the SP Dynamis. Combines Nd:YAG and Er:YAG laser sources for the widest range of aesthetic and medical applications. Hair removal uses the 1064nm Nd:YAG component with FRAC3 and VSP technologies.",
+      "howItWorks": "Dual-laser system with 1064nm Nd:YAG for non-ablative treatments (hair removal, vascular, skin tightening) and Er:YAG for ablative treatments (resurfacing, surgical). For hair removal specifically, it uses the same FRAC3 three-dimensional treatment pattern and VSP pulse control as the SP Dynamis. Compatible with the S-11 scanner for large-area coverage.",
+      "typicalUses": [
+        "Premium multi-application practices with diverse treatment menus",
+        "All skin types for hair removal via Nd:YAG",
+        "Clinics performing both aesthetic and surgical laser procedures"
+      ],
+      "keyFeatures": "Fotona's top-of-the-line platform. Not purpose-built for hair removal, but the Nd:YAG hair removal capability is proven and effective. Clinics investing in a Dynamis Max are typically focused on a broad treatment portfolio rather than dedicated hair removal. If hair removal is your primary concern, ask whether the clinic also offers a dedicated hair removal system."
+    }
+  },
+  {
     "type": "technology-term",
     "slug": "shr",
     "name": "SHR (Super Hair Removal)",
@@ -1186,23 +1870,23 @@
     ]
   },
   {
-    "type": "technology-term",
-    "slug": "quad-wavelength",
-    "name": "Quad-Wavelength (755nm + 808nm + 940nm + 1064nm)",
-    "technologyType": "wavelength",
-    "isRealLaser": true,
-    "classification": "verify-brand",
-    "whatItIs": "Quad-wavelength systems combine four diode wavelengths (755nm, 808nm, 940nm, and 1064nm) into a single handpiece. This configuration is almost exclusively found in budget Chinese-manufactured machines, not in premium clinical systems from established manufacturers.",
-    "whyItMatters": "Four wavelengths sounds like it should be better than three, but this is primarily a marketing differentiator used by Chinese OEM manufacturers to stand out from the flood of tri-wavelength machines on the market. The 940nm addition fills a minor gap between 808nm and 1064nm, but the clinical benefit over a quality tri-wavelength system is negligible. The critical issue is not the number of wavelengths. It is the quality of engineering behind them. A $3,000 quad-wavelength machine from Alibaba has four wavelengths on paper, but the power output per wavelength, pulse control precision, beam uniformity, and cooling system quality are not comparable to a $70,000 Soprano Titanium with three wavelengths. More wavelengths does not mean better results. When a clinic advertises '4-wavelength laser,' ask what brand and model they are using. If it is not from a recognized manufacturer, the extra wavelength is a spec-sheet talking point, not a clinical advantage.",
-    "askYourClinic": "What is the brand and model of your 4-wavelength laser? Who manufactures it? Is it FDA-cleared?",
-    "aliases": [
-      "quad wavelength",
-      "4 wavelength laser",
-      "four wavelength laser",
-      "4 wave laser",
-      "755 808 940 1064",
-      "quad wavelength diode"
-    ]
+  "type": "technology-term",
+  "slug": "quad-wavelength",
+  "name": "Quad-Wavelength (755nm + 808nm + 940nm + 1064nm)",
+  "technologyType": "wavelength",
+  "isRealLaser": true,
+  "classification": "verify-brand",
+  "whatItIs": "Quad-wavelength systems combine four diode wavelengths (typically 755nm, 808nm, 940nm, and 1064nm) into a single device. However, there are two very different implementations of this concept.",
+  "whyItMatters": "Context matters more than the number of wavelengths. Budget Chinese-manufactured machines (typically $2,000-$5,000 from Alibaba) cram all four wavelengths into a single handpiece firing simultaneously. The 940nm addition over tri-wavelength machines is a spec-sheet differentiator to stand out in a crowded market of cheap imports (the clinical benefit over a quality tri-wavelength system is negligible). Premium systems like the Sciton OMNI also offer four wavelengths (760nm, 810nm, 940nm, 1060nm), but as separate dedicated handpieces that clinicians select based on patient skin type and treatment area. That is wavelength selection, not wavelength stacking, a fundamentally different and clinically meaningful approach. The critical issue is never the number of wavelengths. It is the quality of engineering behind them. A $3,000 quad-wavelength machine from Alibaba has four wavelengths on paper, but the power output per wavelength, pulse control precision, beam uniformity, and cooling system quality are not comparable to a premium system. When a clinic advertises '4-wavelength laser', ask what brand and model they are using and whether the wavelengths are in separate handpieces or a single combined handpiece. If it is not from a recognized manufacturer, the extra wavelength is a marketing talking point, not a clinical advantage.",
+  "askYourClinic": "What is the brand and model of your 4-wavelength laser?",
+  "aliases": [
+    "quad wavelength",
+    "4 wavelength laser",
+    "four wavelength laser",
+    "4 wave laser",
+    "755 808 940 1064",
+    "quad wavelength diode"
+  ]
   },
   {
   "type": "technology-term",
