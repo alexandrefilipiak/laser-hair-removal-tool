@@ -1,8 +1,11 @@
 /**
- * Home Devices vs Clinical Lasers Guide page
+ * Home Lasers vs Clinical Lasers Guide page
  *
- * Educational page explaining the power difference between
- * home laser devices and professional clinical lasers.
+ * Comprehensive comparison of home laser hair removal devices
+ * vs professional clinical lasers, covering DermRays, Epilaser,
+ * CurrentBody, and Tria against clinical devices.
+ *
+ * Updated February 2026 with full competitive landscape.
  */
 
 import Link from 'next/link';
@@ -14,11 +17,11 @@ import { ShareButtons } from '@/components/ShareButtons';
 export const metadata: Metadata = {
   title: 'Home Lasers vs Clinical Lasers | LaserHairRemovalMap',
   description:
-    'At-home lasers like the Tria 4X are real lasers. But they\'re not playing in the same league. Learn why clinical lasers deliver up to 100x more energy per pulse and what that means for your results.',
+    'Home laser devices use the same wavelengths as clinical lasers but deliver 3-10x less fluence. We compared every FDA-cleared home laser to clinical devices. Here is what the power gap means for your results.',
   openGraph: {
     title: 'Home Lasers vs Clinical Lasers | LaserHairRemovalMap',
     description:
-      'At-home lasers like the Tria 4X are real lasers. They\'re just not playing in the same league. Learn why clinical lasers deliver up to 100x more energy per pulse and what that means for your results.',
+      'Home laser devices use the same wavelengths as clinical lasers but deliver 3-10x less fluence. We compared every FDA-cleared home laser to clinical devices. Here is what the power gap means for your results.',
   },
 };
 
@@ -94,7 +97,7 @@ export default function HomeVsClinicalLasersPage() {
               fontSize: '1.0625rem',
             }}
           >
-            Same wavelength, different league
+            Real lasers, real gap
           </p>
         </header>
 
@@ -114,19 +117,22 @@ export default function HomeVsClinicalLasersPage() {
             fontSize: '0.875rem',
           }}
         >
+          <a href="#they-are-real-lasers" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">They&apos;re Real Lasers</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>&middot;</span>
           <a href="#the-power-gap" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">The Power Gap</a>
-          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>&middot;</span>
+          <a href="#what-about-epilaser" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">The Epilaser</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>&middot;</span>
           <a href="#why-the-gap-exists" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">Why the Gap Exists</a>
-          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
-          <a href="#what-it-means" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">What It Means for Results</a>
-          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
-          <a href="#where-home-devices-fit" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">Where Home Devices Fit</a>
-          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>·</span>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>&middot;</span>
+          <a href="#what-it-means" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">What It Means</a>
+          <span style={{ color: '#E8E4DF', padding: '0.5rem 0' }}>&middot;</span>
           <a href="#how-we-classify" style={{ color: '#5E8B7E', textDecoration: 'none', padding: '0.5rem 0.25rem' }} className="hover:underline">How We Classify</a>
         </nav>
 
         {/* Opening section */}
         <section
+          id="they-are-real-lasers"
           className="rounded-xl"
           style={{
             backgroundColor: '#FFFFFF',
@@ -145,13 +151,13 @@ export default function HomeVsClinicalLasersPage() {
               marginBottom: '1rem',
             }}
           >
-            The Surprise
+            Yes, They&apos;re Real Lasers
           </h2>
           <p className="leading-relaxed" style={{ color: '#2D2D2D', fontSize: '1.0625rem', lineHeight: 1.7 }}>
-            At-home devices Tria 4X and Tria Precision are real lasers. But they are not playing in the same league as clinical lasers.
+            The home devices you can buy on Amazon from brands like DermRays, CurrentBody, and Epilaser are real diode lasers, not IPL. They use the same 808 to 810nm wavelength found in professional clinical devices like the Lumenis LightSheer and Cynosure Vectus.
           </p>
           <p className="leading-relaxed" style={{ color: '#2D2D2D', fontSize: '1.0625rem', lineHeight: 1.7, marginTop: '1rem' }}>
-            The Tria Hair Removal Laser 4X, the most powerful home laser available, uses a real 810nm diode laser: the same wavelength used by professional clinical devices like the Lumenis LightSheer and Venus Velocity. It is FDA-cleared as an OTC (over-the-counter) device under product code OHT, a completely different regulatory category from the professional lasers used in clinics.
+            The difference isn&apos;t whether they work. It&apos;s how much power they deliver, and the gap is larger than most people realize.
           </p>
         </section>
 
@@ -165,7 +171,7 @@ export default function HomeVsClinicalLasersPage() {
           >
             <img
               src="/laser-hair-removal-home-vs-clinical.png"
-              alt="Home device vs clinical laser comparison: Tria Hair Removal Laser 4X (home device, Class 1) next to Candela GentleMax Pro (clinical laser, Class IV). Both are real lasers, but the clinical device delivers roughly 100 times more energy per pulse."
+              alt="Home laser device next to a clinical laser system. Both use real laser technology, but the clinical device delivers dramatically more energy per pulse across a much larger treatment area."
               style={{
                 width: '100%',
                 height: 'auto',
@@ -184,7 +190,7 @@ export default function HomeVsClinicalLasersPage() {
               maxWidth: '90%',
             }}
           >
-            Left: Tria Hair Removal Laser 4X, a home diode laser you can buy for around $300. Right: Candela GentleMax Pro, a clinical laser costing $80,000–$150,000. Both use real laser technology. The difference is power: the GentleMax Pro delivers enough energy to permanently damage a hair follicle in a single pulse. The Tria cannot.
+            A home diode laser you can buy for $400-$999 vs. a clinical laser costing $80,000-$150,000. Both use real laser technology. The difference is power: clinical devices deliver enough energy to permanently damage a hair follicle in a single pulse.
           </figcaption>
         </figure>
 
@@ -202,12 +208,12 @@ export default function HomeVsClinicalLasersPage() {
             The Power Gap
           </h2>
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
-            The difference comes down to power, and the gap is larger than most people realize.
+            The DermRays V8S is the most powerful home laser by total energy output: an 810nm diode laser with up to 9 J/cm&sup2; fluence and 27 joules per pulse across a 3 cm&sup2; treatment window. It&apos;s FDA-cleared (510(k) K230090) and available on Amazon for around $599.
           </p>
 
           {/* Power comparison cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4" style={{ marginBottom: '1.5rem' }}>
-            {/* Tria card */}
+            {/* DermRays V8S card */}
             <div
               className="rounded-xl p-4"
               style={{
@@ -216,25 +222,29 @@ export default function HomeVsClinicalLasersPage() {
               }}
             >
               <div style={{ color: '#B8860B', fontWeight: 600, fontSize: '1rem', marginBottom: '0.5rem' }}>
-                Tria Hair Removal Laser 4X
+                DermRays V8S
               </div>
-              <div style={{ color: '#5A5550', fontSize: '0.875rem', marginBottom: '0.25rem' }}>Home device · ~$300</div>
+              <div style={{ color: '#5A5550', fontSize: '0.875rem', marginBottom: '0.25rem' }}>Most powerful home laser &middot; ~$599</div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.75rem' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
                   <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Fluence</span>
-                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>Up to 20 J/cm²</span>
+                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>Up to 9 J/cm&sup2;</span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
                   <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Energy per pulse</span>
-                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>~0.5 joules</span>
+                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>27 joules</span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Treatment window</span>
-                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>1 cm²</span>
+                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Spot area</span>
+                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>3 cm&sup2;</span>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Repetition rate</span>
+                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>Single shot</span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
                   <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Classification</span>
-                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>Class 1 / OTC</span>
+                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>Class II</span>
                 </div>
               </div>
             </div>
@@ -250,19 +260,23 @@ export default function HomeVsClinicalLasersPage() {
               <div style={{ color: '#5E8B7E', fontWeight: 600, fontSize: '1rem', marginBottom: '0.5rem' }}>
                 Candela GentleMax Pro
               </div>
-              <div style={{ color: '#5A5550', fontSize: '0.875rem', marginBottom: '0.25rem' }}>Clinical laser · $80,000–$150,000</div>
+              <div style={{ color: '#5A5550', fontSize: '0.875rem', marginBottom: '0.25rem' }}>Clinical laser &middot; $80,000-$150,000</div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.75rem' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
                   <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Fluence</span>
-                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>Up to 100+ J/cm²</span>
+                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>Up to 100+ J/cm&sup2;</span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
                   <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Energy per pulse</span>
                   <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>Up to 80 joules</span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Spot sizes</span>
-                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>Up to 24mm</span>
+                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Spot area</span>
+                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>Up to 4.5 cm&sup2;</span>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Repetition rate</span>
+                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>2-3 pulses/sec</span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
                   <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Classification</span>
@@ -271,6 +285,10 @@ export default function HomeVsClinicalLasersPage() {
               </div>
             </div>
           </div>
+
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
+            In fluence (the energy concentration your skin actually experiences), the clinical device delivers 3 to 11 times more depending on the spot size and settings the practitioner selects. In total energy per pulse, the clinical device delivers about 3 times more across a similar spot area.
+          </p>
 
           {/* Two metrics callout */}
           <div
@@ -282,9 +300,36 @@ export default function HomeVsClinicalLasersPage() {
             }}
           >
             <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
-              <strong style={{ color: '#2D2D2D' }}>Two ways to measure the gap.</strong> Energy per pulse (joules) measures total power output. Here the clinical laser wins by ~100x. Fluence (J/cm²) measures energy concentration at the skin surface. Here the clinical laser wins by 5-20x depending on spot size. Both metrics matter. The clinical device delivers dramatically more energy, across a dramatically larger treatment area, in a single pulse.
+              <strong style={{ color: '#2D2D2D' }}>What matters is energy concentration at the skin, not total energy output.</strong> A home device spreads its energy across a wider area at lower intensity. A clinical device concentrates enough energy at each point to permanently destroy the follicle. That threshold is what separates the two.
             </p>
           </div>
+        </section>
+
+        {/* What about the Epilaser */}
+        <section id="what-about-epilaser" style={{ marginBottom: '2.5rem' }}>
+          <h2
+            style={{
+              fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
+              color: '#2D2D2D',
+              fontSize: '1.5rem',
+              fontWeight: 600,
+              marginBottom: '1rem',
+            }}
+          >
+            What About the Epilaser?
+          </h2>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
+            The Epilaser Pro by Epilady (the company that invented the mechanical epilator in 1986) takes a fundamentally different approach. Instead of flooding the skin surface with light, a camera identifies individual follicles and four diode lasers target them one at a time.
+          </p>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
+            It claims 24 J/cm&sup2; at each follicle, approaching clinical fluence levels. The technology is legitimate and has three generations of FDA clearance ({''}
+            <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf17/K170970.pdf" target="_blank" rel="noopener noreferrer" style={{ color: '#5E8B7E' }} className="hover:underline">2017</a>,{' '}
+            <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf21/K213105.pdf" target="_blank" rel="noopener noreferrer" style={{ color: '#5E8B7E' }} className="hover:underline">2022</a>,{' '}
+            <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf23/K233224.pdf" target="_blank" rel="noopener noreferrer" style={{ color: '#5E8B7E' }} className="hover:underline">2024</a>).
+          </p>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
+            However, all performance data (70% reduction in 3 months) comes from the manufacturer only. There are no independent clinical studies as of early 2026. We classify it as &ldquo;Limited Results&rdquo; until independent data is available.
+          </p>
         </section>
 
         {/* Why the Gap Exists */}
@@ -301,16 +346,16 @@ export default function HomeVsClinicalLasersPage() {
             Why the Gap Exists
           </h2>
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
-            That power gap isn&apos;t a design flaw in the home device. It&apos;s a legal requirement.
+            The power gap isn&apos;t a design flaw. It&apos;s a legal requirement.
           </p>
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
-            Professional lasers are classified as Class IV medical devices, meaning they can cause immediate tissue damage and require trained operators, protective eyewear, and controlled clinical environments. These machines don't plug into a standard wall socket. A device like the Candela GentleMax Pro requires a dedicated electrical circuit and professional installation by an electrician.
+            Professional lasers are Class IV medical devices: they can cause immediate tissue damage and require trained operators, protective eyewear, and controlled clinical environments. A clinic also needs dedicated 220V electrical service and often a water cooling system just to run one.
           </p>
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
-            Home devices are Class 1 or Class 2, limited by regulation to energy levels safe for unsupervised use, and they charge over USB or plug into a normal outlet.
+            Home devices are classified for over-the-counter use. They must be safe enough for anyone to operate without training, in a bathroom, plugged into a regular outlet. That safety requirement caps their power output well below the threshold needed to permanently destroy a hair follicle in a single pulse.
           </p>
 
-          {/* Regulation callout */}
+          {/* FDA callout */}
           <div
             className="rounded-xl"
             style={{
@@ -320,14 +365,12 @@ export default function HomeVsClinicalLasersPage() {
             }}
           >
             <p className="leading-relaxed" style={{ color: '#2D2D2D', lineHeight: 1.8 }}>
-              <strong>The Tria uses the same 810nm diode wavelength as professional devices like the Lumenis LightSheer.</strong> Same wavelength. Same type of laser. The main difference is how much power the device is legally allowed to deliver.
-              
-              Clinical devices also deliver energy through larger spot sizes, advanced cooling systems, and adjustable pulse durations that home devices simply don't have room for.
+              <strong>FDA-cleared doesn&apos;t mean clinically equivalent.</strong> The FDA clearance on home devices confirms they are safe for unsupervised use. It does not mean they deliver the same results as the clinical lasers used by your provider.
             </p>
           </div>
         </section>
 
-        {/* What It Means for Results */}
+        {/* What It Means for Your Results */}
         <section id="what-it-means" style={{ marginBottom: '2.5rem' }}>
           <h2
             style={{
@@ -341,29 +384,11 @@ export default function HomeVsClinicalLasersPage() {
             What It Means for Your Results
           </h2>
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
-            Destroying a hair follicle permanently requires delivering enough thermal energy to the follicle&apos;s stem cells in a single pulse or rapid pulse sequence. Clinical lasers can do this. Home devices deliver energy below that threshold.
+            Permanently destroying a hair follicle requires delivering enough thermal energy to its stem cells in a single pulse or rapid pulse sequence. Clinical lasers at 25-60+ J/cm&sup2; do this. Home devices at 7-9 J/cm&sup2; do not.
           </p>
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
-            This is why home devices can slow regrowth and thin hair with consistent long-term use, but don&apos;t achieve the permanent hair reduction that clinical lasers provide in 6-8 sessions.
+            This is why home devices can slow regrowth and thin hair with consistent long-term use (typically 2-3 sessions per week over months), but don&apos;t achieve the permanent hair reduction that clinical lasers provide in 6-8 sessions spaced 6-8 weeks apart.
           </p>
-          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
-            The FDA clearance language reflects this difference: professional devices are cleared for &ldquo;permanent hair reduction&rdquo; with rigorous clinical evidence thresholds, while home devices go through a different regulatory path entirely.
-          </p>
-        </section>
-
-        {/* Where Home Devices Fit */}
-        <section id="where-home-devices-fit" style={{ marginBottom: '2.5rem' }}>
-          <h2
-            style={{
-              fontFamily: 'var(--font-dm-sans), system-ui, sans-serif',
-              color: '#2D2D2D',
-              fontSize: '1.5rem',
-              fontWeight: 600,
-              marginBottom: '1rem',
-            }}
-          >
-            Where Home Devices Fit
-          </h2>
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
             Home devices work best as maintenance between professional sessions, or for people who can&apos;t access or afford clinical treatment and accept slower, more limited results.
           </p>
@@ -401,7 +426,7 @@ export default function HomeVsClinicalLasersPage() {
             <Link href="/is-it-a-real-laser" style={{ color: '#5E8B7E', fontWeight: 500 }} className="hover:underline">
               equipment database
             </Link>
-            {' '}with a &ldquo;Limited Use&rdquo; badge. This doesn&apos;t mean they&apos;re bad products. It means they operate under fundamentally different power constraints than the clinical devices your provider uses, and comparing them directly would be misleading.
+            {' '}with a &ldquo;Limited Results&rdquo; badge. This doesn&apos;t mean they&apos;re bad products. It means they operate under fundamentally different power constraints than the clinical devices your provider uses, and comparing them directly would be misleading.
           </p>
 
           {/* Classification cards */}
@@ -418,72 +443,35 @@ export default function HomeVsClinicalLasersPage() {
                 Clinical Lasers
               </div>
               <p style={{ color: '#5A5550', fontSize: '0.9375rem', lineHeight: 1.6, marginBottom: '0.75rem' }}>
-                Class IV medical devices. Require trained operators and controlled environments. Capable of permanent hair reduction in 6-8 sessions.
+                Class IV medical devices. Require trained operators, controlled environments, and dedicated electrical service. Capable of permanent hair reduction in 6-8 sessions.
               </p>
               <p style={{ color: '#2D2D2D', fontSize: '0.875rem', fontWeight: 500, marginBottom: '0.5rem' }}>
                 Examples:
               </p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-                <Link
-                  href="/is-it-a-real-laser/gentlemax-pro"
-                  className="transition-all hover:border-[#5E8B7E]"
-                  style={{
-                    backgroundColor: '#FFFFFF',
-                    border: '1px solid #E8E4DF',
-                    borderRadius: '9999px',
-                    padding: '0.375rem 0.75rem',
-                    fontSize: '0.8125rem',
-                    color: '#2D2D2D',
-                    textDecoration: 'none',
-                  }}
-                >
-                  GentleMax Pro
-                </Link>
-                <Link
-                  href="/is-it-a-real-laser/lightsheer"
-                  className="transition-all hover:border-[#5E8B7E]"
-                  style={{
-                    backgroundColor: '#FFFFFF',
-                    border: '1px solid #E8E4DF',
-                    borderRadius: '9999px',
-                    padding: '0.375rem 0.75rem',
-                    fontSize: '0.8125rem',
-                    color: '#2D2D2D',
-                    textDecoration: 'none',
-                  }}
-                >
-                  LightSheer
-                </Link>
-                <Link
-                  href="/is-it-a-real-laser/soprano-titanium"
-                  className="transition-all hover:border-[#5E8B7E]"
-                  style={{
-                    backgroundColor: '#FFFFFF',
-                    border: '1px solid #E8E4DF',
-                    borderRadius: '9999px',
-                    padding: '0.375rem 0.75rem',
-                    fontSize: '0.8125rem',
-                    color: '#2D2D2D',
-                    textDecoration: 'none',
-                  }}
-                >
-                  Soprano Titanium
-                </Link>
-                <Link
-                  href="/is-it-a-real-laser/vectus"
-                  className="transition-all hover:border-[#5E8B7E]"
-                  style={{
-                    backgroundColor: '#FFFFFF',
-                    border: '1px solid #E8E4DF',
-                    borderRadius: '9999px',
-                    padding: '0.375rem 0.75rem',
-                    fontSize: '0.8125rem',
-                    color: '#2D2D2D',
-                    textDecoration: 'none',
-                  }}
-                >
-                  Vectus
-                </Link>
+                {[
+                  { href: '/is-it-a-real-laser/gentlemax-pro', label: 'GentleMax Pro' },
+                  { href: '/is-it-a-real-laser/lightsheer', label: 'LightSheer' },
+                  { href: '/is-it-a-real-laser/soprano-titanium', label: 'Soprano Titanium' },
+                  { href: '/is-it-a-real-laser/vectus', label: 'Vectus' },
+                ].map((device) => (
+                  <Link
+                    key={device.href}
+                    href={device.href}
+                    className="transition-all hover:border-[#5E8B7E]"
+                    style={{
+                      backgroundColor: '#FFFFFF',
+                      border: '1px solid #E8E4DF',
+                      borderRadius: '9999px',
+                      padding: '0.375rem 0.75rem',
+                      fontSize: '0.8125rem',
+                      color: '#2D2D2D',
+                      textDecoration: 'none',
+                    }}
+                  >
+                    {device.label}
+                  </Link>
+                ))}
               </div>
             </div>
 
@@ -496,45 +484,38 @@ export default function HomeVsClinicalLasersPage() {
               }}
             >
               <div style={{ color: '#B8860B', fontWeight: 600, fontSize: '1rem', marginBottom: '0.5rem' }}>
-                Home Devices · Limited Use
+                Home Devices &middot; Limited Results
               </div>
               <p style={{ color: '#5A5550', fontSize: '0.9375rem', lineHeight: 1.6, marginBottom: '0.75rem' }}>
-                Class 1-2 OTC devices. Safe for unsupervised use. Effective for maintenance and hair thinning, not for permanent hair reduction.
+                Class II home devices. Safe for unsupervised use. Effective for hair thinning and maintenance. Limited evidence for permanent hair reduction.
               </p>
               <p style={{ color: '#2D2D2D', fontSize: '0.875rem', fontWeight: 500, marginBottom: '0.5rem' }}>
                 Examples:
               </p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-                <Link
-                  href="/is-it-a-real-laser/tria-4x"
-                  className="transition-all hover:border-[#B8860B]"
-                  style={{
-                    backgroundColor: '#FFFFFF',
-                    border: '1px solid #E8E4DF',
-                    borderRadius: '9999px',
-                    padding: '0.375rem 0.75rem',
-                    fontSize: '0.8125rem',
-                    color: '#2D2D2D',
-                    textDecoration: 'none',
-                  }}
-                >
-                  Tria 4X
-                </Link>
-                <Link
-                  href="/is-it-a-real-laser/tria-precision"
-                  className="transition-all hover:border-[#B8860B]"
-                  style={{
-                    backgroundColor: '#FFFFFF',
-                    border: '1px solid #E8E4DF',
-                    borderRadius: '9999px',
-                    padding: '0.375rem 0.75rem',
-                    fontSize: '0.8125rem',
-                    color: '#2D2D2D',
-                    textDecoration: 'none',
-                  }}
-                >
-                  Tria Precision
-                </Link>
+                {[
+                  { href: '/is-it-a-real-laser/dermrays-v8s', label: 'DermRays V8S' },
+                  { href: '/is-it-a-real-laser/currentbody-skin-laser', label: 'CurrentBody' },
+                  { href: '/is-it-a-real-laser/epilaser-pro-808', label: 'Epilaser Pro' },
+                  { href: '/is-it-a-real-laser/tria-4x', label: 'Tria 4X' },
+                ].map((device) => (
+                  <Link
+                    key={device.href}
+                    href={device.href}
+                    className="transition-all hover:border-[#B8860B]"
+                    style={{
+                      backgroundColor: '#FFFFFF',
+                      border: '1px solid #E8E4DF',
+                      borderRadius: '9999px',
+                      padding: '0.375rem 0.75rem',
+                      fontSize: '0.8125rem',
+                      color: '#2D2D2D',
+                      textDecoration: 'none',
+                    }}
+                  >
+                    {device.label}
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
@@ -585,11 +566,11 @@ export default function HomeVsClinicalLasersPage() {
               lineHeight: 1.6,
             }}
           >
-            Know someone using a home laser? Share this article so others understand what they&apos;re getting.
+            Know someone using a home laser? Share this so they understand what they&apos;re getting.
           </p>
           <ShareButtons
             url="https://laserhairremovalmap.com/is-it-a-real-laser/home-laser-vs-clinical-laser"
-            title="Home Lasers vs Clinical Lasers: Same Wavelength, Different League"
+            title="Home Lasers vs Clinical Lasers: Real Lasers, Real Gap"
           />
         </div>
 
