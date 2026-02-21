@@ -1705,9 +1705,436 @@
       "keyFeatures": "Fotona's top-of-the-line platform. Not purpose-built for hair removal, but the Nd:YAG hair removal capability is proven and effective. Clinics investing in a Dynamis Max are typically focused on a broad treatment portfolio rather than dedicated hair removal. If hair removal is your primary concern, ask whether the clinic also offers a dedicated hair removal system."
     }
   },
-
-
-  
+{
+    "type": "machine",
+    "slug": "dermrays-v4s",
+    "name": "DermRays V4S",
+    "manufacturer": "DermRays",
+    "technologyType": "laser",
+    "wavelengths": [
+      "810nm"
+    ],
+    "brandTier": "consumer",
+    "skinTypes": {
+      "fitzpatrickRange": "I-IV",
+      "displayText": "Designed for lighter skin tones (Fitzpatrick I-IV)."
+    },
+    "purposeBuilt": true,
+    "coolingMethod": null,
+    "notes": "Entry-level home diode laser. 810nm, lower energy output than V8S. FDA cleared (510(k) K230090 covers V4S and V8S).",
+    "aliases": [
+      "dermrays v4s",
+      "derm rays v4s"
+    ],
+    "family": "dermrays-home",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "DermRays' entry-level home diode laser. Uses the same 810nm wavelength as clinical diode lasers but at consumer-grade power levels.",
+      "howItWorks": "810nm diode laser targets melanin in hair follicles. Lower fluence than clinical devices means more sessions required for results.",
+      "typicalUses": [
+        "Home hair removal maintenance",
+        "Small treatment areas"
+      ],
+      "keyFeatures": "FDA cleared. More affordable entry point than the V8S. Same wavelength as clinical diode lasers but significantly lower power."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "dermrays-v8s",
+    "name": "DermRays V8S",
+    "manufacturer": "DermRays",
+    "technologyType": "laser",
+    "wavelengths": [
+      "810nm"
+    ],
+    "brandTier": "consumer",
+    "skinTypes": {
+      "fitzpatrickRange": "I-IV",
+      "displayText": "Designed for lighter skin tones (Fitzpatrick I-IV)."
+    },
+    "purposeBuilt": true,
+    "coolingMethod": null,
+    "notes": "Most powerful home 810nm laser by total energy per pulse (27J/pulse, 9 J/cm2, 3 cm2 window). FDA cleared K230090 (April 2023). SGS-tested claim of 82% average reduction. Clinical devices deliver 25-40 J/cm2. Pulse duration undisclosed.",
+    "aliases": [
+      "dermrays v8s",
+      "derm rays v8s",
+      "dermrays v8s enhanced"
+    ],
+    "family": "dermrays-home",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "The most powerful consumer 810nm diode laser by total energy output. Delivers 27 joules per pulse across a 3 cm2 spot, yielding 9 J/cm2 fluence.",
+      "howItWorks": "810nm diode laser targets melanin in hair follicles. At 9 J/cm2, it delivers roughly one-third the fluence of clinical diode lasers (25-40 J/cm2 typical). Pulse duration is not disclosed by the manufacturer.",
+      "typicalUses": [
+        "Home hair removal for body and facial areas",
+        "Maintenance between professional sessions",
+        "Small to medium treatment areas"
+      ],
+      "keyFeatures": "Highest energy output among widely available home lasers. FDA cleared. SGS third-party testing claims 82% reduction. Independent reviews reported limited results, likely due to the fluence gap versus clinical devices."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "dermrays-v6s",
+    "name": "DermRays V6S",
+    "manufacturer": "DermRays",
+    "technologyType": "laser",
+    "wavelengths": [
+      "810nm"
+    ],
+    "brandTier": "consumer",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "Marketed for all skin tones including darker skin (Fitzpatrick I-VI)."
+    },
+    "purposeBuilt": true,
+    "coolingMethod": null,
+    "notes": "Home diode laser marketed for darker skin tones. FDA cleared under GEX product code. Uses 810nm wavelength. Clinical devices for dark skin typically use 1064nm Nd:YAG.",
+    "aliases": [
+      "dermrays v6s",
+      "derm rays v6s"
+    ],
+    "family": "dermrays-home",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "DermRays' home laser designed for darker skin tones. Uses 810nm diode wavelength rather than the 1064nm Nd:YAG typically used clinically for dark skin.",
+      "howItWorks": "810nm diode targets melanin. For darker skin, clinical providers typically prefer 1064nm Nd:YAG because it bypasses epidermal melanin more effectively.",
+      "typicalUses": [
+        "Home hair removal for darker skin tones",
+        "Small treatment areas"
+      ],
+      "keyFeatures": "One of few home lasers marketed for Fitzpatrick V-VI. FDA cleared under GEX product code. No independent clinical studies on efficacy for dark skin."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "currentbody-skin-laser",
+    "name": "CurrentBody Skin Laser",
+    "manufacturer": "CurrentBody",
+    "technologyType": "laser",
+    "wavelengths": [
+      "810nm"
+    ],
+    "brandTier": "consumer",
+    "skinTypes": {
+      "fitzpatrickRange": "I-IV",
+      "displayText": "Designed for lighter skin tones (Fitzpatrick I-IV)."
+    },
+    "purposeBuilt": true,
+    "coolingMethod": null,
+    "notes": "Home 810nm diode laser. 7 J/cm2, 3 cm2 window, mains-powered. Launched November 2023. Claims FDA clearance but specific 510(k) number not publicly identified. ~$399.",
+    "aliases": [
+      "currentbody laser",
+      "currentbody skin laser hair removal"
+    ],
+    "family": "currentbody-home",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "CurrentBody's home-use 810nm diode laser for hair removal. Mains-powered design eliminates battery limitations.",
+      "howItWorks": "810nm diode laser at 7 J/cm2 fluence. Mains-powered for consistent energy delivery. 3 cm2 treatment window.",
+      "typicalUses": [
+        "Home hair removal",
+        "Small treatment areas",
+        "Maintenance between professional sessions"
+      ],
+      "keyFeatures": "Mains-powered (no battery degradation). 7 J/cm2 fluence. Claims FDA clearance but specific 510(k) not publicly verified."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "epilaser-pro",
+    "name": "Epilaser Pro",
+    "manufacturer": "Epilaser",
+    "technologyType": "laser",
+    "wavelengths": [
+      "808nm"
+    ],
+    "brandTier": "consumer",
+    "skinTypes": {
+      "fitzpatrickRange": "I-IV",
+      "displayText": "808nm model for lighter skin tones (Fitzpatrick I-IV)."
+    },
+    "purposeBuilt": true,
+    "coolingMethod": null,
+    "notes": "Camera-guided home laser with SPOT targeting. Claims 24 J/cm2 at individual follicles. Three FDA clearances: K170970 (2017), K213105 (2022), K233224 (2024). Claims 70% reduction in 3 months. No independent clinical verification. ~$999.",
+    "aliases": [
+      "epilaser",
+      "epilaser pro",
+      "epilaser absolute"
+    ],
+    "family": "epilaser-home",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Camera-guided home laser that targets individual hair follicles rather than treating a broad area. Third generation product with three FDA clearances.",
+      "howItWorks": "The SPOT camera system identifies individual follicles and delivers laser energy precisely to each one. Claims 24 J/cm2 per follicle. Per-follicle approach means very small effective spot sizes.",
+      "typicalUses": [
+        "Home hair removal with precision targeting",
+        "Individual follicle treatment"
+      ],
+      "keyFeatures": "Camera-guided follicle detection. Claims clinical-level fluence per follicle. Three FDA clearances. All efficacy data is manufacturer-only with no independent clinical studies as of early 2026."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "epilaser-980",
+    "name": "Epilaser 980nm",
+    "manufacturer": "Epilaser",
+    "technologyType": "laser",
+    "wavelengths": [
+      "980nm"
+    ],
+    "brandTier": "consumer",
+    "skinTypes": {
+      "fitzpatrickRange": "IV-VI",
+      "displayText": "980nm variant designed for darker skin tones."
+    },
+    "purposeBuilt": true,
+    "coolingMethod": null,
+    "notes": "Dark-skin variant using 980nm wavelength. Clinical devices for dark skin use 1064nm Nd:YAG. Same camera-guided SPOT targeting. No independent clinical studies.",
+    "aliases": [
+      "epilaser 980",
+      "epilaser dark skin"
+    ],
+    "family": "epilaser-home",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Epilaser's dark-skin variant using a 980nm wavelength, a non-standard choice for hair removal.",
+      "howItWorks": "980nm wavelength sits between the standard diode (808-810nm) and Nd:YAG (1064nm). Less epidermal melanin absorption than 808nm, but clinical evidence for 980nm in hair removal is limited.",
+      "typicalUses": [
+        "Home hair removal for darker skin tones"
+      ],
+      "keyFeatures": "Uses non-standard 980nm wavelength (clinical standard for dark skin is 1064nm Nd:YAG). Camera-guided targeting. No independent studies."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "lynton-lumina",
+    "name": "LUMINA",
+    "manufacturer": "Lynton",
+    "technologyType": "ipl",
+    "wavelengths": [
+      "550-1100nm",
+      "625-1100nm",
+      "1064nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones with appropriate handpiece selection. Nd:YAG upgrade for darker skin."
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact",
+    "notes": "UK-manufactured IPL + laser platform by Lynton Lasers. Modular system. NHS Supply Chain listed. 650nm and 585nm IPL handpieces standard, with optional 1064nm Nd:YAG and Q-switched upgrades. Major UK market presence.",
+    "aliases": [
+      "lynton lumina",
+      "lynton laser",
+      "lynton ipl"
+    ],
+    "family": "lynton",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Lynton's flagship modular IPL and laser platform, British-manufactured and NHS Supply Chain listed. Dominant in the UK aesthetic market.",
+      "howItWorks": "Dual IPL handpieces (585nm and 650nm) for hair removal and skin treatments. Optional 1064nm Nd:YAG for darker skin and deeper lesions. ILG (Interchangeable Light Guide) technology for spot size customization.",
+      "typicalUses": [
+        "Hair removal (IPL and Nd:YAG)",
+        "Skin rejuvenation",
+        "Vascular and pigmented lesion treatment",
+        "Tattoo removal (Q-switched upgrade)"
+      ],
+      "keyFeatures": "Modular platform. NHS listed. Over 20 years UK manufacturing. Built-in patient database."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "rohrer-spectrum",
+    "name": "Spectrum",
+    "manufacturer": "Rohrer Aesthetics",
+    "technologyType": "laser",
+    "wavelengths": [
+      "810nm"
+    ],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin types with appropriate handpiece selection."
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact",
+    "notes": "Multi-platform 5-in-1 system: 810nm diode (hair removal), IPL, 1064nm Nd:YAG (vascular), Q-switched 1064/532nm (tattoo), 2940nm erbium (resurfacing). Portable, no consumables. US-made.",
+    "aliases": [
+      "rohrer spectrum",
+      "rohrer aesthetics spectrum"
+    ],
+    "family": "rohrer",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Rohrer Aesthetics' all-in-one laser and IPL platform. Five handpieces in one portable system.",
+      "howItWorks": "810nm diode for hair removal with contact cooling and up to 10 pulses/second. Each handpiece has self-contained cooling.",
+      "typicalUses": [
+        "Laser hair removal (810nm diode)",
+        "Tattoo removal (Q-switched)",
+        "Vascular treatment",
+        "Skin resurfacing (erbium)",
+        "IPL photofacial"
+      ],
+      "keyFeatures": "No consumables. Portable. Entry-level multi-modality platform. Popular with startup practices."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "primelase-excellence",
+    "name": "Primelase Excellence",
+    "manufacturer": "Cocoon Medical (Sinclair)",
+    "technologyType": "laser",
+    "wavelengths": [
+      "755nm",
+      "810nm",
+      "810nm+940nm+1060nm",
+      "1060nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones with multi-wavelength selection."
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact",
+    "notes": "Ultra-high power diode platform (4,800W). Four wavelengths: Alex 755nm, Diode 810nm, Blend (810+940+1060nm), Yag 1060nm. Patented USP (Ultra Short Pulse) technology from 3ms. Crystal Freeze cooling at 5C. Spanish-made. Growing European presence.",
+    "aliases": [
+      "primelase",
+      "primelase excellence",
+      "primelase hr",
+      "cocoon medical primelase"
+    ],
+    "family": "primelase",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Cocoon Medical's flagship multi-wavelength diode laser platform. 4,800W across four wavelengths. Spanish-engineered, distributed globally through Sinclair.",
+      "howItWorks": "Four wavelength options for different skin types and hair depths. USP technology delivers pulses as short as 3ms. Crystal Freeze cooling at 5C throughout treatment.",
+      "typicalUses": [
+        "Hair removal on all phototypes",
+        "Vascular lesions",
+        "Pigmented lesions",
+        "Acne treatment",
+        "Skin rejuvenation"
+      ],
+      "keyFeatures": "4,800W power. Four wavelengths. USP ultra-short pulses. Spot sizes up to 30x17mm. Growing rapidly in European markets."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "inmode-fusion",
+    "name": "Fusion (Light & Dark)",
+    "manufacturer": "InMode",
+    "technologyType": "laser",
+    "wavelengths": [
+      "755nm",
+      "810nm",
+      "1064nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones. Fusion Light for I-IV, Fusion Dark for IV-VI."
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact",
+    "notes": "InMode's dedicated hair removal handpieces for Triton and OptimasMAX platforms. Three wavelengths: 755nm Alexandrite, 810nm Diode, 1064nm Nd:YAG. FusionXL is the large-spot variant.",
+    "aliases": [
+      "inmode fusion",
+      "fusion light",
+      "fusion dark",
+      "fusionxl",
+      "inmode fusionxl"
+    ],
+    "family": "inmode",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "InMode's multi-wavelength hair removal system. Combines three wavelengths for all skin types.",
+      "howItWorks": "Mosaic combination of 755nm, 810nm, and 1064nm targets hair at different depths simultaneously. Light variant for lighter skin, Dark for darker skin.",
+      "typicalUses": [
+        "Hair removal on all skin types",
+        "Large area body treatments (FusionXL)",
+        "Dark skin hair removal"
+      ],
+      "keyFeatures": "Three wavelengths in one handpiece. Dedicated Light and Dark configurations. FusionXL for large areas. Part of InMode modular ecosystem."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "sciton-bbl-hero",
+    "name": "BBL HERO",
+    "manufacturer": "Sciton",
+    "technologyType": "ipl",
+    "wavelengths": [
+      "590-1400nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-V",
+      "displayText": "Most skin tones with appropriate filter selection."
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact",
+    "notes": "Sciton's high-powered BroadBand Light platform. HERO = High Energy Rapid Output. One of the most powerful clinical IPL systems. Demonstrates that clinical IPL can deliver real results for hair removal.",
+    "aliases": [
+      "sciton bbl hero",
+      "bbl hero",
+      "broadband light hero"
+    ],
+    "family": "sciton-bbl",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Sciton's flagship BroadBand Light system. One of the clinical IPL systems that demonstrates IPL can deliver results in professional settings.",
+      "howItWorks": "BroadBand Light with multiple cutoff filters for wavelength customization. HERO technology provides higher energy and faster repetition rates.",
+      "typicalUses": [
+        "Hair removal",
+        "Photorejuvenation",
+        "Pigmented lesions",
+        "Vascular lesions",
+        "Acne"
+      ],
+      "keyFeatures": "One of the most powerful clinical IPL platforms. Multiple filters. Thermoelectric cooling. Demonstrates clinical IPL can be effective for hair removal."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "lumenis-m22",
+    "name": "M22",
+    "manufacturer": "Lumenis",
+    "technologyType": "ipl",
+    "wavelengths": [
+      "515-1200nm",
+      "755nm",
+      "1064nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones with appropriate module selection."
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact",
+    "notes": "Lumenis' multi-application IPL and laser platform. OPT (Optimal Pulse Technology) for consistent energy delivery. One of the most widely used clinical IPL systems globally.",
+    "aliases": [
+      "lumenis m22",
+      "m22 ipl"
+    ],
+    "family": "lumenis-ipl",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Lumenis' flagship multi-application platform combining advanced IPL with optional laser modules. One of the most widely deployed clinical IPL systems worldwide.",
+      "howItWorks": "OPT ensures consistent energy across the entire pulse, unlike conventional IPL where energy peaks at the start. ExpertFilters for precise wavelength selection.",
+      "typicalUses": [
+        "Hair removal (IPL)",
+        "Skin rejuvenation",
+        "Vascular and pigmented lesions",
+        "Acne",
+        "Skin resurfacing (ResurFX module)"
+      ],
+      "keyFeatures": "OPT technology. Modular design. ExpertFilters. One of the most clinically studied IPL platforms."
+    }
+  },
   {
     "type": "technology-term",
     "slug": "shr",
