@@ -35,7 +35,7 @@ export default function PurposeBuiltVsMultiPurposePage() {
         {/* Back to search link */}
         <nav style={{ marginBottom: '2.5rem' }}>
           <Link
-            href="/is-it-a-real-laser"
+            href="/equipment-verification-tool"
             className="inline-flex items-center gap-2 text-sm transition-colors hover:text-[#5E8B7E]"
             style={{ color: '#5A5550' }}
           >
@@ -404,7 +404,7 @@ export default function PurposeBuiltVsMultiPurposePage() {
           </h2>
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1.5rem' }}>
             On every machine page in our{' '}
-            <Link href="/is-it-a-real-laser" style={{ color: '#5E8B7E', fontWeight: 500 }} className="hover:underline">
+            <Link href="/equipment-verification-tool" style={{ color: '#5E8B7E', fontWeight: 500 }} className="hover:underline">
               equipment database
             </Link>
             , you&apos;ll see whether we&apos;ve classified the device as purpose-built for hair removal or multi-purpose.
@@ -431,7 +431,7 @@ export default function PurposeBuiltVsMultiPurposePage() {
               </p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                 <Link
-                  href="/is-it-a-real-laser/soprano-titanium"
+                  href="/equipment-verification-tool/soprano-titanium"
                   className="transition-all hover:border-[#5E8B7E]"
                   style={{
                     backgroundColor: '#FFFFFF',
@@ -446,7 +446,7 @@ export default function PurposeBuiltVsMultiPurposePage() {
                   Soprano Titanium
                 </Link>
                 <Link
-                  href="/is-it-a-real-laser/lightsheer"
+                  href="/equipment-verification-tool/lightsheer"
                   className="transition-all hover:border-[#5E8B7E]"
                   style={{
                     backgroundColor: '#FFFFFF',
@@ -461,7 +461,7 @@ export default function PurposeBuiltVsMultiPurposePage() {
                   LightSheer
                 </Link>
                 <Link
-                  href="/is-it-a-real-laser/vectus"
+                  href="/equipment-verification-tool/vectus"
                   className="transition-all hover:border-[#5E8B7E]"
                   style={{
                     backgroundColor: '#FFFFFF',
@@ -476,7 +476,7 @@ export default function PurposeBuiltVsMultiPurposePage() {
                   Vectus
                 </Link>
                 <Link
-                  href="/is-it-a-real-laser/motus-ax"
+                  href="/equipment-verification-tool/motus-ax"
                   className="transition-all hover:border-[#5E8B7E]"
                   style={{
                     backgroundColor: '#FFFFFF',
@@ -491,7 +491,7 @@ export default function PurposeBuiltVsMultiPurposePage() {
                   Motus
                 </Link>
                 <Link
-                  href="/is-it-a-real-laser/mediostar"
+                  href="/equipment-verification-tool/mediostar"
                   className="transition-all hover:border-[#5E8B7E]"
                   style={{
                     backgroundColor: '#FFFFFF',
@@ -506,7 +506,7 @@ export default function PurposeBuiltVsMultiPurposePage() {
                   MeDioStar
                 </Link>
                 <Link
-                  href="/is-it-a-real-laser/diolaze-xl"
+                  href="/equipment-verification-tool/diolaze-xl"
                   className="transition-all hover:border-[#5E8B7E]"
                   style={{
                     backgroundColor: '#FFFFFF',
@@ -521,7 +521,7 @@ export default function PurposeBuiltVsMultiPurposePage() {
                   Diolaze XL
                 </Link>
                 <Link
-                  href="/is-it-a-real-laser/gentlemax-pro"
+                  href="/equipment-verification-tool/gentlemax-pro"
                   className="transition-all hover:border-[#5E8B7E]"
                   style={{
                     backgroundColor: '#FFFFFF',
@@ -557,7 +557,7 @@ export default function PurposeBuiltVsMultiPurposePage() {
               </p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                 <Link
-                  href="/is-it-a-real-laser/nordlys"
+                  href="/equipment-verification-tool/nordlys"
                   className="transition-all hover:border-[#B8860B]"
                   style={{
                     backgroundColor: '#FFFFFF',
@@ -572,7 +572,7 @@ export default function PurposeBuiltVsMultiPurposePage() {
                   Nordlys
                 </Link>
                 <Link
-                  href="/is-it-a-real-laser/harmony-xl-pro"
+                  href="/equipment-verification-tool/harmony-xl-pro"
                   className="transition-all hover:border-[#B8860B]"
                   style={{
                     backgroundColor: '#FFFFFF',
@@ -587,7 +587,7 @@ export default function PurposeBuiltVsMultiPurposePage() {
                   Harmony XL Pro
                 </Link>
                 <Link
-                  href="/is-it-a-real-laser/icon"
+                  href="/equipment-verification-tool/icon"
                   className="transition-all hover:border-[#B8860B]"
                   style={{
                     backgroundColor: '#FFFFFF',
@@ -602,7 +602,7 @@ export default function PurposeBuiltVsMultiPurposePage() {
                   Icon
                 </Link>
                 <Link
-                  href="/is-it-a-real-laser/fotona-dynamis"
+                  href="/equipment-verification-tool/fotona-dynamis"
                   className="transition-all hover:border-[#B8860B]"
                   style={{
                     backgroundColor: '#FFFFFF',
@@ -617,7 +617,7 @@ export default function PurposeBuiltVsMultiPurposePage() {
                   SP Dynamis
                 </Link>
                 <Link
-                  href="/is-it-a-real-laser/aerolase-neo-elite"
+                  href="/equipment-verification-tool/aerolase-neo-elite"
                   className="transition-all hover:border-[#B8860B]"
                   style={{
                     backgroundColor: '#FFFFFF',
@@ -632,7 +632,7 @@ export default function PurposeBuiltVsMultiPurposePage() {
                   Neo Elite
                 </Link>
                 <Link
-                  href="/is-it-a-real-laser/thunder-mt"
+                  href="/equipment-verification-tool/thunder-mt"
                   className="transition-all hover:border-[#B8860B]"
                   style={{
                     backgroundColor: '#FFFFFF',
@@ -748,11 +748,11 @@ export default function PurposeBuiltVsMultiPurposePage() {
         >
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
             For more on how equipment cost and origin affect treatment quality, see our{' '}
-            <Link href="/is-it-a-real-laser/equipment-costs" style={{ color: '#5E8B7E', fontWeight: 500 }} className="hover:underline">
+            <Link href="/equipment-verification-tool/equipment-costs" style={{ color: '#5E8B7E', fontWeight: 500 }} className="hover:underline">
               equipment cost analysis
             </Link>
             . To verify what equipment your clinic uses, try our{' '}
-            <Link href="/is-it-a-real-laser" style={{ color: '#5E8B7E', fontWeight: 500 }} className="hover:underline">
+            <Link href="/equipment-verification-tool" style={{ color: '#5E8B7E', fontWeight: 500 }} className="hover:underline">
               equipment verification tool
             </Link>
             .
@@ -780,7 +780,7 @@ export default function PurposeBuiltVsMultiPurposePage() {
             Choosing between clinics? Share this article to help others ask the right questions.
           </p>
           <ShareButtons
-            url="https://laserhairremovalmap.com/is-it-a-real-laser/purpose-built-vs-multi-purpose"
+            url="https://laserhairremovalmap.com/equipment-verification-tool/purpose-built-vs-multi-purpose"
             title="Purpose-Built vs. Multi-Purpose Lasers: What It Means for Your Results"
           />
         </div>
@@ -796,7 +796,7 @@ export default function PurposeBuiltVsMultiPurposePage() {
         >
           Have information about equipment we should investigate?{' '}
           <Link
-            href="/is-it-a-real-laser/contact"
+            href="/equipment-verification-tool/contact"
             style={{ color: '#5E8B7E', fontWeight: 500 }}
             className="hover:underline"
           >

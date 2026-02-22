@@ -40,7 +40,7 @@ export function SearchResultItem({
       className="last:border-b-0"
     >
       <Link
-        href={`/is-it-a-real-laser/${item.slug}`}
+        href={`/equipment-verification-tool/${item.slug}`}
         className="flex items-center justify-between gap-3 hover:bg-[rgba(94,139,126,0.05)]"
         style={{ padding: '0.875rem 1.25rem', textAlign: 'left' }}
       >

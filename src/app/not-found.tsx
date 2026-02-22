@@ -2,7 +2,7 @@
  * Global 404 page
  *
  * Handles all not-found routes. Shows equipment-specific messaging
- * with popular equipment suggestions when the path is under /is-it-a-real-laser/.
+ * with popular equipment suggestions when the path is under /equipment-verification-tool/.
  */
 
 'use client';
@@ -17,7 +17,7 @@ const popularMachines = allEquipment.filter(isMachine).slice(0, 4);
 
 export default function NotFound() {
   const pathname = usePathname();
-  const isEquipmentRoute = pathname?.startsWith('/is-it-a-real-laser/');
+  const isEquipmentRoute = pathname?.startsWith('/equipment-verification-tool/');
 
   if (isEquipmentRoute) {
     return (
@@ -52,7 +52,7 @@ export default function NotFound() {
                 {popularMachines.map((machine) => (
                   <li key={machine.slug}>
                     <Link
-                      href={`/is-it-a-real-laser/${machine.slug}`}
+                      href={`/equipment-verification-tool/${machine.slug}`}
                       className="text-blue-600 hover:text-blue-800 font-medium"
                     >
                       {machine.name}
@@ -68,7 +68,7 @@ export default function NotFound() {
           )}
 
           <Link
-            href="/is-it-a-real-laser"
+            href="/equipment-verification-tool"
             className="mt-8 inline-flex items-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-sm sm:text-base font-medium text-white transition-colors hover:bg-gray-700"
           >
             <svg

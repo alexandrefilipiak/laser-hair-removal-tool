@@ -83,7 +83,7 @@ export function NotFoundSuggestions({
                   aria-selected={isActive}
                 >
                   <Link
-                    href={`/is-it-a-real-laser/${suggestion.slug}`}
+                    href={`/equipment-verification-tool/${suggestion.slug}`}
                     onClick={(e) => {
                       if (onSelect) {
                         e.preventDefault();
@@ -150,7 +150,7 @@ export function NotFoundSuggestions({
                   aria-selected={isActive}
                 >
                   <Link
-                    href={`/is-it-a-real-laser/${suggestion.slug}`}
+                    href={`/equipment-verification-tool/${suggestion.slug}`}
                     onClick={(e) => {
                       if (onSelect) {
                         e.preventDefault();

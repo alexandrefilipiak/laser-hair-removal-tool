@@ -49,7 +49,7 @@ export default function EquipmentNotFound() {
             {suggestions.map((machine) => (
               <li key={machine.slug}>
                 <Link
-                  href={`/is-it-a-real-laser/${machine.slug}`}
+                  href={`/equipment-verification-tool/${machine.slug}`}
                   className="text-blue-600 hover:text-blue-800 font-medium"
                 >
                   {machine.name}
@@ -62,7 +62,7 @@ export default function EquipmentNotFound() {
       )}
 
       <Link
-        href="/is-it-a-real-laser"
+        href="/equipment-verification-tool"
         className="mt-8 inline-flex items-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-700 md:text-base"
       >
         <svg

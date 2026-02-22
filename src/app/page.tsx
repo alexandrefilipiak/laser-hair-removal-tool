@@ -68,7 +68,7 @@ export default function Home() {
 
         {/* CTA Button */}
         <Link
-          href="/is-it-a-real-laser"
+          href="/equipment-verification-tool"
           style={{
             display: 'inline-flex',
             alignItems: 'center',

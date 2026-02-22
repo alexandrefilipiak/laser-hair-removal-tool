@@ -134,7 +134,7 @@ export function SearchBar({ equipment }: SearchBarProps) {
           if (hasResults) {
             // Navigate to the selected result
             const slug = results[activeIndex].item.slug;
-            router.push(`/is-it-a-real-laser/${slug}`);
+            router.push(`/equipment-verification-tool/${slug}`);
             setIsOpen(false);
             setQuery('');
             setActiveIndex(-1);
@@ -143,7 +143,7 @@ export function SearchBar({ equipment }: SearchBarProps) {
             handleBrowseAll();
           } else if (suggestions[activeIndex]?.slug) {
             // Navigate to a suggestion
-            router.push(`/is-it-a-real-laser/${suggestions[activeIndex].slug}`);
+            router.push(`/equipment-verification-tool/${suggestions[activeIndex].slug}`);
             setIsOpen(false);
             setQuery('');
             setActiveIndex(-1);
@@ -213,14 +213,14 @@ export function SearchBar({ equipment }: SearchBarProps) {
     if (activeIndex >= 0 && results.length > 0) {
       // Navigate to the highlighted result
       const slug = results[activeIndex].item.slug;
-      router.push(`/is-it-a-real-laser/${slug}`);
+      router.push(`/equipment-verification-tool/${slug}`);
       setIsOpen(false);
       setQuery('');
       setActiveIndex(-1);
     } else if (results.length > 0) {
       // Navigate to the first result
       const slug = results[0].item.slug;
-      router.push(`/is-it-a-real-laser/${slug}`);
+      router.push(`/equipment-verification-tool/${slug}`);
       setIsOpen(false);
       setQuery('');
       setActiveIndex(-1);
@@ -341,7 +341,7 @@ export function SearchBar({ equipment }: SearchBarProps) {
             equipment={equipment}
             activeIndex={activeIndex}
             onSelect={(slug) => {
-              router.push(`/is-it-a-real-laser/${slug}`);
+              router.push(`/equipment-verification-tool/${slug}`);
               setIsOpen(false);
               setQuery('');
               setActiveIndex(-1);

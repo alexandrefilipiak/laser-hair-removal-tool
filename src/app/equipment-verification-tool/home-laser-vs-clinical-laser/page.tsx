@@ -38,7 +38,7 @@ export default function HomeVsClinicalLasersPage() {
         {/* Back to search link */}
         <nav style={{ marginBottom: '2.5rem' }}>
           <Link
-            href="/is-it-a-real-laser"
+            href="/equipment-verification-tool"
             className="inline-flex items-center gap-2 text-sm transition-colors hover:text-[#5E8B7E]"
             style={{ color: '#5A5550' }}
           >
@@ -239,8 +239,8 @@ export default function HomeVsClinicalLasersPage() {
                   <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>3 cm&sup2;</span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Repetition rate</span>
-                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>Single shot</span>
+                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Pulse duration</span>
+                  <span style={{ color: '#5A5550', fontSize: '0.9375rem', fontStyle: 'italic' }}>Undisclosed</span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
                   <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Classification</span>
@@ -275,8 +275,8 @@ export default function HomeVsClinicalLasersPage() {
                   <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>Up to 4.5 cm&sup2;</span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Repetition rate</span>
-                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>2-3 pulses/sec</span>
+                  <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Pulse duration</span>
+                  <span style={{ color: '#2D2D2D', fontSize: '0.9375rem', fontWeight: 500 }}>0.25-100 ms (adjustable)</span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
                   <span style={{ color: '#5A5550', fontSize: '0.875rem' }}>Classification</span>
@@ -290,7 +290,7 @@ export default function HomeVsClinicalLasersPage() {
             In fluence (the energy concentration your skin actually experiences), the clinical device delivers 3 to 11 times more depending on the spot size and settings the practitioner selects. In total energy per pulse, the clinical device delivers about 3 times more across a similar spot area.
           </p>
 
-          {/* Two metrics callout */}
+          {/* Power density callout */}
           <div
             className="rounded-xl"
             style={{
@@ -300,7 +300,7 @@ export default function HomeVsClinicalLasersPage() {
             }}
           >
             <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
-              <strong style={{ color: '#2D2D2D' }}>What matters is energy concentration at the skin, not total energy output.</strong> A home device spreads its energy across a wider area at lower intensity. A clinical device concentrates enough energy at each point to permanently destroy the follicle. That threshold is what separates the two.
+              <strong style={{ color: '#2D2D2D' }}>It&apos;s not just about energy. It&apos;s about power density.</strong> Destroying a hair follicle requires heating it to a specific temperature and sustaining that temperature long enough for the heat to conduct from the hair shaft to the surrounding germ cells. This depends on three factors working together: energy output, pulse duration, and spot size. Clinical devices are engineered to hit the right combination. Home devices fall short on all three.
             </p>
           </div>
         </section>
@@ -384,7 +384,10 @@ export default function HomeVsClinicalLasersPage() {
             What It Means for Your Results
           </h2>
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
-            Permanently destroying a hair follicle requires delivering enough thermal energy to its stem cells in a single pulse or rapid pulse sequence. Clinical lasers at 25-60+ J/cm&sup2; do this. Home devices at 7-9 J/cm&sup2; do not.
+            Permanently destroying a hair follicle is not just about reaching a high enough temperature. The heat must be sustained long enough to conduct from the hair shaft outward to the germ cells that produce new hair. If the temperature drops too quickly, the follicle survives. This is why the most common reason hair removal fails is simply that the equipment cannot generate the required temperature for the correct duration.
+          </p>
+          <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
+            Clinical lasers solve this with higher power output, calibrated pulse durations, larger spot sizes that penetrate deeper into the skin, and active cooling systems (chilled sapphire tips, cryogen spray, or forced cold air) that protect the skin surface while allowing more energy to reach the follicle. Home devices have none of these.
           </p>
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1rem' }}>
             This is why home devices can slow regrowth and thin hair with consistent long-term use (typically 2-3 sessions per week over months), but don&apos;t achieve the permanent hair reduction that clinical lasers provide in 6-8 sessions spaced 6-8 weeks apart.
@@ -423,7 +426,7 @@ export default function HomeVsClinicalLasersPage() {
           </h2>
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8, marginBottom: '1.5rem' }}>
             We classify home devices separately in our{' '}
-            <Link href="/is-it-a-real-laser" style={{ color: '#5E8B7E', fontWeight: 500 }} className="hover:underline">
+            <Link href="/equipment-verification-tool" style={{ color: '#5E8B7E', fontWeight: 500 }} className="hover:underline">
               equipment database
             </Link>
             {' '}with a &ldquo;Limited Results&rdquo; badge. This doesn&apos;t mean they&apos;re bad products. It means they operate under fundamentally different power constraints than the clinical devices your provider uses, and comparing them directly would be misleading.
@@ -450,10 +453,10 @@ export default function HomeVsClinicalLasersPage() {
               </p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                 {[
-                  { href: '/is-it-a-real-laser/gentlemax-pro', label: 'GentleMax Pro' },
-                  { href: '/is-it-a-real-laser/lightsheer', label: 'LightSheer' },
-                  { href: '/is-it-a-real-laser/soprano-titanium', label: 'Soprano Titanium' },
-                  { href: '/is-it-a-real-laser/vectus', label: 'Vectus' },
+                  { href: '/equipment-verification-tool/gentlemax-pro', label: 'GentleMax Pro' },
+                  { href: '/equipment-verification-tool/lightsheer', label: 'LightSheer' },
+                  { href: '/equipment-verification-tool/soprano-titanium', label: 'Soprano Titanium' },
+                  { href: '/equipment-verification-tool/vectus', label: 'Vectus' },
                 ].map((device) => (
                   <Link
                     key={device.href}
@@ -494,10 +497,10 @@ export default function HomeVsClinicalLasersPage() {
               </p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                 {[
-                  { href: '/is-it-a-real-laser/dermrays-v8s', label: 'DermRays V8S' },
-                  { href: '/is-it-a-real-laser/currentbody-skin-laser', label: 'CurrentBody' },
-                  { href: '/is-it-a-real-laser/epilaser-pro-808', label: 'Epilaser Pro' },
-                  { href: '/is-it-a-real-laser/tria-4x', label: 'Tria 4X' },
+                  { href: '/equipment-verification-tool/dermrays-v8s', label: 'DermRays V8S' },
+                  { href: '/equipment-verification-tool/currentbody-skin-laser', label: 'CurrentBody' },
+                  { href: '/equipment-verification-tool/epilaser-pro-808', label: 'Epilaser Pro' },
+                  { href: '/equipment-verification-tool/tria-4x', label: 'Tria 4X' },
                 ].map((device) => (
                   <Link
                     key={device.href}
@@ -533,15 +536,15 @@ export default function HomeVsClinicalLasersPage() {
         >
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.8 }}>
             For more on how equipment cost and brand affect treatment quality, see our{' '}
-            <Link href="/is-it-a-real-laser/equipment-costs" style={{ color: '#5E8B7E', fontWeight: 500 }} className="hover:underline">
+            <Link href="/equipment-verification-tool/equipment-costs" style={{ color: '#5E8B7E', fontWeight: 500 }} className="hover:underline">
               equipment cost analysis
             </Link>
             . To learn the difference between purpose-built and multi-purpose clinical lasers, see our{' '}
-            <Link href="/is-it-a-real-laser/purpose-built-vs-multi-purpose" style={{ color: '#5E8B7E', fontWeight: 500 }} className="hover:underline">
+            <Link href="/equipment-verification-tool/purpose-built-vs-multi-purpose" style={{ color: '#5E8B7E', fontWeight: 500 }} className="hover:underline">
               purpose-built vs multi-purpose guide
             </Link>
             . To verify what equipment your clinic uses, try our{' '}
-            <Link href="/is-it-a-real-laser" style={{ color: '#5E8B7E', fontWeight: 500 }} className="hover:underline">
+            <Link href="/equipment-verification-tool" style={{ color: '#5E8B7E', fontWeight: 500 }} className="hover:underline">
               equipment verification tool
             </Link>
             .
@@ -569,7 +572,7 @@ export default function HomeVsClinicalLasersPage() {
             Know someone using a home laser? Share this so they understand what they&apos;re getting.
           </p>
           <ShareButtons
-            url="https://laserhairremovalmap.com/is-it-a-real-laser/home-laser-vs-clinical-laser"
+            url="https://laserhairremovalmap.com/equipment-verification-tool/home-laser-vs-clinical-laser"
             title="Home Lasers vs Clinical Lasers: Real Lasers, Real Gap"
           />
         </div>
@@ -585,7 +588,7 @@ export default function HomeVsClinicalLasersPage() {
         >
           Have information about equipment we should investigate?{' '}
           <Link
-            href="/is-it-a-real-laser/contact"
+            href="/equipment-verification-tool/contact"
             style={{ color: '#5E8B7E', fontWeight: 500 }}
             className="hover:underline"
           >

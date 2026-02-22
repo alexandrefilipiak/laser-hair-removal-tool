@@ -48,6 +48,12 @@ const glossaryTerms = [
     category: "technology",
   },
   {
+    term: "Laser Burn",
+    definition:
+      "Thermal damage to the skin caused by excessive heat from laser treatment. Burns can range from mild redness (first-degree) to blistering (second-degree) or tissue damage (third-degree). Common causes include incorrect fluence settings, inadequate cooling, treating tanned skin, or using the wrong wavelength for a patient's skin type. Darker skin tones are at higher risk because epidermal melanin absorbs more laser energy. Proper settings, cooling systems like DCD, and trained operators minimize burn risk.",
+    category: "side-effects",
+  },
+  {
     term: "Catagen",
     aka: "regression phase",
     definition:
@@ -61,10 +67,30 @@ const glossaryTerms = [
     category: "science",
   },
   {
+    term: "Cryogenic Burn",
+    aka: "frostbite",
+    definition:
+      "Skin damage caused by excessive exposure to cryogen cooling spray used in some laser systems. Cooling devices like DCD spray cold liquid (typically around -26°C) to protect the skin during treatment. If the cryogen spray duration is too long or applied incorrectly, it can cause localized frostbite, resulting in white patches, blistering, or hypopigmentation. Proper calibration of spray timing prevents this complication.",
+    category: "side-effects",
+  },
+  {
     term: "Clinical-Grade",
     definition:
       "Equipment designed for use by trained professionals in medical or aesthetic settings. Clinical-grade devices operate at significantly higher fluences (typically 15–60+ J/cm²) compared to home devices (3–10 J/cm²). This power difference is what enables permanent follicular destruction rather than temporary hair reduction.",
     category: "equipment",
+  },
+  {
+    term: "Contact Cooling",
+    definition:
+      "A skin protection method where a cold surface (typically a sapphire or crystal window) is pressed against the skin during laser treatment. The chilled tip (usually 4–5°C) absorbs heat from the epidermis while allowing laser energy to pass through to the hair follicle. Found in devices like the Alma Soprano and LightSheer. Provides continuous cooling throughout treatment, unlike DCD which sprays cryogen in bursts. Generally considered comfortable but requires good contact with the skin to be effective.",
+    category: "technology",
+  },
+  {
+    term: "DCD",
+    aka: "Dynamic Cooling Device",
+    definition:
+      "Candela's patented skin cooling technology that sprays a burst of cryogen (cold liquid) onto the skin milliseconds before each laser pulse. This protects the epidermis from heat damage while allowing the laser energy to reach the hair follicle. DCD is a key safety feature in Candela lasers like the GentleMax Pro and GentleLase, enabling higher fluences with less discomfort and reduced risk of burns.",
+    category: "technology",
   },
   {
     term: "Dermal Papilla",
@@ -93,6 +119,12 @@ const glossaryTerms = [
     category: "technology",
   },
   {
+    term: "Electrolysis",
+    definition:
+      "A hair removal method that uses electrical current to destroy individual hair follicles one at a time. Unlike laser, electrolysis works on all hair colors including gray, white, and blonde hair because it doesn't rely on melanin. The FDA considers electrolysis the only truly permanent hair removal method. However, it's much slower than laser (treating one follicle at a time) and typically more painful. Often recommended for small areas, light-colored hair, or finishing work after laser treatment.",
+    category: "technology",
+  },
+  {
     term: "Fitzpatrick Scale",
     aka: "skin phototype",
     definition:
@@ -117,6 +149,18 @@ const glossaryTerms = [
     definition:
       "The small tunnel-shaped structure in the skin from which hair grows. Each follicle contains a hair shaft, sebaceous gland, and the dermal papilla at its base. Laser hair removal targets the melanin within the follicle, heating it to damage the structures responsible for hair growth. The follicle cycles through three phases: anagen (growth), catagen (transition), and telogen (rest). Laser treatment is only effective during anagen when the follicle is active and contains the most melanin.",
     category: "biology",
+  },
+  {
+    term: "Hyperpigmentation",
+    definition:
+      "Darkening of the skin that can occur after laser treatment, appearing as brown or dark patches in the treated area. Caused by excess melanin production triggered by heat or inflammation. More common in darker skin tones (Fitzpatrick IV–VI) and when treating tanned skin. Usually temporary, fading over weeks to months, but can be permanent in rare cases. Risk is reduced by using appropriate wavelengths (Nd:YAG for darker skin), proper fluence settings, and avoiding sun exposure before and after treatment.",
+    category: "side-effects",
+  },
+  {
+    term: "Hypopigmentation",
+    definition:
+      "Lightening of the skin that can occur after laser treatment, appearing as white or pale patches in the treated area. Caused by damage to melanocytes (pigment-producing cells) from excessive heat or cryogen exposure. More noticeable on darker skin tones. Can be temporary or permanent depending on the extent of melanocyte damage. Risk is minimized by using conservative settings, proper cooling, and avoiding treatment on tanned skin.",
+    category: "side-effects",
   },
   {
     term: "IPL",
@@ -150,6 +194,13 @@ const glossaryTerms = [
     definition:
       "Lumenis's proprietary technology for controlling IPL pulse shape, ensuring even energy distribution throughout each pulse. Used in the Lumenis M22 platform. A clinical-grade IPL technology. Not a laser, but a professional system.",
     category: "technology",
+  },
+  {
+    term: "PCOS",
+    aka: "Polycystic Ovary Syndrome",
+    definition:
+      "A hormonal condition that can cause hirsutism (excess hair growth) in women, particularly on the face, chest, and abdomen. PCOS affects laser hair removal outcomes because the underlying hormonal imbalance can stimulate new hair growth even after successful treatment of existing follicles. Patients with PCOS typically require more sessions and may need periodic maintenance treatments. Managing the condition with a healthcare provider can improve laser hair removal results.",
+    category: "biology",
   },
   {
     term: "Paradoxical Hypertrichosis",
@@ -259,7 +310,7 @@ function LinkedDefinition({ text, currentTerm }: { text: string; currentTerm: st
 
   // Add equipment links
   Object.entries(equipmentLinks).forEach(([name, slug]) => {
-    allLinks.push({ term: name, type: 'equipment', href: `/is-it-a-real-laser/${slug}` });
+    allLinks.push({ term: name, type: 'equipment', href: `/equipment-verification-tool/${slug}` });
   });
 
   // Sort by term length (longest first) to match longer terms before shorter ones

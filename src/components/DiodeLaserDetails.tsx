@@ -50,7 +50,7 @@ export function DiodeLaserDetails({ term }: DiodeLaserDetailsProps) {
         {/* Back to search link */}
         <nav style={{ marginBottom: '2.5rem' }}>
           <Link
-            href="/is-it-a-real-laser"
+            href="/equipment-verification-tool"
             className="inline-flex items-center gap-2 text-sm transition-colors hover:text-[#5E8B7E]"
             style={{ color: '#5A5550' }}
           >
@@ -217,7 +217,7 @@ export function DiodeLaserDetails({ term }: DiodeLaserDetailsProps) {
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7 }}>
             Once you have the answer,{' '}
             <Link
-              href="/is-it-a-real-laser"
+              href="/equipment-verification-tool"
               style={{ color: '#5E8B7E', fontWeight: 500, textDecoration: 'underline' }}
             >
               check how it's rated in our equipment database →
@@ -251,7 +251,7 @@ export function DiodeLaserDetails({ term }: DiodeLaserDetailsProps) {
               {machines810nm.map((machine) => (
                 <Link
                   key={machine.slug}
-                  href={`/is-it-a-real-laser/${machine.slug}`}
+                  href={`/equipment-verification-tool/${machine.slug}`}
                   className="inline-flex items-center gap-2 transition-all hover:border-[#5E8B7E]"
                   style={{
                     backgroundColor: '#FFFFFF',

@@ -12,7 +12,7 @@ const machineCount = equipment.filter(e => e.type === 'machine').length;
 export const metadata = {
   title: 'Is It a Real Hair Removal Laser? - Equipment Checker',
   description:
-    'Search and verify laser hair removal equipment. Find out if a device is a real laser or IPL.',
+    'Search and verify laser hair removal equipment. Find out if a device is a clinical-grade equipment.',
 };
 
 const popularSearches = [
@@ -62,7 +62,7 @@ export default function IsItARealLaserPage() {
               marginRight: 'auto',
             }}
           >
-            Your clinic says they use "advanced laser technology." But is it actually a laser?
+            Your clinic says they use "advanced laser technology". But is it clinical-grade equipment?
           </p>
 
           {/* Search Bar */}
@@ -89,7 +89,7 @@ export default function IsItARealLaserPage() {
               {popularSearches.map((item) => (
                 <Link
                   key={item.slug}
-                  href={`/is-it-a-real-laser/${item.slug}`}
+                  href={`/equipment-verification-tool/${item.slug}`}
                   style={{
                     backgroundColor: '#FFFFFF',
                     color: '#2D2D2D',
@@ -144,7 +144,7 @@ export default function IsItARealLaserPage() {
 
           {/* IPL vs Laser Comparison Image */}
           <div style={{ marginTop: '1.5rem', display: 'flex', justifyContent: 'center' }}>
-            <Link href="/is-it-a-real-laser/ipl" className="w-full md:w-auto">
+            <Link href="/equipment-verification-tool/ipl" className="w-full md:w-auto">
               <img
                 src="/ipl-vs-laser.png"
                 alt="IPL vs Real Laser comparison"
@@ -188,7 +188,7 @@ export default function IsItARealLaserPage() {
                   textAlign: 'left',
                 }}
               >
-                <Link href="/is-it-a-real-laser/755nm" style={{ color: '#5E8B7E', fontWeight: 600, fontSize: '0.9375rem', textDecoration: 'none' }} className="hover:underline">
+                <Link href="/equipment-verification-tool/755nm" style={{ color: '#5E8B7E', fontWeight: 600, fontSize: '0.9375rem', textDecoration: 'none' }} className="hover:underline">
                   755nm Alexandrite
                 </Link>
                 <p style={{ color: '#5A5550', fontSize: '0.9375rem', lineHeight: 1.7, marginTop: '0.5rem' }}>
@@ -205,7 +205,7 @@ export default function IsItARealLaserPage() {
                   textAlign: 'left',
                 }}
               >
-                <Link href="/is-it-a-real-laser/810nm" style={{ color: '#5E8B7E', fontWeight: 600, fontSize: '0.9375rem', textDecoration: 'none' }} className="hover:underline">
+                <Link href="/equipment-verification-tool/810nm" style={{ color: '#5E8B7E', fontWeight: 600, fontSize: '0.9375rem', textDecoration: 'none' }} className="hover:underline">
                   810nm Diode
                 </Link>
                 <p style={{ color: '#5A5550', fontSize: '0.9375rem', lineHeight: 1.7, marginTop: '0.5rem' }}>
@@ -222,7 +222,7 @@ export default function IsItARealLaserPage() {
                   textAlign: 'left',
                 }}
               >
-                <Link href="/is-it-a-real-laser/1064nm" style={{ color: '#5E8B7E', fontWeight: 600, fontSize: '0.9375rem', textDecoration: 'none' }} className="hover:underline">
+                <Link href="/equipment-verification-tool/1064nm" style={{ color: '#5E8B7E', fontWeight: 600, fontSize: '0.9375rem', textDecoration: 'none' }} className="hover:underline">
                   1064nm Nd:YAG
                 </Link>
                 <p style={{ color: '#5A5550', fontSize: '0.9375rem', lineHeight: 1.7, marginTop: '0.5rem' }}>
@@ -243,141 +243,227 @@ export default function IsItARealLaserPage() {
             </p>
           </div>
 
-          {/* Not Lasers Warning Section */}
+          {/* IPL Section - Split into Clinical IPL and Generic IPL */}
           <div
             style={{
               marginTop: '2.5rem',
-              padding: '1.25rem 1.5rem',
-              backgroundColor: 'rgba(196, 107, 92, 0.08)',
-              borderRadius: '0.75rem',
-              border: '1px solid rgba(196, 107, 92, 0.15)',
               maxWidth: '480px',
               marginLeft: 'auto',
               marginRight: 'auto',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '1rem',
             }}
           >
+            {/* Box 1: Clinical IPL - Amber tone */}
             <div
               style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '0.5rem',
-                marginBottom: '0.75rem',
+                padding: '1.25rem 1.5rem',
+                backgroundColor: 'rgba(180, 140, 60, 0.08)',
+                borderRadius: '0.75rem',
+                border: '1px solid rgba(180, 140, 60, 0.15)',
               }}
             >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#C46B5C"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
-                <line x1="12" y1="9" x2="12" y2="13" />
-                <line x1="12" y1="17" x2="12.01" y2="17" />
-              </svg>
-              <span
+              <div
                 style={{
-                  color: '#C46B5C',
-                  fontWeight: 600,
-                  fontSize: '0.9rem',
-                  letterSpacing: '-0.01em',
-                }}
-              >
-                These Are NOT Lasers
-              </span>
-            </div>
-
-            <p
-              style={{
-                color: '#5A5550',
-                fontSize: '0.9375rem',
-                textAlign: 'center',
-                marginBottom: '0.75rem',
-                lineHeight: 1.7,
-              }}
-            >
-              Despite how they&apos;re marketed, these technologies use Intense Pulsed Light, not laser:
-            </p>
-
-            <div
-              style={{
-                display: 'flex',
-                flexWrap: 'wrap',
-                justifyContent: 'center',
-                gap: '0.5rem',
-                marginBottom: '0.75rem',
-              }}
-            >
-              {[
-                { name: 'BBL', slug: 'bbl' },
-                { name: 'AFT', slug: 'aft' },
-                { name: 'E-Light', slug: 'e-light' },
-                { name: 'OPT', slug: 'opt' },
-                { name: 'DPL', slug: 'dpl' },
-                { name: 'IPL', slug: 'ipl' },
-              ].map((tech) => (
-                <Link
-                  key={tech.slug}
-                  href={`/is-it-a-real-laser/${tech.slug}`}
-                  style={{
-                    backgroundColor: 'rgba(196, 107, 92, 0.12)',
-                    color: '#C46B5C',
-                    fontSize: '0.9375rem',
-                    fontWeight: 500,
-                    padding: '0.4rem 0.9rem',
-                    borderRadius: '9999px',
-                    textDecoration: 'none',
-                    transition: 'all 0.2s',
-                  }}
-                  className="hover:bg-[rgba(196,107,92,0.2)]"
-                >
-                  {tech.name}
-                </Link>
-              ))}
-            </div>
-
-            <p
-              style={{
-                color: '#5A5550',
-                fontSize: '0.75rem',
-                textAlign: 'center',
-                marginBottom: '0.75rem',
-              }}
-            >
-            </p>
-
-            <div style={{ textAlign: 'center' }}>
-              <Link
-                href="/is-it-a-real-laser/ipl"
-                style={{
-                  color: '#C46B5C',
-                  fontSize: '0.9375rem',
-                  fontWeight: 500,
-                  textDecoration: 'none',
-                  display: 'inline-flex',
+                  display: 'flex',
                   alignItems: 'center',
-                  gap: '0.35rem',
+                  justifyContent: 'center',
+                  gap: '0.5rem',
+                  marginBottom: '0.75rem',
                 }}
-                className="hover:underline"
               >
-                IPL vs Laser: Learn the difference
                 <svg
-                  width="14"
-                  height="14"
+                  width="18"
+                  height="18"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="currentColor"
+                  stroke="#B48C3C"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <path d="M5 12h14M12 5l7 7-7 7" />
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" y1="8" x2="12" y2="12" />
+                  <line x1="12" y1="16" x2="12.01" y2="16" />
                 </svg>
-              </Link>
+                <span
+                  style={{
+                    color: '#B48C3C',
+                    fontWeight: 600,
+                    fontSize: '0.9rem',
+                    letterSpacing: '-0.01em',
+                  }}
+                >
+                  IPL Machines Are Not Lasers. But Clinical IPL Can Be Effective
+                </span>
+              </div>
+
+              <p
+                style={{
+                  color: '#5A5550',
+                  fontSize: '0.9375rem',
+                  textAlign: 'center',
+                  marginBottom: '0.75rem',
+                  lineHeight: 1.7,
+                }}
+              >
+                These are clinical-grade IPL technologies. They&apos;re not lasers, but professional systems like these can deliver real results for hair removal:
+              </p>
+
+              <div
+                style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  justifyContent: 'center',
+                  gap: '0.5rem',
+                  marginBottom: '0.75rem',
+                }}
+              >
+                {[
+                  { name: 'BBL', slug: 'bbl' },
+                  { name: 'AFT', slug: 'aft' },
+                  { name: 'OPT', slug: 'opt' },
+                ].map((tech) => (
+                  <Link
+                    key={tech.slug}
+                    href={`/equipment-verification-tool/${tech.slug}`}
+                    style={{
+                      backgroundColor: 'rgba(180, 140, 60, 0.12)',
+                      color: '#B48C3C',
+                      fontSize: '0.9375rem',
+                      fontWeight: 500,
+                      padding: '0.4rem 0.9rem',
+                      borderRadius: '9999px',
+                      textDecoration: 'none',
+                      transition: 'all 0.2s',
+                    }}
+                    className="hover:bg-[rgba(180,140,60,0.2)]"
+                  >
+                    {tech.name}
+                  </Link>
+                ))}
+              </div>
+
+              <div style={{ textAlign: 'center' }}>
+                <Link
+                  href="/equipment-verification-tool/ipl"
+                  style={{
+                    color: '#B48C3C',
+                    fontSize: '0.9375rem',
+                    fontWeight: 500,
+                    textDecoration: 'none',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.35rem',
+                  }}
+                  className="hover:underline"
+                >
+                  IPL vs Laser: Learn the difference
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* Box 2: Generic IPL - Red warning tone */}
+            <div
+              style={{
+                padding: '1.25rem 1.5rem',
+                backgroundColor: 'rgba(196, 107, 92, 0.08)',
+                borderRadius: '0.75rem',
+                border: '1px solid rgba(196, 107, 92, 0.15)',
+              }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '0.5rem',
+                  marginBottom: '0.75rem',
+                }}
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#C46B5C"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                  <line x1="12" y1="9" x2="12" y2="13" />
+                  <line x1="12" y1="17" x2="12.01" y2="17" />
+                </svg>
+                <span
+                  style={{
+                    color: '#C46B5C',
+                    fontWeight: 600,
+                    fontSize: '0.9rem',
+                    letterSpacing: '-0.01em',
+                  }}
+                >
+                  These Terms Need Verification
+                </span>
+              </div>
+
+              <p
+                style={{
+                  color: '#5A5550',
+                  fontSize: '0.9375rem',
+                  textAlign: 'center',
+                  marginBottom: '0.75rem',
+                  lineHeight: 1.7,
+                }}
+              >
+                These are generic or unbranded IPL terms. Ask your clinic exactly which machine they use:
+              </p>
+
+              <div
+                style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  justifyContent: 'center',
+                  gap: '0.5rem',
+                }}
+              >
+                {[
+                  { name: 'E-Light', slug: 'e-light' },
+                  { name: 'DPL', slug: 'dpl' },
+                  { name: 'IPL', slug: 'ipl' },
+                ].map((tech) => (
+                  <Link
+                    key={tech.slug}
+                    href={`/equipment-verification-tool/${tech.slug}`}
+                    style={{
+                      backgroundColor: 'rgba(196, 107, 92, 0.12)',
+                      color: '#C46B5C',
+                      fontSize: '0.9375rem',
+                      fontWeight: 500,
+                      padding: '0.4rem 0.9rem',
+                      borderRadius: '9999px',
+                      textDecoration: 'none',
+                      transition: 'all 0.2s',
+                    }}
+                    className="hover:bg-[rgba(196,107,92,0.2)]"
+                  >
+                    {tech.name}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -410,7 +496,7 @@ export default function IsItARealLaserPage() {
                 alignItems: 'center',
               }}
             >
-              <Link href="/is-it-a-real-laser/purpose-built-vs-multi-purpose" className="block w-full md:w-[50%]">
+              <Link href="/equipment-verification-tool/purpose-built-vs-multi-purpose" className="block w-full md:w-[50%]">
                 <img
                   src="/laser-hair-removal-single-vs-multi-purpose.png"
                   alt="Purpose-built vs multi-purpose laser comparison: Candela GentleMax Pro (designed for laser hair removal) next to Candela Nordlys (designed for versatility). Both are professional devices from the same manufacturer, but with different design priorities."
@@ -435,14 +521,14 @@ export default function IsItARealLaserPage() {
                 }}
               >
                 Left: Candela GentleMax Pro, purpose-built for hair removal. Right: Candela Nordlys, a multi-purpose platform handling hair removal, vascular, pigmentation, and more. Same manufacturer, different design priorities.{' '}
-                <Link href="/is-it-a-real-laser/purpose-built-vs-multi-purpose" style={{ color: '#5E8B7E' }} className="hover:underline">
+                <Link href="/equipment-verification-tool/purpose-built-vs-multi-purpose" style={{ color: '#5E8B7E' }} className="hover:underline">
                   Learn more in our purpose-built vs multi-purpose guide.
                 </Link>
               </figcaption>
             </figure>
             <div style={{ textAlign: 'center' }}>
               <Link
-                href="/is-it-a-real-laser/purpose-built-vs-multi-purpose"
+                href="/equipment-verification-tool/purpose-built-vs-multi-purpose"
                 style={{
                   color: '#5E8B7E',
                   fontSize: '0.9375rem',
@@ -523,7 +609,7 @@ export default function IsItARealLaserPage() {
                 alignItems: 'center',
               }}
             >
-              <Link href="/is-it-a-real-laser/equipment-costs" className="block w-full md:w-[60%]">
+              <Link href="/equipment-verification-tool/equipment-costs" className="block w-full md:w-[60%]">
                 <img
                   src="/laser-hair-removal-alibaba-and-candela.png"
                   alt="Chinese model from Alibaba: $2,799-2,899 | Used Candela model: $97,500 | Both offer 'laser hair removal'"
@@ -551,7 +637,7 @@ export default function IsItARealLaserPage() {
             </div>
             <div style={{ textAlign: 'center' }}>
               <Link
-                href="/is-it-a-real-laser/equipment-costs"
+                href="/equipment-verification-tool/equipment-costs"
                 style={{
                   color: '#5E8B7E',
                   fontSize: '0.9375rem',
@@ -632,7 +718,7 @@ export default function IsItARealLaserPage() {
                 alignItems: 'center',
               }}
             >
-              <Link href="/is-it-a-real-laser/home-laser-vs-clinical-laser" className="block w-full md:w-[50%]">
+              <Link href="/equipment-verification-tool/home-laser-vs-clinical-laser" className="block w-full md:w-[50%]">
                 <img
                   src="/laser-hair-removal-home-vs-clinical.png"
                   alt="Home laser vs clinical laser comparison: Tria Hair Removal Laser 4X (home device, Class 1) next to Candela GentleMax Pro (clinical laser, Class IV). Both are real lasers, but the clinical device delivers roughly 100 times more energy per pulse."
@@ -661,7 +747,7 @@ export default function IsItARealLaserPage() {
             </figure>
             <div style={{ textAlign: 'center' }}>
               <Link
-                href="/is-it-a-real-laser/home-laser-vs-clinical-laser"
+                href="/equipment-verification-tool/home-laser-vs-clinical-laser"
                 style={{
                   color: '#5E8B7E',
                   fontSize: '0.9375rem',
@@ -740,7 +826,7 @@ export default function IsItARealLaserPage() {
             Own a clinic with premium equipment? Share this tool with your clients: it helps them understand why your investment matters.
           </p>
           <ShareButtons
-            url="https://laserhairremovalmap.com/is-it-a-real-laser"
+            url="https://laserhairremovalmap.com/equipment-verification-tool"
             title="Is It a Real Hair Removal Laser? - Equipment Checker"
           />
         </div>
@@ -757,7 +843,7 @@ export default function IsItARealLaserPage() {
       >
         Have information about equipment we should investigate?{' '}
         <Link
-          href="/is-it-a-real-laser/contact"
+          href="/equipment-verification-tool/contact"
           style={{ color: '#5E8B7E', fontWeight: 500 }}
           className="hover:underline"
         >

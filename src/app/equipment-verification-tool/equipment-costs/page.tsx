@@ -35,7 +35,7 @@ export default function EquipmentCostsPage() {
         {/* Back to search link */}
         <nav style={{ marginBottom: '2.5rem' }}>
           <Link
-            href="/is-it-a-real-laser"
+            href="/equipment-verification-tool"
             className="inline-flex items-center gap-2 text-sm transition-colors hover:text-[#5E8B7E]"
             style={{ color: '#5A5550' }}
           >
@@ -1074,7 +1074,7 @@ export default function EquipmentCostsPage() {
           <p className="leading-relaxed" style={{ color: '#5A5550', lineHeight: 1.7 }}>
             Once you have the answer,{' '}
             <Link
-              href="/is-it-a-real-laser"
+              href="/equipment-verification-tool"
               style={{ color: '#5E8B7E', fontWeight: 500, textDecoration: 'underline' }}
             >
               check how it's rated in our equipment database →
@@ -1103,7 +1103,7 @@ export default function EquipmentCostsPage() {
             Know a clinic using premium equipment? Share this article: it helps them explain why quality matters.
           </p>
           <ShareButtons
-            url="https://laserhairremovalmap.com/is-it-a-real-laser/equipment-costs"
+            url="https://laserhairremovalmap.com/equipment-verification-tool/equipment-costs"
             title="The $3,000 Machine vs the $100,000 Machine - Why Laser Hair Removal Equipment Costs Matter"
           />
         </div>
@@ -1119,7 +1119,7 @@ export default function EquipmentCostsPage() {
         >
           Have information about equipment we should investigate?{' '}
           <Link
-            href="/is-it-a-real-laser/contact"
+            href="/equipment-verification-tool/contact"
             style={{ color: '#5E8B7E', fontWeight: 500 }}
             className="hover:underline"
           >

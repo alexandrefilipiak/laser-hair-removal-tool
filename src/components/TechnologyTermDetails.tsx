@@ -34,7 +34,7 @@ export function TechnologyTermDetails({ term }: TechnologyTermDetailsProps) {
         {/* Back to search link */}
         <nav style={{ marginBottom: '2.5rem' }}>
           <Link
-            href="/is-it-a-real-laser"
+            href="/equipment-verification-tool"
             className="inline-flex items-center gap-2 text-sm transition-colors hover:text-[#5E8B7E]"
             style={{ color: '#5A5550' }}
           >

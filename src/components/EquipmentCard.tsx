@@ -10,7 +10,7 @@ interface EquipmentCardProps {
 export function EquipmentCard({ equipment }: EquipmentCardProps) {
   return (
     <Link
-      href={`/is-it-a-real-laser/${equipment.slug}`}
+      href={`/equipment-verification-tool/${equipment.slug}`}
       className="group block p-4 rounded-xl transition-all duration-200 hover:-translate-y-0.5"
       style={{
         backgroundColor: '#FFFFFF',

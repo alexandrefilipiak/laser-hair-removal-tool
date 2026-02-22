@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: 'Contact | LaserHairRemovalMap',
   description: 'Get in touch with us. Share tips about equipment, report issues, or ask questions about laser hair removal technology.',
   alternates: {
-    canonical: `${siteUrl}/is-it-a-real-laser/contact`,
+    canonical: `${siteUrl}/equipment-verification-tool/contact`,
   },
   openGraph: {
     title: 'Contact | LaserHairRemovalMap',
     description: 'Get in touch with us. Share tips about equipment, report issues, or ask questions about laser hair removal technology.',
-    url: `${siteUrl}/is-it-a-real-laser/contact`,
+    url: `${siteUrl}/equipment-verification-tool/contact`,
     siteName: 'LaserHairRemovalMap',
     type: 'website',
   },
@@ -35,7 +35,7 @@ export default function ContactPage() {
         {/* Back to search link */}
         <nav style={{ marginBottom: '2.5rem' }}>
           <Link
-            href="/is-it-a-real-laser"
+            href="/equipment-verification-tool"
             className="inline-flex items-center gap-2 text-sm transition-colors hover:text-[#5E8B7E]"
             style={{ color: '#5A5550' }}
           >

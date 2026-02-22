@@ -1,7 +1,7 @@
 /**
  * Equipment detail page
  *
- * Dynamic route for individual equipment pages at /is-it-a-real-laser/[slug].
+ * Dynamic route for individual equipment pages at /equipment-verification-tool/[slug].
  * Uses static generation with generateStaticParams for all known equipment.
  * Returns 404 for unknown slugs via dynamicParams = false.
  */

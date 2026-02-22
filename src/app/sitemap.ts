@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const slugs = getAllEquipmentSlugs();
 
   const equipmentPages = slugs.map((slug) => ({
-    url: `${BASE_URL}/is-it-a-real-laser/${slug}`,
+    url: `${BASE_URL}/equipment-verification-tool/${slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
@@ -31,31 +31,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${BASE_URL}/is-it-a-real-laser`,
+      url: `${BASE_URL}/equipment-verification-tool`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/is-it-a-real-laser/equipment-costs`,
+      url: `${BASE_URL}/equipment-verification-tool/equipment-costs`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.85,
     },
     {
-      url: `${BASE_URL}/is-it-a-real-laser/purpose-built-vs-multi-purpose`,
+      url: `${BASE_URL}/equipment-verification-tool/purpose-built-vs-multi-purpose`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.85,
     },
     {
-      url: `${BASE_URL}/is-it-a-real-laser/home-laser-vs-clinical-laser`,
+      url: `${BASE_URL}/equipment-verification-tool/home-laser-vs-clinical-laser`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.85,
     },
     {
-      url: `${BASE_URL}/is-it-a-real-laser/contact`,
+      url: `${BASE_URL}/equipment-verification-tool/contact`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.5,
