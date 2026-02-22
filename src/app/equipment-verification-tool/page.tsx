@@ -32,8 +32,35 @@ export default function IsItARealLaserPage() {
         position: 'relative',
       }}
     >
+      {/* Back to Home */}
+      <nav className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-10">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 text-base transition-colors hover:text-[#5E8B7E]"
+          style={{ color: '#5A5550' }}
+        >
+          <svg
+            className="h-4 w-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            />
+          </svg>
+          <span style={{ letterSpacing: '0.02em' }}>
+            Back to Home
+          </span>
+        </Link>
+      </nav>
+
       {/* Hero Section */}
-      <section style={{ position: 'relative', paddingTop: '5rem', paddingBottom: '3rem' }}>
+      <section style={{ position: 'relative', paddingTop: '2rem', paddingBottom: '3rem' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center" style={{ position: 'relative', zIndex: 1 }}>
           {/* Title */}
           <h1

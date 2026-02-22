@@ -15,7 +15,7 @@ export function Footer() {
         paddingBottom: '1rem',
       }}
     >
-      <p style={{ color: '#5A5550', fontSize: '0.75rem', letterSpacing: '0.02em' }}>
+      <p style={{ color: '#5A5550', fontSize: '1rem', letterSpacing: '0.02em' }}>
         For informational purposes only. Not medical advice.
       </p>
     </footer>

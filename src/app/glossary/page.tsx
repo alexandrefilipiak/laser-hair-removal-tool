@@ -4,6 +4,13 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
+import {
+  getAllGlossaryTerms,
+  getEquipmentLinks,
+  getCategoryConfig,
+  buildGlossaryAnchors,
+  getAvailableLetters,
+} from "@/lib/glossary";
 
 export const metadata: Metadata = {
   title: "Laser Hair Removal Glossary — Technical Terms Explained | Laser Hair Removal Map",
@@ -11,275 +18,12 @@ export const metadata: Metadata = {
     "Plain-language definitions of laser hair removal terms: fluence, Fitzpatrick scale, selective photothermolysis, IPL, Nd:YAG, and more. Understand what your clinic is talking about.",
 };
 
-// Equipment name to slug mapping for machines mentioned in definitions
-const equipmentLinks: Record<string, string> = {
-  "GentleLase": "gentlelase",
-  "GentleMax Pro": "gentlemax-pro",
-  "GentleMax": "gentlemax",
-  "GentleYAG": "gentleyag",
-  "LightSheer": "lightsheer",
-  "Soprano": "soprano-titanium",
-  "Alma Soprano": "soprano-titanium",
-  "Clarity II": "clarity-ii",
-  "Lumenis M22": "nordlys", // M22 redirects to Nordlys as similar platform
-  "Forever Bare BBL": "forever-bare-bbl",
-};
-
-const glossaryTerms = [
-  {
-    term: "Alexandrite Laser",
-    aka: "755nm laser",
-    definition:
-      "A laser that emits light at 755nm wavelength. Highly effective for hair removal on lighter skin tones (Fitzpatrick I–IV). Found in machines like the Candela GentleLase and GentleMax Pro.",
-    category: "technology",
-  },
-  {
-    term: "Anagen",
-    aka: "growth phase",
-    definition:
-      "The active growth phase of the hair cycle. This is the only phase during which laser hair removal is effective, because the follicle contains the most melanin and is connected to the dermal papilla. At any given time, only 20–30% of hair follicles are in anagen, which is why multiple sessions are needed.",
-    category: "biology",
-  },
-  {
-    term: "BBL",
-    aka: "BroadBand Light",
-    definition:
-      "Sciton's branded clinical IPL technology. Used in devices like the BBL HERO and BBL HEROic. Not a laser, but a clinical-grade light-based system capable of effective hair removal. The 'Forever Bare BBL' mode uses multiple low-fluence pulses at high repetition rates.",
-    category: "technology",
-  },
-  {
-    term: "Laser Burn",
-    definition:
-      "Thermal damage to the skin caused by excessive heat from laser treatment. Burns can range from mild redness (first-degree) to blistering (second-degree) or tissue damage (third-degree). Common causes include incorrect fluence settings, inadequate cooling, treating tanned skin, or using the wrong wavelength for a patient's skin type. Darker skin tones are at higher risk because epidermal melanin absorbs more laser energy. Proper settings, cooling systems like DCD, and trained operators minimize burn risk.",
-    category: "side-effects",
-  },
-  {
-    term: "Catagen",
-    aka: "regression phase",
-    definition:
-      "The transitional phase where the hair follicle shrinks and detaches from the dermal papilla. Home devices with low fluence tend to push follicles into catagen rather than destroying them, which is why results from home devices are temporary and require ongoing maintenance.",
-    category: "biology",
-  },
-  {
-    term: "Chromophore",
-    definition:
-      "A molecule that absorbs specific wavelengths of light. In laser hair removal, the target chromophore is melanin in the hair follicle. Different chromophores (melanin, hemoglobin, water) absorb different wavelengths, which is why laser selection matters for each treatment type.",
-    category: "science",
-  },
-  {
-    term: "Cryogenic Burn",
-    aka: "frostbite",
-    definition:
-      "Skin damage caused by excessive exposure to cryogen cooling spray used in some laser systems. Cooling devices like DCD spray cold liquid (typically around -26°C) to protect the skin during treatment. If the cryogen spray duration is too long or applied incorrectly, it can cause localized frostbite, resulting in white patches, blistering, or hypopigmentation. Proper calibration of spray timing prevents this complication.",
-    category: "side-effects",
-  },
-  {
-    term: "Clinical-Grade",
-    definition:
-      "Equipment designed for use by trained professionals in medical or aesthetic settings. Clinical-grade devices operate at significantly higher fluences (typically 15–60+ J/cm²) compared to home devices (3–10 J/cm²). This power difference is what enables permanent follicular destruction rather than temporary hair reduction.",
-    category: "equipment",
-  },
-  {
-    term: "Contact Cooling",
-    definition:
-      "A skin protection method where a cold surface (typically a sapphire or crystal window) is pressed against the skin during laser treatment. The chilled tip (usually 4–5°C) absorbs heat from the epidermis while allowing laser energy to pass through to the hair follicle. Found in devices like the Alma Soprano and LightSheer. Provides continuous cooling throughout treatment, unlike DCD which sprays cryogen in bursts. Generally considered comfortable but requires good contact with the skin to be effective.",
-    category: "technology",
-  },
-  {
-    term: "DCD",
-    aka: "Dynamic Cooling Device",
-    definition:
-      "Candela's patented skin cooling technology that sprays a burst of cryogen (cold liquid) onto the skin milliseconds before each laser pulse. This protects the epidermis from heat damage while allowing the laser energy to reach the hair follicle. DCD is a key safety feature in Candela lasers like the GentleMax Pro and GentleLase, enabling higher fluences with less discomfort and reduced risk of burns.",
-    category: "technology",
-  },
-  {
-    term: "Dermal Papilla",
-    definition:
-      "A small, nipple-like structure at the base of the hair follicle containing blood vessels and specialized cells that regulate hair growth. During anagen, the follicle is connected to the dermal papilla, which supplies nutrients for hair production. Laser hair removal aims to damage the dermal papilla to prevent future hair regrowth. During catagen and telogen, the follicle detaches from the dermal papilla, which is why laser treatment is less effective during these phases.",
-    category: "biology",
-  },
-  {
-    term: "Diode Laser",
-    aka: "810nm laser",
-    definition:
-      "A semiconductor laser typically emitting at 808–810nm. The most common laser type for hair removal worldwide. Works across a wide range of skin tones. Found in machines like the Lumenis LightSheer, Alma Soprano, and many others.",
-    category: "technology",
-  },
-  {
-    term: "DPL",
-    aka: "Dynamic Pulse Light",
-    definition:
-      "A generic IPL marketing term with no standardized technical specification. Often associated with unbranded or low-cost IPL machines. If a clinic says they use 'DPL', ask which specific machine brand and model they have.",
-    category: "technology",
-  },
-  {
-    term: "E-Light",
-    definition:
-      "A technology combining IPL with radiofrequency (RF) energy. Often found in inexpensive, unbranded machines. The term has no standardized specification and is frequently associated with low-cost devices. Ask your clinic for the specific brand and model.",
-    category: "technology",
-  },
-  {
-    term: "Electrolysis",
-    definition:
-      "A hair removal method that uses electrical current to destroy individual hair follicles one at a time. Unlike laser, electrolysis works on all hair colors including gray, white, and blonde hair because it doesn't rely on melanin. The FDA considers electrolysis the only truly permanent hair removal method. However, it's much slower than laser (treating one follicle at a time) and typically more painful. Often recommended for small areas, light-colored hair, or finishing work after laser treatment.",
-    category: "technology",
-  },
-  {
-    term: "Fitzpatrick Scale",
-    aka: "skin phototype",
-    definition:
-      "A six-level classification system (I–VI) for skin color and its response to UV exposure. Type I is very fair skin that always burns under the sun; Type VI is deeply pigmented skin that never burns under the sun. Your Fitzpatrick type determines which laser wavelength is safest and most effective for you. Alexandrite (755nm) works best for I–IV; Nd:YAG (1064nm) is safest for V–VI.",
-    category: "science",
-  },
-  {
-    term: "Fluence",
-    aka: "energy density",
-    definition:
-      "The amount of laser energy delivered per unit area, measured in joules per square centimeter (J/cm²). Higher fluence generally means more effective treatment but also more risk if used incorrectly. Clinical lasers typically operate at 15–60+ J/cm²; home devices at 3–10 J/cm². This is the single biggest difference between professional and home treatments.",
-    category: "science",
-  },
-  {
-    term: "Folliculitis",
-    definition:
-      "Inflammation or infection of hair follicles that can occur after laser treatment. Appears as red, bumpy, itchy spots days after treatment. Caused by bacteria entering compromised follicles, often triggered by hot showers, sweating, or tight clothing too soon after treatment. Not the same as perifollicular edema.",
-    category: "side-effects",
-  },
-  {
-    term: "Hair Follicle",
-    definition:
-      "The small tunnel-shaped structure in the skin from which hair grows. Each follicle contains a hair shaft, sebaceous gland, and the dermal papilla at its base. Laser hair removal targets the melanin within the follicle, heating it to damage the structures responsible for hair growth. The follicle cycles through three phases: anagen (growth), catagen (transition), and telogen (rest). Laser treatment is only effective during anagen when the follicle is active and contains the most melanin.",
-    category: "biology",
-  },
-  {
-    term: "Hyperpigmentation",
-    definition:
-      "Darkening of the skin that can occur after laser treatment, appearing as brown or dark patches in the treated area. Caused by excess melanin production triggered by heat or inflammation. More common in darker skin tones (Fitzpatrick IV–VI) and when treating tanned skin. Usually temporary, fading over weeks to months, but can be permanent in rare cases. Risk is reduced by using appropriate wavelengths (Nd:YAG for darker skin), proper fluence settings, and avoiding sun exposure before and after treatment.",
-    category: "side-effects",
-  },
-  {
-    term: "Hypopigmentation",
-    definition:
-      "Lightening of the skin that can occur after laser treatment, appearing as white or pale patches in the treated area. Caused by damage to melanocytes (pigment-producing cells) from excessive heat or cryogen exposure. More noticeable on darker skin tones. Can be temporary or permanent depending on the extent of melanocyte damage. Risk is minimized by using conservative settings, proper cooling, and avoiding treatment on tanned skin.",
-    category: "side-effects",
-  },
-  {
-    term: "IPL",
-    aka: "Intense Pulsed Light",
-    definition:
-      "A broad-spectrum light technology (typically 400–1200nm) that is not a laser. Clinical IPL systems from established manufacturers (like Forever Bare BBL, Lumenis M22) can be effective for hair removal, though comparative studies generally show lower reduction rates than diode lasers. The term 'IPL' alone doesn't indicate quality: there's a massive gap between a premium Forever Bare BBL and an unbranded device.",
-    category: "technology",
-  },
-  {
-    term: "Joule (J)",
-    definition:
-      "The standard unit of energy. In laser hair removal, energy is typically expressed as fluence: joules per square centimeter (J/cm²). A higher number means more energy is being delivered to the treatment area.",
-    category: "science",
-  },
-  {
-    term: "Melanin",
-    definition:
-      "The natural pigment in skin and hair that absorbs laser energy. Laser hair removal works by targeting melanin in the hair follicle: the laser heats the melanin, which damages the follicle. This is why the treatment works best on dark hair (more melanin to absorb energy) and why darker skin tones require specific wavelengths to avoid heating the melanin in the skin itself.",
-    category: "biology",
-  },
-  {
-    term: "Nd:YAG Laser",
-    aka: "1064nm laser",
-    definition:
-      "A neodymium-doped yttrium aluminum garnet laser emitting at 1064nm. The safest wavelength for darker skin tones (Fitzpatrick V–VI) because 1064nm penetrates deeper and is absorbed less by epidermal melanin. Requires higher fluence (50–80 J/cm²) to be effective. Found in machines like the Candela GentleYAG and Lutronic Clarity II.",
-    category: "technology",
-  },
-  {
-    term: "OPT",
-    aka: "Optimal Pulse Technology",
-    definition:
-      "Lumenis's proprietary technology for controlling IPL pulse shape, ensuring even energy distribution throughout each pulse. Used in the Lumenis M22 platform. A clinical-grade IPL technology. Not a laser, but a professional system.",
-    category: "technology",
-  },
-  {
-    term: "PCOS",
-    aka: "Polycystic Ovary Syndrome",
-    definition:
-      "A hormonal condition that can cause hirsutism (excess hair growth) in women, particularly on the face, chest, and abdomen. PCOS affects laser hair removal outcomes because the underlying hormonal imbalance can stimulate new hair growth even after successful treatment of existing follicles. Patients with PCOS typically require more sessions and may need periodic maintenance treatments. Managing the condition with a healthcare provider can improve laser hair removal results.",
-    category: "biology",
-  },
-  {
-    term: "Paradoxical Hypertrichosis",
-    aka: "paradoxical hair growth",
-    definition:
-      "A rare side effect where laser treatment stimulates new hair growth in adjacent areas rather than reducing it. More common on the face and neck, and in patients with darker skin or hormonal conditions. The exact mechanism is not fully understood but may involve sub-therapeutic energy levels stimulating dormant follicles rather than destroying them.",
-    category: "side-effects",
-  },
-  {
-    term: "Perifollicular Edema",
-    definition:
-      "Small red bumps that appear around individual hair follicles immediately after laser treatment, typically resolving within hours to a day. This is actually a desired treatment endpoint. It indicates that the follicle absorbed enough energy for thermal destruction. Not to be confused with folliculitis, which is an infection that develops days later.",
-    category: "side-effects",
-  },
-  {
-    term: "Pulse Duration",
-    aka: "pulse width",
-    definition:
-      "How long each laser pulse lasts, measured in milliseconds (ms). Must be matched to the target's thermal relaxation time for safe, effective treatment. Shorter pulses (2–10ms) target smaller structures; longer pulses (20–100ms+) heat larger volumes more gradually and are generally safer for darker skin tones.",
-    category: "science",
-  },
-  {
-    term: "Selective Photothermolysis",
-    aka: "SPTL",
-    definition:
-      "The scientific principle behind laser hair removal. By selecting the right wavelength, pulse duration, and fluence, laser energy can selectively heat and destroy a specific target (melanin in the hair follicle) without damaging surrounding tissue. Introduced by Anderson and Parrish in 1983, this concept underlies all modern laser dermatology.",
-    category: "science",
-  },
-  {
-    term: "SHR",
-    aka: "Super Hair Removal",
-    definition:
-      "A treatment delivery method (not a specific device). SHR uses rapid low-fluence pulses with a sweeping motion across the skin, gradually heating the follicle. Marketed as more comfortable than traditional single-shot methods. If a clinic says they use 'SHR', ask which machine brand and model they actually have. SHR is how the treatment is delivered, not what delivers it.",
-    category: "technology",
-  },
-  {
-    term: "Spot Size",
-    definition:
-      "The diameter of the laser beam where it contacts the skin, measured in millimeters. Larger spot sizes (12–18mm+) allow deeper penetration and faster treatment of large areas. Smaller spot sizes (6–10mm) are used for precision work on smaller areas like the upper lip. Generally, larger spot sizes are more effective for hair removal.",
-    category: "science",
-  },
-  {
-    term: "Telogen",
-    aka: "resting phase",
-    definition:
-      "The resting phase of the hair cycle where the follicle is dormant and the hair eventually sheds. Laser treatment is ineffective during telogen because the follicle lacks sufficient melanin and is disconnected from the structures that need to be destroyed. This is why treatments are spaced 4–8 weeks apart: to catch follicles as they cycle back into anagen.",
-    category: "biology",
-  },
-  {
-    term: "Thermal Relaxation Time",
-    aka: "TRT",
-    definition:
-      "The time it takes for a heated target to cool to half its peak temperature. For hair follicles, TRT is approximately 10–100 milliseconds depending on diameter. Effective treatment requires pulse duration matched to or shorter than the target's TRT: long enough to heat the follicle, short enough that heat doesn't spread to surrounding skin.",
-    category: "science",
-  },
-];
-
-// Build glossary term anchors map (term -> anchor id)
-const glossaryAnchors: Record<string, string> = {};
-glossaryTerms.forEach((item) => {
-  const anchor = item.term.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-  glossaryAnchors[item.term] = anchor;
-  // Also add common variations
-  if (item.term === "Fitzpatrick Scale") {
-    glossaryAnchors["Fitzpatrick"] = anchor;
-  }
-  if (item.term === "Thermal Relaxation Time") {
-    glossaryAnchors["thermal relaxation time"] = anchor;
-  }
-});
-
-// Category display config
-const categoryConfig: Record<string, { label: string; color: string }> = {
-  technology: { label: "Technology", color: "#3B82F6" },
-  biology: { label: "Biology", color: "#10B981" },
-  science: { label: "Physics", color: "#8B5CF6" },
-  equipment: { label: "Equipment", color: "#F59E0B" },
-  "side-effects": { label: "Side Effects", color: "#EF4444" },
-};
+// Load data from JSON
+const glossaryTerms = getAllGlossaryTerms();
+const equipmentLinks = getEquipmentLinks();
+const categoryConfig = getCategoryConfig();
+const glossaryAnchors = buildGlossaryAnchors();
+const availableLetters = getAvailableLetters();
 
 /**
  * Process definition text and add links to glossary terms and equipment pages
@@ -393,9 +137,36 @@ function LinkedDefinition({ text, currentTerm }: { text: string; currentTerm: st
 export default function GlossaryPage() {
   return (
     <main className="min-h-screen bg-white">
+      {/* Back to Home */}
+      <nav className="mx-auto max-w-3xl px-3 pt-8 sm:px-6 sm:pt-10">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 text-base transition-colors hover:text-[#5E8B7E]"
+          style={{ color: '#5A5550' }}
+        >
+          <svg
+            className="h-4 w-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            />
+          </svg>
+          <span style={{ letterSpacing: '0.02em' }}>
+            Back to Home
+          </span>
+        </Link>
+      </nav>
+
       {/* Hero */}
       <section className="border-b border-gray-100 bg-gradient-to-b from-gray-50 to-white">
-        <div className="mx-auto max-w-3xl px-3 py-8 text-center sm:px-6 sm:py-16">
+        <div className="mx-auto max-w-3xl px-3 py-8 text-center sm:px-6 sm:py-12">
           <p className="mb-2 text-base font-medium uppercase tracking-widest text-gray-400 sm:mb-3">
             Reference
           </p>
@@ -427,72 +198,68 @@ export default function GlossaryPage() {
       <section className="mx-auto max-w-3xl px-3 py-6 sm:px-6 sm:py-12">
         {/* Alphabet quick nav */}
         <nav className="mb-6 flex flex-wrap justify-center gap-0.5 border-b border-gray-100 pb-4 sm:mb-10 sm:justify-start sm:gap-1 sm:pb-6">
-          {Array.from(new Set(glossaryTerms.map((t) => t.term[0].toUpperCase())))
-            .sort()
-            .map((letter) => (
-              <a
-                key={letter}
-                href={`#letter-${letter}`}
-                className="flex h-8 w-8 items-center justify-center rounded-md text-base font-medium text-gray-400 transition-colors hover:bg-gray-100 hover:text-gray-900 sm:h-10 sm:w-10"
-              >
-                {letter}
-              </a>
-            ))}
+          {availableLetters.map((letter) => (
+            <a
+              key={letter}
+              href={`#letter-${letter}`}
+              className="flex h-8 w-8 items-center justify-center rounded-md text-base font-medium text-gray-400 transition-colors hover:bg-gray-100 hover:text-gray-900 sm:h-10 sm:w-10"
+            >
+              {letter}
+            </a>
+          ))}
         </nav>
 
         {/* Terms grouped by letter */}
         <div className="space-y-2">
-          {Array.from(new Set(glossaryTerms.map((t) => t.term[0].toUpperCase())))
-            .sort()
-            .map((letter) => (
-              <div key={letter} id={`letter-${letter}`}>
-                <div className="sticky top-0 z-10 -mx-2 mb-3 bg-white/95 px-2 py-2 backdrop-blur-sm">
-                  <span className="text-2xl font-bold text-gray-900">
-                    {letter}
-                  </span>
-                </div>
-                <div className="mb-8 space-y-6">
-                  {glossaryTerms
-                    .filter((t) => t.term[0].toUpperCase() === letter)
-                    .map((item) => {
-                      const cat = categoryConfig[item.category];
-                      return (
-                        <article
-                          key={item.term}
-                          id={item.term
-                            .toLowerCase()
-                            .replace(/[^a-z0-9]+/g, "-")}
-                          className="group rounded-xl border border-gray-100 bg-white px-3 py-3 transition-shadow hover:shadow-md sm:px-6 sm:py-5"
-                        >
-                          <div className="mb-2 flex flex-col gap-1.5 sm:flex-row sm:items-start sm:justify-between sm:gap-3">
-                            <div className="order-2 sm:order-1">
-                              <h2 className="text-base font-semibold text-gray-900 sm:text-xl">
-                                {item.term}
-                              </h2>
-                              {item.aka && (
-                                <p className="mt-0.5 text-base text-gray-500">
-                                  Also known as: {item.aka}
-                                </p>
-                              )}
-                            </div>
-                            {cat && (
-                              <span
-                                className="order-1 w-fit shrink-0 rounded-full px-2 py-0.5 text-base font-medium text-white sm:order-2 sm:mt-1 sm:px-2.5"
-                                style={{ backgroundColor: cat.color }}
-                              >
-                                {cat.label}
-                              </span>
+          {availableLetters.map((letter) => (
+            <div key={letter} id={`letter-${letter}`}>
+              <div className="sticky top-0 z-10 -mx-2 mb-3 bg-white/95 px-2 py-2 backdrop-blur-sm">
+                <span className="text-2xl font-bold text-gray-900">
+                  {letter}
+                </span>
+              </div>
+              <div className="mb-8 space-y-6">
+                {glossaryTerms
+                  .filter((t) => t.term[0].toUpperCase() === letter)
+                  .map((item) => {
+                    const cat = categoryConfig[item.category];
+                    return (
+                      <article
+                        key={item.term}
+                        id={item.term
+                          .toLowerCase()
+                          .replace(/[^a-z0-9]+/g, "-")}
+                        className="group rounded-xl border border-gray-100 bg-white px-3 py-3 transition-shadow hover:shadow-md sm:px-6 sm:py-5"
+                      >
+                        <div className="mb-2 flex flex-col gap-1.5 sm:flex-row sm:items-start sm:justify-between sm:gap-3">
+                          <div className="order-2 sm:order-1">
+                            <h2 className="text-base font-semibold text-gray-900 sm:text-xl">
+                              {item.term}
+                            </h2>
+                            {item.aka && (
+                              <p className="mt-0.5 text-base text-gray-500">
+                                Also known as: {item.aka}
+                              </p>
                             )}
                           </div>
-                          <p className="text-base leading-relaxed text-gray-600">
-                            <LinkedDefinition text={item.definition} currentTerm={item.term} />
-                          </p>
-                        </article>
-                      );
-                    })}
-                </div>
+                          {cat && (
+                            <span
+                              className="order-1 w-fit shrink-0 rounded-full px-2 py-0.5 text-base font-medium text-white sm:order-2 sm:mt-1 sm:px-2.5"
+                              style={{ backgroundColor: cat.color }}
+                            >
+                              {cat.label}
+                            </span>
+                          )}
+                        </div>
+                        <p className="text-base leading-relaxed text-gray-600">
+                          <LinkedDefinition text={item.definition} currentTerm={item.term} />
+                        </p>
+                      </article>
+                    );
+                  })}
               </div>
-            ))}
+            </div>
+          ))}
         </div>
       </section>
 
