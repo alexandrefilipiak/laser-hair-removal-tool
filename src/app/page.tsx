@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#FAF9F7]">
       {/* Hero Section */}
-      <section className="relative overflow-hidden px-4 pb-12 pt-24 sm:px-6 sm:pb-16 sm:pt-28 md:pb-20 md:pt-36">
+      <section className="relative overflow-hidden px-4 pb-12 pt-8 sm:px-6 sm:pb-16 sm:pt-10 md:pb-20">
         <div className="mx-auto max-w-4xl text-center">
           {/* Eyebrow */}
-          <p className="mb-4 mt-4 text-base font-medium uppercase tracking-[0.2em] text-[#5E8B7E] sm:mb-6 sm:mt-0">
+          <p className="mb-4 text-base font-medium uppercase tracking-[0.2em] text-[#5E8B7E] sm:mb-6">
             Independent Consumer Resource
           </p>
 
