@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#FAF9F7]">
       {/* Hero Section */}
-      <section className="relative overflow-hidden px-4 pb-12 pt-8 sm:px-6 sm:pb-16 sm:pt-10 md:pb-20">
+      <section className="relative overflow-hidden px-4 pb-6 pt-8 sm:px-6 sm:pb-8 sm:pt-10 md:pb-10">
         <div className="mx-auto max-w-4xl text-center">
           {/* Eyebrow */}
           <p className="mb-4 text-base font-medium uppercase tracking-[0.2em] text-[#5E8B7E] sm:mb-6">
@@ -25,7 +25,7 @@ export default function Home() {
           </h1>
 
           {/* Subtitle */}
-          <p className="mx-auto mb-8 max-w-2xl text-base leading-relaxed text-[#5A5550] sm:mb-12 sm:text-lg md:text-xl">
+          <p className="mx-auto mb-4 max-w-2xl text-base leading-relaxed text-[#5A5550] sm:mb-6 sm:text-lg md:text-xl">
             Free tools to help you verify clinic equipment, understand technical
             terms, and know what questions to ask before your treatment.
           </p>

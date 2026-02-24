@@ -2,12 +2,12 @@
  * Classification badge component
  *
  * Displays one of 6 classification badges based on equipment type:
- * - Real Laser (sage green) - verified, established, purpose-built
- * - Real Laser — Multi-Purpose (soft teal) - premium brand, not hair-removal specific
- * - Real Laser — Verify the Brand (amber) - real laser tech, quality depends on machine
- * - Real Laser — Home Device (muted amber) - real laser but consumer-grade
- * - Ask Your Clinic (muted rose) - could be laser or IPL
- * - Not a Laser (soft coral) - IPL or non-laser technology
+ * - Clinical Laser (sage green) - verified, established, purpose-built laser
+ * - Clinical IPL (blue) - premium IPL devices (AFT, BBL, OPT)
+ * - Clinical Hybrid (soft teal) - premium brand, multi-purpose platform
+ * - Home Laser (amber) - consumer-grade laser device
+ * - Ask Your Clinic (muted rose) - need more information
+ * - Limited Results (soft coral) - E-light, DPL, generic IPL
  */
 
 import type { BadgeType } from '@/lib/equipment';
@@ -21,22 +21,22 @@ interface ClassificationBadgeProps {
 
 /** Color configurations for each badge type */
 const colorConfig: Record<BadgeType, { backgroundColor: string; color: string; borderColor: string }> = {
-  'real-laser': {
+  'clinical-laser': {
     backgroundColor: 'rgba(94, 139, 126, 0.12)',
     color: '#5E8B7E',
     borderColor: 'rgba(94, 139, 126, 0.25)',
   },
-  'multi-purpose': {
+  'clinical-ipl': {
+    backgroundColor: 'rgba(74, 124, 176, 0.12)',
+    color: '#4A7CB0',
+    borderColor: 'rgba(74, 124, 176, 0.25)',
+  },
+  'clinical-hybrid': {
     backgroundColor: 'rgba(74, 158, 148, 0.12)',
     color: '#4A9E94',
     borderColor: 'rgba(74, 158, 148, 0.25)',
   },
-  'verify-brand': {
-    backgroundColor: 'rgba(184, 150, 78, 0.12)',
-    color: '#B8964E',
-    borderColor: 'rgba(184, 150, 78, 0.25)',
-  },
-  'home-device': {
+  'home-laser': {
     backgroundColor: 'rgba(196, 145, 62, 0.12)',
     color: '#C4913E',
     borderColor: 'rgba(196, 145, 62, 0.25)',
@@ -46,7 +46,7 @@ const colorConfig: Record<BadgeType, { backgroundColor: string; color: string; b
     color: '#B07A7A',
     borderColor: 'rgba(176, 122, 122, 0.25)',
   },
-  'not-laser': {
+  'limited-results': {
     backgroundColor: 'rgba(196, 107, 92, 0.12)',
     color: '#C46B5C',
     borderColor: 'rgba(196, 107, 92, 0.25)',
@@ -54,17 +54,17 @@ const colorConfig: Record<BadgeType, { backgroundColor: string; color: string; b
 };
 
 /** Badge labels and icons for each type */
-const badgeContent: Record<BadgeType, { label: string; icon: 'check' | 'warning' | 'question' | 'x' }> = {
-  'real-laser': { label: 'Real Laser', icon: 'check' },
-  'multi-purpose': { label: 'Real Laser · Multi-Purpose', icon: 'check' },
-  'verify-brand': { label: 'Real Laser · Verify the Brand', icon: 'check' },
-  'home-device': { label: 'Real Laser · Home Device', icon: 'check' },
+const badgeContent: Record<BadgeType, { label: string; icon: 'check' | 'tilde' | 'plus' | 'warning' | 'question' | 'x' }> = {
+  'clinical-laser': { label: 'Clinical Laser', icon: 'check' },
+  'clinical-ipl': { label: 'Clinical IPL', icon: 'tilde' },
+  'clinical-hybrid': { label: 'Clinical Hybrid', icon: 'plus' },
+  'home-laser': { label: 'Home Laser', icon: 'warning' },
   'ask-clinic': { label: 'Ask Your Clinic', icon: 'question' },
-  'not-laser': { label: 'Not a Laser', icon: 'x' },
+  'limited-results': { label: 'Limited Results', icon: 'x' },
 };
 
 /** SVG icons for each badge type */
-function BadgeIcon({ type, className }: { type: 'check' | 'warning' | 'question' | 'x'; className: string }) {
+function BadgeIcon({ type, className }: { type: 'check' | 'tilde' | 'plus' | 'warning' | 'question' | 'x'; className: string }) {
   switch (type) {
     case 'check':
       return (
@@ -72,6 +72,22 @@ function BadgeIcon({ type, className }: { type: 'check' | 'warning' | 'question'
           <path
             fillRule="evenodd"
             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+            clipRule="evenodd"
+          />
+        </svg>
+      );
+    case 'tilde':
+      return (
+        <svg className={className} fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+          <path d="M4 10c0-1.5 1.5-3 3.5-3 1.5 0 2.5.75 3.5 1.5s2 1.5 3.5 1.5c2 0 3.5-1.5 3.5-3v1c0 1.5-1.5 3-3.5 3-1.5 0-2.5-.75-3.5-1.5S9 8 7.5 8C5.5 8 4 9.5 4 11v-1z" />
+        </svg>
+      );
+    case 'plus':
+      return (
+        <svg className={className} fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+          <path
+            fillRule="evenodd"
+            d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
             clipRule="evenodd"
           />
         </svg>

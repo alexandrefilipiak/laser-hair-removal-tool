@@ -25,23 +25,23 @@ export type BrandTier = 'premium-clinical' | 'standard-clinical' | 'consumer' | 
  * Classification for technology terms
  * Used to determine which badge to display
  */
-export type TermClassification = 'real-laser' | 'verify-brand' | 'ask-clinic' | 'not-laser';
+export type TermClassification = 'clinical-laser' | 'clinical-ipl' | 'ask-clinic' | 'limited-results';
 
 /**
  * Badge types for the 6-badge classification system
  */
 export type BadgeType =
-  | 'real-laser'           // ✅ Real Laser (sage green) - purpose-built, established brand
-  | 'multi-purpose'        // ✅ Real Laser — Multi-Purpose (soft teal) - premium brand, not hair-removal specific
-  | 'verify-brand'         // ✅ Real Laser — Verify the Brand (amber) - wavelength entries
-  | 'home-device'          // ✅ Real Laser — Home Device (muted amber) - consumer-grade
-  | 'ask-clinic'           // ❓ Ask Your Clinic (muted rose) - could be laser or IPL
-  | 'not-laser';           // ❌ Not a Laser (soft coral) - IPL or non-laser
+  | 'clinical-laser'       // ✅ Clinical Laser (sage green) - purpose-built, established brand
+  | 'clinical-ipl'         // ~ Clinical IPL (blue) - premium IPL devices (AFT, BBL, OPT)
+  | 'clinical-hybrid'      // ✚ Clinical Hybrid (soft teal) - premium brand, multi-purpose platform
+  | 'home-laser'           // ⚠️ Home Laser (amber) - consumer-grade laser
+  | 'ask-clinic'           // ❓ Ask Your Clinic (muted rose) - need more info
+  | 'limited-results';     // ❌ Limited Results (soft coral) - E-light, DPL, generic IPL
 
 /**
  * Core technology type - what the device fundamentally is
  */
-export type TechnologyType = 'laser' | 'ipl' | 'led' | 'rf';
+export type TechnologyType = 'laser' | 'ipl' | 'hybrid' | 'led' | 'rf';
 
 /**
  * Extended technology type for technology terms (includes delivery methods, wavelengths)
@@ -288,35 +288,49 @@ export function getRelatedByManufacturer(
  * Derive the badge type for a machine entry
  *
  * Logic:
- * - If not a laser technology → "not-laser"
- * - If consumer device → "home-device"
- * - If premium/standard brand but not purpose-built → "multi-purpose"
- * - If unknown brand → "multi-purpose" (can't fully verify)
- * - If purpose-built with premium/standard brand → "real-laser"
+ * - If hybrid (IPL + laser) with premium/standard brand → "clinical-hybrid"
+ * - If IPL with premium/standard brand → "clinical-ipl"
+ * - If IPL/hybrid with consumer/unknown brand → "limited-results"
+ * - If laser with consumer brand → "home-laser"
+ * - If laser with premium/standard brand → "clinical-laser"
+ * - If laser with unknown brand → "ask-clinic"
  */
 export function getMachineBadgeType(machine: MachineEntry): BadgeType {
-  // Not a laser technology
+  // Hybrid machines (IPL + laser combined)
+  if (machine.technologyType === 'hybrid') {
+    if (machine.brandTier === 'premium-clinical' || machine.brandTier === 'standard-clinical') {
+      return 'clinical-hybrid';
+    }
+    return 'limited-results';
+  }
+
+  // IPL machines
+  if (machine.technologyType === 'ipl') {
+    // Premium/standard IPL devices (Sciton BBL, Alma AFT, etc.)
+    if (machine.brandTier === 'premium-clinical' || machine.brandTier === 'standard-clinical') {
+      return 'clinical-ipl';
+    }
+    // Consumer or unknown IPL → limited results
+    return 'limited-results';
+  }
+
+  // Non-laser (RF, LED, etc.) → limited results
   if (machine.technologyType !== 'laser') {
-    return 'not-laser';
+    return 'limited-results';
   }
 
   // Consumer-grade laser devices (Tria, etc.)
   if (machine.brandTier === 'consumer') {
-    return 'home-device';
+    return 'home-laser';
   }
 
-  // Premium/standard brands
+  // Premium/standard laser brands → clinical laser (purpose-built or multi-purpose)
   if (machine.brandTier === 'premium-clinical' || machine.brandTier === 'standard-clinical') {
-    // Purpose-built for hair removal = full endorsement
-    if (machine.purposeBuilt) {
-      return 'real-laser';
-    }
-    // Multi-purpose platform (Nordlys, Harmony XL Pro, etc.)
-    return 'multi-purpose';
+    return 'clinical-laser';
   }
 
-  // Unknown brands - treat as multi-purpose (can't fully verify quality)
-  return 'multi-purpose';
+  // Unknown laser brands - ask clinic for verification
+  return 'ask-clinic';
 }
 
 /**

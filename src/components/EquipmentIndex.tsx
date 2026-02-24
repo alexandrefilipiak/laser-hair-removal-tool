@@ -34,17 +34,16 @@ function sortEquipment(equipment: EquipmentEntry[]): EquipmentEntry[] {
   });
 }
 
-type FilterType = 'all' | 'gold-standard' | 'established' | 'multi-purpose' | 'verify-brand' | 'ask-clinic' | 'not-laser' | 'home-devices';
+type FilterType = 'all' | 'clinical-laser' | 'clinical-ipl' | 'clinical-hybrid' | 'home-laser' | 'ask-clinic' | 'limited-results';
 
 const filters: { key: FilterType; label: string }[] = [
   { key: 'all', label: 'All' },
-  { key: 'gold-standard', label: 'Gold Standard' },
-  { key: 'established', label: 'Established' },
-  { key: 'multi-purpose', label: 'Multi-Purpose' },
-  { key: 'verify-brand', label: 'Verify the Brand' },
+  { key: 'clinical-laser', label: 'Clinical Laser' },
+  { key: 'clinical-ipl', label: 'Clinical IPL' },
+  { key: 'clinical-hybrid', label: 'Clinical Hybrid' },
+  { key: 'home-laser', label: 'Home Laser' },
   { key: 'ask-clinic', label: 'Ask Your Clinic' },
-  { key: 'not-laser', label: 'Not a Laser' },
-  { key: 'home-devices', label: 'Home Devices' },
+  { key: 'limited-results', label: 'Limited Results' },
 ];
 
 interface EquipmentIndexProps {
@@ -60,35 +59,8 @@ export function EquipmentIndex({ equipment }: EquipmentIndexProps) {
   const filteredEquipment = sortedEquipment.filter((item) => {
     if (activeFilter === 'all') return true;
 
-    if (activeFilter === 'gold-standard') {
-      return isMachine(item) && item.brandTier === 'premium-clinical';
-    }
-
-    if (activeFilter === 'established') {
-      return isMachine(item) && item.brandTier === 'standard-clinical';
-    }
-
-    if (activeFilter === 'multi-purpose') {
-      return getBadgeType(item) === 'multi-purpose';
-    }
-
-    if (activeFilter === 'verify-brand') {
-      return getBadgeType(item) === 'verify-brand';
-    }
-
-    if (activeFilter === 'ask-clinic') {
-      return getBadgeType(item) === 'ask-clinic';
-    }
-
-    if (activeFilter === 'not-laser') {
-      return getBadgeType(item) === 'not-laser';
-    }
-
-    if (activeFilter === 'home-devices') {
-      return getBadgeType(item) === 'home-device';
-    }
-
-    return true;
+    // All other filters match badge type directly
+    return getBadgeType(item) === activeFilter;
   });
 
   return (

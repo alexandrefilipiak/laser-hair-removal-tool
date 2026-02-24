@@ -13,6 +13,12 @@
       "category": "biology"
     },
     {
+      "term": "Axilla",
+      "aka": "underarm",
+      "definition": "The medical term for the armpit area. One of the most common treatment areas for laser hair removal due to the presence of dense terminal hair. The axilla typically responds well to laser treatment, with most patients seeing significant reduction after 6–8 sessions. The relatively small surface area makes it a quick treatment zone.",
+      "category": "biology"
+    },
+    {
       "term": "BBL",
       "aka": "BroadBand Light",
       "definition": "Sciton's branded clinical IPL technology. Used in devices like the BBL HERO and BBL HEROic. Not a laser, but a clinical-grade light-based system capable of effective hair removal. The 'Forever Bare BBL' mode uses multiple low-fluence pulses at high repetition rates.",
@@ -116,6 +122,11 @@
       "category": "side-effects"
     },
     {
+      "term": "Intermediate Hair",
+      "definition": "Hair that is transitioning between vellus and terminal hair. Intermediate hairs have some pigmentation and are thicker than vellus but not as coarse as terminal hair. These hairs may respond to laser treatment but often require more sessions than terminal hair due to lower melanin content. Hormonal changes (puberty, pregnancy, menopause) or medical conditions can cause vellus hairs to transition through the intermediate stage to become terminal hairs.",
+      "category": "biology"
+    },
+    {
       "term": "IPL",
       "aka": "Intense Pulsed Light",
       "definition": "A broad-spectrum light technology (typically 400–1200nm) that is not a laser. Clinical IPL systems from established manufacturers (like Forever Bare BBL, Lumenis M22) can be effective for hair removal, though comparative studies generally show lower reduction rates than diode lasers. The term 'IPL' alone doesn't indicate quality: there's a massive gap between a premium Forever Bare BBL and an unbranded device.",
@@ -190,10 +201,21 @@
       "category": "biology"
     },
     {
+      "term": "Terminal Hair",
+      "definition": "Thick, coarse, pigmented hair found on the scalp, eyebrows, underarms, pubic area, and (in adults) legs and arms. Terminal hairs have a well-developed root and contain significant melanin, making them ideal targets for laser hair removal. The high melanin content allows the laser to effectively heat and destroy the follicle. Terminal hair is what most people seek to remove with laser treatment.",
+      "category": "biology"
+    },
+    {
       "term": "Thermal Relaxation Time",
       "aka": "TRT",
-      "definition": "The time it takes for a heated target to cool to half its peak temperature. For hair follicles, TRT is approximately 10–100 milliseconds depending on diameter. Effective treatment requires pulse duration matched to or shorter than the target's TRT: long enough to heat the follicle, short enough that heat doesn't spread to surrounding skin.",
+      "definition": "The time it takes for a heated target to cool to half its peak temperature. For hair follicles, TRT is approximately 10–100 milliseconds depending on diameter. Traditional theory states that pulse duration should match the target's TRT. However, this concept has been challenged: a 2013 paper by Murphy & Torstensson in Lasers in Medical Science argues that the important parameter is the time required to induce irreversible protein denaturation, which is determined by tissue structure rather than physical dimensions. Despite this debate, TRT remains widely referenced in clinical settings.",
       "category": "science"
+    },
+    {
+      "term": "Vellus Hair",
+      "aka": "peach fuzz",
+      "definition": "Fine, short, lightly pigmented hair that covers most of the body. Vellus hairs lack significant melanin, which means laser treatment is generally ineffective on them. The laser has no chromophore to target. Attempting to treat vellus hair with laser can sometimes stimulate the follicles to produce thicker, darker hair (paradoxical hypertrichosis). For vellus hair removal, electrolysis is typically recommended instead of laser.",
+      "category": "biology"
     }
   ],
   "equipmentLinks": {
