@@ -351,6 +351,7 @@ export default function IsItARealLaserPage() {
                   { name: 'BBL', slug: 'bbl' },
                   { name: 'AFT', slug: 'aft' },
                   { name: 'OPT', slug: 'opt' },
+                  { name: 'VPL', slug: 'vpl' },
                 ].map((tech) => (
                   <Link
                     key={tech.slug}
