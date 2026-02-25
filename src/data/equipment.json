@@ -1194,6 +1194,41 @@
   },
   {
   "type": "machine",
+  "slug": "ultraplus-vpl",
+  "name": "UltraPlus VPL",
+  "manufacturer": "Energist",
+  "technologyType": "ipl",
+  "wavelengths": [],
+  "brandTier": "standard-clinical",
+  "skinTypes": {
+    "fitzpatrickRange": "I-V",
+    "displayText": "Light to medium-dark skin tones"
+  },
+  "purposeBuilt": false,
+  "coolingMethod": "contact cooling",
+  "notes": "Energist's multi-application IPL workstation using their Variable Pulsed Light (VPL) technology. This is NOT a laser. It is an IPL system. Hair removal handpiece operates at 610–950nm broad spectrum. Often mislabeled by clinicians as a \"VPL diode laser.\"",
+  "aliases": [
+    "ultraplus vpl",
+    "energist ultraplus",
+    "energist ultra vpl",
+    "energist vpl ultraplus",
+    "ultraplus",
+    "ultra vpl"
+  ],
+  "family": "energist-vpl",
+  "deliveryMethod": "vpl",
+  "richContent": {
+    "overview": "Energist's flagship IPL workstation using their patented Variable Pulsed Light (VPL) technology, manufactured in Swansea, UK. This is NOT a laser. It is an Intense Pulsed Light system with multiple handpieces for hair removal, skin rejuvenation, vascular treatments, and acne.",
+    "howItWorks": "Uses a single flashlamp to deliver broad-spectrum light (405–950nm) through treatment-specific handpieces. The hair removal handpiece filters to 610–950nm. VPL's distinguishing feature is delivering each flash as a sequence of rapid micro-pulses rather than a single burst, which Energist claims provides more controlled heating. Despite this, it is fundamentally IPL technology, not a focused single-wavelength laser.",
+    "typicalUses": [
+      "Multi-purpose clinics wanting one device for hair removal, skin rejuvenation, vascular lesions, and acne",
+      "Popular in UK and Australian clinics"
+    ],
+    "keyFeatures": "840 pulse variations with fluence up to 108J/cm². Clinicians sometimes call this a \"VPL diode laser\". This is incorrect. The word \"diode\" may refer to internal components, not a diode laser wavelength. Energist is a legitimate manufacturer with over 3,500 VPL units worldwide, but this is still IPL, not laser. Ask your clinic to confirm whether they use this or an actual laser."
+  }
+  },
+  {
+  "type": "machine",
   "slug": "sciton-omni",
   "name": "OMNI",
   "manufacturer": "Sciton (co-engineered with Asclepion)",
@@ -2374,5 +2409,23 @@
     "broad spectrum light",
     "flashlamp"
   ] 
+  },
+  {
+  "type": "technology-term",
+  "slug": "vpl",
+  "name": "VPL (Variable Pulsed Light)",
+  "technologyType": "ipl",
+  "isRealLaser": false,
+  "classification": "clinical-ipl",
+  "whatItIs": "VPL is Energist Medical Group's branded IPL technology, using multiple rapid micro-pulses per flash rather than a single burst of light. Manufactured in Swansea, UK since 1999 with over 3,500 units deployed worldwide.",
+  "whyItMatters": "VPL is NOT a laser. It is a form of IPL. Clinicians sometimes call it a \"VPL diode laser\" but this is misleading. The word \"diode\" refers to the light source component, not a diode laser wavelength. Energist themselves describe VPL as built on Intense Pulsed Light technology. Unlike budget IPL imports, Energist is a legitimate manufacturer. But it is still IPL, not laser.",
+  "askYourClinic": null,
+  "aliases": [
+    "variable pulsed light",
+    "energist vpl",
+    "ultraplus vpl",
+    "vpl diode",
+    "vpl diode laser"
+  ]
   }
 ]
