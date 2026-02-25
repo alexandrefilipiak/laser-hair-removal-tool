@@ -2259,7 +2259,7 @@
     "isRealLaser": false,
     "classification": "clinical-ipl",
     "whatItIs": "OPT is a pulse delivery method used in IPL machines that provides consistent energy throughout the pulse.",
-    "whyItMatters": "OPT is NOT a laser - it is a feature of some IPL machines. While OPT may improve the consistency of IPL treatments compared to traditional IPL, it is still fundamentally an Intense Pulsed Light system. The term is often used in marketing to make IPL sound more advanced.",
+    "whyItMatters": "OPT is NOT a laser. It is a feature of some IPL machines. While OPT may improve the consistency of IPL treatments compared to traditional IPL, it is still fundamentally an Intense Pulsed Light system.",
     "askYourClinic": null,
     "aliases": [
       "optimal pulse technology",
@@ -2274,7 +2274,7 @@
     "isRealLaser": false,
     "classification": "limited-results",
     "whatItIs": "DPL is a marketing term for certain IPL devices, suggesting improved pulse control.",
-    "whyItMatters": "DPL is NOT a laser - it is another marketing name for IPL technology. Like OPT and E-Light, DPL is used to rebrand IPL devices with technical-sounding names. Regardless of the name, these are all Intense Pulsed Light systems, not true lasers.",
+    "whyItMatters": "DPL is NOT a laser. It is another marketing name for IPL technology. Like OPT and E-Light, DPL is used to rebrand IPL devices with technical-sounding names. Regardless of the name, these are all Intense Pulsed Light systems, not true lasers.",
     "askYourClinic": null,
     "aliases": [
       "dynamic pulse light",
