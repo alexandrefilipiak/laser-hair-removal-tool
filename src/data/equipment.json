@@ -451,27 +451,200 @@
   },
   {
     "type": "machine",
-    "slug": "soprano-ice-platinum",
-    "name": "Soprano ICE Platinum",
+    "slug": "soprano",
+    "name": "Soprano",
     "manufacturer": "Alma",
     "technologyType": "laser",
     "wavelengths": ["810nm"],
     "brandTier": "standard-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
-      "displayText": "All skin tones (when used with SHR delivery method)"
+      "displayText": "All skin tones (810nm diode with SHR technology)"
     },
     "purposeBuilt": true,
     "coolingMethod": "contact cooling",
-    "notes": "810nm diode with SHR (Super Hair Removal) delivery method. Gradual heating approach for reduced discomfort.",
-    "aliases": ["soprano ice", "soprano platinum", "alma soprano ice platinum", "soprano"],
+    "notes": "The original Soprano from 2005. First laser to use Alma's SHR (Super Hair Removal) In-Motion technology. Single wavelength 810nm diode. The machine that started the Soprano family and introduced the concept of pain-free laser hair removal through gradual heating. Largely retired from active clinical use but some units still in service.",
+    "aliases": [
+      "soprano",
+      "alma soprano",
+      "soprano original",
+      "alma soprano laser"
+    ],
     "family": "alma-soprano",
-    "deliveryMethod": "shr",
+    "deliveryMethod": "SHR",
     "richContent": {
-      "overview": "Alma's flagship hair removal laser using SHR (Super Hair Removal), a gradual heating approach that makes treatments virtually painless.",
-      "howItWorks": "Instead of high-energy single pulses, SHR delivers rapid low-fluence pulses that gradually heat the follicle. ICE cooling keeps the skin comfortable throughout. This allows safe treatment across all skin types, including tanned skin.",
-      "typicalUses": ["Patients who found traditional laser too painful", "All skin types including darker tones", "All body areas"],
-      "keyFeatures": "The SHR continuous motion technique means no overlapping pulses or missed spots. Pain levels significantly lower than traditional pulsed delivery."
+      "overview": "The original Alma Soprano, launched in 2005. The first laser hair removal system to use SHR (Super Hair Removal) technology with In-Motion delivery. This machine introduced the concept of virtually painless laser hair removal through gradual heating at high repetition rates rather than single high-energy pulses.",
+      "howItWorks": "Single 810nm diode wavelength with SHR delivery. The handpiece glides continuously across the skin delivering low-fluence pulses at high repetition rates. Contact cooling on the tip protects the epidermis while the dermis is gradually heated to damage the hair follicle.",
+      "typicalUses": [
+        "Largely retired from active service",
+        "Some older clinics may still have units in operation"
+      ],
+      "keyFeatures": "Historical significance as the machine that launched Alma's Soprano family and popularized SHR technology worldwide. Single wavelength only (810nm), no Alexandrite or Nd:YAG option. If your clinic uses the original Soprano, it is a legitimate Alma laser but represents technology from 2005. Ask whether they have upgraded to a newer Soprano model."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "soprano-xl",
+    "name": "Soprano XL",
+    "manufacturer": "Alma",
+    "technologyType": "laser",
+    "wavelengths": ["810nm"],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (810nm diode with SHR technology)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact cooling",
+    "notes": "Second generation Soprano, circa 2008. Upgraded power output and refined In-Motion SHR technology over the original Soprano. Still single wavelength 810nm diode. Many units remain in active clinical service.",
+    "aliases": [
+      "soprano xl",
+      "alma soprano xl",
+      "sopranoxl"
+    ],
+    "family": "alma-soprano",
+    "deliveryMethod": "SHR",
+    "richContent": {
+      "overview": "Second generation of the Soprano family, launched around 2008. Builds on the original Soprano with upgraded power output and refined SHR In-Motion technology. Still a single-wavelength 810nm diode system.",
+      "howItWorks": "Same SHR principle as the original Soprano: low-fluence pulses at high repetition rates with In-Motion delivery. The XL added improved power capabilities for faster treatment of larger body areas. Contact cooling protects the skin surface.",
+      "typicalUses": [
+        "Still found in many established clinics that purchased the system when it was current",
+        "Budget-conscious clinics purchasing refurbished units"
+      ],
+      "keyFeatures": "A legitimate Alma laser with proven clinical results. Single wavelength (810nm) limits versatility compared to newer multi-wavelength Soprano models. If your clinic uses a Soprano XL, the technology is real but over 15 years old. Worth asking whether they have considered upgrading to a multi-wavelength system for broader skin type coverage."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "soprano-xli",
+    "name": "Soprano XLi",
+    "manufacturer": "Alma",
+    "technologyType": "laser",
+    "wavelengths": ["810nm"],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (810nm diode with SHR technology)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact cooling",
+    "notes": "Third generation Soprano, circa 2010. Updated user interface and added optional NIR (Near Infrared) handpiece for skin tightening treatments. Still single wavelength 810nm for hair removal. Sometimes marketed interchangeably with Soprano ICE at clinics that upgraded the cooling system.",
+    "aliases": [
+      "soprano xli",
+      "alma soprano xli",
+      "sopranoxli",
+      "soprano xl i"
+    ],
+    "family": "alma-soprano",
+    "deliveryMethod": "SHR",
+    "richContent": {
+      "overview": "Third generation Soprano, launched around 2010. Updated interface and added an optional NIR (Near Infrared) handpiece for skin tightening, making it Alma's first multi-application Soprano platform. Still uses 810nm diode for hair removal.",
+      "howItWorks": "Same SHR In-Motion technology as the Soprano XL for hair removal. The NIR handpiece added a secondary application for deep dermal heating and skin tightening, giving clinics a two-treatment platform. Thermo-electric cooling (TEC) on the handpiece.",
+      "typicalUses": [
+        "Clinics offering both hair removal and skin tightening from a single platform",
+        "Many units still in active service, sometimes with upgraded cooling components"
+      ],
+      "keyFeatures": "Bridged the gap between the single-purpose XL and the multi-wavelength ICE. The NIR handpiece was Alma's first step toward making Soprano a multi-application platform. For hair removal specifically, it remains a single-wavelength 810nm system. Some clinics that upgraded the cooling on their XLi market it as Soprano ICE, which can cause confusion. Ask the clinic which specific model and handpieces they have."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "soprano-ice",
+    "name": "Soprano ICE",
+    "manufacturer": "Alma",
+    "technologyType": "laser",
+    "wavelengths": ["755nm", "810nm", "1064nm"],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (three wavelengths via separate handpieces)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "ICE contact cooling",
+    "notes": "Launched 2015. First Soprano with three wavelengths (755nm Alexandrite, 810nm Diode, 1064nm Nd:YAG) but via separate handpieces, not combined. Introduced ICE sapphire contact cooling. Still widely used. Important distinction from the ICE Platinum: the ICE uses separate applicators per wavelength, the ICE Platinum combines all three in one Trio handpiece.",
+    "aliases": [
+      "soprano ice",
+      "alma soprano ice",
+      "soprano i.c.e.",
+      "alma ice"
+    ],
+    "family": "alma-soprano",
+    "deliveryMethod": "SHR",
+    "richContent": {
+      "overview": "Launched in 2015, the Soprano ICE was the first Soprano to offer three laser wavelengths: 755nm Alexandrite, 810nm Diode, and 1064nm Nd:YAG. It also introduced Alma's ICE sapphire contact cooling technology, making treatments virtually painless. Alma still lists it as a current product and it remains widely deployed globally.",
+      "howItWorks": "Three separate handpieces (Alex 755nm, Speed 810nm, YAG 1064nm), each with a 1cm² spot size. The practitioner selects the appropriate handpiece based on the patient's skin type: 755nm for lighter skin, 810nm for medium, 1064nm for darker skin. ICE cooling uses a chilled sapphire tip that maintains constant contact with the skin, preventing epidermal damage while allowing effective energy delivery to the follicle.",
+      "typicalUses": [
+        "Clinics treating diverse skin types who need wavelength flexibility",
+        "Practices that upgraded from the Soprano XL or XLi to gain multi-wavelength capability"
+      ],
+      "keyFeatures": "Do not confuse the Soprano ICE with the Soprano ICE Platinum. The ICE has three separate handpieces (practitioner switches between them). The ICE Platinum has the Trio handpiece that fires all three wavelengths simultaneously through one applicator. Both are legitimate Alma lasers, but the treatment experience and efficiency differ. The ICE's 1cm² spot size per handpiece is smaller than the Platinum's 2cm² Trio or the Titanium's 4cm² Trio MAX, meaning treatments take longer on large body areas."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "soprano-ice-platinum",
+    "name": "Soprano ICE Platinum",
+    "manufacturer": "Alma",
+    "technologyType": "laser",
+    "wavelengths": ["755nm", "810nm", "1064nm"],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (tri-wavelength Trio handpiece)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "ICE contact cooling",
+    "notes": "Launched around 2017. First Soprano to combine all three wavelengths (755nm Alexandrite, 810nm Diode, 1064nm Nd:YAG) in a single Trio handpiece firing simultaneously. This was a major leap from the Soprano ICE which required separate handpieces per wavelength. 2cm² Trio spot size. SHR In-Motion delivery with ICE sapphire contact cooling.",
+    "aliases": [
+      "soprano ice platinum",
+      "alma soprano ice platinum",
+      "soprano platinum",
+      "soprano ice plat",
+      "ice platinum"
+    ],
+    "family": "alma-soprano",
+    "deliveryMethod": "SHR",
+    "richContent": {
+      "overview": "Launched around 2017, the Soprano ICE Platinum was the first laser to combine three wavelengths (755nm Alexandrite, 810nm Diode, 1064nm Nd:YAG) in a single Trio handpiece that fires all three simultaneously. This was a breakthrough in the Soprano family, eliminating the need to switch between separate applicators as required on the Soprano ICE.",
+      "howItWorks": "The Trio handpiece delivers all three wavelengths simultaneously, targeting different tissue depths and anatomical structures within the hair follicle in a single pass. The 755nm targets the bulge of the follicle (effective for light/fine hair), the 810nm targets the bulge and bulb (deep penetration, general purpose), and the 1064nm targets the bulb and papilla (safest for dark skin). SHR In-Motion delivery uses low-fluence rapid pulses with continuous handpiece movement. ICE sapphire cooling keeps the skin comfortable throughout.",
+      "typicalUses": [
+        "Clinics treating diverse skin types who want one handpiece for all patients",
+        "Practices upgrading from the Soprano ICE to eliminate handpiece switching"
+      ],
+      "keyFeatures": "The key innovation over the Soprano ICE is the Trio handpiece: all three wavelengths in one applicator with a 2cm² spot size, versus three separate 1cm² handpieces on the ICE. This means faster treatments, no switching between applicators, and simultaneous multi-depth targeting. However, the Trio spot size (2cm²) is smaller than the Titanium's Trio MAX (4cm²), so treatment times on large areas like legs and back are roughly double what the Titanium achieves. If your clinic uses the ICE Platinum, they have invested in a premium Alma system with proven tri-wavelength technology. It sits just below the Titanium and Titanium SE in Alma's current lineup."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "soprano-lite",
+    "name": "Soprano Lite",
+    "manufacturer": "Alma",
+    "technologyType": "laser",
+    "wavelengths": ["810nm"],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (810nm diode with SHR technology)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact cooling",
+    "notes": "Budget version of the Soprano family, launched around 2012. Single wavelength 810nm diode with SHR and In-Motion delivery. Positioned below the Soprano XL/XLi as a more affordable entry point for clinics. Installed in over 3,500 clinics worldwide. Some units have been upgraded with additional handpieces (755nm Alex, 1064nm Nd:YAG).",
+    "aliases": [
+      "soprano lite",
+      "alma soprano lite",
+      "soprano light",
+      "alma soprano light"
+    ],
+    "family": "alma-soprano",
+    "deliveryMethod": "SHR",
+    "richContent": {
+      "overview": "The budget entry point in Alma's Soprano family, launched around 2012. A stripped-down single-wavelength 810nm diode laser with Alma's SHR and In-Motion technology. Positioned below the Soprano XL and XLi as a more affordable option for clinics entering the laser hair removal market. One of the most widely deployed laser hair removal systems globally.",
+      "howItWorks": "Same SHR principle as all Soprano models: low-fluence pulses at high repetition rates with In-Motion delivery. The handpiece glides continuously across the skin, gradually heating the dermis to damage hair follicles. Contact cooling on the sapphire tip protects the epidermis. Eight-inch color touchscreen with preset parameters simplifies operation.",
+      "typicalUses": [
+        "Budget-conscious clinics wanting a legitimate Alma laser at a lower price point",
+        "High-volume clinics treating primarily Fitzpatrick II-IV where 810nm alone is effective"
+      ],
+      "keyFeatures": "A legitimate Alma laser, but the most basic in the family. No consumables. For context within the Soprano lineup: the Lite and XL/XLi are single-wavelength 810nm only. The Soprano ICE (2015) added three wavelengths via separate handpieces. The ICE Platinum (2017) combined all three in one Trio handpiece. The Titanium (2019) and Titanium SE (2024) added larger spot sizes, ICE Plus cooling, and Smart Clinic analytics. If your clinic uses a Soprano Lite, the technology is real but limited to one wavelength. This means the practitioner cannot switch to 755nm for lighter skin or 1064nm for darker skin. Ask whether the clinic has added additional handpieces to expand the machine's capability."
     }
   },
   {
@@ -481,22 +654,64 @@
     "manufacturer": "Alma",
     "technologyType": "laser",
     "wavelengths": ["755nm", "810nm", "1064nm"],
-    "brandTier": "standard-clinical",
+    "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
-      "displayText": "All skin tones (tri-wavelength system)"
+      "displayText": "All skin tones (tri-wavelength Trio handpiece)"
     },
     "purposeBuilt": true,
-    "coolingMethod": "contact cooling",
-    "notes": "Tri-wavelength laser combining Alexandrite, diode, and Nd:YAG. SHR delivery method.",
-    "aliases": ["alma soprano titanium"],
+    "coolingMethod": "ICE Plus contact cooling",
+    "notes": "Launched 2019. Fifth generation Soprano. Tri-wavelength (755nm + 810nm + 1064nm) with Trio handpiece firing all three simultaneously. ICE Plus cooling (upgrade from ICE on the Platinum). Dual connector ports for two handpieces at once. 15-inch Android touchscreen. Smart Clinic IoT analytics. This is the most counterfeited machine in the Soprano family (see Alma's own warning about fakes).",
+    "aliases": [
+      "soprano titanium",
+      "alma soprano titanium",
+      "alma titanium",
+      "soprano titan"
+    ],
     "family": "alma-soprano",
-    "deliveryMethod": "shr",
+    "deliveryMethod": "SHR",
     "richContent": {
-      "overview": "Alma's most advanced platform combining three wavelengths (755nm + 810nm + 1064nm) with SHR delivery in a single handpiece.",
-      "howItWorks": "Delivers all three wavelengths simultaneously: 755nm targets superficial hair, 810nm reaches mid-depth, 1064nm penetrates deepest. Combined with SHR gradual heating and ICE cooling.",
-      "typicalUses": ["All skin types and hair types (excluding white/gray)", "Patients with mixed hair characteristics or varying skin tones across body areas"],
-      "keyFeatures": "Simultaneous tri-wavelength delivery is unique to this platform. Treats a wider range of hair types in fewer sessions than single-wavelength systems."
+      "overview": "Launched in 2019 as the fifth generation Soprano. Combines three wavelengths (755nm Alexandrite, 810nm Diode, 1064nm Nd:YAG) in the Trio handpiece with ICE Plus cooling, dual connector ports, and Smart Clinic cloud-based analytics. Won the Aesthetics Journal 'Energy Device of the Year' nomination within months of launch.",
+      "howItWorks": "Same tri-wavelength simultaneous delivery as the ICE Platinum, but with upgraded ICE Plus cooling that reaches lower temperatures for greater comfort at higher fluence levels. The Trio handpiece has a 2cm² spot size. SHR In-Motion delivery glides across the skin delivering rapid low-fluence pulses. Dual connector ports allow two different handpieces to be connected simultaneously, eliminating swap time between applicators. Smart Clinic IoT platform provides real-time data on system performance and treatment analytics.",
+      "typicalUses": [
+        "Premium clinics wanting Alma's advanced platform with IoT analytics",
+        "Practices treating diverse skin types at high volume"
+      ],
+      "keyFeatures": "Upgrades over the ICE Platinum: ICE Plus cooling (colder than ICE), dual connector ports (two handpieces connected at once), 15-inch Android touchscreen, Smart Clinic cloud analytics. Same 2cm² Trio spot size as the Platinum. For even faster treatments, the Titanium Special Edition (2024) added the 4cm² Trio MAX applicator. Important: this is the most counterfeited Soprano model. Chinese manufacturers produce visually identical clones for under $3,000. Alma has published a warning about fakes. If your clinic uses a Soprano Titanium, it should have Alma branding, and the clinic should be able to confirm they purchased from an authorized Alma dealer."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "soprano-titanium-se",
+    "name": "Soprano Titanium Special Edition",
+    "manufacturer": "Alma",
+    "technologyType": "laser",
+    "wavelengths": ["755nm", "810nm", "1064nm"],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (tri-wavelength Trio MAX handpiece)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "ICE Plus contact cooling",
+    "notes": "Launched 2024. Sixth generation Soprano and current top of Alma's product line. The Trio MAX applicator doubles the spot size to 4cm² versus 2cm² on the standard Titanium. Independently verified as the fastest hair removal laser on the market (Sapio Research).",
+    "aliases": [
+      "soprano titanium special edition",
+      "soprano titanium se",
+      "alma soprano titanium special edition",
+      "soprano titanium 2024",
+      "soprano titanium trio max"
+    ],
+    "family": "alma-soprano",
+    "deliveryMethod": "SHR",
+    "richContent": {
+      "overview": "The sixth generation Soprano, launched in 2024. The main upgrade over the standard Titanium is the Trio MAX applicator, which doubles the spot size from 2cm² to 4cm². An independent study by Sapio Research found it to be the fastest laser hair removal treatment on the market when compared against leading global brands.",
+      "howItWorks": "The Trio MAX applicator fires all three wavelengths (755nm + 810nm + 1064nm) simultaneously through a 4cm² window, covering twice the skin area per pass compared to the standard Titanium's Trio handpiece. ICE Plus cooling reaches -4°C, allowing practitioners to use maximum fluence with minimal patient discomfort. Treatment speeds: full legs in 7 to 15 minutes, full back in 2 to 5 minutes, both arms in 2 to 5 minutes.",
+      "typicalUses": [
+        "High-volume clinics where treatment speed directly impacts revenue",
+        "Practices upgrading from the standard Titanium to cut session times in half on large body areas"
+      ],
+      "keyFeatures": "The only meaningful difference from the standard Soprano Titanium is the Trio MAX applicator and its 4cm² spot size. Everything else (wavelengths, SHR delivery, ICE Plus cooling, Smart Clinic analytics, dual connectors) carries over. If your clinic advertises Soprano Titanium, ask whether they have the standard Trio (2cm²) or the Trio MAX (4cm²). Both are premium Alma equipment. The SE is simply faster on large treatment areas."
     }
   },
   {
@@ -2170,6 +2385,40 @@
       ],
       "keyFeatures": "OPT technology. Modular design. ExpertFilters. One of the most clinically studied IPL platforms."
     }
+  },
+  {
+  "type": "machine",
+  "slug": "epilaze",
+  "name": "EpiLaze",
+  "manufacturer": "Rohrer Aesthetics",
+  "technologyType": "laser",
+  "wavelengths": ["755nm", "810nm", "1064nm"],
+  "brandTier": "standard-clinical",
+  "skinTypes": {
+    "fitzpatrickRange": "I-VI",
+    "displayText": "All skin tones (tri-wavelength system)"
+  },
+  "purposeBuilt": true,
+  "coolingMethod": "sapphire contact cooling",
+  "notes": "Rohrer Aesthetics' tri-wavelength hair removal system. US-manufactured (Paramus, NJ). Features proprietary Smooth Flow Technology (SFT) delivery mode for in-motion treatment. Note: some clinics use the name 'Epilaze' for unrelated generic machines — the real EpiLaze is manufactured by Rohrer Aesthetics only.",
+  "aliases": [
+    "epilaze",
+    "rohrer epilaze",
+    "rohrer aesthetics epilaze",
+    "epi laze",
+    "epilaze hair removal system"
+  ],
+  "family": null,
+  "deliveryMethod": "SFT",
+  "richContent": {
+    "overview": "Rohrer Aesthetics' purpose-built tri-wavelength hair removal laser. Combines 755nm Alexandrite, 810nm Diode, and 1064nm Nd:YAG in a single system. Manufactured in the US with FDA clearance for permanent hair reduction on all skin types.",
+    "howItWorks": "Three separate laser sources, each optimized for different skin types. The 755nm Alexandrite targets lighter skin (Fitzpatrick I-II), the 810nm Diode handles mid-range types (III-IV), and the 1064nm Nd:YAG safely treats darker skin (V-VI). Smooth Flow Technology (SFT) mode delivers up to 10 pulses per second for in-motion treatment of large areas. Sapphire contact cooling protects the skin before, during, and after each pulse.",
+    "typicalUses": [
+      "Clinics treating diverse skin types with a single device",
+      "Dermatology practices and med spas looking for a US-manufactured alternative to Alma Soprano Titanium or InMode Triton"
+    ],
+    "keyFeatures": "US-manufactured tri-wavelength system from a smaller but legitimate American company. SFT mode allows large area treatments (legs, back, chest) in under 20 minutes. No consumables or disposables. Important: some clinics abroad use the name 'Epilaze' for unrelated generic/white-label machines. The genuine EpiLaze is made exclusively by Rohrer Aesthetics."
+  }
   },
   {
     "type": "technology-term",
