@@ -12,7 +12,7 @@ const machineCount = equipment.filter(e => e.type === 'machine').length;
 export const metadata = {
   title: 'Is It a Real Hair Removal Laser? - Equipment Checker',
   description:
-    'Search and verify laser hair removal equipment. Find out if a device is a clinical-grade equipment.',
+    'Search and verify 93+ laser hair removal machines. Find out if a device is clinical-grade equipment.',
 };
 
 const popularSearches = [
