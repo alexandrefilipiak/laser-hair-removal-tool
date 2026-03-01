@@ -6,6 +6,7 @@
   "manufacturer": "Candela",
   "technologyType": "laser",
   "wavelengths": ["755nm", "1064nm"],
+  "power": { "max": "4,600 VA" },
   "brandTier": "premium-clinical",
   "skinTypes": {
     "fitzpatrickRange": "I-VI",
@@ -31,6 +32,7 @@
     "manufacturer": "Candela",
     "technologyType": "laser",
     "wavelengths": ["755nm", "1064nm"],
+    "power": { "max": "4,600 VA" },
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
@@ -56,6 +58,7 @@
     "manufacturer": "Candela",
     "technologyType": "laser",
     "wavelengths": ["755nm", "1064nm"],
+    "power": { "max": "4,600 VA" },
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
@@ -81,6 +84,7 @@
     "manufacturer": "Candela",
     "technologyType": "laser",
     "wavelengths": ["755nm"],
+    "power": { "max": "4,600 VA" },
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-IV",
@@ -106,6 +110,7 @@
     "manufacturer": "Candela",
     "technologyType": "laser",
     "wavelengths": ["755nm"],
+    "power": { "max": "4,600 VA" },
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-IV",
@@ -126,11 +131,49 @@
   },
   {
     "type": "machine",
+    "slug": "gentlelase-pro-u",
+    "name": "GentleLase Pro-U",
+    "manufacturer": "Candela",
+    "technologyType": "laser",
+    "wavelengths": ["755nm"],
+    "power": { "max": "4,600 VA" },
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-III",
+      "displayText": "Lighter skin tones (Alexandrite 755nm). Discuss with your provider if you have darker or tanned skin."
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "DCD (Dynamic Cooling Device, cryogen) or ACC (Air Cooling Compatible)",
+    "notes": "GentleLase Pro with upgrade path to GentleMax Pro. Single-wavelength 755nm Alexandrite platform, upgradeable to dual-wavelength GentleMax Pro by adding the 1064nm Nd:YAG module. Spot sizes from 1.5mm to 24mm (with optional Large Spot and Specialty Delivery Systems). Up to 10Hz repetition rate. Shares the same platform, user manual, and 4,600VA electrical spec as the GentleYAG Pro-U. Candela's recommended entry point for practices planning to upgrade to GentleMax Pro as they grow.",
+    "aliases": [
+      "gentlelase pro-u",
+      "gentlelase pro u",
+      "candela gentlelase pro-u",
+      "candela gentlelase pro u",
+      "gentlelase prou"
+    ],
+    "family": "candela-gentle",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Candela's current single-wavelength Alexandrite platform and the upgradeable entry point into the Gentle Pro series. The 'U' in Pro-U stands for upgradeable — clinics can add the 1064nm Nd:YAG module to convert it into a GentleMax Pro without replacing the entire system.",
+      "howItWorks": "755nm Alexandrite laser targets melanin in hair follicles. DCD (Dynamic Cooling Device) sprays cryogen milliseconds before each pulse, protecting the epidermis. Variable pulse durations and spot sizes up to 24mm allow treatment customization. Enhanced 2Hz repetition rate for faster coverage of large areas.",
+      "typicalUses": [
+        "Hair removal on lighter skin types (Fitzpatrick I-III)",
+        "Pigmented lesions (age spots, sun damage, freckles)",
+        "Vascular lesions (port wine stains)",
+        "Practices planning to upgrade to GentleMax Pro dual-wavelength"
+      ],
+      "keyFeatures": "Upgradeable to GentleMax Pro. The single most important distinction from the older GentleLase Pro. Same platform and power as the dual-wavelength models. Optional 20/22/24mm Large Spot Delivery System makes it the fastest standalone Alexandrite hair removal laser. DCD cryogen cooling is operator-independent and scales with fluence, unlike gel-based cooling."
+    }
+  },
+  {
+    "type": "machine",
     "slug": "gentleyag",
     "name": "GentleYAG",
     "manufacturer": "Candela",
     "technologyType": "laser",
     "wavelengths": ["1064nm"],
+    "power": { "max": "4,600 VA" },
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
@@ -151,11 +194,52 @@
   },
   {
     "type": "machine",
+    "slug": "gentleyag-pro-u",
+    "name": "GentleYAG Pro-U",
+    "manufacturer": "Candela",
+    "technologyType": "laser",
+    "wavelengths": ["1064nm"],
+    "power": { "max": "4,600 VA" },
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones, especially suited for darker and tanned skin (Nd:YAG 1064nm)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "DCD (Dynamic Cooling Device, cryogen) or ACC (Air Cooling Compatible)",
+    "notes": "GentleYAG Pro with upgrade path to GentleMax Pro. Single-wavelength 1064nm Nd:YAG platform, upgradeable to dual-wavelength GentleMax Pro by adding the 755nm Alexandrite module. Max delivered energy 80 joules. Spot sizes from 1.5mm to 24mm (with optional Large Spot and Specialty Delivery Systems). Up to 10Hz repetition rate. The preferred Candela platform for clinics primarily serving darker skin types, with the option to add Alexandrite capability later.",
+    "aliases": [
+      "gentleyag pro-u",
+      "gentleyag pro u",
+      "candela gentleyag pro-u",
+      "candela gentleyag pro u",
+      "gentleyag prou",
+      "gentle yag pro-u",
+      "gentle yag pro u"
+    ],
+    "family": "candela-gentle",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Candela's current single-wavelength Nd:YAG platform, the counterpart to the GentleLase Pro-U. Where the GentleLase Pro-U specializes in lighter skin with 755nm Alexandrite, the GentleYAG Pro-U specializes in darker and tanned skin with 1064nm Nd:YAG. Both are upgradeable to the dual-wavelength GentleMax Pro.",
+      "howItWorks": "1064nm Nd:YAG wavelength penetrates deeper and bypasses epidermal melanin, making it safe for darker skin types where shorter wavelengths risk burns. DCD cryogen cooling protects the epidermis before each pulse. Variable pulse durations (0.25–100ms) and spot sizes up to 24mm allow practitioners to customize for hair removal, vascular work, or skin rejuvenation.",
+      "typicalUses": [
+        "Hair removal on darker skin types (Fitzpatrick IV-VI)",
+        "Year-round treatment including tanned skin",
+        "Vascular lesions (spider veins, leg veins, facial veins, telangiectasia)",
+        "Wrinkle reduction and skin rejuvenation",
+        "Onychomycosis (nail fungus)",
+        "Practices serving diverse populations planning to upgrade to GentleMax Pro"
+      ],
+      "keyFeatures": "Upgradeable to GentleMax Pro. Same upgrade path as GentleLase Pro-U but starting from the Nd:YAG side. Safe for all skin types including the darkest tones where Alexandrite lasers are contraindicated. 80 joules max delivered energy. Optional 20/22/24mm Large Spot Delivery System for faster large-area treatments. Same DCD cryogen cooling as the entire Gentle Pro series."
+    }
+  },
+  {
+    "type": "machine",
     "slug": "nordlys",
     "name": "Nordlys",
     "manufacturer": "Candela",
     "technologyType": "ipl",
-    "wavelengths": ["755nm", "1064nm"],
+    "wavelengths": ["400nm-950nm (SWT IPL)", "1064nm", "1550nm", "1940nm"],
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
@@ -169,7 +253,7 @@
     "deliveryMethod": null,
     "richContent": {
       "overview": "Candela's multi-application aesthetic platform (formerly Ellipse). Hair removal is one of many capabilities, not its primary focus.",
-      "howItWorks": "Supports multiple handpiece attachments. For hair removal, it uses Alexandrite or Nd:YAG depending on the handpiece selected. Uses contact cooling rather than the DCD system found in the Gentle series.",
+      "howItWorks": "Four technologies in one platform. Hair removal uses SWT (Selective Waveband Technology) IPL handpieces with narrowband filtering across 400–950nm, not a true laser. The Nd:YAG 1064nm module treats vascular lesions. Frax 1550nm and 1940nm modules handle skin resurfacing. Eight different SWT IPL handpieces target different narrow wavelength bands for different skin types and conditions.",
       "typicalUses": ["Clinics offering diverse treatment menus (rosacea, sun damage, skin tightening) alongside hair removal"],
       "keyFeatures": "Versatile across many treatments, but dedicated hair removal devices like the Gentle series may deliver better results for that specific application."
     }
@@ -301,27 +385,146 @@
   },
   {
     "type": "machine",
-    "slug": "icon",
-    "name": "Icon",
-    "manufacturer": "Cynosure",
-    "technologyType": "laser",
-    "wavelengths": ["1064nm"],
-    "brandTier": "premium-clinical",
+    "slug": "medilux",
+    "name": "MediLux",
+    "manufacturer": "Palomar (now Cynosure)",
+    "technologyType": "ipl",
+    "wavelengths": ["400nm-1400nm (IPL)"],
+    "brandTier": "standard-clinical",
     "skinTypes": {
-      "fitzpatrickRange": "I-VI",
-      "displayText": "All skin tones (Nd:YAG wavelength)"
+      "fitzpatrickRange": "I-V",
+      "displayText": "Lighter to medium-dark skin tones. Not recommended for very dark skin (Fitzpatrick VI) — no Nd:YAG laser handpiece available on this platform."
     },
     "purposeBuilt": false,
     "coolingMethod": "contact cooling",
-    "notes": "Multi-application aesthetic platform. Hair removal is one of many treatments available. Not purpose-built for hair removal.",
-    "aliases": ["cynosure icon"],
-    "family": null,
+    "notes": "Palomar's original IPL platform and predecessor to the StarLux series. IPL only, unlike the StarLux 300/500/Icon, the MediLux does not support the Lux1064 Nd:YAG laser handpiece. Compatible with IPL handpieces only: LuxR, LuxRs, LuxY, LuxG, LuxB, LuxV. Smooth Pulse technology prevents epidermal temperature spikes. Handpieces rated for 100,000+ pulses: among the most durable in the industry. 48 lbs: extremely compact and portable. Discontinued but still found in budget clinics and on the used market for under $5,000. Palomar acquired by Cynosure in 2015.",
+    "aliases": [
+      "medilux",
+      "palomar medilux",
+      "medi lux",
+      "palomar medi lux"
+    ],
+    "family": "palomar-starlux",
     "deliveryMethod": null,
     "richContent": {
-      "overview": "Cynosure's multi-application platform. Hair removal is one of many capabilities, not its primary purpose.",
-      "howItWorks": "Uses 1064nm Nd:YAG for hair removal. Supports multiple handpieces for other treatments (photofacials, scar treatment, skin resurfacing). Contact cooling protects skin.",
-      "typicalUses": ["Practices offering comprehensive aesthetic services beyond just hair removal"],
-      "keyFeatures": "Versatile platform, but may not match dedicated hair removal systems for efficiency. Safe for darker skin types via the 1064nm wavelength."
+      "overview": "Palomar's first-generation multi-treatment IPL system, launched in the early 2000s. The MediLux established Palomar's handpiece-based platform architecture that would evolve into the StarLux 300, StarLux 500, and eventually the Cynosure Icon. Unlike its successors, the MediLux is pure IPL, it has no laser handpiece option.",
+      "howItWorks": "IPL flashlamp delivers broadband light (400–1400nm) filtered through application-specific handpieces. LuxR/LuxRs handpieces filter for hair removal wavelengths, LuxG for vascular/pigmented lesions, LuxV for acne. Smooth Pulse technology eliminates energy spikes that could damage the epidermis, maintaining consistent skin temperature throughout treatment.",
+      "typicalUses": [
+        "Hair removal via IPL (LuxR for large areas, LuxRs for face/bikini)",
+        "Photofacials and pigmented lesion treatment (LuxG)",
+        "Acne treatment (LuxV)",
+        "Budget practices and smaller clinics looking for an affordable multi-treatment system"
+      ],
+      "keyFeatures": "Pure IPL: no laser capability. This is the oldest platform in the Palomar family and does not support the Lux1064 Nd:YAG handpiece available on StarLux and Icon. If a clinic is using a MediLux for hair removal, they are using IPL, not laser. Still encountered in clinics due to its low cost on the used market and the exceptional durability of Palomar handpieces."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "starlux-300",
+    "name": "StarLux 300",
+    "manufacturer": "Palomar (now Cynosure)",
+    "technologyType": "hybrid",
+    "wavelengths": ["525nm-1200nm (IPL)", "1064nm (Nd:YAG handpiece)"],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "Depends on handpiece. IPL handpieces: Fitzpatrick I-V. Lux1064 Nd:YAG: Fitzpatrick V-VI."
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact cooling",
+    "notes": "Predecessor to StarLux 500. Same handpiece compatibility for core IPL and Lux1064 laser handpieces but slower cooling system (5+ minutes vs 1 minute on the 500). Cannot use Lux1440, Lux1540, or Lux2940 fractional laser handpieces. Still found in clinics due to lower cost on used market. Palomar acquired by Cynosure in 2015.",
+    "aliases": [
+      "starlux 300",
+      "palomar starlux 300",
+      "star lux 300",
+      "starlux300"
+    ],
+    "family": "palomar-starlux",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "The original StarLux platform and Palomar's entry into multi-treatment aesthetic systems. Shares the same core handpiece ecosystem as the StarLux 500 for hair removal (LuxR, LuxRs, LuxY, LuxYs, Lux1064) but with a slower cooling system and no fractional laser handpiece compatibility.",
+      "howItWorks": "Same IPL and laser handpiece technology as StarLux 500. AccuSpectrum dual-filter technology, Smooth Pulse energy delivery, and Photon Recycling. The slower cooling system is the primary limitation: longer wait times between handpiece changes.",
+      "typicalUses": [
+        "Hair removal via IPL handpieces (same as StarLux 500)",
+        "Vascular and pigmented lesion treatment",
+        "Budget-friendly alternative to StarLux 500 on the used market",
+        "Practices with lower patient volume"
+      ],
+      "keyFeatures": "Same consumer advice as StarLux 500: ask which handpiece is used for hair removal. LuxR/LuxY = IPL, Lux1064 = true laser. The 300 is the more affordable used option but has the same core hair removal capabilities. Widely available on the pre-owned market for $5,000-$15,000."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "starlux-500",
+    "name": "StarLux 500",
+    "manufacturer": "Palomar (now Cynosure)",
+    "technologyType": "hybrid",
+    "wavelengths": ["525nm-1200nm (IPL)", "1064nm (Nd:YAG handpiece)"],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "Depends on handpiece. IPL handpieces (LuxR/LuxY): Fitzpatrick I-V. Lux1064 Nd:YAG handpiece: Fitzpatrick V-VI and tanned skin."
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact cooling (advanced sapphire cooling, 5°C)",
+    "notes": "Multi-technology platform combining IPL and laser handpieces on one compact base unit. Hair removal primarily uses IPL handpieces (LuxR for large areas, LuxRs for small areas, LuxY/LuxYs for finer hair). The Lux1064 handpiece is an actual Nd:YAG laser for darker skin types. Over a dozen handpieces available covering hair removal, vascular lesions, pigmented lesions, fractional resurfacing, and skin tightening. Palomar acquired by Cynosure in 2015. Successor: Cynosure Icon. Predecessor: StarLux 300. Many units still in active clinical use despite being discontinued. Palomar's proprietary Photon Recycling and Smooth Pulse technologies. 58 lbs base unit: one of the most compact multi-treatment platforms.",
+    "aliases": [
+      "starlux 500",
+      "palomar starlux 500",
+      "palomar starlux",
+      "star lux 500",
+      "starlux500"
+    ],
+    "family": "palomar-starlux",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "Palomar's flagship multi-treatment platform, combining IPL and laser technologies via interchangeable handpieces. Widely installed in US clinics from mid-2000s through Cynosure's acquisition in 2015. The StarLux 500 improved on the StarLux 300 with faster cooling (1 minute vs 5+ minutes) and compatibility with additional fractional laser handpieces (Lux1440, Lux1540, Lux2940).",
+      "howItWorks": "The base unit delivers optimized pulsed light through application-specific handpieces. For hair removal, IPL handpieces (LuxR, LuxRs, LuxY, LuxYs) use filtered broadband light with AccuSpectrum dual-filter technology to target melanin in hair follicles. The Lux1064 handpiece switches to true Nd:YAG laser for darker skin types. Smooth Pulse technology delivers energy in controlled pulses to prevent epidermal damage. Photon Recycling captures scattered light and redirects it to the target.",
+      "typicalUses": [
+        "Hair removal via IPL handpieces (LuxR for large body areas, LuxRs for face/bikini, LuxY/LuxYs for finer hair)",
+        "Hair removal on dark skin via Lux1064 Nd:YAG handpiece",
+        "Vascular and pigmented lesion treatment (LuxG, MaxG)",
+        "Fractional skin resurfacing (Lux1540, Lux2940)",
+        "Practices wanting one platform for multiple treatment types"
+      ],
+      "keyFeatures": "Important: when a clinic says 'we use StarLux for hair removal', ask which handpiece. The LuxR/LuxY handpieces are IPL (not laser). Only the Lux1064 handpiece is a true laser. This is a multi-purpose platform, not purpose-built for hair removal. Succeeded by the Cynosure Icon, which uses upgraded 'Max' handpieces (MaxR, MaxYs, MaxG) on the same platform architecture."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "cynosure-icon",
+    "name": "Icon",
+    "manufacturer": "Cynosure (formerly Palomar)",
+    "technologyType": "hybrid",
+    "wavelengths": ["525nm-1200nm (IPL)", "1064nm (Nd:YAG handpiece)"],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "Depends on handpiece. IPL handpieces (MaxR/MaxYs): Fitzpatrick I-V. 1064+ Nd:YAG: Fitzpatrick V-VI."
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "Advanced Contact Cooling (5°C sapphire)",
+    "notes": "Successor to Palomar StarLux 500, now manufactured by Cynosure. Same platform architecture with upgraded 'Max' handpieces (MaxR, MaxRs, MaxYs, MaxG) offering higher peak power and optimized light delivery. Adds Skintel melanin reader: FDA-cleared device that objectively measures skin melanin content for safer parameter selection. Compatible with fractional laser handpieces (1540, 2940) and Lux Deep IR for skin tightening. Still in production and actively sold by Cynosure. Over 350 joules peak energy capability.",
+    "aliases": [
+      "cynosure icon",
+      "palomar icon",
+      "icon laser",
+      "icon ipl"
+    ],
+    "family": "palomar-starlux",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "The current-generation evolution of Palomar's StarLux platform, now under Cynosure branding. The Icon maintains the multi-handpiece architecture but with upgraded performance, the addition of Skintel melanin measurement, and enhanced cooling. One of the most versatile multi-treatment platforms on the market, though still primarily IPL-based for hair removal.",
+      "howItWorks": "Same core technology as StarLux. Optimized pulsed light delivered through interchangeable handpieces. Max-series handpieces deliver higher peak power with optimized spectral filtering. Skintel melanin reader uses LEDs to calculate objective melanin values for safer parameter settings, removing subjective Fitzpatrick assessment. Advanced Contact Cooling maintains 5°C sapphire tip temperature.",
+      "typicalUses": [
+        "Hair removal via MaxR/MaxRs IPL handpieces (all skin types I-V)",
+        "Hair removal on dark skin via 1064+ Nd:YAG handpiece",
+        "Photofacial/skin rejuvenation (MaxG handpiece)",
+        "Fractional resurfacing for scars and wrinkles (1540, 2940 handpieces)",
+        "Skin tightening (Lux Deep IR)",
+        "Practices wanting maximum treatment versatility from one platform"
+      ],
+      "keyFeatures": "Same consumer advice applies: the Icon uses IPL handpieces for most hair removal, not laser. The 1064+ handpiece is the only true laser option. The Skintel melanin reader is a genuine safety advantage over competitor IPL systems: it removes guesswork from parameter selection. Cynosure's current multi-platform offering, often found alongside the Vectus (dedicated diode laser) and Elite iQ (dedicated Alexandrite+Nd:YAG laser) in larger practices."
     }
   },
   {
@@ -331,6 +534,7 @@
     "manufacturer": "Lumenis",
     "technologyType": "laser",
     "wavelengths": ["810nm"],
+    "power": { "max": "1,600W" },
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-V",
@@ -356,6 +560,7 @@
     "manufacturer": "Lumenis",
     "technologyType": "laser",
     "wavelengths": ["810nm"],
+    "power": { "max": "1,600W" },
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-V",
@@ -367,6 +572,25 @@
     "aliases": ["light sheer duet", "lumenis lightsheer duet", "lightsheerduet"],
     "family": "lumenis-lightsheer",
     "deliveryMethod": null,
+    "fdaClearances": [
+      {
+        "number": "K053628",
+        "description": "Original LightSheer Duet clearance: 800nm diode, ET (9x9mm) and HS (22x35mm vacuum-assisted) handpieces. Hair removal, PFB, vascular lesions, pigmented lesions. Fitzpatrick I-VI.",
+        "date": "2006-03-01",
+        "date_note": "Approximate. Application dated December 28, 2005."
+      },
+      {
+        "number": "K133319",
+        "description": "Added 1060nm HS and ET handpieces to the LightSheer Duet: expanded to dual wavelength for darker skin and additional indications including wrinkles and port wine stains.",
+        "date": "2014-01-01",
+        "date_note": "Approximate date. Clearance year estimated from K-number sequence."
+      },
+      {
+        "number": "K170179",
+        "description": "LightSheer Family consolidated clearance: includes Duet with all 805nm and 1060nm handpieces. Comprehensive update covering all four LightSheer systems.",
+        "date": "2017-09-18"
+      }
+    ],
     "richContent": {
       "overview": "Lumenis's dual-handpiece diode laser featuring vacuum-assisted technology for dramatically faster treatments.",
       "howItWorks": "Two handpieces: a large vacuum-assisted one (HS) for rapid coverage and a standard one (ET) for precision. The vacuum draws skin into the treatment window, bringing follicles closer to the laser and allowing effective treatment at lower, and less painful, fluences.",
@@ -381,6 +605,7 @@
     "manufacturer": "Lumenis",
     "technologyType": "laser",
     "wavelengths": ["810nm"],
+    "power": { "max": "2,310W" },
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-V",
@@ -392,6 +617,13 @@
     "aliases": ["light sheer desire", "lumenis lightsheer desire"],
     "family": "lumenis-lightsheer",
     "deliveryMethod": null,
+    "fdaClearances": [
+      {
+        "number": "K170179",
+        "description": "LightSheer Family consolidated clearance: added 1060nm handpieces (ET/XC and HS) to the Desire system. Covers 805nm ET/XC/HS and 1060nm ET/XC/HS handpieces. Expanded indications include wrinkles, port wine stains, melasma.",
+        "date": "2017-09-18"
+      }
+    ],
     "richContent": {
       "overview": "Enhanced version of the LightSheer Duet with improved ergonomics for practitioners.",
       "howItWorks": "Same 810nm diode and vacuum-assisted dual-handpiece system as the Duet. Improvements focus on handpiece design and cooling.",
@@ -401,11 +633,55 @@
   },
   {
     "type": "machine",
+    "slug": "lightsheer-infinity",
+    "name": "LightSheer INFINITY",
+    "manufacturer": "Lumenis",
+    "technologyType": "laser",
+    "wavelengths": ["805nm", "1060nm"],
+    "brandTier": "premium-clinical",
+    "power": { "max": "2,300W" },
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (dual wavelength: 805nm for lighter skin, 1060nm for darker and tanned skin)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "ChillTip (sapphire contact cooling) and vacuum-assisted HIT",
+    "notes": "First dual-wavelength system in the LightSheer family, adding 1060nm to the established 805nm diode. Three handpieces: HS (22x35mm, vacuum-assisted HIT for large areas, available in both wavelengths), LR (9x27mm, ChillTip sapphire cooling), and ET (9x9mm, ChillTip for small/hard-to-reach areas). Up to 75% faster than competing devices at launch. Introduced in 2014. Succeeded by the LightSheer Quattro which further refined the dual-wavelength platform. Many Infinity units remain in active clinical use.",
+    "aliases": [
+      "lightsheer infinity",
+      "lumenis lightsheer infinity",
+      "lumenis infinity",
+      "light sheer infinity"
+    ],
+    "family": "lumenis-lightsheer",
+    "deliveryMethod": "stamping (static) and vacuum-assisted (HIT)",
+    "fdaClearances": [
+      {
+        "number": "K170179",
+        "description": "LightSheer Family of Pulsed Diode Array Laser Systems. Consolidated clearance covering Duet, Desire, Desire Light, and Infinity. Infinity-specific: ET/LR 805nm and HS 805nm handpieces for vascular lesions, PFB, hair removal, pigmented lesions. ET/LR 1060nm and HS 1060nm handpieces add wrinkles, port wine stains, melasma, and additional pigmented lesion indications. Fitzpatrick I-VI. Predicates: K053628 (Duet), K151947 (Desire Light), K133319 (1060nm handpieces).",
+        "date": "2017-09-18"
+      }
+    ],
+    "richContent": {
+      "overview": "The first LightSheer model to offer dual wavelengths. Added the 1060nm diode to the proven 805nm platform, enabling safe year-round treatment of darker and tanned skin types that the single-wavelength LightSheer models couldn't optimally address. Now succeeded by the LightSheer Quattro.",
+      "howItWorks": "Two diode wavelengths target different skin types: 805nm penetrates effectively across lighter skin tones, while 1060nm bypasses epidermal melanin for safer treatment on darker and tanned skin. The vacuum-assisted HS handpiece (22x35mm) draws skin closer to the laser source for faster large-area treatment with reduced pain — the vacuum mechanism blocks pain signals by activating tactile and pressure receptors. ChillTip handpieces (ET 9x9mm and LR 9x27mm) use sapphire contact cooling for high-fluence precision work on smaller areas.",
+      "typicalUses": [
+        "Large-area hair removal at speed (legs, back) via vacuum-assisted HS handpiece",
+        "Darker and tanned skin types year-round via 1060nm wavelength",
+        "Small or hard-to-reach areas (face, bikini) via ET/LR ChillTip handpieces",
+        "Vascular lesions and pigmented lesions"
+      ],
+      "keyFeatures": "First dual-wavelength LightSheer. The 1060nm addition was a significant upgrade for clinics serving diverse populations. Vacuum-assisted HIT technology on the large 22x35mm handpiece makes it one of the fastest hair removal systems available. No gels or anesthetics needed. Now succeeded by the LightSheer Quattro, but many Infinity units remain in active clinical use."
+    }
+  },
+  {
+    "type": "machine",
     "slug": "lightsheer-quattro",
     "name": "LightSheer Quattro",
     "manufacturer": "Lumenis",
     "technologyType": "laser",
     "wavelengths": ["810nm"],
+    "power": { "max": "2,310W" },
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-V",
@@ -417,6 +693,13 @@
     "aliases": ["light sheer quattro", "lumenis lightsheer quattro"],
     "family": "lumenis-lightsheer",
     "deliveryMethod": null,
+    "fdaClearances": [
+      {
+        "number": "K170179",
+        "description": "LightSheer Family consolidated clearance. Quattro likely operates under this same family clearance as a refreshed Infinity platform. Supports HS, ET, and XC handpieces in both 805nm and 1060nm. No separate Quattro-specific 510(k) found.",
+        "date": "2017-09-18"
+      }
+    ]
     "richContent": {
       "overview": "Lumenis's most advanced diode laser with four handpiece options for maximum versatility.",
       "howItWorks": "Same proven 810nm diode with four handpieces: extra-large vacuum-assisted, large vacuum-assisted, medium, and small precision. Each optimized for specific treatment areas.",
@@ -754,7 +1037,7 @@
     "purposeBuilt": true,
     "coolingMethod": "air cooling",
     "notes": "Dual-wavelength Alexandrite + Nd:YAG with IntelliTrak technology for consistent coverage.",
-    "aliases": ["clarity 2", "lutronic clarity ii", "lutronic clarity 2"],
+    "aliases": ["clarity 2", "lutronic clarity ii", "lutronic clarity 2", "LaserOptek "],
     "family": null,
     "deliveryMethod": null,
     "richContent": {
@@ -1558,10 +1841,47 @@
   },
   {
     "type": "machine",
+    "slug": "syneron-elight",
+    "name": "eLight",
+    "manufacturer": "Syneron (now Candela)",
+    "technologyType": "ipl",
+    "wavelengths": ["680nm-980nm (IPL + RF)"],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-V",
+      "displayText": "Light to medium-dark skin tones. Uses IPL (DS handpiece) for hair removal. No diode laser handpiece available on this platform."
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact cooling (chilled applicator tip)",
+    "notes": "Syneron's facial-focused elos platform. Uses DS handpiece (IPL + bipolar RF at 680nm) for hair removal. Does NOT support the DSL diode laser handpiece available on the eMax and eLase. Other handpieces: AC (acne), SR/SRA (skin rejuvenation), ST (skin tightening). All handpieces combine optical energy with bipolar radio frequency (elos technology). Designed primarily for facial treatments. Syneron merged with Candela in 2010. Discontinued but still found in clinics on the used market.",
+    "aliases": [
+      "syneron elight",
+      "syneron e-light",
+      "e-light",
+      "elight",
+      "syneron e light"
+    ],
+    "family": "syneron-elos",
+    "deliveryMethod": "elos (electro-optical synergy)",
+    "richContent": {
+      "overview": "Syneron's compact elos platform designed primarily for facial aesthetic treatments. The eLight sits below the eMax in Syneron's product hierarchy. It shares the same elos technology (combined optical energy + bipolar RF) but supports fewer handpieces and critically lacks the DSL diode laser handpiece for hair removal.",
+      "howItWorks": "elos technology pre-heats the target chromophore (melanin in hair follicles) with optical energy (IPL), which lowers tissue impedance and creates a preferred pathway for bipolar RF current. The RF energy then further heats the follicle, creating a 'vortex' of combined energy. This allows lower optical fluence than standalone IPL, which Syneron claims improves safety on darker skin. However, the DS handpiece uses broadband IPL light, not laser.",
+      "typicalUses": [
+        "Facial hair removal via DS handpiece (IPL + RF)",
+        "Acne treatment (AC handpiece)",
+        "Skin rejuvenation / photofacial (SR/SRA handpieces)",
+        "Skin tightening (ST/ReFirme handpiece)",
+        "Smaller practices focused on facial aesthetic treatments"
+      ],
+      "keyFeatures": "Important: the eLight uses IPL for hair removal, not laser. It does NOT have the DSL (Depilation System Laser) handpiece. That 810nm diode laser is only available on the eMax, eLase, and elos Plus. If a clinic says 'we use Syneron eLight for hair removal,' they are using IPL + RF, not diode laser + RF. The elos RF component does add genuine clinical value over standalone IPL, but the light source itself is broadband, not laser."
+    }
+  },
+  {
+    "type": "machine",
     "slug": "syneron-emax",
     "name": "eMax",
     "manufacturer": "Syneron (now Candela Medical)",
-    "technologyType": "laser",
+    "technologyType": "hybrid",
     "wavelengths": [
       "810nm"
     ],
@@ -2204,6 +2524,7 @@
     "wavelengths": [
       "810nm"
     ],
+
     "brandTier": "standard-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
@@ -2233,6 +2554,48 @@
   },
   {
     "type": "machine",
+    "slug": "primelase-hr",
+    "name": "Primelase HR",
+    "manufacturer": "Cocoon Medical (Sinclair)",
+    "technologyType": "laser",
+    "wavelengths": ["755nm", "810nm", "810nm+940nm+1060nm"],
+    "power": { "max": "4,800W" },
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (multi-wavelength diode system with Blend applicator)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "Crystal Freeze (sapphire contact cooling, constant 5°C)",
+    "notes": "Cocoon Medical's original high-power multi-wavelength diode platform. 4,800W peak power. Three applicator wavelengths: 755nm (Alex), 810nm (Diode), and Blend (810+940+1060nm). Combines SSL (Solid State Laser) and diode technology. Predecessor to the Primelase Excellence, which added a dedicated 1060nm Yag applicator and expanded treatment indications beyond hair removal.",
+    "aliases": [
+      "primelase hr",
+      "cocoon medical primelase hr",
+      "primelase hr diode",
+      "sinclair primelase hr"
+    ],
+    "family": "cocoon-primelase",
+    "deliveryMethod": "static and dynamic (in-motion)",
+    "fdaClearances": [
+      {
+        "number": "K191321",
+        "description": "Operates under the same Primelase platform clearance as the Primelase Excellence. K191321 covers the PRIMELASE diode laser system with 755nm, 810nm, and 810-1060nm applicators. The HR is the original hair-removal-focused configuration without the dedicated 1060nm Yag applicator added in the Excellence.",
+        "date": "2019-08-02"
+      }
+    ],
+    "richContent": {
+      "overview": "Cocoon Medical's high-power multi-wavelength diode laser, designed for high-volume clinics. At 4,800W peak power, it was among the most powerful diode hair removal platforms at launch. Combines SSL and diode laser technology in a single system.",
+      "howItWorks": "Three applicator options cover different needs: 755nm Alexandrite for fine/light hair on lighter skin, 810nm Diode as the workhorse for all skin types, and a Blend applicator combining 810+940+1060nm for maximum versatility. Crystal Freeze sapphire cooling maintains a constant 5°C during treatment. Works in both static (single-pulse) and dynamic (in-motion sliding) modes.",
+      "typicalUses": [
+        "High-volume clinics needing fast treatment times",
+        "All skin types including tanned skin (Fitzpatrick I-VI)",
+        "Fine and light hair via 755nm applicator"
+      ],
+      "keyFeatures": "4,800W peak power. One of the highest in any diode platform. Independent study showed 55% greater hair removal efficiency than Soprano ICE after 3 sessions (69% vs 53% reduction). Still found in many clinics, though Cocoon Medical now markets the Primelase Excellence as the current flagship."
+    }
+  },
+  {
+    "type": "machine",
     "slug": "primelase-excellence",
     "name": "Primelase Excellence",
     "manufacturer": "Cocoon Medical (Sinclair)",
@@ -2243,33 +2606,94 @@
       "810nm+940nm+1060nm",
       "1060nm"
     ],
+    "power": { "max": "4,800W" },
     "brandTier": "premium-clinical",
     "skinTypes": {
       "fitzpatrickRange": "I-VI",
       "displayText": "All skin tones with multi-wavelength selection."
     },
     "purposeBuilt": true,
-    "coolingMethod": "contact",
-    "notes": "Ultra-high power diode platform (4,800W). Four wavelengths: Alex 755nm, Diode 810nm, Blend (810+940+1060nm), Yag 1060nm. Patented USP (Ultra Short Pulse) technology from 3ms. Crystal Freeze cooling at 5C. Spanish-made. Growing European presence.",
+    "coolingMethod": "Crystal Freeze (sapphire contact cooling, constant 5°C)",
+    "notes": "Cocoon Medical's current flagship. Ultra-high power diode platform (4,800W). Four wavelength applicators: Alex 755nm, Diode 810nm, Blend (810+940+1060nm), Yag 1060nm. Patented USP (Ultra Short Pulse) technology from 3ms. Crystal Freeze cooling at 5°C. Spanish-made. Successor to the Primelase HR, adding a dedicated 1060nm Yag applicator and expanding indications beyond hair removal to vascular lesions, pigmented lesions, acne, rejuvenation, and onychomycosis.",
     "aliases": [
-      "primelase",
       "primelase excellence",
-      "primelase hr",
+      "cocoon medical excellence",
+      "sinclair excellence",
+      "primelase",
       "cocoon medical primelase"
     ],
-    "family": "primelase",
-    "deliveryMethod": null,
+    "family": "cocoon-primelase",
+    "deliveryMethod": "static and dynamic (in-motion)",
+    "fdaClearances": [
+      {
+        "number": "K191321",
+        "description": "PRIMELASE diode laser hair removal system. 755nm, 810nm, and 810-1060nm applicators. Hair removal (static and dynamic modes), PFB treatment, Fitzpatrick I-VI. Five removable applicators. Spot sizes: 20×9mm, 30×9mm, 30×17mm. Max fluence 80 J/cm². Pulse 3-400ms. Class IV laser, 75kg. Predicates: Soprano ICE (K140009), LightSheer Infinity (K170179), InMode Diolaze (K180719).",
+        "date": "2019-08-02"
+      }
+    ],
     "richContent": {
-      "overview": "Cocoon Medical's flagship multi-wavelength diode laser platform. 4,800W across four wavelengths. Spanish-engineered, distributed globally through Sinclair.",
-      "howItWorks": "Four wavelength options for different skin types and hair depths. USP technology delivers pulses as short as 3ms. Crystal Freeze cooling at 5C throughout treatment.",
+      "overview": "Cocoon Medical's flagship multi-wavelength diode laser platform. 4,800W across four wavelengths. Spanish-engineered, distributed globally through Sinclair. Successor to the Primelase HR with expanded treatment indications.",
+      "howItWorks": "Four wavelength applicators target different skin types and hair depths: 755nm Alex for fine/light hair on lighter skin, 810nm Diode as the general workhorse, Blend (810+940+1060nm) for maximum versatility, and 1060nm Yag for darker skin. USP technology delivers pulses as short as 3ms. Crystal Freeze sapphire cooling maintains constant 5°C throughout treatment.",
       "typicalUses": [
-        "Hair removal on all phototypes",
+        "Hair removal on all phototypes (Fitzpatrick I-VI)",
         "Vascular lesions",
         "Pigmented lesions",
         "Acne treatment",
-        "Skin rejuvenation"
+        "Skin rejuvenation",
+        "Onychomycosis"
       ],
-      "keyFeatures": "4,800W power. Four wavelengths. USP ultra-short pulses. Spot sizes up to 30x17mm. Growing rapidly in European markets."
+      "keyFeatures": "4,800W power. Among the highest of any diode platform. Four wavelengths including dedicated 1060nm Yag (not available on predecessor Primelase HR). USP ultra-short pulses from 3ms. Spot sizes up to 30x17mm. Independent study showed 55% greater hair removal efficiency than Soprano ICE after 3 sessions. Growing rapidly in European markets."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "elysion-pro",
+    "name": "Elysion Pro",
+    "manufacturer": "Cocoon Medical (Sinclair)",
+    "technologyType": "laser",
+    "wavelengths": ["755nm", "810nm", "940nm", "1060nm"],
+    "power": {
+      "max": "3,500W",
+      "configurations": [
+        { "mode": "4-wavelength", "watts": 2000 },
+        { "mode": "810nm only", "watts": 3500 }
+      ]
+    },
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (multi-wavelength diode system)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "Crystal Freeze (sapphire contact cooling, constant 5°C)",
+    "notes": "Cocoon Medical's mid-tier diode platform positioned below the Primelase line. Available in two power configurations: 2,000W (4 wavelengths via Alex, Diode, Blend, and Yag handpieces) or 3,500W (810nm single wavelength only). Shares USP (Ultra Short Pulse) 3ms technology with the Primelase family. Designed as an entry point for spas, med spas, and high-volume laser hair removal centers. Portable and lightweight compared to Primelase. FDA approved and CE certified.",
+    "aliases": [
+      "elysion pro",
+      "elysion-pro",
+      "cocoon medical elysion pro",
+      "cocoon elysion",
+      "sinclair elysion pro",
+      "elysion pro diode"
+    ],
+    "family": "cocoon-primelase",
+    "deliveryMethod": "static and dynamic (in-motion)",
+    "fdaClearances": [
+        {
+          "number": "K193367",
+          "description": "Elysion Pro diode laser hair removal system. 755nm and 810nm applicators. Hair removal (static and dynamic modes), PFB treatment, Fitzpatrick I-VI. Three applicators: two 810nm (10×10mm and 18×10mm) and one 755nm (10×10mm). Class IV laser. Predicate: own Primelase Excellence (K191321).",
+          "date": "2020-06-01",
+          "date_note": "Approximate. FDA letter undated in public PDF. Application received 2019-12-04. Summary prepared 2020-03-07. Freyr announced clearance 2020-06-08."
+        }
+    ],
+    "richContent": {
+      "overview": "Cocoon Medical's entry-level professional diode laser, positioned below the Primelase HR and Primelase Excellence. Designed for spas and clinics entering the laser hair removal market or operating on tighter budgets while still wanting a reputable European-manufactured platform.",
+      "howItWorks": "Same USP (Ultra Short Pulse) technology as the Primelase family, delivering energy in 3ms pulses to destroy germination cells without overheating surrounding skin. Four handpiece options: 755nm Alex for fine/light hair, 810nm Diode as the general workhorse, Blend (810+940+1060nm) for versatility across all skin types, and 1060nm Yag for darker skin. Static mode at 3Hz and dynamic in-motion mode at up to 15Hz.",
+      "typicalUses": [
+        "Entry-level clinics and med spas wanting reputable equipment at lower cost than Primelase",
+        "High-volume hair removal centers needing portable equipment",
+        "All skin types including tanned skin (Fitzpatrick I-VI)"
+      ],
+      "keyFeatures": "Two power tiers: 2,000W with all four wavelengths or 3,500W with 810nm only. Lightweight and portable compared to the Primelase platforms. Same USP 3ms pulse technology as the flagship Primelase Excellence but at roughly half the power (2,000W vs 4,800W). Lower acquisition cost makes it Cocoon Medical's recommended option for first-time laser buyers."
     }
   },
   {
@@ -2387,38 +2811,439 @@
     }
   },
   {
-  "type": "machine",
-  "slug": "epilaze",
-  "name": "EpiLaze",
-  "manufacturer": "Rohrer Aesthetics",
-  "technologyType": "laser",
-  "wavelengths": ["755nm", "810nm", "1064nm"],
-  "brandTier": "standard-clinical",
-  "skinTypes": {
-    "fitzpatrickRange": "I-VI",
-    "displayText": "All skin tones (tri-wavelength system)"
-  },
-  "purposeBuilt": true,
-  "coolingMethod": "sapphire contact cooling",
-  "notes": "Rohrer Aesthetics' tri-wavelength hair removal system. US-manufactured (Paramus, NJ). Features proprietary Smooth Flow Technology (SFT) delivery mode for in-motion treatment. Note: some clinics use the name 'Epilaze' for unrelated generic machines — the real EpiLaze is manufactured by Rohrer Aesthetics only.",
-  "aliases": [
-    "epilaze",
-    "rohrer epilaze",
-    "rohrer aesthetics epilaze",
-    "epi laze",
-    "epilaze hair removal system"
-  ],
-  "family": null,
-  "deliveryMethod": "SFT",
-  "richContent": {
-    "overview": "Rohrer Aesthetics' purpose-built tri-wavelength hair removal laser. Combines 755nm Alexandrite, 810nm Diode, and 1064nm Nd:YAG in a single system. Manufactured in the US with FDA clearance for permanent hair reduction on all skin types.",
-    "howItWorks": "Three separate laser sources, each optimized for different skin types. The 755nm Alexandrite targets lighter skin (Fitzpatrick I-II), the 810nm Diode handles mid-range types (III-IV), and the 1064nm Nd:YAG safely treats darker skin (V-VI). Smooth Flow Technology (SFT) mode delivers up to 10 pulses per second for in-motion treatment of large areas. Sapphire contact cooling protects the skin before, during, and after each pulse.",
-    "typicalUses": [
-      "Clinics treating diverse skin types with a single device",
-      "Dermatology practices and med spas looking for a US-manufactured alternative to Alma Soprano Titanium or InMode Triton"
+    "type": "machine",
+    "slug": "epilaze",
+    "name": "EpiLaze",
+    "manufacturer": "Rohrer Aesthetics",
+    "technologyType": "laser",
+    "wavelengths": ["755nm", "810nm", "1064nm"],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (tri-wavelength system)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "sapphire contact cooling",
+    "notes": "Rohrer Aesthetics' tri-wavelength hair removal system. US-manufactured (Paramus, NJ). Features proprietary Smooth Flow Technology (SFT) delivery mode for in-motion treatment. Note: some clinics use the name 'Epilaze' for unrelated generic machines — the real EpiLaze is manufactured by Rohrer Aesthetics only.",
+    "aliases": [
+      "epilaze",
+      "rohrer epilaze",
+      "rohrer aesthetics epilaze",
+      "epi laze",
+      "epilaze hair removal system"
     ],
-    "keyFeatures": "US-manufactured tri-wavelength system from a smaller but legitimate American company. SFT mode allows large area treatments (legs, back, chest) in under 20 minutes. No consumables or disposables. Important: some clinics abroad use the name 'Epilaze' for unrelated generic/white-label machines. The genuine EpiLaze is made exclusively by Rohrer Aesthetics."
-  }
+    "family": null,
+    "deliveryMethod": "SFT",
+    "richContent": {
+      "overview": "Rohrer Aesthetics' purpose-built tri-wavelength hair removal laser. Combines 755nm Alexandrite, 810nm Diode, and 1064nm Nd:YAG in a single system. Manufactured in the US with FDA clearance for permanent hair reduction on all skin types.",
+      "howItWorks": "Three separate laser sources, each optimized for different skin types. The 755nm Alexandrite targets lighter skin (Fitzpatrick I-II), the 810nm Diode handles mid-range types (III-IV), and the 1064nm Nd:YAG safely treats darker skin (V-VI). Smooth Flow Technology (SFT) mode delivers up to 10 pulses per second for in-motion treatment of large areas. Sapphire contact cooling protects the skin before, during, and after each pulse.",
+      "typicalUses": [
+        "Clinics treating diverse skin types with a single device",
+        "Dermatology practices and med spas looking for a US-manufactured alternative to Alma Soprano Titanium or InMode Triton"
+      ],
+      "keyFeatures": "US-manufactured tri-wavelength system from a smaller but legitimate American company. SFT mode allows large area treatments (legs, back, chest) in under 20 minutes. No consumables or disposables. Important: some clinics abroad use the name 'Epilaze' for unrelated generic/white-label machines. The genuine EpiLaze is made exclusively by Rohrer Aesthetics."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "viora-v20",
+    "name": "Viora V20 (V-IPL)",
+    "manufacturer": "Viora (Sinclair)",
+    "technologyType": "ipl",
+    "wavelengths": ["580-950nm (filtered broadband)"],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-V",
+      "displayText": "Light to medium-dark skin tones (IPL with multiple filter options)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact cooling (TEC)",
+    "notes": "Multi-technology platform (IPL + RF). Hair removal uses the V-IPL handpiece with PCR (PulseConfiguRhythm) technology. This is IPL, not laser. Multiple cut-off filters available (570nm, 580nm, 630nm, 755nm) for different skin types. Also offers RF skin tightening, fractional RF, and body contouring via separate handpieces. Marketed to dental practices as an add-on revenue stream. FDA-cleared (K111303, 2011). Now sold under Sinclair Global brand.",
+    "aliases": ["viora v20", "viora v-20", "v20 viora", "viora v-ipl", "viora ipl"],
+    "family": "viora-v-series",
+    "deliveryMethod": "PCR (PulseConfiguRhythm)",
+    "fdaClearances": [
+      {
+        "number": "K142093",
+        "description": "Original V20 System clearance. Product codes GEX (laser surgical instrument) + PBX (powered RF surgical instrument).",
+        "date": "2014-11-14"
+      },
+      {
+        "number": "K152611",
+        "description": "V20 System update. Added V-Form body contouring handpiece. Product codes GEX + ISA + PBX.",
+        "date": "2016-02-19"
+      }
+    ],
+    "richContent": {
+      "overview": "Viora's V20 is a multi-technology platform combining IPL and RF technologies. For hair removal, it uses the V-IPL handpiece: an Intense Pulsed Light system, not a laser. The platform also offers RF skin tightening, fractional RF skin resurfacing, body contouring, and vaginal rejuvenation via separate handpieces.",
+      "howItWorks": "The V-IPL handpiece delivers broadband light through interchangeable cut-off filters (ranging from 415nm to 755nm). Viora's proprietary PCR (PulseConfiguRhythm) technology offers three pulse configurations (single, multiple, and rapid) for different skin types and conditions. Contact cooling (TEC) protects the skin surface.",
+      "typicalUses": ["Multi-purpose clinics offering hair removal alongside skin rejuvenation, acne treatment, and body contouring", "Dental practices adding aesthetic services", "Clinics seeking one platform for multiple revenue streams"],
+      "keyFeatures": "PCR technology provides adjustable pulse configurations for different skin types. V-IPL hair removal handpieces available with multiple filters: HR 570nm (skin types I-III), HR 580nm (I-IV), HR 630nm (I-V), HR 755nm (I-V). Note: despite the 755nm filter wavelength, this is filtered broadband IPL light, not an Alexandrite laser. Israeli manufacturer with FDA clearance, now part of Sinclair Global."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "viora-v30",
+    "name": "Viora V30",
+    "manufacturer": "Viora (Sinclair)",
+    "technologyType": "hybrid",
+    "wavelengths": ["580-950nm (V-IPL, filtered broadband)", "1064nm (V-Nd:YAG laser)"],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (V-Nd:YAG laser for darker skin, V-IPL for lighter skin)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact cooling (TEC)",
+    "notes": "Most advanced Viora platform combining IPL, Nd:YAG laser, RF, and fractional RF. Hair removal available via TWO handpieces: the V-IPL (IPL, same as V20) and the V-Nd:YAG (1064nm real laser, primarily for darker skin and vascular lesions). Ask your clinic which handpiece they use for hair removal: V-IPL is IPL, V-Nd:YAG is a real laser. FDA-cleared (K111303, 2011). Now sold under Sinclair Global brand.",
+    "aliases": ["viora v30", "viora v-30", "v30 viora", "viora nd:yag", "viora ndyag"],
+    "family": "viora-v-series",
+    "deliveryMethod": "PCR (PulseConfiguRhythm)",
+    "fdaClearances": [
+      {
+        "number": "K133837",
+        "description": "Original V30 / Viora V-Total clearance. Product codes GEX (laser surgical instrument) + PBX (powered RF surgical instrument).",
+        "date": "2014-04-09"
+      },
+      {
+        "number": "K162363",
+        "description": "V30 System update. Added V-Form handpiece and BC Medium Applicator for body contouring. Product codes GEX + ISA + PBX.",
+        "date": "2016-11-18"
+      }
+    ],
+    "richContent": {
+      "overview": "Viora's flagship multi-technology platform combining IPL, Nd:YAG laser, RF, and fractional RF. For hair removal, it offers two options: the V-IPL handpiece (IPL, same as V20) and the V-Nd:YAG handpiece (1064nm long-pulse Nd:YAG laser). The V-Nd:YAG is a real laser and is primarily indicated for darker skin hair removal and vascular lesions.",
+      "howItWorks": "The V-IPL handpiece delivers broadband light through interchangeable filters with PCR pulse control. The V-Nd:YAG handpiece delivers 1064nm laser energy with four interchangeable spot sizes and PCR pulse configurations. Both handpieces include contact cooling.",
+      "typicalUses": ["Full-service aesthetic clinics wanting IPL + laser + RF in one platform", "Clinics treating diverse skin types (V-Nd:YAG adds Fitzpatrick V-VI capability)", "Practices offering vascular treatment alongside hair removal"],
+      "keyFeatures": "The V30 is the only V-Series platform that includes a real laser (V-Nd:YAG at 1064nm). If your clinic uses a V30, ask specifically whether they use the V-IPL or V-Nd:YAG handpiece for hair removal: the difference is IPL vs real laser. The V-Nd:YAG's 1064nm wavelength is particularly suited for darker skin types. Also includes V-ST (RF skin tightening), V-FR (fractional RF), V-FORM (body contouring), and V-VR (vaginal rejuvenation) handpieces."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "sharplight-omnimax-s3",
+    "name": "SharpLight OmniMax S3",
+    "manufacturer": "SharpLight Technologies",
+    "technologyType": "ipl",
+    "wavelengths": ["580-950nm", "635-950nm", "730-950nm (filtered broadband)"],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-V",
+      "displayText": "Light to medium-dark skin (multiple DPC handpieces for different skin types)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "TEC (Thermo Electric Contact Cooling, down to -8°C)",
+    "notes": "Multi-technology platform (DPC + RF + VermaDerm IR). Hair removal uses DPC (Dynamic Pulse Control) handpieces. DPC is SharpLight's proprietary enhanced IPL technology, not laser. Three hair removal handpieces: HR 580 (skin I-IV), HR 635 (I-V), HR 730 (III-V). Also does skin rejuvenation, acne, vascular/pigmented lesions, body contouring. Israeli manufacturer, FDA-cleared (2011). Particularly strong presence in Canadian market. Price range $125,000-$175,000.",
+    "aliases": ["omnimax s3", "sharplight s3", "sharplight omnimax", "omnimax s-3", "sharp light s3"],
+    "family": "sharplight-omnimax",
+    "deliveryMethod": "DPC (Dynamic Pulse Control)",
+    "fdaClearances": [
+      {
+        "number": "K082876",
+        "description": "Beamax/Formax Pulsed Light Device Family (predecessor platform clearance).",
+        "date": "2008-11-10"
+      },
+      {
+        "number": "K111303",
+        "description": "DTS (Dermatological Treatment System) device family. Covers IPL (DPC), IR, Laser, and RF energy sources for hair removal, skin rejuvenation, vascular/pigmented lesions, acne. Product code GEX. This is the primary clearance covering the OmniMax platform.",
+        "date": "2011-12-21"
+      }
+    ],
+    "richContent": {
+      "overview": "SharpLight's multi-technology platform combining DPC (enhanced IPL), RF, and VermaDerm infrared technologies. For hair removal, it uses DPC handpieces — SharpLight's proprietary advancement of IPL with three pulse configurations (smooth, long, high). Despite being marketed as an advanced aesthetic system, the hair removal component is IPL-based, not laser.",
+      "howItWorks": "DPC (Dynamic Pulse Control) delivers broadband light through handpieces with different cut-off filters. Three pulse modes allow customization: smooth pulse for darker skin, long pulse for medium skin, high pulse for lighter skin with fine hair. TEC contact cooling to -8°C protects the skin surface. The system also includes RF and VermaDerm IR handpieces for non-hair-removal treatments.",
+      "typicalUses": ["Multi-service clinics in Canada and internationally", "Practices wanting hair removal + skin rejuvenation + body contouring in one platform", "Clinics expanding their treatment menu without multiple devices"],
+      "keyFeatures": "Three DPC hair removal handpieces cover skin types I-V: HR 580nm (I-IV), HR 635nm (I-V), HR 730nm (III-V for darker skin). DPC technology offers three pulse configurations for treatment customization. SharpLight explicitly describes DPC as 'an advancement of IPL'. It is NOT laser technology. Note: SharpLight's RF technology is not cleared for sale in the US. Strong presence in Canadian market through partnership with American Laser Clinics (AML) group."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "sharplight-omnimax-s4",
+    "name": "SharpLight OmniMax S4",
+    "manufacturer": "SharpLight Technologies",
+    "technologyType": "ipl",
+    "wavelengths": ["580-950nm", "635-950nm", "730-950nm (DPC/IPL for hair removal)", "2940nm (Er:YAG, skin resurfacing only)", "1064nm (Nd:YAG, tattoo/vascular only)"],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-V",
+      "displayText": "Light to medium-dark skin (hair removal via DPC handpieces, same as S3)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "TEC (Thermo Electric Contact Cooling, down to -8°C)",
+    "notes": "SharpLight's top-of-line platform adding Er:YAG fractional laser, LP-Nd:YAG, and Q-Switched Nd:YAG to the S3's DPC + RF + VermaDerm. IMPORTANT: The laser components (Er:YAG, Nd:YAG) are for skin resurfacing, tattoo removal, and vascular lesions, NOT for hair removal. Hair removal still uses DPC (IPL) handpieces, identical to the S3. Over 15 compatible handpieces, 60+ clinical indications. Israeli manufacturer, FDA-cleared. ROI claimed within 6 months.",
+    "aliases": ["omnimax s4", "sharplight s4", "sharplight omnimax s4", "omnimax s-4", "sharp light s4"],
+    "family": "sharplight-omnimax",
+    "deliveryMethod": "DPC (Dynamic Pulse Control)",
+    "fdaClearances": [
+      {
+        "number": "K082876",
+        "description": "Beamax/Formax Pulsed Light Device Family — predecessor platform clearance.",
+        "date": "2008-11-10"
+      },
+      {
+        "number": "K111303",
+        "description": "DTS (Dermatological Treatment System) device family — covers IPL (DPC), IR, Laser, and RF energy sources for hair removal, skin rejuvenation, vascular/pigmented lesions, acne, tattoo removal. Product code GEX. This is the primary clearance covering the OmniMax platform including the laser handpieces.",
+        "date": "2011-12-21"
+      }
+    ],
+    "richContent": {
+      "overview": "SharpLight's most comprehensive multi-technology platform, housing four technology categories: DPC (enhanced IPL), RF, VermaDerm IR, and Laser (Er:YAG + Nd:YAG). It can perform 60+ clinical indications across 15+ handpieces. However, for hair removal specifically, it still uses the same DPC (IPL) handpieces as the S3. The added laser technologies address skin resurfacing, tattoo removal, and vascular lesions, not hair removal.",
+      "howItWorks": "Hair removal works identically to the S3: via DPC handpieces delivering broadband IPL light with three pulse configurations. The Er:YAG fractional laser (2940nm) is for skin resurfacing. The LP-Nd:YAG and Q-Switched Nd:YAG (1064nm/532nm) are for vascular lesions, pigmented lesions, and tattoo removal. These laser handpieces are not used for hair removal.",
+      "typicalUses": ["Full-service medical aesthetics clinics wanting maximum treatment versatility", "Practices combining hair removal with tattoo removal, skin resurfacing, and body contouring", "Clinics seeking fastest ROI through breadth of services"],
+      "keyFeatures": "Despite containing actual laser handpieces, hair removal on the S4 is still done with DPC (IPL), the same technology as the S3. The addition of LP laser gives 'hair removal treatment options along with improved energy penetration for all skin types' per SharpLight, but the primary hair removal remains DPC. Consumers should ask specifically which handpiece is used for their hair removal treatment. Compatible with 15+ handpieces for maximum versatility. SharpLight calls this their 'top of the line for medical aesthetic equipment.'"
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "formatk-magma",
+    "name": "Magma",
+    "manufacturer": "Formatk Systems",
+    "technologyType": "hybrid",
+    "wavelengths": [
+      "808nm (diode laser)",
+      "1064nm (Nd:YAG diode laser)",
+      "430-1100nm (IPL USP, filtered broadband)"
+    ],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (808nm diode + 1064nm Nd:YAG for hair removal across all skin types, IPL with filters for lighter skin)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "Golden-Touch contact cooling",
+    "notes": "Formatk's flagship multi-technology platform: the most complete system in their lineup. Combines 808nm diode laser (ALD/LLD handpieces), 1064nm Nd:YAG pure diode laser, and 10 IPL USP (Ultra Short Pulse) applicators (430-1100nm) on one platform. Hair removal is done via the diode laser handpieces (real 808nm laser) or the Nd:YAG (1064nm, suited for darker skin). IPL handles skin rejuvenation, vascular/pigmented lesions, acne, and can also do hair removal on lighter skin types. The 1064nm Nd:YAG is unique to the Magma: not available on the Alpha or Spark. 3 interchangeable tips on the Nd:YAG for precision on different vascular lesion sizes, with integrated contact cooling (first long-pulse Nd:YAG with this feature per Formatk). Includes MILO digital melanin meter. Israeli manufacturer (Tirat Carmel), founded in 2008 by Ilan Toledano. Distributed in North America by Aesthetic Management Partners and DermaSpark (Canada).",
+    "aliases": [
+      "formatk magma",
+      "forma-tk magma",
+      "magma platform",
+      "magma system",
+      "formatk magma platform"
+    ],
+    "family": "formatk-magma",
+    "deliveryMethod": "PowerMotion (high-fluence in-motion)",
+    "fdaClearances": [
+      {
+        "number": "K153566",
+        "description": "Original Magma System. Multi-technology platform: 808nm diode laser (ALD/LLD), 1064nm Nd:YAG laser, and 10 IPL applicators (430-1100nm). Predicates: Lumenis LightSheer Desire (K151947) and Lumenis M22 (K142860). Product codes GEX + ONF.",
+        "date": "2016-04-06"
+      }
+    ],
+    "richContent": {
+      "overview": "Formatk's flagship multi-technology platform combining three distinct light sources: an 808nm diode laser for hair removal, a 1064nm Nd:YAG pure diode laser for vascular lesions and darker skin hair removal, and 10 IPL USP (Ultra Short Pulse) applicators for skin rejuvenation, pigmented/vascular lesions, and acne. This is the most complete system Formatk offers. The Alpha strips out the Nd:YAG, and the Spark strips out everything except the diode laser.",
+      "howItWorks": "The LLD handpiece delivers 808nm diode laser energy (up to 35 J/cm²) for hair removal via PowerMotion (a high-fluence in-motion technique enabling single-pass treatments). The ALD handpiece offers an alternative 808nm spot size. The 1064nm Nd:YAG pure diode treats vascular lesions (telangiectasias, leg veins, cherry angiomas) with up to 440 J/cm², plus hair removal on darker skin. Ten IPL USP applicators span 430-1100nm: HR filters (650nm/590nm cutoffs) for hair removal, SR filters (530nm) for pigmented/vascular lesions, and AC filters (430nm) for acne. MILO digital melanin meter provides in-vivo skin typing. Golden-Touch contact cooling protects the skin.",
+      "typicalUses": [
+        "Clinics wanting a comprehensive multi-technology platform with real laser hair removal",
+        "Practices needing Nd:YAG for vascular lesions and darker skin types",
+        "Medical practices wanting to consolidate hair removal + vascular + skin rejuvenation + acne on one device",
+        "Clinics in US, Canada, UK, Europe, and France where Formatk is present"
+      ],
+      "keyFeatures": "The Magma's key advantage over the Alpha is the 1064nm Nd:YAG pure diode laser: ideal for vascular lesions and safe hair removal on darker skin types. The Nd:YAG features 3 interchangeable tips and integrated contact cooling (a first for long-pulse Nd:YAG per Formatk), delivering up to 440 J/cm². IPL USP technology claims the highest pulse density on the market. All three light sources share the MILO melanin meter and Golden-Touch cooling platform. This is the largest and most expensive system in Formatk's lineup."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "formatk-magma-spark",
+    "name": "Magma Spark",
+    "manufacturer": "Formatk Systems",
+    "technologyType": "laser",
+    "wavelengths": [
+      "808nm"
+    ],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (808nm diode laser with MILO melanin meter for personalized parameters)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "Golden-Touch contact cooling",
+    "notes": "Diode laser-only version of the Magma platform. Uses the same 808nm ALD and LLD laser handpieces as the full Magma, but without the 1064nm Nd:YAG or IPL applicators. This makes it a purpose-built hair removal device. FDA cleared as Special 510(k) under K162781 with K153566 as predicate. Includes MILO melanin meter and PowerMotion delivery. Israeli manufacturer. May also appear marketed as 'Alpha Magma Spark Pro' on reseller sites. This is the predecessor/sibling to the Alpha, which added IPL back into the mix.",
+    "aliases": [
+      "magma spark",
+      "formatk magma spark",
+      "forma-tk magma spark",
+      "formatk spark",
+      "alpha magma spark pro"
+    ],
+    "family": "formatk-magma",
+    "deliveryMethod": "PowerMotion (high-fluence in-motion)",
+    "fdaClearances": [
+      {
+        "number": "K162781",
+        "description": "Magma Spark: 808nm diode laser platform with ALD and LLD applicators for hair removal and permanent hair reduction (Fitzpatrick I-VI) and treatment of PFB. Special 510(k), predicate: K153566 (Magma System).",
+        "date": "2016-11-09"
+      }
+    ],
+    "richContent": {
+      "overview": "The Magma Spark is the diode laser-only member of the Formatk Magma family. It uses the same 808nm ALD and LLD laser handpieces found on the full Magma platform but strips away the Nd:YAG laser and all IPL applicators. The result is a focused, purpose-built hair removal device at a lower price point than the full Magma.",
+      "howItWorks": "Two 808nm diode laser handpieces, ALD (Advanced Laser Diode) and LLD (Large Laser Diode), deliver energy for hair removal. The LLD offers up to 35 J/cm². PowerMotion in-motion delivery enables single-pass treatments. MILO melanin meter provides objective skin typing. Golden-Touch contact cooling protects the epidermis during treatment.",
+      "typicalUses": [
+        "Clinics focused exclusively on laser hair removal without needing skin rejuvenation capabilities",
+        "Practices wanting a purpose-built 808nm diode at a lower price than the full Magma",
+        "Entry point into the Formatk ecosystem with upgrade path to Alpha or Magma"
+      ],
+      "keyFeatures": "As a diode laser-only device, the Spark is classified as a purpose-built hair removal laser, unlike the hybrid Alpha and Magma. Same proven 808nm diode technology and PowerMotion delivery as its siblings, but without the added complexity and cost of IPL and Nd:YAG components. The Spark appears on some reseller sites as 'Alpha Magma Spark Pro' which can cause confusion with the separate Alpha System."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "formatk-alpha",
+    "name": "Alpha",
+    "manufacturer": "Formatk Systems",
+    "technologyType": "hybrid",
+    "wavelengths": [
+      "808nm (diode laser)",
+      "430-650nm (3D IPL, filtered broadband)"
+    ],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (808nm diode laser for hair removal across all skin types, 3D IPL with filters for skin treatments on lighter skin)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "Golden-Touch contact cooling",
+    "notes": "Mid-range hybrid combining 808nm diode laser + 3D IPL on a single device. Hair removal is done via the LLD and ALD diode laser handpieces. These ARE real 808nm lasers. Two 3D IPL handpieces: L-530 (body, 530nm/650nm filters) and S-590 (face, 430nm/530nm/590nm filters) for skin rejuvenation, vascular/pigmented lesions, acne, and rosacea. Does NOT include the 1064nm Nd:YAG found on the full Magma. The '3D' in 3D IPL refers to three adjustable parameters: Energy, Pulse Duration, and Contact Cooling Intensity. Includes MILO digital melanin meter. Israeli manufacturer (Tirat Carmel), founded 2008. Distributed in North America by Aesthetic Management Partners and DermaSpark (Canada). Health Canada licensed. 20 million pulse handpiece life on diode.",
+    "aliases": [
+      "formatk alpha",
+      "forma-tk alpha",
+      "alpha system",
+      "formatk alpha system",
+      "forma tk alpha"
+    ],
+    "family": "formatk-magma",
+    "deliveryMethod": "PowerMotion (high-fluence in-motion)",
+    "fdaClearances": [
+      {
+        "number": "K153566",
+        "description": "Operates under the Magma System clearance: multi-technology platform for 808nm diode laser and IPL. The Alpha is a configuration of the cleared Magma platform without the Nd:YAG applicator.",
+        "date": "2016-04-06"
+      }
+    ],
+    "richContent": {
+      "overview": "Formatk's mid-range device positioned as 'Making Premium the New Standard.' Combines a genuine 808nm diode laser with 3D IPL technology on a single, smaller platform. The Alpha sits between the full Magma (which adds Nd:YAG) and the Spark (diode only). Unlike many hybrid systems where the hair removal component is IPL, the Alpha's primary hair removal handpieces (LLD and ALD) are real diode lasers.",
+      "howItWorks": "The LLD handpiece delivers 808nm diode laser energy with up to 35 J/cm² for hair removal. Five treatment modes allow personalized protocols: standard, fast, and three PowerMotion modes that use high-fluence in-motion delivery for single-pass treatments. The ALD handpiece offers an alternative 808nm spot size. Two 3D IPL handpieces: L-530 (body, filters at 530nm and 650nm) for pigmented/vascular lesions and body hair removal on lighter skin, and S-590 (face, filters at 430nm, 530nm, 590nm) for acne, rosacea, and facial rejuvenation. '3D' means three independently adjustable parameters: energy, pulse duration, and contact cooling intensity, addressing the vasoconstriction problem of overcooling. MILO melanin meter provides in-vivo skin typing. Golden-Touch contact cooling protects the skin.",
+      "typicalUses": [
+        "Clinics wanting real diode laser hair removal plus IPL skin treatments on one compact platform",
+        "Practices serving diverse skin types (Fitzpatrick I-VI)",
+        "Med spas and aesthetic clinics wanting to expand beyond hair removal without a second device",
+        "Clinics that don't need Nd:YAG vascular treatment (otherwise get the full Magma)"
+      ],
+      "keyFeatures": "The key distinction: the LLD diode handpiece IS a real 808nm laser, not IPL. The Alpha's 3D IPL handpieces offer independent control of energy, pulse duration, AND cooling temperature (most IPL systems only control energy and pulse duration). This addresses the overcooling/vasoconstriction problem where excessive cooling reduces treatment effectiveness. MILO melanin meter provides objective skin typing rather than visual Fitzpatrick assessment. No 1064nm Nd:YAG. Clinics needing vascular lesion treatment or dedicated darker-skin wavelength should consider the full Magma instead."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "jeisys-smoothcool-hr",
+    "name": "SmoothCool HR",
+    "manufacturer": "Jeisys Medical",
+    "technologyType": "ipl",
+    "wavelengths": [
+      "420-950nm (filtered broadband)"
+    ],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-V",
+      "displayText": "Light to medium-dark skin tones (IPL with 700nm and 800nm long-pass filters for hair removal)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "ATC (Advanced Cooling Technology, -10°C to 20°C)",
+    "notes": "Hair removal-focused IPL system. NOT a laser. Uses a dedicated HR handpiece with a large 10mm x 50mm spot size optimized for fast hair removal treatments. The 700nm and 800nm long-pass filters target deeper follicles. ATC sub-zero cooling to -10°C is the standout feature: eliminates the need for external Zimmer chiller. Also comes with 8 interchangeable SR filters (530nm, 560nm, 590nm, 640nm, 700nm, 800nm, plus 420(S) and 530(S) dual band-pass) enabling skin rejuvenation, vascular/pigmented lesion treatment, and acne treatment. Korean manufacturer (Jeisys Medical Inc., Seoul, founded 2001/2004), backed by Archimed ($8B healthcare investment firm). US distributor: Perigee Medical. NOTE: Completely different company from 'Guangzhou Jeisys Beauty Technology' (Chinese budget equipment).",
+    "aliases": [
+      "smoothcool hr",
+      "jeisys smoothcool hr",
+      "smooth cool hr",
+      "jeisys hr",
+      "smoothcool hair removal"
+    ],
+    "family": "jeisys-smoothcool",
+    "deliveryMethod": null,
+    "fdaClearances": [
+      {
+        "number": "K082911",
+        "description": "Original SmoothCool HR System clearance. IPL for permanent hair reduction. Product code GEX. Predicate: P-Nain System (K072833).",
+        "date": "2008-12-19"
+      },
+      {
+        "number": "K213484",
+        "description": "SmoothCool HR System update: added handpieces (420nm(S), 560nm(S)) and filters (800nm, 530nm, 420nm). Predicate: K082911. Reference device: Lumenis Stellar M22 (K193500).",
+        "date": "2022-04-20"
+      },
+      {
+        "number": "K223685",
+        "description": "SmoothCool HR System update: added filters (640nm, 590nm, 545(V), 530(D), 500nm). Waveband 420-950nm. Predicate: K213484.",
+        "date": "2023-01-04"
+      }
+    ],
+    "richContent": {
+      "overview": "Jeisys Medical's hair removal-focused IPL platform. The HR handpiece features a large 10mm x 50mm spot size with integrated ATC sub-zero cooling for fast, comfortable hair removal treatments. While primarily marketed for hair removal, the system also includes SR filters for skin rejuvenation versatility. This is NOT a laser. It is an IPL system, despite being classified under FDA product code GEX.",
+      "howItWorks": "The system uses xenon flash lamp technology to generate broadband light. The HR handpiece uses 700nm and 800nm long-pass filters to target deeper hair follicles while bypassing superficial melanin. ATC (Advanced Cooling Technology) maintains precise skin surface temperature at sub-zero levels (-10°C) during treatment, enabling higher fluences with less pain. Fluence up to 65 J/cm². Pulse duration 1-60ms.",
+      "typicalUses": [
+        "Clinics focused primarily on IPL hair removal with some skin rejuvenation capability",
+        "Practices wanting powerful IPL cooling without purchasing a separate Zimmer chiller",
+        "Clinics adding hair removal services alongside their existing treatment offerings"
+      ],
+      "keyFeatures": "ATC sub-zero cooling (-10°C) is the primary differentiator. No other IPL system offers built-in cooling this cold, eliminating the need for an external Zimmer chiller (~$15K+ savings). Large 10x50mm spot on the HR handpiece enables fast treatment of large body areas. 700nm filter targets deeper follicles, 800nm for even deeper penetration. Despite the 'HR' name, comes with 8 SR filters too. Legitimate Korean manufacturer backed by Archimed. Not to be confused with 'Guangzhou Jeisys Beauty Technology', a completely separate Chinese company."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "jeisys-smoothcool-hybrid",
+    "name": "SmoothCool Hybrid",
+    "manufacturer": "Jeisys Medical",
+    "technologyType": "ipl",
+    "wavelengths": [
+      "420-950nm (filtered broadband)"
+    ],
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-V",
+      "displayText": "Light to medium-dark skin tones (IPL with 700nm/800nm filters for hair removal, multiple filters for skin treatments)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "ATC (Advanced Cooling Technology, -10°C to 20°C)",
+    "notes": "Complete dual-handpiece IPL platform combining the HR (hair removal) and SR (skin rejuvenation) handpieces. NOT a laser. The HR handpiece has a large 10mm x 50mm spot for fast hair removal; the SR handpiece accepts 8-11 interchangeable filters for photorejuvenation, vascular/pigmented lesions, acne, rosacea, and melasma. This is the most complete SmoothCool configuration. ATC sub-zero cooling to -10°C on both handpieces. Cell-toning microsecond pulse technology for melasma. Korean manufacturer (Jeisys Medical Inc., Seoul, founded 2001/2004), backed by Archimed ($8B healthcare investment firm). US distributor: Perigee Medical. Also sold by Eclipse Aesthetics. Weight: 242 lb (110 kg). 220V system. NOTE: Completely different company from 'Guangzhou Jeisys Beauty Technology' (Chinese budget equipment).",
+    "aliases": [
+      "smoothcool hybrid",
+      "jeisys smoothcool hybrid",
+      "smooth cool hybrid",
+      "jeisys hybrid",
+      "smoothcool",
+      "jeisys smoothcool",
+      "smooth cool"
+    ],
+    "family": "jeisys-smoothcool",
+    "deliveryMethod": null,
+    "fdaClearances": [
+      {
+        "number": "K082911",
+        "description": "Original SmoothCool HR System clearance. IPL for permanent hair reduction. Product code GEX.",
+        "date": "2008-12-19"
+      },
+      {
+        "number": "K092326",
+        "description": "SmoothCool clearance for non-laser light-based skin treatments. Product code ONF.",
+        "date": "2010-03-05"
+      },
+      {
+        "number": "K213484",
+        "description": "SmoothCool HR System update: added handpieces and filters. Predicate: K082911. Reference: Lumenis Stellar M22 (K193500).",
+        "date": "2022-04-20"
+      },
+      {
+        "number": "K223685",
+        "description": "SmoothCool HR System update: added more filters. Waveband 420-950nm. Predicate: K213484.",
+        "date": "2023-01-04"
+      }
+    ],
+    "richContent": {
+      "overview": "Jeisys Medical's complete dual-handpiece IPL platform combining hair removal and skin rejuvenation capabilities. The Hybrid includes both the large-spot HR handpiece (10mm x 50mm, optimized for fast hair removal) and the versatile SR handpiece (8-11 interchangeable filters for skin treatments). This is NOT a laser. It is an IPL system. The standout feature is ATC sub-zero cooling to -10°C on both handpieces, which Jeisys claims delivers the highest peak power, speed, and safety from any commercial IPL system.",
+      "howItWorks": "The system uses xenon flash lamp technology. The HR handpiece uses 700nm and 800nm long-pass filters for deep follicle targeting during hair removal. The SR handpiece accepts interchangeable filters: 530nm/560nm/590nm/640nm for pigment and vascular work, 420(S)/530(S) dual band-pass for acne and precise vascular targeting, and 700nm/800nm for deeper targets. Cell-toning technology uses microsecond pulses for melasma. Photo Shower™ delivers 300 pulses/minute for acne. ATC cooling maintains -10°C skin surface temperature. Fluence up to 65 J/cm². Pulse duration 1-60ms.",
+      "typicalUses": [
+        "Clinics wanting comprehensive IPL hair removal + skin rejuvenation on one platform",
+        "Practices treating melasma and PIH (cell-toning technology)",
+        "Clinics wanting sub-zero cooling without purchasing a separate Zimmer chiller (~$15K+ savings)",
+        "Multi-service med spas needing versatile IPL capability"
+      ],
+      "keyFeatures": "The Hybrid combines both the HR and SR handpieces for complete treatment coverage. ATC sub-zero cooling (-10°C) is the primary differentiator. No other IPL system offers built-in cooling this cold. Cell-toning microsecond pulses for melasma and Photo Shower (300 pulses/min) for acne are unique capabilities. Legitimate Korean manufacturer now expanding aggressively into the US market (US subsidiary established 2025, led by former CEO of Hydrafacial), backed by Archimed ($8B healthcare investment firm). Not to be confused with 'Guangzhou Jeisys Beauty Technology', a completely separate Chinese company."
+    }
   },
   {
     "type": "technology-term",
@@ -2490,14 +3315,15 @@
     "name": "E-Light",
     "technologyType": "ipl",
     "isRealLaser": false,
-    "classification": "limited-results",
-    "whatItIs": "E-Light combines IPL with radiofrequency (RF) energy in a single device.",
-    "whyItMatters": "E-Light is NOT a laser. It is a combination of IPL and RF technology, often marketed with impressive-sounding names. The IPL component provides light energy while RF adds heat. Despite marketing claims, this is still fundamentally an IPL-based system, not a true laser.",
-    "askYourClinic": null,
+    "classification": "ask-clinic",
+    "whatItIs": "E-Light combines IPL with radiofrequency (RF) energy in a single device. Widely used as a generic term by budget manufacturers for IPL+RF combo machines.",
+    "whyItMatters": "E-Light is NOT a laser. It is a combination of IPL and RF technology, often marketed with impressive-sounding names. The IPL component provides light energy while RF adds heat. Despite marketing claims, this is still fundamentally an IPL-based system, not a true laser. Note: not to be confused with the Syneron eLight, which is a specific clinical device from an established manufacturer using the same IPL+RF principle but with significantly higher build quality and proprietary elos technology.",
+    "askYourClinic": "What is the brand and model of the E-Light device? Is it a Syneron eLight or a generic IPL+RF machine?",
     "aliases": [
-      "elight",
       "e light",
-      "ipl rf"
+      "ipl rf",
+      "e-light machine",
+      "elight machine"
     ]
   },
   {
@@ -2692,6 +3518,23 @@
       "smooth flow",
       "rohrer sft",
       "epilaze sft"
+    ]
+  },
+  {
+    "type": "technology-term",
+    "slug": "usp",
+    "name": "USP (Ultra Short Pulse)",
+    "technologyType": "delivery-method",
+    "isRealLaser": null,
+    "classification": "verify-brand",
+    "whatItIs": "USP stands for Ultra Short Pulse. It is a patented delivery method developed by Cocoon Medical (Sinclair) that fires diode laser energy in pulses as short as 3ms. The ultra-short pulse duration reaches the optimal temperature to destroy the hair follicle's germination cells without heating the surrounding skin.",
+    "whyItMatters": "USP is hardware-specific to Cocoon Medical devices (Primelase Excellence, Primelase HR, and Elysion Pro). Unlike generic terms like SHR which can appear on any machine, a clinic claiming USP technology should have a genuine Cocoon Medical device. However, as with other branded terms, Chinese manufacturers could copy the name. If you see USP indicated on a machine that isn't clearly Cocoon Medical or Sinclair branded, ask questions.",
+    "askYourClinic": "What is the brand and model of your laser? USP is exclusive to Cocoon Medical devices (Primelase or Elysion Pro).",
+    "aliases": [
+      "ultra short pulse",
+      "usp technology",
+      "cocoon medical usp",
+      "usp laser"
     ]
   }
 ]
