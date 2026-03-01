@@ -2676,5 +2676,22 @@
     "vpl diode",
     "vpl diode laser"
   ]
+  },
+  {
+    "type": "technology-term",
+    "slug": "sft",
+    "name": "SFT (Smooth Flow Technology)",
+    "technologyType": "laser",
+    "isRealLaser": true,
+    "classification": "verify-brand",
+    "whatItIs": "SFT is Rohrer Aesthetics' proprietary rapid-pulse delivery mode, exclusive to the EpiLaze hair removal system. In SFT mode, the laser delivers up to 10 pulses per second, allowing in-motion treatment of large body areas.",
+    "whyItMatters": "Unlike SHR which can appear on any device from any manufacturer, SFT is hardware-specific to the Rohrer Aesthetics EpiLaze. If a clinic says they use SFT, they should have a genuine EpiLaze system. However, at least one Chinese manufacturer (MOONLIGHT) has copied Rohrer's marketing materials word for word, claiming 'our exclusive Smooth Flow Technology' on a generic tri-wavelength machine. If your clinic mentions SFT, ask to see the Rohrer Aesthetics branding on the device.",
+    "askYourClinic": "Can I see the Rohrer Aesthetics logo on the machine? What is the model name?",
+    "aliases": [
+      "smooth flow technology",
+      "smooth flow",
+      "rohrer sft",
+      "epilaze sft"
+    ]
   }
 ]
