@@ -17,11 +17,7 @@ import {
 import { EquipmentDetails } from '@/components/EquipmentDetails';
 import { TechnologyTermDetails } from '@/components/TechnologyTermDetails';
 import { IPLDetails } from '@/components/IPLDetails';
-import { DiodeLaserDetails } from '@/components/DiodeLaserDetails';
-import { AlexandriteLaserDetails } from '@/components/AlexandriteLaserDetails';
-import { NdYAGLaserDetails } from '@/components/NdYAGLaserDetails';
-import { DualWavelengthLaserDetails } from '@/components/DualWavelengthLaserDetails';
-import { TriWavelengthLaserDetails } from '@/components/TriWavelengthLaserDetails';
+import { WavelengthDetails, hasWavelengthConfig } from '@/components/WavelengthDetails';
 import { JsonLd } from '@/components/JsonLd';
 import { generateProductSchema, generateTechTermSchema } from '@/lib/schema';
 
@@ -201,7 +197,7 @@ export default async function EquipmentPage({
 
   // Technology term entry
   if (isTechnologyTerm(equipment)) {
-    // Special custom page for IPL
+    // Special custom page for IPL (unique structure, kept separate)
     if (slug === 'ipl') {
       return (
         <>
@@ -211,56 +207,17 @@ export default async function EquipmentPage({
       );
     }
 
-    // Special custom page for 810nm Diode
-    if (slug === '810nm') {
+    // Wavelength pages (755nm, 810nm, 1064nm, dual-wavelength, tri-wavelength)
+    if (hasWavelengthConfig(slug)) {
       return (
         <>
           <JsonLd data={generateTechTermSchema(equipment)} />
-          <DiodeLaserDetails term={equipment} />
+          <WavelengthDetails term={equipment} />
         </>
       );
     }
 
-    // Special custom page for 755nm Alexandrite
-    if (slug === '755nm') {
-      return (
-        <>
-          <JsonLd data={generateTechTermSchema(equipment)} />
-          <AlexandriteLaserDetails term={equipment} />
-        </>
-      );
-    }
-
-    // Special custom page for 1064nm Nd:YAG
-    if (slug === '1064nm') {
-      return (
-        <>
-          <JsonLd data={generateTechTermSchema(equipment)} />
-          <NdYAGLaserDetails term={equipment} />
-        </>
-      );
-    }
-
-    // Special custom page for Dual Wavelength
-    if (slug === 'dual-wavelength') {
-      return (
-        <>
-          <JsonLd data={generateTechTermSchema(equipment)} />
-          <DualWavelengthLaserDetails term={equipment} />
-        </>
-      );
-    }
-
-    // Special custom page for Tri-Wavelength
-    if (slug === 'tri-wavelength') {
-      return (
-        <>
-          <JsonLd data={generateTechTermSchema(equipment)} />
-          <TriWavelengthLaserDetails term={equipment} />
-        </>
-      );
-    }
-
+    // Default technology term page
     return (
       <>
         <JsonLd data={generateTechTermSchema(equipment)} />

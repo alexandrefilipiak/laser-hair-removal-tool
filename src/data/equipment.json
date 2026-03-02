@@ -2647,6 +2647,56 @@
   },
   {
     "type": "machine",
+    "slug": "elysion",
+    "name": "Elysion",
+    "manufacturer": "Cocoon Medical (Sinclair)",
+    "technologyType": "laser",
+    "wavelengths": ["810nm"],
+    "power": {
+      "max": "1,600W"
+    },
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (810nm diode, suitable for darker and tanned skin in dynamic mode)"
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "Crystal Freeze (sapphire contact cooling, constant 5°C)",
+    "notes": "Cocoon Medical's entry-level, single-wavelength diode laser. The original Elysion is the 810nm-only version of the platform, positioned below the multi-wavelength Elysion Pro. Same chassis, same Crystal Freeze cooling, same USP 3ms pulse technology, but limited to the 810nm diode. Max power 1,600W (vs 2,000W on the Pro with all four wavelengths). Two spot sizes: 10x10mm and 18x10mm. Static mode at 1-3Hz, dynamic (in-motion) mode at 5-15Hz. Max energy 160J, limited to 40 J/cm² maximum. Max peak electrical power 9,000W. Dimensions: 650x500x450mm. Weight: 113 lb (51 kg). 10.4\" touchscreen. Single-phase 100-240V, 50-60Hz. No consumables. Cocoon Medical offers an upgrade path from the Elysion to the Primelase platform. Manufactured in Barcelona, Spain. Sold in the US through LAX Distribution / MedLaser USA and other distributors. CE certified and FDA cleared under K193367 (covers both Elysion and Elysion Pro).",
+    "aliases": [
+      "elysion",
+      "cocoon elysion",
+      "cocoon medical elysion",
+      "sinclair elysion",
+      "elysion 810",
+      "elysion 810nm",
+      "elysion diode",
+      "cocoon elysion diode"
+    ],
+    "family": "cocoon-elysion",
+    "deliveryMethod": "static and dynamic (in-motion)",
+    "fdaClearances": [
+      {
+        "number": "K193367",
+        "description": "ELYSION Diode Laser Hair Removal System. 755nm and 810nm applicators. Hair removal (static and dynamic modes), PFB treatment, Fitzpatrick I-VI. Three applicators: two 810nm (10x10mm and 18x10mm) and one 755nm (10x10mm). Class IV laser. Predicate: Primelase Excellence (K191321). This clearance covers both the Elysion and Elysion Pro.",
+        "date": "2020-06-01",
+        "date_note": "Approximate. FDA letter undated in public PDF. Application received 2019-12-04. Summary prepared 2020-03-07. Freyr announced clearance 2020-06-08."
+      }
+    ],
+    "richContent": {
+      "overview": "Cocoon Medical's most affordable professional diode laser. The Elysion is the single-wavelength (810nm) version of the platform, built for clinics that want a reliable, no-frills diode laser for hair removal without paying for multi-wavelength capability.",
+      "howItWorks": "Uses a single 810nm diode to target melanin in the hair follicle. USP (Ultra Short Pulse) technology delivers energy in 3ms pulses, destroying germination cells without overheating surrounding skin. Two work modes: static (1-3Hz) for precision with high-energy single shots, and dynamic in-motion (5-15Hz) for fast coverage of large areas at lower fluences. Crystal Freeze sapphire contact cooling holds the handpiece tip at a constant 5°C throughout the session.",
+      "typicalUses": [
+        "New clinics and spas entering laser hair removal on a tighter budget",
+        "High-volume hair removal businesses that only need 810nm",
+        "Practices that want the option to upgrade to Primelase later",
+        "All skin types including tanned skin (Fitzpatrick I-VI)"
+      ],
+      "keyFeatures": "The Elysion is the stripped-down sibling of the Elysion Pro. Same build quality, same Crystal Freeze cooling, same USP pulse technology, but 810nm only and 1,600W instead of the Pro's 2,000W (multi-wavelength) or 3,500W (810nm-only Pro config). If your clinic only treats with 810nm and doesn't need the 755nm Alexandrite or the Blend (940+1060nm) handpieces, the Elysion does the same job at a lower acquisition cost. Cocoon Medical also offers an upgrade path to the Primelase lineup if the clinic grows."
+    }
+  },
+  {
+    "type": "machine",
     "slug": "elysion-pro",
     "name": "Elysion Pro",
     "manufacturer": "Cocoon Medical (Sinclair)",

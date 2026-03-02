@@ -1,6 +1,8 @@
 import { SearchBar } from '@/components/SearchBar';
 import { EquipmentIndex } from '@/components/EquipmentIndex';
 import { Footer } from '@/components/Footer';
+import { BackNavigation } from '@/components/BackNavigation';
+import { SectionDivider } from '@/components/SectionDivider';
 import equipmentData from '@/data/equipment.json';
 import type { EquipmentEntry } from '@/lib/equipment';
 import Link from 'next/link';
@@ -33,31 +35,9 @@ export default function IsItARealLaserPage() {
       }}
     >
       {/* Back to Home */}
-      <nav className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-10">
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 text-base transition-colors hover:text-[#5E8B7E]"
-          style={{ color: '#5A5550' }}
-        >
-          <svg
-            className="h-4 w-4"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M10 19l-7-7m0 0l7-7m-7 7h18"
-            />
-          </svg>
-          <span style={{ letterSpacing: '0.02em' }}>
-            Back to Home
-          </span>
-        </Link>
-      </nav>
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-10">
+        <BackNavigation href="/" label="Back to Home" />
+      </div>
 
       {/* Hero Section */}
       <section style={{ position: 'relative', paddingTop: '2rem', paddingBottom: '3rem' }}>
@@ -586,27 +566,7 @@ export default function IsItARealLaserPage() {
           </div>
 
           {/* Section Separator */}
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '1rem',
-              marginTop: '2.5rem',
-              marginBottom: '0.5rem',
-              maxWidth: '560px',
-              marginLeft: 'auto',
-              marginRight: 'auto',
-            }}
-          >
-            <div style={{ flex: 1, height: '1px', backgroundColor: '#E8E4DF' }} />
-            <div style={{ display: 'flex', gap: '0.5rem' }}>
-              <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: '#D4CFC7' }} />
-              <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: '#D4CFC7' }} />
-              <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: '#D4CFC7' }} />
-            </div>
-            <div style={{ flex: 1, height: '1px', backgroundColor: '#E8E4DF' }} />
-          </div>
+          <SectionDivider />
 
           {/* Not All Lasers Are Equal */}
           <div
@@ -695,27 +655,7 @@ export default function IsItARealLaserPage() {
           </div>
 
           {/* Section Separator */}
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '1rem',
-              marginTop: '2.5rem',
-              marginBottom: '0.5rem',
-              maxWidth: '560px',
-              marginLeft: 'auto',
-              marginRight: 'auto',
-            }}
-          >
-            <div style={{ flex: 1, height: '1px', backgroundColor: '#E8E4DF' }} />
-            <div style={{ display: 'flex', gap: '0.5rem' }}>
-              <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: '#D4CFC7' }} />
-              <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: '#D4CFC7' }} />
-              <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: '#D4CFC7' }} />
-            </div>
-            <div style={{ flex: 1, height: '1px', backgroundColor: '#E8E4DF' }} />
-          </div>
+          <SectionDivider />
 
           {/* Home Lasers vs Clinical Lasers */}
           <div
