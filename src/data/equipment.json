@@ -1351,7 +1351,7 @@
       "aerolase neo",
       "aerolase"
     ],
-    "family": null,
+    "family": "aerolase-neo",
     "deliveryMethod": null,
     "richContent": {
       "overview": "Aerolase's multi-application 1064nm Nd:YAG laser using proprietary 650-microsecond pulse technology. Unique in that it requires no cooling system, no numbing cream, and no contact gel - the handpiece doesn't even touch the skin.",
@@ -1362,6 +1362,56 @@
         "Clinics wanting zero consumable costs (no cooling supplies, gels, or tips)"
       ],
       "keyFeatures": "Zero consumables and no-contact delivery mean lower operating costs. Particularly strong for diverse patient populations. Not primarily designed for hair removal - it's a versatile dermatology platform where hair removal is one of many capabilities."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "aerolase-neo-derm",
+    "name": "Neo Derm",
+    "manufacturer": "Aerolase",
+    "technologyType": "laser",
+    "wavelengths": [
+      "1064nm"
+    ],
+    "power": {
+      "max": null
+    },
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones, especially suited for darker skin (Nd:YAG with 650-microsecond technology)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": null,
+    "notes": "1064nm Nd:YAG using Aerolase's 650-microsecond pulse technology, same as the Neo Elite but with higher energy output. Aerolase positions the Neo Derm as a combination of the Neo Elite (aesthetic/multi-purpose) and Neo V (vascular specialist), covering both medical and aesthetic dermatology in one device. No cooling system, no contact gel, no numbing required. The handpiece does not touch the skin during treatment. Internally air-cooled, compact design, no fiber optics or water cooling. Hair removal is one of many applications; the device is FDA-cleared for 36+ indications under the broader Aerolase Nd:YAG clearance (K120235). Aerolase markets specific treatment protocols under branded names: NeoClear (acne), NeoSkin (rejuvenation). Weighs roughly 25 lbs. Targeted primarily at dermatology practices wanting both medical and aesthetic capability from a single platform. Not to be confused with the Neo V, which is vascular-only and not typically used for hair removal.",
+    "aliases": [
+      "aerolase neo derm",
+      "neo derm",
+      "aerolase neoderm",
+      "neoderm",
+      "aerolase derm",
+      "neo derm aerolase",
+      "aerolase neo derm laser"
+    ],
+    "family": "aerolase-neo",
+    "deliveryMethod": "non-contact (handpiece does not touch skin)",
+    "fdaClearances": [
+      {
+        "number": "K120235",
+        "date": "2012-09-17",
+        "description": "Clearance for the full Aerolase Nd:YAG 1064nm laser family (FriendlyLight, LightPod, Neo models). Cleared for dermatology (vascular lesions, pigmented lesions, wrinkles, acne, hair removal, PFB), podiatry, and general surgery. Hair removal indication covers permanent hair reduction on all Fitzpatrick skin types I-VI including tanned skin. Product code GEX (powered laser surgical instrument)."
+      }
+    ],
+    "richContent": {
+      "overview": "Aerolase's top-tier 1064nm Nd:YAG platform, combining the capabilities of both the Neo Elite and Neo V into one system with enhanced energy output. Like all Aerolase Neo devices, it requires no cooling, no numbing cream, and no contact gel. The handpiece never touches your skin.",
+      "howItWorks": "The 650-microsecond pulse duration is the key innovation. It delivers laser energy faster than the skin's thermal relaxation time (about 800 microseconds), so heat gets sealed inside the target (hair follicle, blood vessel, pigment) before it can spread to surrounding tissue. This is why no external cooling is needed. The 1064nm Nd:YAG wavelength penetrates deep and bypasses epidermal melanin, making it safe for darker skin tones where other laser types risk burns or pigmentation changes.",
+      "typicalUses": [
+        "Dermatology practices treating both medical (acne, rosacea, psoriasis, PFB) and aesthetic (rejuvenation, hair removal, veins) concerns",
+        "Practices specializing in darker skin types (Fitzpatrick IV-VI)",
+        "Clinics wanting zero consumable costs and a compact, portable device",
+        "Providers looking for a single device to replace multiple specialized lasers"
+      ],
+      "keyFeatures": "The Neo Derm is the most capable device in the Aerolase Neo lineup, combining medical dermatology and aesthetic applications with higher energy output than the Neo Elite alone. The zero-consumable model (no cooling gels, no tips, no replacement handpieces) keeps ongoing costs low. For hair removal specifically, the 1064nm wavelength works on all skin tones but is slower on large body areas compared to dedicated high-speed diode systems. Best suited for practices where hair removal is one of many services, not the primary revenue driver."
     }
   },
   {
@@ -2115,8 +2165,7 @@
     "notes": "Venus Concept's multi-application IPL platform. This is NOT a laser. Uses Intense Pulsed Light with SmartPulse technology. Hair removal is one of many applications including photofacials, acne treatment, skin resurfacing, and wrinkle reduction. FDA-cleared for hair removal on Fitzpatrick I-IV only.",
     "aliases": [
       "venus versa",
-      "venus concept versa",
-      "venus versa pro"
+      "venus concept versa"
     ],
     "family": null,
     "deliveryMethod": null,
@@ -2129,6 +2178,58 @@
         "Light to medium skin tones only (Fitzpatrick I-IV for hair removal)"
       ],
       "keyFeatures": "Important distinction: Venus Concept makes BOTH this IPL device AND true diode lasers (Venus Velocity, Venus Epileve). If your clinic uses Venus Concept equipment for hair removal, ask specifically whether it is the Versa (IPL) or Velocity/Epileve (real diode laser). The Venus name alone does not guarantee laser treatment. IPL hair removal typically requires more sessions than true laser for comparable results."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "venus-versa-pro",
+    "name": "Venus Versa Pro",
+    "manufacturer": "Venus Concept",
+    "technologyType": "ipl",
+    "wavelengths": [
+      "515-1200nm (IPL, filtered broadband)",
+      "650nm+ (HR650/HR650XL hair removal applicator)",
+      "690nm+ (HR690/HR690XL hair removal applicator)"
+    ],
+    "power": {
+      "max": null
+    },
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-IV",
+      "displayText": "Light to medium skin tones only (IPL hair removal applicators FDA-cleared for Fitzpatrick I-IV)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact cooling (real-time cooling system, monitors light-guide temperature 1,000x per second)",
+    "notes": "This is NOT a laser. The Venus Versa Pro is an updated version of the Venus Versa, using Intense Pulsed Light (IPL) with SmartPulse technology. It is a multi-application platform with interchangeable applicators: HR650/HR650XL and HR690/HR690XL for hair removal, SR515 and SR580 for photorejuvenation, AC Dual for acne, NanoFractional RF (Viva) for skin resurfacing, and DiamondPolar/OctiPolar for wrinkle reduction and skin tightening. The 'Pro' designation adds the Venus Viva MD NanoFractional RF applicator and enhanced capabilities over the standard Versa. Hair removal is limited to Fitzpatrick I-IV. Venus Concept also makes true diode lasers (Velocity, Epileve) which work on all skin tones. Shares FDA clearance with the standard Venus Versa. The TriBella treatment protocol combines IPL, RF, and (MP)2 in a single session. Max output energy listed at 124 mJ/pin for the NanoFractional applicator.",
+    "aliases": [
+      "venus versa pro",
+      "versa pro",
+      "venus concept versa pro",
+      "venus versa pro ipl",
+      "versa pro venus",
+      "venus versa pro tribella"
+    ],
+    "family": "venus-versa",
+    "deliveryMethod": "SmartPulse (optimized pulse delivery for consistent energy output)",
+    "fdaClearances": [
+      {
+        "number": null,
+        "date": null,
+        "description": "Cleared under the same Venus Versa FDA clearance as a multi-application aesthetic device. HR650/HR650XL and HR690/HR690XL applicators cleared for hair removal and permanent hair reduction on Fitzpatrick I-IV. SR515 and SR580 applicators cleared for pigmented and vascular lesions. AC Dual cleared for acne vulgaris. DiamondPolar and OctiPolar cleared for wrinkle treatment. NanoFractional RF (Viva) cleared for ablation and resurfacing.",
+        "date_note": "Specific K-number not confirmed; shares clearance with Venus Versa platform. Venus Concept does not publish the K-number prominently."
+      }
+    ],
+    "richContent": {
+      "overview": "An updated version of Venus Concept's multi-application IPL platform. This is NOT a laser. It uses broad-spectrum Intense Pulsed Light with SmartPulse technology, plus NanoFractional RF and (MP)2 radio frequency. Hair removal is one of many capabilities, alongside photofacials, acne treatment, skin resurfacing, and wrinkle reduction.",
+      "howItWorks": "IPL (Intense Pulsed Light) works differently from a laser. Instead of a single precise wavelength, it fires a broad spectrum of light filtered through different applicators. For hair removal, the HR650 and HR690 applicators filter out shorter wavelengths and deliver light above 650nm or 690nm to target melanin in the hair follicle. SmartPulse technology aims to optimize each pulse for consistent energy delivery. A real-time cooling system monitors the light-guide temperature 1,000 times per second to protect the skin.",
+      "typicalUses": [
+        "Multi-service clinics wanting IPL hair removal, photofacials, acne treatment, and skin resurfacing from one platform",
+        "Practices that want NanoFractional RF (Viva) skin resurfacing alongside IPL",
+        "Light to medium skin tones only (Fitzpatrick I-IV for hair removal)",
+        "TriBella combination treatments (IPL + RF + (MP)2 in one session)"
+      ],
+      "keyFeatures": "The Pro version adds the Venus Viva MD NanoFractional RF applicator for skin resurfacing, which the standard Versa may not include. Same core IPL technology. Critical to understand: this is IPL, not laser. Venus Concept also sells true diode lasers (Venus Velocity, Venus Epileve) that work on all skin tones and are purpose-built for hair removal. If your clinic says they use 'Venus' for hair removal, ask whether it is the Versa/Versa Pro (IPL, Fitzpatrick I-IV only) or the Velocity/Epileve (diode laser, all skin tones). IPL hair removal generally requires more sessions than true laser for comparable results."
     }
   },
   {
