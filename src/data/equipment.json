@@ -1099,6 +1099,148 @@
   },
   {
     "type": "machine",
+    "slug": "inmode-fusion",
+    "name": "Fusion (Light & Dark)",
+    "manufacturer": "InMode",
+    "technologyType": "laser",
+    "wavelengths": [
+      "755nm",
+      "810nm",
+      "1064nm"
+    ],
+    "brandTier": "premium-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones. Fusion Light for I-IV, Fusion Dark for IV-VI."
+    },
+    "purposeBuilt": true,
+    "coolingMethod": "contact",
+    "notes": "InMode's dedicated hair removal handpieces for Triton and OptimasMAX platforms. Three wavelengths: 755nm Alexandrite, 810nm Diode, 1064nm Nd:YAG. FusionXL is the large-spot variant.",
+    "aliases": [
+      "inmode fusion",
+      "fusion light",
+      "fusion dark",
+      "fusionxl",
+      "inmode fusionxl"
+    ],
+    "family": "inmode",
+    "deliveryMethod": null,
+    "richContent": {
+      "overview": "InMode's multi-wavelength hair removal system. Combines three wavelengths for all skin types.",
+      "howItWorks": "Mosaic combination of 755nm, 810nm, and 1064nm targets hair at different depths simultaneously. Light variant for lighter skin, Dark for darker skin.",
+      "typicalUses": [
+        "Hair removal on all skin types",
+        "Large area body treatments (FusionXL)",
+        "Dark skin hair removal"
+      ],
+      "keyFeatures": "Three wavelengths in one handpiece. Dedicated Light and Dark configurations. FusionXL for large areas. Part of InMode modular ecosystem."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "optimas",
+    "name": "Optimas",
+    "manufacturer": "InMode",
+    "technologyType": "laser",
+    "wavelengths": [
+      "810nm"
+    ],
+    "power": {
+      "max": null
+    },
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-V",
+      "displayText": "Light to medium-dark skin tones (diode wavelength)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact cooling",
+    "coolingDetails": "Sapphire 3CP tip (triple contact cooling)",
+    "notes": "InMode's original multi-application workstation. Hair removal is handled by the DiolazeXL handpiece (810nm diode, same as the standalone Diolaze XL). The platform also houses Morpheus8 RF microneedling, Lumecca IPL for photorejuvenation, Vasculaze for vascular lesions, Fractora for skin resurfacing, and Forma for skin tightening. Shares FDA clearance K180719 with the Triton platform. Superseded by the Optimas Max in 2024.",
+    "aliases": [
+      "optimas",
+      "inmode optimas",
+      "optimas inmode",
+      "inmode optimas platform"
+    ],
+    "family": "inmode-optimas",
+    "deliveryMethod": null,
+    "fdaClearances": [
+      {
+        "number": "K180719",
+        "description": "Original clearance covering the TRITON/OPTIMAS system platform and DiolazeXL handpieces in three configurations: 810nm, 810/1064nm, and 755/810nm. Hair removal and treatment of vascular and pigmented lesions. Product code GEX.",
+        "date": "2018-06-18"
+      },
+      {
+        "number": "K221571",
+        "description": "Modified device update to K180719. Minor hardware changes and user interface screen enlarged from 10 to 12 inches. Same platform, same handpieces.",
+        "date": "2022-01-01",
+        "date_note": "Approximate. Estimated from K-number sequence."
+      }
+    ],
+    "richContent": {
+      "overview": "InMode's original multi-application workstation. Hair removal is one of six or more treatment categories available on the platform, handled by the DiolazeXL handpiece.",
+      "howItWorks": "The DiolazeXL handpiece uses an 810nm diode with a large spot size and sapphire contact cooling. Each pulse covers a broad area for fast treatments. The platform itself is a modular workstation that accepts different handpieces for different clinical indications.",
+      "typicalUses": [
+        "Multi-service med spas offering hair removal alongside skin rejuvenation, body contouring, and vascular treatments",
+        "Clinics that want one platform instead of buying separate devices for each treatment type"
+      ],
+      "keyFeatures": "This platform only offers the DiolazeXL handpiece for hair removal, which is 810nm diode only. No Alexandrite or Nd:YAG wavelength options. If you need treatment for darker skin, ask whether your clinic has the newer Optimas Max with Fusion Dark handpieces, or the standalone Triton."
+    }
+  },
+  {
+    "type": "machine",
+    "slug": "optimas-max",
+    "name": "Optimas Max",
+    "manufacturer": "InMode",
+    "technologyType": "laser",
+    "wavelengths": [
+      "755nm",
+      "810nm",
+      "1064nm"
+    ],
+    "power": {
+      "max": null
+    },
+    "brandTier": "standard-clinical",
+    "skinTypes": {
+      "fitzpatrickRange": "I-VI",
+      "displayText": "All skin tones (triple wavelength system)"
+    },
+    "purposeBuilt": false,
+    "coolingMethod": "contact cooling",
+    "coolingDetails": "Sapphire 3CP tip (triple contact cooling)",
+    "notes": "Upgraded successor to the Optimas, launched July 2024. The big upgrade for hair removal is the Fusion Light and Fusion Dark handpieces, which add 755nm Alexandrite and 1064nm Nd:YAG to the existing 810nm diode. Fusion Light pairs 755nm + 810nm for lighter skin; Fusion Dark pairs 810nm + 1064nm for darker skin. The platform also includes DiolazeXL MAX (810nm diode with large spot size), Morpheus8 Burst and Burst Deep, Lumecca Peak IPL (25% more power than original Lumecca), Vasculaze Max, and Forma/Plus.",
+    "aliases": [
+      "optimas max",
+      "inmode optimas max",
+      "optimasmax",
+      "optimas max inmode",
+      "optimax max",
+      "inmode optimasmax"
+    ],
+    "family": "inmode-optimas",
+    "deliveryMethod": null,
+    "fdaClearances": [
+      {
+        "number": "K251632",
+        "description": "Optimas MAX System clearance. Fusion Light and Fusion Dark handpieces specifically cleared for hair removal (755nm, 810nm, 1064nm). Also covers DiolazeXL MAX, VasculazeMAX, Lumecca Peak, Morpheus8 Burst/Burst Deep, and Forma/Plus. Product code GEX.",
+        "date": "2025-06-26"
+      }
+    ],
+    "richContent": {
+      "overview": "InMode's upgraded multi-application platform, successor to the Optimas. The headline addition for hair removal is the Fusion Light and Fusion Dark handpieces, which bring triple wavelength capability to the workstation.",
+      "howItWorks": "Fusion Light combines 755nm Alexandrite and 810nm diode for lighter skin tones. Fusion Dark combines 810nm diode and 1064nm Nd:YAG for darker skin tones. The DiolazeXL MAX handpiece provides 810nm diode with a large spot size for fast coverage of big areas. All handpieces use sapphire contact cooling.",
+      "typicalUses": [
+        "Multi-service clinics wanting one platform for hair removal, skin rejuvenation, RF microneedling, and vascular treatments",
+        "Clinics serving diverse patient populations who need wavelength flexibility for different skin types",
+        "Practices upgrading from the original Optimas to gain Alexandrite and Nd:YAG capability"
+      ],
+      "keyFeatures": "The critical question to ask your clinic: do they have the Fusion handpieces, or only the DiolazeXL MAX? The Fusion handpieces give you three wavelengths and the ability to match wavelength to skin type. The DiolazeXL MAX is 810nm diode only. Both are available on this platform, but a clinic may not have purchased both."
+    }
+  },
+  {
+    "type": "machine",
     "slug": "tria-4x",
     "name": "Tria 4X",
     "manufacturer": "Tria Beauty",
@@ -2845,45 +2987,6 @@
         "All skin types including tanned skin (Fitzpatrick I-VI)"
       ],
       "keyFeatures": "Two power tiers: 2,000W with all four wavelengths or 3,500W with 810nm only. Lightweight and portable compared to the Primelase platforms. Same USP 3ms pulse technology as the flagship Primelase Excellence but at roughly half the power (2,000W vs 4,800W). Lower acquisition cost makes it Cocoon Medical's recommended option for first-time laser buyers."
-    }
-  },
-  {
-    "type": "machine",
-    "slug": "inmode-fusion",
-    "name": "Fusion (Light & Dark)",
-    "manufacturer": "InMode",
-    "technologyType": "laser",
-    "wavelengths": [
-      "755nm",
-      "810nm",
-      "1064nm"
-    ],
-    "brandTier": "premium-clinical",
-    "skinTypes": {
-      "fitzpatrickRange": "I-VI",
-      "displayText": "All skin tones. Fusion Light for I-IV, Fusion Dark for IV-VI."
-    },
-    "purposeBuilt": true,
-    "coolingMethod": "contact",
-    "notes": "InMode's dedicated hair removal handpieces for Triton and OptimasMAX platforms. Three wavelengths: 755nm Alexandrite, 810nm Diode, 1064nm Nd:YAG. FusionXL is the large-spot variant.",
-    "aliases": [
-      "inmode fusion",
-      "fusion light",
-      "fusion dark",
-      "fusionxl",
-      "inmode fusionxl"
-    ],
-    "family": "inmode",
-    "deliveryMethod": null,
-    "richContent": {
-      "overview": "InMode's multi-wavelength hair removal system. Combines three wavelengths for all skin types.",
-      "howItWorks": "Mosaic combination of 755nm, 810nm, and 1064nm targets hair at different depths simultaneously. Light variant for lighter skin, Dark for darker skin.",
-      "typicalUses": [
-        "Hair removal on all skin types",
-        "Large area body treatments (FusionXL)",
-        "Dark skin hair removal"
-      ],
-      "keyFeatures": "Three wavelengths in one handpiece. Dedicated Light and Dark configurations. FusionXL for large areas. Part of InMode modular ecosystem."
     }
   },
   {
